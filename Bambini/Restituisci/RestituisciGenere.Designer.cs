@@ -43,10 +43,10 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(355, 394);
+            this.indietro_button.Location = new System.Drawing.Point(499, 593);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(192, 64);
+            this.indietro_button.Size = new System.Drawing.Size(380, 120);
             this.indietro_button.TabIndex = 17;
             this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
@@ -56,10 +56,10 @@
             // 
             this.aiuto_button.FlatAppearance.BorderSize = 0;
             this.aiuto_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aiuto_button.Location = new System.Drawing.Point(787, 30);
+            this.aiuto_button.Location = new System.Drawing.Point(1114, 11);
             this.aiuto_button.Margin = new System.Windows.Forms.Padding(2);
             this.aiuto_button.Name = "aiuto_button";
-            this.aiuto_button.Size = new System.Drawing.Size(69, 36);
+            this.aiuto_button.Size = new System.Drawing.Size(230, 80);
             this.aiuto_button.TabIndex = 16;
             this.aiuto_button.Text = "AIUTO";
             this.aiuto_button.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@
             // scegligenere_label
             // 
             this.scegligenere_label.AutoSize = true;
-            this.scegligenere_label.Location = new System.Drawing.Point(385, 34);
+            this.scegligenere_label.Location = new System.Drawing.Point(673, 30);
             this.scegligenere_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scegligenere_label.Name = "scegligenere_label";
             this.scegligenere_label.Size = new System.Drawing.Size(87, 13);
@@ -79,10 +79,10 @@
             this.storie_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.storie_button.FlatAppearance.BorderSize = 0;
             this.storie_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.storie_button.Location = new System.Drawing.Point(500, 194);
+            this.storie_button.Location = new System.Drawing.Point(789, 257);
             this.storie_button.Margin = new System.Windows.Forms.Padding(2);
             this.storie_button.Name = "storie_button";
-            this.storie_button.Size = new System.Drawing.Size(260, 80);
+            this.storie_button.Size = new System.Drawing.Size(450, 150);
             this.storie_button.TabIndex = 23;
             this.storie_button.Text = "storie";
             this.storie_button.UseVisualStyleBackColor = true;
@@ -93,10 +93,10 @@
             this.racconti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.racconti_button.FlatAppearance.BorderSize = 0;
             this.racconti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.racconti_button.Location = new System.Drawing.Point(500, 103);
+            this.racconti_button.Location = new System.Drawing.Point(789, 103);
             this.racconti_button.Margin = new System.Windows.Forms.Padding(2);
             this.racconti_button.Name = "racconti_button";
-            this.racconti_button.Size = new System.Drawing.Size(260, 80);
+            this.racconti_button.Size = new System.Drawing.Size(450, 150);
             this.racconti_button.TabIndex = 22;
             this.racconti_button.Text = "racconti";
             this.racconti_button.UseVisualStyleBackColor = true;
@@ -107,10 +107,10 @@
             this.cibo_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cibo_button.FlatAppearance.BorderSize = 0;
             this.cibo_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cibo_button.Location = new System.Drawing.Point(500, 285);
+            this.cibo_button.Location = new System.Drawing.Point(789, 439);
             this.cibo_button.Margin = new System.Windows.Forms.Padding(2);
             this.cibo_button.Name = "cibo_button";
-            this.cibo_button.Size = new System.Drawing.Size(260, 80);
+            this.cibo_button.Size = new System.Drawing.Size(450, 150);
             this.cibo_button.TabIndex = 21;
             this.cibo_button.Text = "cibo";
             this.cibo_button.UseVisualStyleBackColor = true;
@@ -121,10 +121,10 @@
             this.animali_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.animali_button.FlatAppearance.BorderSize = 0;
             this.animali_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.animali_button.Location = new System.Drawing.Point(137, 285);
+            this.animali_button.Location = new System.Drawing.Point(165, 439);
             this.animali_button.Margin = new System.Windows.Forms.Padding(2);
             this.animali_button.Name = "animali_button";
-            this.animali_button.Size = new System.Drawing.Size(260, 80);
+            this.animali_button.Size = new System.Drawing.Size(450, 150);
             this.animali_button.TabIndex = 20;
             this.animali_button.Text = "animali";
             this.animali_button.UseVisualStyleBackColor = true;
@@ -135,10 +135,10 @@
             this.scienze_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.scienze_button.FlatAppearance.BorderSize = 0;
             this.scienze_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scienze_button.Location = new System.Drawing.Point(137, 194);
+            this.scienze_button.Location = new System.Drawing.Point(165, 257);
             this.scienze_button.Margin = new System.Windows.Forms.Padding(2);
             this.scienze_button.Name = "scienze_button";
-            this.scienze_button.Size = new System.Drawing.Size(260, 80);
+            this.scienze_button.Size = new System.Drawing.Size(450, 150);
             this.scienze_button.TabIndex = 19;
             this.scienze_button.Text = "scienze";
             this.scienze_button.UseVisualStyleBackColor = true;
@@ -149,10 +149,10 @@
             this.sentimenti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.sentimenti_button.FlatAppearance.BorderSize = 0;
             this.sentimenti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sentimenti_button.Location = new System.Drawing.Point(137, 103);
+            this.sentimenti_button.Location = new System.Drawing.Point(165, 103);
             this.sentimenti_button.Margin = new System.Windows.Forms.Padding(2);
             this.sentimenti_button.Name = "sentimenti_button";
-            this.sentimenti_button.Size = new System.Drawing.Size(260, 80);
+            this.sentimenti_button.Size = new System.Drawing.Size(450, 150);
             this.sentimenti_button.TabIndex = 18;
             this.sentimenti_button.Text = "Sentimenti";
             this.sentimenti_button.UseVisualStyleBackColor = true;

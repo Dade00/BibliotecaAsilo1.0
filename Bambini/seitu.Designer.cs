@@ -69,10 +69,10 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(377, 329);
+            this.indietro_button.Location = new System.Drawing.Point(262, 329);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(146, 66);
+            this.indietro_button.Size = new System.Drawing.Size(380, 120);
             this.indietro_button.TabIndex = 3;
             this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // 
             this.avanti_button.FlatAppearance.BorderSize = 0;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.avanti_button.Location = new System.Drawing.Point(599, 329);
+            this.avanti_button.Location = new System.Drawing.Point(711, 329);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";
-            this.avanti_button.Size = new System.Drawing.Size(146, 66);
+            this.avanti_button.Size = new System.Drawing.Size(380, 120);
             this.avanti_button.TabIndex = 4;
             this.avanti_button.Text = "AVANTI";
             this.avanti_button.UseVisualStyleBackColor = true;

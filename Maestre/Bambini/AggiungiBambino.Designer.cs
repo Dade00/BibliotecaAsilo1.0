@@ -50,9 +50,9 @@
             // 
             // AnnullaModificaBambini
             // 
-            this.AnnullaModificaBambini.Location = new System.Drawing.Point(179, 397);
+            this.AnnullaModificaBambini.Location = new System.Drawing.Point(111, 397);
             this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
-            this.AnnullaModificaBambini.Size = new System.Drawing.Size(153, 35);
+            this.AnnullaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.AnnullaModificaBambini.TabIndex = 127;
             this.AnnullaModificaBambini.Text = "ANNULLA";
             this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@
             // 
             this.ConfermaModificaBambini.Location = new System.Drawing.Point(497, 397);
             this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
-            this.ConfermaModificaBambini.Size = new System.Drawing.Size(153, 35);
+            this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaModificaBambini.TabIndex = 126;
             this.ConfermaModificaBambini.Text = "CONFERMA";
             this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             this.AiutoAggiungiBambini.Location = new System.Drawing.Point(643, 19);
             this.AiutoAggiungiBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoAggiungiBambini.Name = "AiutoAggiungiBambini";
-            this.AiutoAggiungiBambini.Size = new System.Drawing.Size(82, 33);
+            this.AiutoAggiungiBambini.Size = new System.Drawing.Size(230, 80);
             this.AiutoAggiungiBambini.TabIndex = 125;
             this.AiutoAggiungiBambini.Text = "AIUTO";
             this.AiutoAggiungiBambini.UseVisualStyleBackColor = true;

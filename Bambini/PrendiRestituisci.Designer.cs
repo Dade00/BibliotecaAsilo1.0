@@ -64,10 +64,10 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(8, 397);
+            this.indietro_button.Location = new System.Drawing.Point(223, 378);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(161, 58);
+            this.indietro_button.Size = new System.Drawing.Size(380, 120);
             this.indietro_button.TabIndex = 2;
             this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@
             // 
             this.help_button.FlatAppearance.BorderSize = 0;
             this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.help_button.Location = new System.Drawing.Point(1244, 11);
+            this.help_button.Location = new System.Drawing.Point(1125, 11);
             this.help_button.Margin = new System.Windows.Forms.Padding(2);
             this.help_button.Name = "help_button";
-            this.help_button.Size = new System.Drawing.Size(95, 36);
+            this.help_button.Size = new System.Drawing.Size(230, 80);
             this.help_button.TabIndex = 3;
             this.help_button.Text = "AIUTO";
             this.help_button.UseVisualStyleBackColor = true;

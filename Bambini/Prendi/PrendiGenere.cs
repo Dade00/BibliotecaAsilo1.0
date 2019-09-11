@@ -68,5 +68,10 @@ namespace Bambini.Prendi
             librochoose.ShowDialog();
             Show();
         }
+
+        private void Aiuto_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

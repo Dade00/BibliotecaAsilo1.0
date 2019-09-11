@@ -16,5 +16,13 @@ namespace Bambini.Restituiusci
         {
             InitializeComponent();
         }
+
+        private void Ok_button_Click(object sender, EventArgs e)
+        {
+            Hide();
+            PrendiRestituisci prendiRestituisci = new PrendiRestituisci();
+            prendiRestituisci.ShowDialog();
+            Show();
+        }
     }
 }

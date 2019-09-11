@@ -97,10 +97,10 @@
             // 
             this.ok_button.FlatAppearance.BorderSize = 0;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ok_button.Location = new System.Drawing.Point(474, 447);
+            this.ok_button.Location = new System.Drawing.Point(409, 447);
             this.ok_button.Margin = new System.Windows.Forms.Padding(2);
             this.ok_button.Name = "ok_button";
-            this.ok_button.Size = new System.Drawing.Size(243, 118);
+            this.ok_button.Size = new System.Drawing.Size(305, 130);
             this.ok_button.TabIndex = 6;
             this.ok_button.Text = "OK";
             this.ok_button.UseVisualStyleBackColor = true;
@@ -110,10 +110,10 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(736, 447);
+            this.indietro_button.Location = new System.Drawing.Point(739, 452);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(243, 118);
+            this.indietro_button.Size = new System.Drawing.Size(380, 120);
             this.indietro_button.TabIndex = 7;
             this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
