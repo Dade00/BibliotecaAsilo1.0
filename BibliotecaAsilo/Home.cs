@@ -21,7 +21,6 @@ namespace BibliotecaAsilo
 
         private void Bambini_button_Click(object sender, EventArgs e)
         {
-            Hide();
             Login_page login_Page = new Login_page();
             login_Page.ShowDialog();
             Show();
@@ -29,10 +28,14 @@ namespace BibliotecaAsilo
 
         private void Maestre_button_Click(object sender, EventArgs e)
         {
-            Hide();
-            Maestre.Home home = new Maestre.Home();
+            Home home = new Maestre.Home();
             home.ShowDialog();
             Show();
+        }
+
+        private void Esci_button_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
