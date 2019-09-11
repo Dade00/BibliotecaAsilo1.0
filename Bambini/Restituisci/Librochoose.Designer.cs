@@ -43,7 +43,7 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(523, 351);
+            this.indietro_button.Location = new System.Drawing.Point(742, 567);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(166, 58);
@@ -56,7 +56,7 @@
             // 
             this.ok_button.FlatAppearance.BorderSize = 0;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ok_button.Location = new System.Drawing.Point(313, 351);
+            this.ok_button.Location = new System.Drawing.Point(529, 567);
             this.ok_button.Margin = new System.Windows.Forms.Padding(2);
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(166, 58);
@@ -68,10 +68,11 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Location = new System.Drawing.Point(391, 55);
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 24F, System.Drawing.FontStyle.Bold);
+            this.libro_label.Location = new System.Drawing.Point(490, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(119, 13);
+            this.libro_label.Size = new System.Drawing.Size(434, 39);
             this.libro_label.TabIndex = 12;
             this.libro_label.Text = "Che libro vuoi restituire?";
             // 
@@ -79,7 +80,7 @@
             // 
             this.down_button.FlatAppearance.BorderSize = 0;
             this.down_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.down_button.Location = new System.Drawing.Point(709, 228);
+            this.down_button.Location = new System.Drawing.Point(928, 178);
             this.down_button.Margin = new System.Windows.Forms.Padding(2);
             this.down_button.Name = "down_button";
             this.down_button.Size = new System.Drawing.Size(110, 97);
@@ -91,7 +92,7 @@
             // 
             this.up_button.FlatAppearance.BorderSize = 0;
             this.up_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.up_button.Location = new System.Drawing.Point(709, 126);
+            this.up_button.Location = new System.Drawing.Point(928, 76);
             this.up_button.Margin = new System.Windows.Forms.Padding(2);
             this.up_button.Name = "up_button";
             this.up_button.Size = new System.Drawing.Size(110, 97);
@@ -101,7 +102,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(77, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(296, 76);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(209, 200);
@@ -111,7 +112,7 @@
             // datagrid
             // 
             this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagrid.Location = new System.Drawing.Point(289, 126);
+            this.datagrid.Location = new System.Drawing.Point(508, 76);
             this.datagrid.Margin = new System.Windows.Forms.Padding(2);
             this.datagrid.Name = "datagrid";
             this.datagrid.RowHeadersWidth = 62;
