@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{784A973A-5685-4330-A84A-7C9634F8F3D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bambini</RootNamespace>
+    <AssemblyName>Bambini</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prendi\ConfermaPresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prendi\ConfermaPresa.Designer.cs">
+      <DependentUpon>ConfermaPresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prendi\Librochoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prendi\Librochoose.Designer.cs">
+      <DependentUpon>Librochoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prendi\PrendiGenere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prendi\PrendiGenere.Designer.cs">
+      <DependentUpon>PrendiGenere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrendiRestituisci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrendiRestituisci.Designer.cs">
+      <DependentUpon>PrendiRestituisci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restituisci\ConfermaRestituzione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restituisci\ConfermaRestituzione.Designer.cs">
+      <DependentUpon>ConfermaRestituzione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restituisci\Librochoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restituisci\Librochoose.Designer.cs">
+      <DependentUpon>Librochoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restituisci\RestituisciGenere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restituisci\RestituisciGenere.Designer.cs">
+      <DependentUpon>RestituisciGenere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seitu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seitu.Designer.cs">
+      <DependentUpon>seitu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prendi\ConfermaPresa.resx">
+      <DependentUpon>ConfermaPresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prendi\Librochoose.resx">
+      <DependentUpon>Librochoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prendi\PrendiGenere.resx">
+      <DependentUpon>PrendiGenere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrendiRestituisci.resx">
+      <DependentUpon>PrendiRestituisci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Restituisci\ConfermaRestituzione.resx">
+      <DependentUpon>ConfermaRestituzione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restituisci\Librochoose.resx">
+      <DependentUpon>Librochoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restituisci\RestituisciGenere.resx">
+      <DependentUpon>RestituisciGenere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seitu.resx">
+      <DependentUpon>seitu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sentimenti2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bambini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crediti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indietro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maestra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Racconti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scienze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sentimenti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Storie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 Anni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 Anni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5 Anni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avanti.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
