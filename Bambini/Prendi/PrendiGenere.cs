@@ -32,6 +32,7 @@ namespace Bambini.Prendi
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
+            closingControl();
         }
 
         private void Scienze_button_Click(object sender, EventArgs e)
@@ -39,6 +40,7 @@ namespace Bambini.Prendi
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
+            closingControl();
         }
 
         private void Animali_button_Click(object sender, EventArgs e)
@@ -46,6 +48,7 @@ namespace Bambini.Prendi
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
+            closingControl();
         }
 
         private void Racconti_button_Click(object sender, EventArgs e)
@@ -53,6 +56,7 @@ namespace Bambini.Prendi
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
+            closingControl();
         }
 
         private void Storie_button_Click(object sender, EventArgs e)
@@ -60,6 +64,7 @@ namespace Bambini.Prendi
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
+            closingControl();
         }
 
         private void Cibo_button_Click(object sender, EventArgs e)
@@ -67,6 +72,16 @@ namespace Bambini.Prendi
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
+            closingControl();
+        }
+
+        private void closingControl()
+        {
+            //Blocco che permette la chiusura del form se si arriva dalla conferma
+            if (GUIServices.ToPrendiRestituisci)
+            {
+                Close();
+            }
         }
     }
 }

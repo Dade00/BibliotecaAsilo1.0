@@ -41,7 +41,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(159, 192);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(407, 367);
+            this.pictureBox1.Size = new System.Drawing.Size(407, 347);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -81,6 +81,7 @@
             this.ok_button.TabIndex = 11;
             this.ok_button.Text = "OK";
             this.ok_button.UseVisualStyleBackColor = true;
+            this.ok_button.Click += new System.EventHandler(this.Ok_button_Click_1);
             // 
             // nomelibro_label
             // 

@@ -22,8 +22,9 @@ namespace Bambini.Prendi
 
         }
 
-        private void Ok_button_Click(object sender, EventArgs e)
+        private void Ok_button_Click_1(object sender, EventArgs e)
         {
+            GUIServices.ToPrendiRestituisci = true;
             Close();
         }
     }
