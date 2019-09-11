@@ -136,6 +136,8 @@
             this.Name = "Librochoose";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Librochoose";
+            this.Load += new System.EventHandler(this.Librochoose_Load);
+            this.VisibleChanged += new System.EventHandler(this.Librochoose_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

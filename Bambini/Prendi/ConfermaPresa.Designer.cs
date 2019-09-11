@@ -77,8 +77,8 @@
             this.ok_button.Location = new System.Drawing.Point(534, 544);
             this.ok_button.Margin = new System.Windows.Forms.Padding(2);
             this.ok_button.Name = "ok_button";
-            this.ok_button.Size = new System.Drawing.Size(78, 36);
-            this.ok_button.TabIndex = 2;
+            this.ok_button.Size = new System.Drawing.Size(305, 130);
+            this.ok_button.TabIndex = 11;
             this.ok_button.Text = "OK";
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.Ok_button_Click_1);

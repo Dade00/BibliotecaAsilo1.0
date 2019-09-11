@@ -24,9 +24,30 @@ namespace Bambini.Prendi
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
+            Hide();
             ConfermaPresa confermaPresa = new ConfermaPresa();
             confermaPresa.ShowDialog();
             Show();
+
+            
+        }
+
+        private void Librochoose_Load(object sender, EventArgs e)
+        {
+            //Blocco che permette la chiusura del form se si arriva dalla conferma
+            if (GUIServices.ToPrendiRestituisci)
+            {
+                Close();
+            }
+        }
+
+        private void Librochoose_VisibleChanged(object sender, EventArgs e)
+        {
+            //Blocco che permette la chiusura del form se si arriva dalla conferma
+            if (GUIServices.ToPrendiRestituisci)
+            {
+                Close();
+            }
         }
     }
 }
