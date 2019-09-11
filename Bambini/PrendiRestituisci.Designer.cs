@@ -71,6 +71,7 @@
             this.indietro_button.TabIndex = 2;
             this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
+            this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 
             // help_button
             // 

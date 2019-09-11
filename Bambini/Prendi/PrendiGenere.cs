@@ -24,7 +24,7 @@ namespace Bambini.Prendi
 
         private void Indietro_button_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }

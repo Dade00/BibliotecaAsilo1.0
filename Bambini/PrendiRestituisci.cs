@@ -32,5 +32,10 @@ namespace Bambini
             librochoose.ShowDialog();
             Show();
         }
+
+        private void Indietro_button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
