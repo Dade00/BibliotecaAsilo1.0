@@ -31,6 +31,7 @@
             this.maestre_button = new System.Windows.Forms.Button();
             this.bambini_button = new System.Windows.Forms.Button();
             this.crediti_button = new System.Windows.Forms.Button();
+            this.Esci_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // maestre_button
@@ -71,11 +72,23 @@
             this.crediti_button.Text = "CREDITI";
             this.crediti_button.UseVisualStyleBackColor = true;
             // 
+            // Esci_button
+            // 
+            this.Esci_button.FlatAppearance.BorderSize = 0;
+            this.Esci_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Esci_button.Location = new System.Drawing.Point(725, 417);
+            this.Esci_button.Name = "Esci_button";
+            this.Esci_button.Size = new System.Drawing.Size(280, 116);
+            this.Esci_button.TabIndex = 3;
+            this.Esci_button.Text = "Esci";
+            this.Esci_button.UseVisualStyleBackColor = true;
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.Esci_button);
             this.Controls.Add(this.crediti_button);
             this.Controls.Add(this.bambini_button);
             this.Controls.Add(this.maestre_button);
@@ -92,6 +105,7 @@
         private System.Windows.Forms.Button maestre_button;
         private System.Windows.Forms.Button bambini_button;
         private System.Windows.Forms.Button crediti_button;
+        private System.Windows.Forms.Button Esci_button;
     }
 }
 

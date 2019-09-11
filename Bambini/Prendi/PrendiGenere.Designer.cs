@@ -144,7 +144,7 @@
             this.sentimenti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.sentimenti_button.FlatAppearance.BorderSize = 0;
             this.sentimenti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sentimenti_button.Image = global::Bambini.Properties.Resources.Sentimenti2;
+            //this.sentimenti_button.Image = global::Bambini.Properties.Resources.Sentimenti2;
             this.sentimenti_button.Location = new System.Drawing.Point(132, 121);
             this.sentimenti_button.Margin = new System.Windows.Forms.Padding(0);
             this.sentimenti_button.Name = "sentimenti_button";

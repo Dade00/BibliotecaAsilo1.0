@@ -49,5 +49,10 @@ namespace Bambini
         {
             Close();
         }
+
+        private void Help_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
