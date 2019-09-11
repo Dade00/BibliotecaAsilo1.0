@@ -203,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
             this.Controls.Add(this.AiutoModificaBambini);
@@ -220,7 +220,9 @@
             this.Controls.Add(this.NomeModBambini);
             this.Controls.Add(this.cognome_label);
             this.Controls.Add(this.nome_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModificaBambino";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificaBambino";
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
             this.ResumeLayout(false);

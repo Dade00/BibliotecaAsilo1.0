@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.Libri_pic);
             this.Controls.Add(this.AnnullaModificaLibro);
             this.Controls.Add(this.ConfermaModificaLibro);
@@ -206,7 +206,9 @@
             this.Controls.Add(this.TitoloAddLibro);
             this.Controls.Add(this.cognome_label);
             this.Controls.Add(this.nome_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AggiungiLibro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AggiungiLibro";
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).EndInit();
             this.ResumeLayout(false);

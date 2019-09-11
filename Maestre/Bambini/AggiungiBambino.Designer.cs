@@ -223,7 +223,9 @@
             this.Controls.Add(this.NomeAddBambini);
             this.Controls.Add(this.cognome_label);
             this.Controls.Add(this.nome_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AggiungiBambino";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AggiungiBambino";
             this.Load += new System.EventHandler(this.AggiungiBambino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();

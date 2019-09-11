@@ -144,7 +144,6 @@
             this.sentimenti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.sentimenti_button.FlatAppearance.BorderSize = 0;
             this.sentimenti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            //this.sentimenti_button.Image = global::Bambini.Properties.Resources.Sentimenti2;
             this.sentimenti_button.Location = new System.Drawing.Point(132, 121);
             this.sentimenti_button.Margin = new System.Windows.Forms.Padding(0);
             this.sentimenti_button.Name = "sentimenti_button";
@@ -157,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.indietro_button);
             this.Controls.Add(this.aiuto_button);
             this.Controls.Add(this.scegligenere_label);
@@ -167,8 +166,10 @@
             this.Controls.Add(this.animali_button);
             this.Controls.Add(this.scienze_button);
             this.Controls.Add(this.sentimenti_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PrendiGeneree";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prendi un libro";
             this.Load += new System.EventHandler(this.Prendi_Load);
             this.ResumeLayout(false);
