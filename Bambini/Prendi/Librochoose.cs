@@ -24,7 +24,9 @@ namespace Bambini.Prendi
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
-
+            ConfermaPresa confermaPresa = new ConfermaPresa();
+            confermaPresa.ShowDialog();
+            Show();
         }
     }
 }

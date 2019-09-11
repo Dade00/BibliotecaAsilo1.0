@@ -51,6 +51,7 @@
             this.scienze_button.TabIndex = 1;
             this.scienze_button.Text = "scienze";
             this.scienze_button.UseVisualStyleBackColor = true;
+            this.scienze_button.Click += new System.EventHandler(this.Scienze_button_Click);
             // 
             // animali_button
             // 
@@ -64,6 +65,7 @@
             this.animali_button.TabIndex = 2;
             this.animali_button.Text = "animali";
             this.animali_button.UseVisualStyleBackColor = true;
+            this.animali_button.Click += new System.EventHandler(this.Animali_button_Click);
             // 
             // cibo_button
             // 
@@ -77,6 +79,7 @@
             this.cibo_button.TabIndex = 3;
             this.cibo_button.Text = "cibo";
             this.cibo_button.UseVisualStyleBackColor = true;
+            this.cibo_button.Click += new System.EventHandler(this.Cibo_button_Click);
             // 
             // racconti_button
             // 
@@ -90,6 +93,7 @@
             this.racconti_button.TabIndex = 4;
             this.racconti_button.Text = "racconti";
             this.racconti_button.UseVisualStyleBackColor = true;
+            this.racconti_button.Click += new System.EventHandler(this.Racconti_button_Click);
             // 
             // storie_button
             // 
@@ -103,6 +107,7 @@
             this.storie_button.TabIndex = 5;
             this.storie_button.Text = "storie";
             this.storie_button.UseVisualStyleBackColor = true;
+            this.storie_button.Click += new System.EventHandler(this.Storie_button_Click);
             // 
             // scegligenere_label
             // 
@@ -152,6 +157,7 @@
             this.sentimenti_button.TabIndex = 0;
             this.sentimenti_button.Text = "Sentimenti";
             this.sentimenti_button.UseVisualStyleBackColor = true;
+            this.sentimenti_button.Click += new System.EventHandler(this.Sentimenti_button_Click);
             // 
             // PrendiGeneree
             // 

@@ -28,8 +28,8 @@ namespace Bambini
         private void Restituisci_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Restituiusci.Librochoose librochoose = new Restituiusci.Librochoose();
-            librochoose.ShowDialog();
+            Restituiusci.RestituisciGenere restituisciGenere = new Restituiusci.RestituisciGenere();
+            restituisciGenere.ShowDialog();
             Show();
         }
 

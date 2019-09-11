@@ -19,12 +19,14 @@ namespace Bambini.Restituiusci
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
-
+            ConfermaRestituzione confermaRestituzione = new ConfermaRestituzione();
+            confermaRestituzione.ShowDialog();
+            Show();
         }
 
         private void Indietro_button_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }
