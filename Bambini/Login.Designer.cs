@@ -34,11 +34,13 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_textbox = new System.Windows.Forms.TextBox();
             this.cognome_textbox = new System.Windows.Forms.TextBox();
-            this.treanni_button = new System.Windows.Forms.Button();
-            this.cinqueanni_button = new System.Windows.Forms.Button();
-            this.quattroanni_button = new System.Windows.Forms.Button();
             this.avanti_button = new System.Windows.Forms.Button();
             this.help_button = new System.Windows.Forms.Button();
+            this.maskedGBox = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.maskedGBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // return_button
@@ -70,7 +72,7 @@
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome_label.Location = new System.Drawing.Point(316, 100);
+            this.nome_label.Location = new System.Drawing.Point(405, 131);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(101, 33);
@@ -81,7 +83,7 @@
             // 
             this.cognome_label.AutoSize = true;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cognome_label.Location = new System.Drawing.Point(250, 144);
+            this.cognome_label.Location = new System.Drawing.Point(339, 175);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(167, 33);
@@ -91,59 +93,20 @@
             // nome_textbox
             // 
             this.nome_textbox.Font = new System.Drawing.Font("GROBOLD", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome_textbox.Location = new System.Drawing.Point(457, 100);
+            this.nome_textbox.Location = new System.Drawing.Point(546, 131);
             this.nome_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.nome_textbox.Name = "nome_textbox";
-            this.nome_textbox.Size = new System.Drawing.Size(289, 36);
+            this.nome_textbox.Size = new System.Drawing.Size(392, 36);
             this.nome_textbox.TabIndex = 6;
             // 
             // cognome_textbox
             // 
             this.cognome_textbox.Font = new System.Drawing.Font("GROBOLD", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cognome_textbox.Location = new System.Drawing.Point(457, 144);
+            this.cognome_textbox.Location = new System.Drawing.Point(546, 175);
             this.cognome_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.cognome_textbox.Name = "cognome_textbox";
-            this.cognome_textbox.Size = new System.Drawing.Size(289, 36);
+            this.cognome_textbox.Size = new System.Drawing.Size(392, 36);
             this.cognome_textbox.TabIndex = 7;
-            // 
-            // treanni_button
-            // 
-            this.treanni_button.FlatAppearance.BorderSize = 0;
-            this.treanni_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.treanni_button.Location = new System.Drawing.Point(34, 251);
-            this.treanni_button.Margin = new System.Windows.Forms.Padding(2);
-            this.treanni_button.Name = "treanni_button";
-            this.treanni_button.Size = new System.Drawing.Size(360, 120);
-            this.treanni_button.TabIndex = 8;
-            this.treanni_button.Text = "TRE ANNI";
-            this.treanni_button.UseVisualStyleBackColor = true;
-            this.treanni_button.Click += new System.EventHandler(this.Treanni_button_Click);
-            // 
-            // cinqueanni_button
-            // 
-            this.cinqueanni_button.FlatAppearance.BorderSize = 0;
-            this.cinqueanni_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cinqueanni_button.Location = new System.Drawing.Point(953, 251);
-            this.cinqueanni_button.Margin = new System.Windows.Forms.Padding(2);
-            this.cinqueanni_button.Name = "cinqueanni_button";
-            this.cinqueanni_button.Size = new System.Drawing.Size(360, 120);
-            this.cinqueanni_button.TabIndex = 9;
-            this.cinqueanni_button.Text = "CINQUE ANNI";
-            this.cinqueanni_button.UseVisualStyleBackColor = true;
-            this.cinqueanni_button.Click += new System.EventHandler(this.Cinqueanni_button_Click);
-            // 
-            // quattroanni_button
-            // 
-            this.quattroanni_button.FlatAppearance.BorderSize = 0;
-            this.quattroanni_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quattroanni_button.Location = new System.Drawing.Point(503, 251);
-            this.quattroanni_button.Margin = new System.Windows.Forms.Padding(2);
-            this.quattroanni_button.Name = "quattroanni_button";
-            this.quattroanni_button.Size = new System.Drawing.Size(360, 120);
-            this.quattroanni_button.TabIndex = 10;
-            this.quattroanni_button.Text = "QUATTRO ANNI";
-            this.quattroanni_button.UseVisualStyleBackColor = true;
-            this.quattroanni_button.Click += new System.EventHandler(this.Quattroanni_button_Click);
             // 
             // avanti_button
             // 
@@ -171,16 +134,73 @@
             this.help_button.UseVisualStyleBackColor = true;
             this.help_button.Click += new System.EventHandler(this.Help_button_Click);
             // 
+            // maskedGBox
+            // 
+            this.maskedGBox.BackColor = System.Drawing.SystemColors.Control;
+            this.maskedGBox.Controls.Add(this.radioButton3);
+            this.maskedGBox.Controls.Add(this.radioButton2);
+            this.maskedGBox.Controls.Add(this.radioButton1);
+            this.maskedGBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maskedGBox.Location = new System.Drawing.Point(59, 228);
+            this.maskedGBox.Margin = new System.Windows.Forms.Padding(0);
+            this.maskedGBox.Name = "maskedGBox";
+            this.maskedGBox.Padding = new System.Windows.Forms.Padding(0);
+            this.maskedGBox.Size = new System.Drawing.Size(1244, 254);
+            this.maskedGBox.TabIndex = 13;
+            this.maskedGBox.TabStop = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton1.FlatAppearance.BorderSize = 0;
+            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton1.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(48, 76);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(300, 100);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "3 anni";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton2.FlatAppearance.BorderSize = 0;
+            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(481, 76);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(300, 100);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "4 anni";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton3.FlatAppearance.BorderSize = 0;
+            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton3.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(914, 76);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(300, 100);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "5 anni";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
             // Login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 11F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.maskedGBox);
             this.Controls.Add(this.help_button);
             this.Controls.Add(this.avanti_button);
-            this.Controls.Add(this.quattroanni_button);
-            this.Controls.Add(this.cinqueanni_button);
-            this.Controls.Add(this.treanni_button);
             this.Controls.Add(this.cognome_textbox);
             this.Controls.Add(this.nome_textbox);
             this.Controls.Add(this.cognome_label);
@@ -194,6 +214,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi sei?";
             this.Load += new System.EventHandler(this.Login_page_Load);
+            this.maskedGBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,11 +227,12 @@
         private System.Windows.Forms.Label cognome_label;
         private System.Windows.Forms.TextBox nome_textbox;
         private System.Windows.Forms.TextBox cognome_textbox;
-        private System.Windows.Forms.Button treanni_button;
-        private System.Windows.Forms.Button cinqueanni_button;
-        private System.Windows.Forms.Button quattroanni_button;
         private System.Windows.Forms.Button avanti_button;
         private System.Windows.Forms.Button help_button;
+        private System.Windows.Forms.GroupBox maskedGBox;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
 

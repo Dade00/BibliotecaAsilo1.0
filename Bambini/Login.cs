@@ -30,20 +30,6 @@ namespace Bambini
             Show();
         }
 
-        private void Treanni_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Quattroanni_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cinqueanni_button_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Return_button_Click(object sender, EventArgs e)
         {
@@ -51,6 +37,16 @@ namespace Bambini
         }
 
         private void Help_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
