@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.CognomeDelBambini);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AnnullaEliminaBambini);
@@ -140,7 +140,9 @@
             this.Controls.Add(this.Bambini);
             this.Controls.Add(this.AiutoCancellaBambino);
             this.Controls.Add(this.libro_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CancellaBambino";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancellaBambino";
             ((System.ComponentModel.ISupportInitialize)(this.Bambini)).EndInit();
             this.ResumeLayout(false);

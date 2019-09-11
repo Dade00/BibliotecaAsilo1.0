@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.storie_button);
             this.Controls.Add(this.racconti_button);
             this.Controls.Add(this.cibo_button);
@@ -166,8 +166,10 @@
             this.Controls.Add(this.indietro_button);
             this.Controls.Add(this.aiuto_button);
             this.Controls.Add(this.scegligenere_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RestituisciGenere";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RestituisciGenere";
             this.Load += new System.EventHandler(this.RestituisciGenere_Load);
             this.ResumeLayout(false);
