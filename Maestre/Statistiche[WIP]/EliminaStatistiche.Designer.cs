@@ -1,6 +1,6 @@
 ﻿namespace Maestre.Statistiche_WIP_
 {
-    partial class a1
+    partial class EliminaStatistiche
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // EliminaStatistiche
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "a1";
+            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "EliminaStatistiche";
+            this.Text = "aa";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

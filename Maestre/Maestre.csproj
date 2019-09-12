@@ -108,23 +108,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Statistiche[WIP]\a1.cs">
+    <Compile Include="Statistiche[WIP]\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistiche[WIP]\a1.Designer.cs">
-      <DependentUpon>a1.cs</DependentUpon>
+    <Compile Include="Statistiche[WIP]\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Statistiche[WIP]\aa.cs">
+    <Compile Include="Statistiche[WIP]\StatBambini\LibriLetti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistiche[WIP]\aa.Designer.cs">
-      <DependentUpon>aa.cs</DependentUpon>
+    <Compile Include="Statistiche[WIP]\StatBambini\LibriLetti.Designer.cs">
+      <DependentUpon>LibriLetti.cs</DependentUpon>
     </Compile>
-    <Compile Include="Statistiche[WIP]\e1.cs">
+    <Compile Include="Statistiche[WIP]\StatLibri\LibriLettiDaBambino.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistiche[WIP]\e1.Designer.cs">
-      <DependentUpon>e1.cs</DependentUpon>
+    <Compile Include="Statistiche[WIP]\StatLibri\LibriLettiDaBambino.Designer.cs">
+      <DependentUpon>LibriLettiDaBambino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistiche[WIP]\EliminaStatistiche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistiche[WIP]\EliminaStatistiche.Designer.cs">
+      <DependentUpon>EliminaStatistiche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistiche[WIP]\StatBambini\BambiniLettoUnLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistiche[WIP]\StatBambini\BambiniLettoUnLibro.Designer.cs">
+      <DependentUpon>BambiniLettoUnLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistiche[WIP]\StatLibri\NumeroDiVolteLetti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistiche[WIP]\StatLibri\NumeroDiVolteLetti.Designer.cs">
+      <DependentUpon>NumeroDiVolteLetti.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bambini\AggiungiBambino.resx">
       <DependentUpon>AggiungiBambino.cs</DependentUpon>
@@ -165,6 +183,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Statistiche[WIP]\StatBambini\BambiniLettoUnLibro.resx">
+      <DependentUpon>BambiniLettoUnLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiche[WIP]\EliminaStatistiche.resx">
+      <DependentUpon>EliminaStatistiche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiche[WIP]\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiche[WIP]\StatBambini\LibriLetti.resx">
+      <DependentUpon>LibriLetti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiche[WIP]\StatLibri\LibriLettiDaBambino.resx">
+      <DependentUpon>LibriLettiDaBambino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiche[WIP]\StatLibri\NumeroDiVolteLetti.resx">
+      <DependentUpon>NumeroDiVolteLetti.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
