@@ -71,6 +71,7 @@
             this.AnnullaEliminaBambini.TabIndex = 79;
             this.AnnullaEliminaBambini.Text = "ANNULLA";
             this.AnnullaEliminaBambini.UseVisualStyleBackColor = true;
+            this.AnnullaEliminaBambini.Click += new System.EventHandler(this.AnnullaEliminaBambini_Click);
             // 
             // ConfermaEliminaBambini
             // 

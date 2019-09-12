@@ -16,5 +16,29 @@ namespace Maestre
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Bambini_button_Click(object sender, EventArgs e)
+        {
+            Bambini.HomeBambini homeBambini = new Bambini.HomeBambini();
+            homeBambini.ShowDialog();
+            Show();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Libri.HomeLibri homeLibri = new Libri.HomeLibri();
+            homeLibri.ShowDialog();
+            Show();
+        }
+
+        private void Indietro_button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

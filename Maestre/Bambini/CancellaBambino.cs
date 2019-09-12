@@ -21,5 +21,10 @@ namespace Maestre.Bambini
         {
 
         }
+
+        private void AnnullaEliminaBambini_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
