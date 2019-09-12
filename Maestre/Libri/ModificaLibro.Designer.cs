@@ -191,6 +191,7 @@
             this.AnnullaModificaLibro.TabIndex = 79;
             this.AnnullaModificaLibro.Text = "ANNULLA";
             this.AnnullaModificaLibro.UseVisualStyleBackColor = true;
+            this.AnnullaModificaLibro.Click += new System.EventHandler(this.AnnullaModificaLibro_Click);
             // 
             // Libri_pic
             // 

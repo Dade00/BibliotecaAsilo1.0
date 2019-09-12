@@ -98,6 +98,7 @@
             this.AnnullaEliminaLibro.TabIndex = 73;
             this.AnnullaEliminaLibro.Text = "ANNULLA";
             this.AnnullaEliminaLibro.UseVisualStyleBackColor = true;
+            this.AnnullaEliminaLibro.Click += new System.EventHandler(this.AnnullaEliminaLibro_Click);
             // 
             // Libri_pic
             // 

@@ -42,6 +42,7 @@
             this.EliminaLibro.TabIndex = 5;
             this.EliminaLibro.Text = "ELIMINA LIBRO";
             this.EliminaLibro.UseVisualStyleBackColor = true;
+            this.EliminaLibro.Click += new System.EventHandler(this.EliminaLibro_Click);
             // 
             // ModificaLibro
             // 
@@ -51,6 +52,7 @@
             this.ModificaLibro.TabIndex = 4;
             this.ModificaLibro.Text = "MODIFICA LIBRO";
             this.ModificaLibro.UseVisualStyleBackColor = true;
+            this.ModificaLibro.Click += new System.EventHandler(this.ModificaLibro_Click);
             // 
             // AggiungiLibro
             // 
@@ -60,6 +62,7 @@
             this.AggiungiLibro.TabIndex = 3;
             this.AggiungiLibro.Text = "AGGIUNGI LIBRO";
             this.AggiungiLibro.UseVisualStyleBackColor = true;
+            this.AggiungiLibro.Click += new System.EventHandler(this.AggiungiLibro_Click);
             // 
             // indietro_button
             // 
