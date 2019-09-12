@@ -35,27 +35,27 @@
             // 
             // AggiungiBambino
             // 
-            this.AggiungiBambino.Location = new System.Drawing.Point(244, 104);
+            this.AggiungiBambino.Location = new System.Drawing.Point(493, 150);
             this.AggiungiBambino.Name = "AggiungiBambino";
-            this.AggiungiBambino.Size = new System.Drawing.Size(288, 53);
+            this.AggiungiBambino.Size = new System.Drawing.Size(380, 120);
             this.AggiungiBambino.TabIndex = 0;
             this.AggiungiBambino.Text = "AGGIUNGI BAMBINO";
             this.AggiungiBambino.UseVisualStyleBackColor = true;
             // 
             // ModificaBambino
             // 
-            this.ModificaBambino.Location = new System.Drawing.Point(244, 179);
+            this.ModificaBambino.Location = new System.Drawing.Point(493, 323);
             this.ModificaBambino.Name = "ModificaBambino";
-            this.ModificaBambino.Size = new System.Drawing.Size(288, 53);
+            this.ModificaBambino.Size = new System.Drawing.Size(380, 120);
             this.ModificaBambino.TabIndex = 1;
             this.ModificaBambino.Text = "MODIFICA BAMBINO";
             this.ModificaBambino.UseVisualStyleBackColor = true;
             // 
             // EliminaBambino
             // 
-            this.EliminaBambino.Location = new System.Drawing.Point(244, 256);
+            this.EliminaBambino.Location = new System.Drawing.Point(493, 499);
             this.EliminaBambino.Name = "EliminaBambino";
-            this.EliminaBambino.Size = new System.Drawing.Size(288, 53);
+            this.EliminaBambino.Size = new System.Drawing.Size(380, 120);
             this.EliminaBambino.TabIndex = 2;
             this.EliminaBambino.Text = "ELIMINA BAMBINO";
             this.EliminaBambino.UseVisualStyleBackColor = true;

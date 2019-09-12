@@ -35,27 +35,27 @@
             // 
             // EliminaLibro
             // 
-            this.EliminaLibro.Location = new System.Drawing.Point(256, 275);
+            this.EliminaLibro.Location = new System.Drawing.Point(493, 482);
             this.EliminaLibro.Name = "EliminaLibro";
-            this.EliminaLibro.Size = new System.Drawing.Size(288, 53);
+            this.EliminaLibro.Size = new System.Drawing.Size(380, 120);
             this.EliminaLibro.TabIndex = 5;
             this.EliminaLibro.Text = "ELIMINA LIBRO";
             this.EliminaLibro.UseVisualStyleBackColor = true;
             // 
             // ModificaLibro
             // 
-            this.ModificaLibro.Location = new System.Drawing.Point(256, 198);
+            this.ModificaLibro.Location = new System.Drawing.Point(493, 322);
             this.ModificaLibro.Name = "ModificaLibro";
-            this.ModificaLibro.Size = new System.Drawing.Size(288, 53);
+            this.ModificaLibro.Size = new System.Drawing.Size(380, 120);
             this.ModificaLibro.TabIndex = 4;
             this.ModificaLibro.Text = "MODIFICA LIBRO";
             this.ModificaLibro.UseVisualStyleBackColor = true;
             // 
             // AggiungiLibro
             // 
-            this.AggiungiLibro.Location = new System.Drawing.Point(256, 123);
+            this.AggiungiLibro.Location = new System.Drawing.Point(493, 166);
             this.AggiungiLibro.Name = "AggiungiLibro";
-            this.AggiungiLibro.Size = new System.Drawing.Size(288, 53);
+            this.AggiungiLibro.Size = new System.Drawing.Size(380, 120);
             this.AggiungiLibro.TabIndex = 3;
             this.AggiungiLibro.Text = "AGGIUNGI LIBRO";
             this.AggiungiLibro.UseVisualStyleBackColor = true;

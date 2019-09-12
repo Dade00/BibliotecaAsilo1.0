@@ -32,7 +32,6 @@
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             this.AiutoModificaBambini = new System.Windows.Forms.Button();
             this.CercaFotoBambini = new System.Windows.Forms.Button();
-            this.FotoModBambini = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
             this.ClasseModBambini = new System.Windows.Forms.TextBox();
@@ -44,12 +43,14 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.AnniModBambini = new System.Windows.Forms.TextBox();
+            this.Bambini_pic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // AnnullaModificaBambini
             // 
-            this.AnnullaModificaBambini.Location = new System.Drawing.Point(77, 389);
+            this.AnnullaModificaBambini.Location = new System.Drawing.Point(226, 544);
             this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
             this.AnnullaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.AnnullaModificaBambini.TabIndex = 111;
@@ -58,7 +59,7 @@
             // 
             // ConfermaModificaBambini
             // 
-            this.ConfermaModificaBambini.Location = new System.Drawing.Point(517, 389);
+            this.ConfermaModificaBambini.Location = new System.Drawing.Point(761, 544);
             this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
             this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaModificaBambini.TabIndex = 110;
@@ -67,7 +68,7 @@
             // 
             // AiutoModificaBambini
             // 
-            this.AiutoModificaBambini.Location = new System.Drawing.Point(644, 11);
+            this.AiutoModificaBambini.Location = new System.Drawing.Point(1125, 11);
             this.AiutoModificaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoModificaBambini.Name = "AiutoModificaBambini";
             this.AiutoModificaBambini.Size = new System.Drawing.Size(230, 80);
@@ -77,7 +78,7 @@
             // 
             // CercaFotoBambini
             // 
-            this.CercaFotoBambini.Location = new System.Drawing.Point(498, 133);
+            this.CercaFotoBambini.Location = new System.Drawing.Point(509, 208);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
             this.CercaFotoBambini.Size = new System.Drawing.Size(101, 20);
@@ -85,18 +86,10 @@
             this.CercaFotoBambini.Text = "CERCA FOTO";
             this.CercaFotoBambini.UseVisualStyleBackColor = true;
             // 
-            // FotoModBambini
-            // 
-            this.FotoModBambini.Location = new System.Drawing.Point(209, 134);
-            this.FotoModBambini.Margin = new System.Windows.Forms.Padding(2);
-            this.FotoModBambini.Name = "FotoModBambini";
-            this.FotoModBambini.Size = new System.Drawing.Size(237, 20);
-            this.FotoModBambini.TabIndex = 107;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 137);
+            this.label3.Location = new System.Drawing.Point(437, 212);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -107,17 +100,17 @@
             // TabellaBambini
             // 
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(77, 175);
+            this.TabellaBambini.Location = new System.Drawing.Point(452, 275);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
-            this.TabellaBambini.Size = new System.Drawing.Size(649, 200);
+            this.TabellaBambini.Size = new System.Drawing.Size(689, 200);
             this.TabellaBambini.TabIndex = 105;
             // 
             // ClasseModBambini
             // 
-            this.ClasseModBambini.Location = new System.Drawing.Point(570, 62);
+            this.ClasseModBambini.Location = new System.Drawing.Point(878, 120);
             this.ClasseModBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseModBambini.Name = "ClasseModBambini";
             this.ClasseModBambini.Size = new System.Drawing.Size(54, 20);
@@ -126,7 +119,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(495, 65);
+            this.label1.Location = new System.Drawing.Point(803, 123);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
@@ -136,7 +129,7 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Location = new System.Drawing.Point(364, 21);
+            this.libro_label.Location = new System.Drawing.Point(672, 45);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
             this.libro_label.Size = new System.Drawing.Size(108, 13);
@@ -146,7 +139,7 @@
             // 
             // CognomeModBambini
             // 
-            this.CognomeModBambini.Location = new System.Drawing.Point(209, 98);
+            this.CognomeModBambini.Location = new System.Drawing.Point(509, 163);
             this.CognomeModBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeModBambini.Name = "CognomeModBambini";
             this.CognomeModBambini.Size = new System.Drawing.Size(237, 20);
@@ -154,7 +147,7 @@
             // 
             // NomeModBambini
             // 
-            this.NomeModBambini.Location = new System.Drawing.Point(209, 65);
+            this.NomeModBambini.Location = new System.Drawing.Point(509, 120);
             this.NomeModBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeModBambini.Name = "NomeModBambini";
             this.NomeModBambini.Size = new System.Drawing.Size(237, 20);
@@ -163,7 +156,7 @@
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
-            this.cognome_label.Location = new System.Drawing.Point(134, 101);
+            this.cognome_label.Location = new System.Drawing.Point(434, 166);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(62, 13);
@@ -173,7 +166,7 @@
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Location = new System.Drawing.Point(134, 68);
+            this.nome_label.Location = new System.Drawing.Point(434, 123);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(39, 13);
@@ -183,7 +176,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(498, 98);
+            this.label2.Location = new System.Drawing.Point(806, 166);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -193,22 +186,30 @@
             // 
             // AnniModBambini
             // 
-            this.AnniModBambini.Location = new System.Drawing.Point(570, 95);
+            this.AnniModBambini.Location = new System.Drawing.Point(878, 163);
             this.AnniModBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AnniModBambini.Name = "AnniModBambini";
             this.AnniModBambini.Size = new System.Drawing.Size(54, 20);
             this.AnniModBambini.TabIndex = 104;
+            // 
+            // Bambini_pic
+            // 
+            this.Bambini_pic.Location = new System.Drawing.Point(226, 275);
+            this.Bambini_pic.Name = "Bambini_pic";
+            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
+            this.Bambini_pic.TabIndex = 130;
+            this.Bambini_pic.TabStop = false;
             // 
             // ModificaBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
             this.Controls.Add(this.AiutoModificaBambini);
             this.Controls.Add(this.CercaFotoBambini);
-            this.Controls.Add(this.FotoModBambini);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TabellaBambini);
             this.Controls.Add(this.AnniModBambini);
@@ -225,6 +226,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificaBambino";
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,7 +238,6 @@
         private System.Windows.Forms.Button ConfermaModificaBambini;
         private System.Windows.Forms.Button AiutoModificaBambini;
         private System.Windows.Forms.Button CercaFotoBambini;
-        private System.Windows.Forms.TextBox FotoModBambini;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView TabellaBambini;
         private System.Windows.Forms.TextBox ClasseModBambini;
@@ -248,5 +249,6 @@
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox AnniModBambini;
+        private System.Windows.Forms.PictureBox Bambini_pic;
     }
 }
