@@ -40,7 +40,7 @@
             this.ok_button.FlatAppearance.BorderSize = 0;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ok_button.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
-            this.ok_button.Location = new System.Drawing.Point(621, 581);
+            this.ok_button.Location = new System.Drawing.Point(531, 581);
             this.ok_button.Margin = new System.Windows.Forms.Padding(2);
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(305, 130);

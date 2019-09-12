@@ -137,7 +137,7 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(515, 637);
+            this.indietro_button.Location = new System.Drawing.Point(493, 637);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 120);

@@ -47,7 +47,7 @@
             // 
             this.return_button.FlatAppearance.BorderSize = 0;
             this.return_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.return_button.Location = new System.Drawing.Point(219, 507);
+            this.return_button.Location = new System.Drawing.Point(219, 572);
             this.return_button.Margin = new System.Windows.Forms.Padding(2);
             this.return_button.Name = "return_button";
             this.return_button.Size = new System.Drawing.Size(380, 120);
@@ -112,7 +112,7 @@
             // 
             this.avanti_button.FlatAppearance.BorderSize = 0;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.avanti_button.Location = new System.Drawing.Point(780, 507);
+            this.avanti_button.Location = new System.Drawing.Point(780, 572);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";
             this.avanti_button.Size = new System.Drawing.Size(380, 120);
