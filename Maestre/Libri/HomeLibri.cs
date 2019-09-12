@@ -16,5 +16,31 @@ namespace Maestre.Libri
         {
             InitializeComponent();
         }
+
+        private void Indietro_button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void AggiungiLibro_Click(object sender, EventArgs e)
+        {
+            Libri.AggiungiLibro aggiungiLibro = new Libri.AggiungiLibro();
+            aggiungiLibro.ShowDialog();
+            Show();
+        }
+
+        private void ModificaLibro_Click(object sender, EventArgs e)
+        {
+            Libri.ModificaLibro modificaLibro = new Libri.ModificaLibro();
+            modificaLibro.ShowDialog();
+            Show();
+        }
+
+        private void EliminaLibro_Click(object sender, EventArgs e)
+        {
+            Libri.EliminaLibro eliminaLibro = new Libri.EliminaLibro();
+            eliminaLibro.ShowDialog();
+            Show();
+        }
     }
 }

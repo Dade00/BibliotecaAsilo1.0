@@ -21,5 +21,10 @@ namespace Maestre.Libri
         {
 
         }
+
+        private void AnnullaModificaLibro_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

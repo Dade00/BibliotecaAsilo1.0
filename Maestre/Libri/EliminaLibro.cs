@@ -26,5 +26,10 @@ namespace Maestre.Libri
         {
 
         }
+
+        private void AnnullaEliminaLibro_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

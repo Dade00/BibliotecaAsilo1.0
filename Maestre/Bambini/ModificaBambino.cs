@@ -26,5 +26,10 @@ namespace Maestre.Bambini
         {
 
         }
+
+        private void AnnullaModificaBambini_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -16,5 +16,31 @@ namespace Maestre.Bambini
         {
             InitializeComponent();
         }
+
+        private void Indietro_button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void AggiungiBambino_Click(object sender, EventArgs e)
+        {
+            Bambini.AggiungiBambino aggiungiBambino = new Bambini.AggiungiBambino();
+            aggiungiBambino.ShowDialog();
+            Show();
+        }
+
+        private void ModificaBambino_Click(object sender, EventArgs e)
+        {
+            Bambini.ModificaBambino modificaBambino = new Bambini.ModificaBambino();
+            modificaBambino.ShowDialog();
+            Show();
+        }
+
+        private void EliminaBambino_Click(object sender, EventArgs e)
+        {
+            Bambini.CancellaBambino cancellaBambino = new Bambini.CancellaBambino();
+            cancellaBambino.ShowDialog();
+            Show();
+        }
     }
 }

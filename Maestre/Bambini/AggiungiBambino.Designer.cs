@@ -50,16 +50,17 @@
             // 
             // AnnullaModificaBambini
             // 
-            this.AnnullaModificaBambini.Location = new System.Drawing.Point(111, 397);
+            this.AnnullaModificaBambini.Location = new System.Drawing.Point(222, 529);
             this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
             this.AnnullaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.AnnullaModificaBambini.TabIndex = 127;
             this.AnnullaModificaBambini.Text = "ANNULLA";
             this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
+            this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
             // 
             // ConfermaModificaBambini
             // 
-            this.ConfermaModificaBambini.Location = new System.Drawing.Point(497, 397);
+            this.ConfermaModificaBambini.Location = new System.Drawing.Point(748, 529);
             this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
             this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaModificaBambini.TabIndex = 126;
@@ -69,7 +70,7 @@
             // 
             // AiutoAggiungiBambini
             // 
-            this.AiutoAggiungiBambini.Location = new System.Drawing.Point(643, 19);
+            this.AiutoAggiungiBambini.Location = new System.Drawing.Point(1125, 11);
             this.AiutoAggiungiBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoAggiungiBambini.Name = "AiutoAggiungiBambini";
             this.AiutoAggiungiBambini.Size = new System.Drawing.Size(230, 80);
@@ -79,7 +80,7 @@
             // 
             // CercaFotoBambini
             // 
-            this.CercaFotoBambini.Location = new System.Drawing.Point(208, 141);
+            this.CercaFotoBambini.Location = new System.Drawing.Point(498, 192);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
             this.CercaFotoBambini.Size = new System.Drawing.Size(124, 21);
@@ -91,7 +92,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 145);
+            this.label3.Location = new System.Drawing.Point(426, 196);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -102,17 +103,17 @@
             // TabellaBambini
             // 
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(280, 183);
+            this.TabellaBambini.Location = new System.Drawing.Point(438, 261);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
-            this.TabellaBambini.Size = new System.Drawing.Size(445, 200);
+            this.TabellaBambini.Size = new System.Drawing.Size(690, 200);
             this.TabellaBambini.TabIndex = 121;
             // 
             // AnniAddBambini
             // 
-            this.AnniAddBambini.Location = new System.Drawing.Point(569, 103);
+            this.AnniAddBambini.Location = new System.Drawing.Point(874, 156);
             this.AnniAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AnniAddBambini.Name = "AnniAddBambini";
             this.AnniAddBambini.Size = new System.Drawing.Size(54, 20);
@@ -121,7 +122,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(497, 106);
+            this.label2.Location = new System.Drawing.Point(802, 159);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -131,7 +132,7 @@
             // 
             // ClasseAddBambini
             // 
-            this.ClasseAddBambini.Location = new System.Drawing.Point(569, 70);
+            this.ClasseAddBambini.Location = new System.Drawing.Point(874, 114);
             this.ClasseAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseAddBambini.Name = "ClasseAddBambini";
             this.ClasseAddBambini.Size = new System.Drawing.Size(54, 20);
@@ -140,7 +141,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(494, 73);
+            this.label1.Location = new System.Drawing.Point(799, 117);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
@@ -150,7 +151,7 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Location = new System.Drawing.Point(363, 29);
+            this.libro_label.Location = new System.Drawing.Point(621, 45);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
             this.libro_label.Size = new System.Drawing.Size(109, 13);
@@ -159,7 +160,7 @@
             // 
             // CognomeAddBambini
             // 
-            this.CognomeAddBambini.Location = new System.Drawing.Point(208, 106);
+            this.CognomeAddBambini.Location = new System.Drawing.Point(498, 156);
             this.CognomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeAddBambini.Name = "CognomeAddBambini";
             this.CognomeAddBambini.Size = new System.Drawing.Size(237, 20);
@@ -167,7 +168,7 @@
             // 
             // NomeAddBambini
             // 
-            this.NomeAddBambini.Location = new System.Drawing.Point(208, 73);
+            this.NomeAddBambini.Location = new System.Drawing.Point(498, 114);
             this.NomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeAddBambini.Name = "NomeAddBambini";
             this.NomeAddBambini.Size = new System.Drawing.Size(237, 20);
@@ -177,7 +178,7 @@
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
-            this.cognome_label.Location = new System.Drawing.Point(133, 109);
+            this.cognome_label.Location = new System.Drawing.Point(423, 159);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(62, 13);
@@ -187,7 +188,7 @@
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Location = new System.Drawing.Point(133, 76);
+            this.nome_label.Location = new System.Drawing.Point(423, 117);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(39, 13);
@@ -196,7 +197,7 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(71, 183);
+            this.Bambini_pic.Location = new System.Drawing.Point(222, 261);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
             this.Bambini_pic.TabIndex = 128;
@@ -206,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
