@@ -38,7 +38,7 @@
             // 
             this.bambini_button.FlatAppearance.BorderSize = 0;
             this.bambini_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bambini_button.Location = new System.Drawing.Point(493, 72);
+            this.bambini_button.Location = new System.Drawing.Point(215, 113);
             this.bambini_button.Margin = new System.Windows.Forms.Padding(2);
             this.bambini_button.Name = "bambini_button";
             this.bambini_button.Size = new System.Drawing.Size(380, 120);
@@ -51,7 +51,7 @@
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(493, 393);
+            this.button1.Location = new System.Drawing.Point(490, 294);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(380, 120);
@@ -64,7 +64,7 @@
             // 
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(493, 230);
+            this.button2.Location = new System.Drawing.Point(771, 113);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(380, 120);
@@ -77,7 +77,7 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(493, 562);
+            this.indietro_button.Location = new System.Drawing.Point(490, 555);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 120);
