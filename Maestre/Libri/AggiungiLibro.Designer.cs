@@ -78,7 +78,7 @@
             // 
             // InserisciFotoLibro
             // 
-            this.InserisciFotoLibro.Location = new System.Drawing.Point(477, 215);
+            this.InserisciFotoLibro.Location = new System.Drawing.Point(477, 217);
             this.InserisciFotoLibro.Margin = new System.Windows.Forms.Padding(2);
             this.InserisciFotoLibro.Name = "InserisciFotoLibro";
             this.InserisciFotoLibro.Size = new System.Drawing.Size(113, 20);
@@ -89,7 +89,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(405, 219);
+            this.label3.Location = new System.Drawing.Point(405, 221);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
