@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.StatBambini = new System.Windows.Forms.Button();
+            this.StatLibri = new System.Windows.Forms.Button();
+            this.DelStat = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,32 +44,33 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Statistiche";
             // 
-            // button1
+            // StatBambini
             // 
-            this.button1.Location = new System.Drawing.Point(159, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(380, 120);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "QUANTI LIBRI HA LETTO OGNI BAMBINI";
-            this.button1.UseVisualStyleBackColor = true;
+            this.StatBambini.Location = new System.Drawing.Point(159, 161);
+            this.StatBambini.Name = "StatBambini";
+            this.StatBambini.Size = new System.Drawing.Size(380, 120);
+            this.StatBambini.TabIndex = 1;
+            this.StatBambini.Text = "QUANTI LIBRI HA LETTO OGNI BAMBINI";
+            this.StatBambini.UseVisualStyleBackColor = true;
+            this.StatBambini.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // StatLibri
             // 
-            this.button2.Location = new System.Drawing.Point(827, 161);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(380, 120);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "QUANTE VOLTE UN LIBRO E\' STATO LETTO";
-            this.button2.UseVisualStyleBackColor = true;
+            this.StatLibri.Location = new System.Drawing.Point(827, 161);
+            this.StatLibri.Name = "StatLibri";
+            this.StatLibri.Size = new System.Drawing.Size(380, 120);
+            this.StatLibri.TabIndex = 2;
+            this.StatLibri.Text = "QUANTE VOLTE UN LIBRO E\' STATO LETTO";
+            this.StatLibri.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // DelStat
             // 
-            this.button3.Location = new System.Drawing.Point(493, 333);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(380, 120);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "ELIMINA  STATISTICHE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.DelStat.Location = new System.Drawing.Point(493, 333);
+            this.DelStat.Name = "DelStat";
+            this.DelStat.Size = new System.Drawing.Size(380, 120);
+            this.DelStat.TabIndex = 3;
+            this.DelStat.Text = "ELIMINA  STATISTICHE";
+            this.DelStat.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -86,9 +87,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DelStat);
+            this.Controls.Add(this.StatLibri);
+            this.Controls.Add(this.StatBambini);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
@@ -101,9 +102,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button StatBambini;
+        private System.Windows.Forms.Button StatLibri;
+        private System.Windows.Forms.Button DelStat;
         private System.Windows.Forms.Button button4;
     }
 }

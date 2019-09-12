@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Maestre.Statistiche_WIP_
 {
-    public partial class EliminaStatistiche : Form
+    public partial class Home : Form
     {
-        public EliminaStatistiche()
+        public Home()
         {
             InitializeComponent();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            StatBambini.AggiungiBambino aggiungiBambino = new Bambini.AggiungiBambino();
+            aggiungiBambino.ShowDialog();
+            Show();
         }
     }
 }

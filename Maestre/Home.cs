@@ -24,6 +24,7 @@ namespace Maestre
 
         private void Bambini_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Bambini.HomeBambini homeBambini = new Bambini.HomeBambini();
             homeBambini.ShowDialog();
             Show();
@@ -31,6 +32,7 @@ namespace Maestre
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            Hide();
             Libri.HomeLibri homeLibri = new Libri.HomeLibri();
             homeLibri.ShowDialog();
             Show();
