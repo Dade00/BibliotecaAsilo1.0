@@ -29,6 +29,7 @@ namespace Bambini.Restituiusci
 
         private void Sentimenti_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
@@ -36,6 +37,7 @@ namespace Bambini.Restituiusci
 
         private void Scienze_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
@@ -43,6 +45,7 @@ namespace Bambini.Restituiusci
 
         private void Animali_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
@@ -50,6 +53,7 @@ namespace Bambini.Restituiusci
 
         private void Racconti_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
@@ -57,6 +61,7 @@ namespace Bambini.Restituiusci
 
         private void Storie_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
@@ -64,9 +69,18 @@ namespace Bambini.Restituiusci
 
         private void Cibo_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
+        }
+
+        private void RestituisciGenere_VisibleChanged(object sender, EventArgs e)
+        {
+            if (GUIServices.ToPrendiRestituisci)
+            {
+                Close();
+            }
         }
     }
 }

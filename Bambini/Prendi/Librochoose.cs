@@ -32,7 +32,7 @@ namespace Bambini.Prendi
             
         }
 
-        private void Librochoose_Load(object sender, EventArgs e)
+        private void Librochoose_VisibleChanged(object sender, EventArgs e)
         {
             //Blocco che permette la chiusura del form se si arriva dalla conferma
             if (GUIServices.ToPrendiRestituisci)
@@ -41,13 +41,14 @@ namespace Bambini.Prendi
             }
         }
 
-        private void Librochoose_VisibleChanged(object sender, EventArgs e)
+        private void Up_button_Click(object sender, EventArgs e)
         {
-            //Blocco che permette la chiusura del form se si arriva dalla conferma
-            if (GUIServices.ToPrendiRestituisci)
-            {
-                Close();
-            }
+
+        }
+
+        private void Down_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

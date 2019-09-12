@@ -29,50 +29,50 @@ namespace Bambini.Prendi
 
         private void Sentimenti_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
-            closingControl();
         }
 
         private void Scienze_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
-            closingControl();
         }
 
         private void Animali_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
-            closingControl();
         }
 
         private void Racconti_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
-            closingControl();
         }
 
         private void Storie_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
-            closingControl();
         }
 
         private void Cibo_button_Click(object sender, EventArgs e)
         {
+            Hide();
             Librochoose librochoose = new Librochoose();
             librochoose.ShowDialog();
             Show();
-            closingControl();
         }
 
         private void closingControl()

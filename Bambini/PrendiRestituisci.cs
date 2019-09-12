@@ -37,5 +37,10 @@ namespace Bambini
         {
             Close();
         }
+
+        private void PrendiRestituisci_VisibleChanged(object sender, EventArgs e)
+        {
+            GUIServices.ToPrendiRestituisci = false;
+        }
     }
 }

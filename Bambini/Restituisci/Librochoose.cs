@@ -19,6 +19,7 @@ namespace Bambini.Restituiusci
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
+            Hide();
             ConfermaRestituzione confermaRestituzione = new ConfermaRestituzione();
             confermaRestituzione.ShowDialog();
             Show();
@@ -27,6 +28,14 @@ namespace Bambini.Restituiusci
         private void Indietro_button_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Librochoose_VisibleChanged(object sender, EventArgs e)
+        {
+            if (GUIServices.ToPrendiRestituisci)
+            {
+                Close();
+            }
         }
     }
 }

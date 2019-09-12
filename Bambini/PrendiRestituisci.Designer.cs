@@ -38,10 +38,10 @@
             // 
             this.prendi_button.FlatAppearance.BorderSize = 0;
             this.prendi_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prendi_button.Location = new System.Drawing.Point(121, 154);
+            this.prendi_button.Location = new System.Drawing.Point(53, 166);
             this.prendi_button.Margin = new System.Windows.Forms.Padding(2);
             this.prendi_button.Name = "prendi_button";
-            this.prendi_button.Size = new System.Drawing.Size(291, 114);
+            this.prendi_button.Size = new System.Drawing.Size(540, 200);
             this.prendi_button.TabIndex = 0;
             this.prendi_button.Text = "PRENDI UN LIBRO";
             this.prendi_button.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // 
             this.restituisci_button.FlatAppearance.BorderSize = 0;
             this.restituisci_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.restituisci_button.Location = new System.Drawing.Point(440, 154);
+            this.restituisci_button.Location = new System.Drawing.Point(694, 166);
             this.restituisci_button.Margin = new System.Windows.Forms.Padding(2);
             this.restituisci_button.Name = "restituisci_button";
-            this.restituisci_button.Size = new System.Drawing.Size(291, 114);
+            this.restituisci_button.Size = new System.Drawing.Size(540, 200);
             this.restituisci_button.TabIndex = 1;
             this.restituisci_button.Text = "RESTITUISCI UN LIBRO";
             this.restituisci_button.UseVisualStyleBackColor = true;
@@ -64,7 +64,7 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(223, 378);
+            this.indietro_button.Location = new System.Drawing.Point(452, 504);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 120);
@@ -98,6 +98,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PrendiRestituisci";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.VisibleChanged += new System.EventHandler(this.PrendiRestituisci_VisibleChanged);
             this.ResumeLayout(false);
 
         }

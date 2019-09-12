@@ -19,10 +19,8 @@ namespace Bambini.Restituiusci
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
-            Hide();
-            PrendiRestituisci prendiRestituisci = new PrendiRestituisci();
-            prendiRestituisci.ShowDialog();
-            Show();
+            GUIServices.ToPrendiRestituisci = true;
+            Close();
         }
     }
 }

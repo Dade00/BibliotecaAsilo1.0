@@ -43,7 +43,7 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(499, 593);
+            this.indietro_button.Location = new System.Drawing.Point(499, 603);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 120);
@@ -67,12 +67,13 @@
             // scegligenere_label
             // 
             this.scegligenere_label.AutoSize = true;
-            this.scegligenere_label.Location = new System.Drawing.Point(673, 30);
+            this.scegligenere_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scegligenere_label.Location = new System.Drawing.Point(431, 11);
             this.scegligenere_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scegligenere_label.Name = "scegligenere_label";
-            this.scegligenere_label.Size = new System.Drawing.Size(87, 13);
+            this.scegligenere_label.Size = new System.Drawing.Size(505, 58);
             this.scegligenere_label.TabIndex = 15;
-            this.scegligenere_label.Text = "Scegli un genere";
+            this.scegligenere_label.Text = "SCEGLI UN GENERE";
             // 
             // storie_button
             // 
@@ -178,6 +179,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RestituisciGenere";
             this.Load += new System.EventHandler(this.RestituisciGenere_Load);
+            this.VisibleChanged += new System.EventHandler(this.RestituisciGenere_VisibleChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
