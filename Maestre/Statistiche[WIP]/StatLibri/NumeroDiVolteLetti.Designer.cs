@@ -46,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(567, 21);
+            this.label1.Location = new System.Drawing.Point(575, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 13);
             this.label1.TabIndex = 0;
@@ -54,16 +54,17 @@
             // 
             // Indietro_Button
             // 
-            this.Indietro_Button.Location = new System.Drawing.Point(210, 571);
+            this.Indietro_Button.Location = new System.Drawing.Point(218, 571);
             this.Indietro_Button.Name = "Indietro_Button";
             this.Indietro_Button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_Button.TabIndex = 1;
             this.Indietro_Button.Text = "INDIETRO";
             this.Indietro_Button.UseVisualStyleBackColor = true;
+            this.Indietro_Button.Click += new System.EventHandler(this.Indietro_Button_Click);
             // 
             // StampaStatLibro
             // 
-            this.StampaStatLibro.Location = new System.Drawing.Point(761, 571);
+            this.StampaStatLibro.Location = new System.Drawing.Point(769, 571);
             this.StampaStatLibro.Name = "StampaStatLibro";
             this.StampaStatLibro.Size = new System.Drawing.Size(380, 120);
             this.StampaStatLibro.TabIndex = 2;
@@ -73,7 +74,7 @@
             // BambiniLettoIlLibro
             // 
             this.BambiniLettoIlLibro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BambiniLettoIlLibro.Location = new System.Drawing.Point(311, 286);
+            this.BambiniLettoIlLibro.Location = new System.Drawing.Point(319, 286);
             this.BambiniLettoIlLibro.Margin = new System.Windows.Forms.Padding(2);
             this.BambiniLettoIlLibro.Name = "BambiniLettoIlLibro";
             this.BambiniLettoIlLibro.RowHeadersWidth = 62;
@@ -84,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(741, 160);
+            this.label2.Location = new System.Drawing.Point(749, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 133;
@@ -93,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(741, 131);
+            this.label3.Location = new System.Drawing.Point(749, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 134;
@@ -101,7 +102,7 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(511, 58);
+            this.Bambini_pic.Location = new System.Drawing.Point(519, 58);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
             this.Bambini_pic.TabIndex = 135;
@@ -110,7 +111,7 @@
             // TitoloLibroScelto
             // 
             this.TitoloLibroScelto.AutoSize = true;
-            this.TitoloLibroScelto.Location = new System.Drawing.Point(804, 131);
+            this.TitoloLibroScelto.Location = new System.Drawing.Point(812, 131);
             this.TitoloLibroScelto.Name = "TitoloLibroScelto";
             this.TitoloLibroScelto.Size = new System.Drawing.Size(35, 13);
             this.TitoloLibroScelto.TabIndex = 136;
@@ -119,7 +120,7 @@
             // AutoreLibroScelto
             // 
             this.AutoreLibroScelto.AutoSize = true;
-            this.AutoreLibroScelto.Location = new System.Drawing.Point(804, 160);
+            this.AutoreLibroScelto.Location = new System.Drawing.Point(812, 160);
             this.AutoreLibroScelto.Name = "AutoreLibroScelto";
             this.AutoreLibroScelto.Size = new System.Drawing.Size(35, 13);
             this.AutoreLibroScelto.TabIndex = 137;
@@ -129,7 +130,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(527, 518);
+            this.label6.Location = new System.Drawing.Point(535, 518);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(229, 13);
             this.label6.TabIndex = 138;
@@ -137,7 +138,7 @@
             // 
             // NvolteLibroLetto
             // 
-            this.NvolteLibroLetto.Location = new System.Drawing.Point(762, 515);
+            this.NvolteLibroLetto.Location = new System.Drawing.Point(770, 515);
             this.NvolteLibroLetto.Name = "NvolteLibroLetto";
             this.NvolteLibroLetto.Size = new System.Drawing.Size(60, 20);
             this.NvolteLibroLetto.TabIndex = 140;
@@ -146,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.NvolteLibroLetto);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.AutoreLibroScelto);
@@ -160,6 +161,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NumeroDiVolteLetti";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NumeroDiVolteLetti";
             ((System.ComponentModel.ISupportInitialize)(this.BambiniLettoIlLibro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();

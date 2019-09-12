@@ -40,7 +40,7 @@
             // 
             // Indietro_Button
             // 
-            this.Indietro_Button.Location = new System.Drawing.Point(250, 381);
+            this.Indietro_Button.Location = new System.Drawing.Point(258, 426);
             this.Indietro_Button.Name = "Indietro_Button";
             this.Indietro_Button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_Button.TabIndex = 0;
@@ -50,17 +50,18 @@
             // 
             // RicercaStatBambini
             // 
-            this.RicercaStatBambini.Location = new System.Drawing.Point(720, 381);
+            this.RicercaStatBambini.Location = new System.Drawing.Point(728, 426);
             this.RicercaStatBambini.Name = "RicercaStatBambini";
             this.RicercaStatBambini.Size = new System.Drawing.Size(380, 120);
             this.RicercaStatBambini.TabIndex = 1;
             this.RicercaStatBambini.Text = "AVVIA RICERCA";
             this.RicercaStatBambini.UseVisualStyleBackColor = true;
+            this.RicercaStatBambini.Click += new System.EventHandler(this.RicercaStatBambini_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(535, 206);
+            this.label1.Location = new System.Drawing.Point(537, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 2;
@@ -69,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(535, 251);
+            this.label2.Location = new System.Drawing.Point(537, 278);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 3;
@@ -77,7 +78,7 @@
             // 
             // NomeBambino
             // 
-            this.NomeBambino.Location = new System.Drawing.Point(617, 203);
+            this.NomeBambino.Location = new System.Drawing.Point(619, 230);
             this.NomeBambino.Name = "NomeBambino";
             this.NomeBambino.Size = new System.Drawing.Size(210, 20);
             this.NomeBambino.TabIndex = 4;
@@ -85,7 +86,7 @@
             // 
             // CognomeBambino
             // 
-            this.CognomeBambino.Location = new System.Drawing.Point(617, 248);
+            this.CognomeBambino.Location = new System.Drawing.Point(619, 275);
             this.CognomeBambino.Name = "CognomeBambino";
             this.CognomeBambino.Size = new System.Drawing.Size(210, 20);
             this.CognomeBambino.TabIndex = 5;
@@ -93,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(635, 68);
+            this.label3.Location = new System.Drawing.Point(643, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 6;
@@ -113,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.AiutoStatistiche);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CognomeBambino);
@@ -124,6 +125,7 @@
             this.Controls.Add(this.Indietro_Button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LibriLettiDaBambino";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "a1";
             this.Load += new System.EventHandler(this.LibriLettiDaBambino_Load);
             this.ResumeLayout(false);

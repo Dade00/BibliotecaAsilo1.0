@@ -50,7 +50,7 @@
             this.StatBambini.Name = "StatBambini";
             this.StatBambini.Size = new System.Drawing.Size(380, 120);
             this.StatBambini.TabIndex = 1;
-            this.StatBambini.Text = "QUANTI LIBRI HA LETTO OGNI BAMBINI";
+            this.StatBambini.Text = "QUANTI LIBRI HA LETTO OGNI BAMBINO";
             this.StatBambini.UseVisualStyleBackColor = true;
             this.StatBambini.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -62,6 +62,7 @@
             this.StatLibri.TabIndex = 2;
             this.StatLibri.Text = "QUANTE VOLTE UN LIBRO E\' STATO LETTO";
             this.StatLibri.UseVisualStyleBackColor = true;
+            this.StatLibri.Click += new System.EventHandler(this.StatLibri_Click);
             // 
             // DelStat
             // 
@@ -80,6 +81,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "INDIETRO";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Home
             // 
@@ -93,6 +95,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.ResumeLayout(false);
             this.PerformLayout();

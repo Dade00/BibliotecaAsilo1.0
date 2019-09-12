@@ -21,5 +21,10 @@ namespace Maestre.Statistiche_WIP_
         {
 
         }
+
+        private void Indietro_button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

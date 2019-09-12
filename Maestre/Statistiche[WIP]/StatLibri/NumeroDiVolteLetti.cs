@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace Maestre.Statistiche_WIP_
 {
-    public partial class Home : Form
+    public partial class NumeroDiVolteLetti : Form
     {
-        public Home()
+        public NumeroDiVolteLetti()
         {
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Label5_Click(object sender, EventArgs e)
         {
-            StatBambini.AggiungiBambino aggiungiBambino = new Bambini.AggiungiBambino();
-            aggiungiBambino.ShowDialog();
-            Show();
+
+        }
+
+        private void Indietro_Button_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

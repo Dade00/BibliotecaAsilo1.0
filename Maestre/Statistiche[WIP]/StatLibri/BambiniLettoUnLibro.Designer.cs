@@ -38,11 +38,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(562, 87);
+            this.label1.Location = new System.Drawing.Point(625, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 13);
+            this.label1.Size = new System.Drawing.Size(117, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quanti Bambini Hanno Letto Un Determinato Libro";
+            this.label1.Text = "Cerca Il Titolo Del Libro";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -68,6 +69,7 @@
             this.RicercaStatLibro.TabIndex = 3;
             this.RicercaStatLibro.Text = "AVVIA RICERCA";
             this.RicercaStatLibro.UseVisualStyleBackColor = true;
+            this.RicercaStatLibro.Click += new System.EventHandler(this.RicercaStatLibro_Click);
             // 
             // button2
             // 
@@ -77,6 +79,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "INDIETRO";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // BambiniLettoUnLibro
             // 
@@ -90,6 +93,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BambiniLettoUnLibro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "e1";
             this.ResumeLayout(false);
             this.PerformLayout();

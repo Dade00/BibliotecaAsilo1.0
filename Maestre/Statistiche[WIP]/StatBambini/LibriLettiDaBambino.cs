@@ -36,5 +36,13 @@ namespace Maestre.Statistiche_WIP_
         {
             Close();
         }
+
+        private void RicercaStatBambini_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Statistiche_WIP_.LibriLetti libriLetti = new Statistiche_WIP_.LibriLetti();
+            libriLetti.ShowDialog();
+            Show();
+        }
     }
 }

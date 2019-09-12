@@ -19,7 +19,10 @@ namespace Maestre
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            
+            Hide();
+            Statistiche_WIP_.Home home = new Statistiche_WIP_.Home();
+            home.ShowDialog();
+            Show();
         }
 
         private void Bambini_button_Click(object sender, EventArgs e)
