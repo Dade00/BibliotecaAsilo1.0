@@ -55,12 +55,12 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Location = new System.Drawing.Point(609, 45);
+            this.libro_label.Location = new System.Drawing.Point(564, 45);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(149, 13);
+            this.libro_label.Size = new System.Drawing.Size(239, 13);
             this.libro_label.TabIndex = 39;
-            this.libro_label.Text = "Cerca Bambino Da Cancellare";
+            this.libro_label.Text = "Cerca Il Nome Del Bambino Che Vuoi Cancellare ";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
             // 
             // AnnullaEliminaBambini
