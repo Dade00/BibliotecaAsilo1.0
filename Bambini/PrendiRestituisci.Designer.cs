@@ -38,7 +38,7 @@
             // 
             this.prendi_button.FlatAppearance.BorderSize = 0;
             this.prendi_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prendi_button.Location = new System.Drawing.Point(53, 166);
+            this.prendi_button.Location = new System.Drawing.Point(93, 166);
             this.prendi_button.Margin = new System.Windows.Forms.Padding(2);
             this.prendi_button.Name = "prendi_button";
             this.prendi_button.Size = new System.Drawing.Size(540, 200);
@@ -51,7 +51,7 @@
             // 
             this.restituisci_button.FlatAppearance.BorderSize = 0;
             this.restituisci_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.restituisci_button.Location = new System.Drawing.Point(694, 166);
+            this.restituisci_button.Location = new System.Drawing.Point(734, 166);
             this.restituisci_button.Margin = new System.Windows.Forms.Padding(2);
             this.restituisci_button.Name = "restituisci_button";
             this.restituisci_button.Size = new System.Drawing.Size(540, 200);
