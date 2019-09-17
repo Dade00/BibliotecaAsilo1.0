@@ -45,6 +45,7 @@
             this.Bambini_radio = new System.Windows.Forms.RadioButton();
             this.Libri_radio = new System.Windows.Forms.RadioButton();
             this.Statistiche_radio = new System.Windows.Forms.RadioButton();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.TabControl.SuspendLayout();
             this.Bambini_page.SuspendLayout();
             this.Libri_page.SuspendLayout();
@@ -69,11 +70,12 @@
             this.TabControl.Controls.Add(this.Bambini_page);
             this.TabControl.Controls.Add(this.Libri_page);
             this.TabControl.Controls.Add(this.Statistiche_page);
-            this.TabControl.Location = new System.Drawing.Point(555, -22);
+            this.TabControl.Controls.Add(this.tabPage1);
+            this.TabControl.Location = new System.Drawing.Point(588, -30);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
             this.TabControl.ShowToolTips = true;
-            this.TabControl.Size = new System.Drawing.Size(819, 804);
+            this.TabControl.Size = new System.Drawing.Size(819, 822);
             this.TabControl.TabIndex = 4;
             this.TabControl.TabStop = false;
             // 
@@ -86,7 +88,7 @@
             this.Bambini_page.Location = new System.Drawing.Point(4, 22);
             this.Bambini_page.Name = "Bambini_page";
             this.Bambini_page.Padding = new System.Windows.Forms.Padding(3);
-            this.Bambini_page.Size = new System.Drawing.Size(797, 742);
+            this.Bambini_page.Size = new System.Drawing.Size(811, 796);
             this.Bambini_page.TabIndex = 0;
             // 
             // Libri_page
@@ -237,6 +239,15 @@
             this.Statistiche_radio.UseVisualStyleBackColor = true;
             this.Statistiche_radio.CheckedChanged += new System.EventHandler(this.Statistiche_radio_CheckedChanged);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(811, 778);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +263,8 @@
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home - Maestre";
+            this.Load += new System.EventHandler(this.Home_Load);
+            this.VisibleChanged += new System.EventHandler(this.Home_VisibleChanged);
             this.TabControl.ResumeLayout(false);
             this.Bambini_page.ResumeLayout(false);
             this.Libri_page.ResumeLayout(false);
@@ -278,6 +291,7 @@
         private System.Windows.Forms.RadioButton Bambini_radio;
         private System.Windows.Forms.RadioButton Libri_radio;
         private System.Windows.Forms.RadioButton Statistiche_radio;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 

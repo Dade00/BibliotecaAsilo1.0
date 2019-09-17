@@ -125,5 +125,15 @@ namespace Maestre
         {
             TabControl.SelectedIndex = 0;
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            TabControl.SelectedIndex = 3;
+        }
+
+        private void Home_VisibleChanged(object sender, EventArgs e)
+        {
+            TabControl.SelectedIndex = 3;
+        }
     }
 }
