@@ -19,7 +19,7 @@ namespace Maestre
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 2;
+            
             /*
             Hide();
             Statistiche_WIP_.Home home = new Statistiche_WIP_.Home();
@@ -30,7 +30,7 @@ namespace Maestre
 
         private void Bambini_button_Click(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 0;
+            
             /*
             Hide();
             Bambini.HomeBambini homeBambini = new Bambini.HomeBambini();
@@ -41,7 +41,7 @@ namespace Maestre
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 1;
+            
             /*
             Hide();
             Libri.HomeLibri homeLibri = new Libri.HomeLibri();
@@ -54,20 +54,76 @@ namespace Maestre
         {
             Close();
         }
-
-        private void StatLibri_Click(object sender, EventArgs e)
+        
+        private void AggiungiLibro_Click(object sender, EventArgs e)
         {
-            
+            Hide();
+            Libri.AggiungiLibro aggiungiLibro = new Libri.AggiungiLibro();
+            aggiungiLibro.ShowDialog();
+            Show();
         }
 
-        private void StatBambini_Click(object sender, EventArgs e)
+        private void ModificaLibro_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            Libri.ModificaLibro modificaLibro = new Libri.ModificaLibro();
+            modificaLibro.ShowDialog();
+            Show();
         }
 
-        private void DelStat_Click(object sender, EventArgs e)
+        private void EliminaLibro_Click(object sender, EventArgs e)
         {
+            Hide();
+            Libri.EliminaLibro eliminaLibro = new Libri.EliminaLibro();
+            eliminaLibro.ShowDialog();
+            Show();
+        }
 
+        private void AggiungiBambino_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Bambini.AggiungiBambino aggiungiBambino = new Bambini.AggiungiBambino();
+            aggiungiBambino.ShowDialog();
+            Show();
+        }
+
+        private void ModificaBambino_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Bambini.ModificaBambino modificaBambino = new Bambini.ModificaBambino();
+            modificaBambino.ShowDialog();
+            Show();
+        }
+
+        private void StatBambini_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            Statistiche_WIP_.LibriLettiDaBambino libriLettiDaBambino = new Statistiche_WIP_.LibriLettiDaBambino();
+            libriLettiDaBambino.ShowDialog();
+            Show();
+        }
+
+        private void StatLibri_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            Statistiche_WIP_.BambiniLettoUnLibro bambiniLettoUnLibro = new Statistiche_WIP_.BambiniLettoUnLibro();
+            bambiniLettoUnLibro.ShowDialog();
+            Show();
+        }
+
+        private void Libri_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            TabControl.SelectedIndex = 1;
+        }
+
+        private void Statistiche_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            TabControl.SelectedIndex = 2;
+        }
+
+        private void Bambini_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            TabControl.SelectedIndex = 0;
         }
     }
 }

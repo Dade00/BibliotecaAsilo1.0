@@ -58,12 +58,6 @@
     <Compile Include="Bambini\CancellaBambino.Designer.cs">
       <DependentUpon>CancellaBambino.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bambini\HomeBambini.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bambini\HomeBambini.Designer.cs">
-      <DependentUpon>HomeBambini.cs</DependentUpon>
-    </Compile>
     <Compile Include="Bambini\ModificaBambino.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +88,6 @@
     <Compile Include="Libri\EliminaLibro.Designer.cs">
       <DependentUpon>EliminaLibro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Libri\HomeLibri.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Libri\HomeLibri.Designer.cs">
-      <DependentUpon>HomeLibri.cs</DependentUpon>
-    </Compile>
     <Compile Include="Libri\ModificaLibro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,12 +96,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Statistiche[WIP]\Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Statistiche[WIP]\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
     <Compile Include="Statistiche[WIP]\StatBambini\LibriLettiDaStud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,9 +126,6 @@
     <EmbeddedResource Include="Bambini\CancellaBambino.resx">
       <DependentUpon>CancellaBambino.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bambini\HomeBambini.resx">
-      <DependentUpon>HomeBambini.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Bambini\ModificaBambino.resx">
       <DependentUpon>ModificaBambino.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,9 +141,6 @@
     <EmbeddedResource Include="Libri\EliminaLibro.resx">
       <DependentUpon>EliminaLibro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Libri\HomeLibri.resx">
-      <DependentUpon>HomeLibri.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Libri\ModificaLibro.resx">
       <DependentUpon>ModificaLibro.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,9 +155,6 @@
     </Compile>
     <EmbeddedResource Include="Statistiche[WIP]\StatLibri\BambiniLettoUnLibro.resx">
       <DependentUpon>BambiniLettoUnLibro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Statistiche[WIP]\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Statistiche[WIP]\StatBambini\LibriLettiDaStud.resx">
       <DependentUpon>LibriLettiDaStud.cs</DependentUpon>
