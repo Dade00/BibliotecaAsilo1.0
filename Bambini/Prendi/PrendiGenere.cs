@@ -88,5 +88,10 @@ namespace Bambini.Prendi
         {
 
         }
+
+        private void PrendiGeneree_VisibleChanged(object sender, EventArgs e)
+        {
+            closingControl();
+        }
     }
 }

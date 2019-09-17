@@ -180,6 +180,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prendi un libro";
             this.Load += new System.EventHandler(this.Prendi_Load);
+            this.VisibleChanged += new System.EventHandler(this.PrendiGeneree_VisibleChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -24,6 +24,7 @@ namespace Maestre.Libri
 
         private void AggiungiLibro_Click(object sender, EventArgs e)
         {
+            Hide();
             Libri.AggiungiLibro aggiungiLibro = new Libri.AggiungiLibro();
             aggiungiLibro.ShowDialog();
             Show();
