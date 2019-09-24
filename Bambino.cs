@@ -9,7 +9,6 @@ public class Bambino
     public string Path { get; set; }
     
     public Bambino(){}
-
     public Bambino(int ID)
     {
         this.ID = ID;

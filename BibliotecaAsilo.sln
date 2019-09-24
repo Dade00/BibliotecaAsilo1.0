@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{A792
 	ProjectSection(SolutionItems) = preProject
 		Bambino.cs = Bambino.cs
 		Genere.cs = Genere.cs
+		Libro.cs = Libro.cs
+		Transazione.cs = Transazione.cs
 	EndProjectSection
 EndProject
 Global
