@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bambini
+namespace Bambini // BASSANO SEI TU?
 {
     public partial class seitu : Form
     {

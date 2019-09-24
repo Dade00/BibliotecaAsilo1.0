@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bambini", "Bambini\Bambini.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maestre", "Maestre\Maestre.csproj", "{A2F02186-4064-4A5D-8165-77050EAD541E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{A7922E95-770E-4AF1-BADB-F8F40A4CD998}"
+	ProjectSection(SolutionItems) = preProject
+		Bambino.cs = Bambino.cs
+		Genere.cs = Genere.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
