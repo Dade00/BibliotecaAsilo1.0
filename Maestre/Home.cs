@@ -19,7 +19,7 @@ namespace Maestre
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            
+
             /*
             Hide();
             Statistiche_WIP_.Home home = new Statistiche_WIP_.Home();
@@ -30,7 +30,7 @@ namespace Maestre
 
         private void Bambini_button_Click(object sender, EventArgs e)
         {
-            
+
             /*
             Hide();
             Bambini.HomeBambini homeBambini = new Bambini.HomeBambini();
@@ -41,7 +41,7 @@ namespace Maestre
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            
+
             /*
             Hide();
             Libri.HomeLibri homeLibri = new Libri.HomeLibri();
@@ -54,7 +54,7 @@ namespace Maestre
         {
             Close();
         }
-        
+
         private void AggiungiLibro_Click(object sender, EventArgs e)
         {
             Hide();

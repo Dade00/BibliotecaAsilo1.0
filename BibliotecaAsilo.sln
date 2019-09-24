@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{A7922E95-770E-4AF1-BADB-F8F40A4CD998}"
 	ProjectSection(SolutionItems) = preProject
 		Bambino.cs = Bambino.cs
+		ExceptionHandler.cs = ExceptionHandler.cs
 		Genere.cs = Genere.cs
 		Libro.cs = Libro.cs
 		Transazione.cs = Transazione.cs
