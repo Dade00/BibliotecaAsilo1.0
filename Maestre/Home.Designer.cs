@@ -31,21 +31,21 @@
             this.indietro_button = new System.Windows.Forms.Button();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.Bambini_page = new System.Windows.Forms.TabPage();
-            this.Libri_page = new System.Windows.Forms.TabPage();
-            this.Statistiche_page = new System.Windows.Forms.TabPage();
             this.EliminaBambino = new System.Windows.Forms.Button();
             this.ModificaBambino = new System.Windows.Forms.Button();
             this.AggiungiBambino = new System.Windows.Forms.Button();
+            this.Libri_page = new System.Windows.Forms.TabPage();
             this.EliminaLibro = new System.Windows.Forms.Button();
             this.ModificaLibro = new System.Windows.Forms.Button();
             this.AggiungiLibro = new System.Windows.Forms.Button();
+            this.Statistiche_page = new System.Windows.Forms.TabPage();
             this.DelStat = new System.Windows.Forms.Button();
             this.StatLibri = new System.Windows.Forms.Button();
             this.StatBambini = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Bambini_radio = new System.Windows.Forms.RadioButton();
             this.Libri_radio = new System.Windows.Forms.RadioButton();
             this.Statistiche_radio = new System.Windows.Forms.RadioButton();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.TabControl.SuspendLayout();
             this.Bambini_page.SuspendLayout();
             this.Libri_page.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(24, 637);
+            this.indietro_button.Location = new System.Drawing.Point(11, 637);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 120);
@@ -91,30 +91,6 @@
             this.Bambini_page.Size = new System.Drawing.Size(811, 796);
             this.Bambini_page.TabIndex = 0;
             // 
-            // Libri_page
-            // 
-            this.Libri_page.BackColor = System.Drawing.SystemColors.Control;
-            this.Libri_page.Controls.Add(this.EliminaLibro);
-            this.Libri_page.Controls.Add(this.ModificaLibro);
-            this.Libri_page.Controls.Add(this.AggiungiLibro);
-            this.Libri_page.Location = new System.Drawing.Point(4, 22);
-            this.Libri_page.Name = "Libri_page";
-            this.Libri_page.Padding = new System.Windows.Forms.Padding(3);
-            this.Libri_page.Size = new System.Drawing.Size(797, 742);
-            this.Libri_page.TabIndex = 1;
-            // 
-            // Statistiche_page
-            // 
-            this.Statistiche_page.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.Statistiche_page.Controls.Add(this.DelStat);
-            this.Statistiche_page.Controls.Add(this.StatLibri);
-            this.Statistiche_page.Controls.Add(this.StatBambini);
-            this.Statistiche_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Statistiche_page.Location = new System.Drawing.Point(4, 22);
-            this.Statistiche_page.Name = "Statistiche_page";
-            this.Statistiche_page.Size = new System.Drawing.Size(811, 778);
-            this.Statistiche_page.TabIndex = 2;
-            // 
             // EliminaBambino
             // 
             this.EliminaBambino.Location = new System.Drawing.Point(145, 489);
@@ -143,6 +119,18 @@
             this.AggiungiBambino.Text = "AGGIUNGI BAMBINO";
             this.AggiungiBambino.UseVisualStyleBackColor = true;
             this.AggiungiBambino.Click += new System.EventHandler(this.AggiungiBambino_Click);
+            // 
+            // Libri_page
+            // 
+            this.Libri_page.BackColor = System.Drawing.SystemColors.Control;
+            this.Libri_page.Controls.Add(this.EliminaLibro);
+            this.Libri_page.Controls.Add(this.ModificaLibro);
+            this.Libri_page.Controls.Add(this.AggiungiLibro);
+            this.Libri_page.Location = new System.Drawing.Point(4, 22);
+            this.Libri_page.Name = "Libri_page";
+            this.Libri_page.Padding = new System.Windows.Forms.Padding(3);
+            this.Libri_page.Size = new System.Drawing.Size(811, 796);
+            this.Libri_page.TabIndex = 1;
             // 
             // EliminaLibro
             // 
@@ -174,6 +162,18 @@
             this.AggiungiLibro.UseVisualStyleBackColor = true;
             this.AggiungiLibro.Click += new System.EventHandler(this.AggiungiLibro_Click);
             // 
+            // Statistiche_page
+            // 
+            this.Statistiche_page.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Statistiche_page.Controls.Add(this.DelStat);
+            this.Statistiche_page.Controls.Add(this.StatLibri);
+            this.Statistiche_page.Controls.Add(this.StatBambini);
+            this.Statistiche_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Statistiche_page.Location = new System.Drawing.Point(4, 22);
+            this.Statistiche_page.Name = "Statistiche_page";
+            this.Statistiche_page.Size = new System.Drawing.Size(811, 796);
+            this.Statistiche_page.TabIndex = 2;
+            // 
             // DelStat
             // 
             this.DelStat.Location = new System.Drawing.Point(151, 489);
@@ -203,10 +203,19 @@
             this.StatBambini.UseVisualStyleBackColor = true;
             this.StatBambini.Click += new System.EventHandler(this.StatBambini_Click_1);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(811, 796);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // Bambini_radio
             // 
             this.Bambini_radio.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Bambini_radio.Location = new System.Drawing.Point(52, 134);
+            this.Bambini_radio.Location = new System.Drawing.Point(59, 103);
             this.Bambini_radio.Name = "Bambini_radio";
             this.Bambini_radio.Size = new System.Drawing.Size(380, 120);
             this.Bambini_radio.TabIndex = 5;
@@ -218,7 +227,7 @@
             // Libri_radio
             // 
             this.Libri_radio.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Libri_radio.Location = new System.Drawing.Point(52, 323);
+            this.Libri_radio.Location = new System.Drawing.Point(59, 292);
             this.Libri_radio.Name = "Libri_radio";
             this.Libri_radio.Size = new System.Drawing.Size(380, 120);
             this.Libri_radio.TabIndex = 6;
@@ -230,7 +239,7 @@
             // Statistiche_radio
             // 
             this.Statistiche_radio.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Statistiche_radio.Location = new System.Drawing.Point(52, 512);
+            this.Statistiche_radio.Location = new System.Drawing.Point(59, 481);
             this.Statistiche_radio.Name = "Statistiche_radio";
             this.Statistiche_radio.Size = new System.Drawing.Size(380, 120);
             this.Statistiche_radio.TabIndex = 7;
@@ -238,15 +247,6 @@
             this.Statistiche_radio.Text = "STATISTICHE";
             this.Statistiche_radio.UseVisualStyleBackColor = true;
             this.Statistiche_radio.CheckedChanged += new System.EventHandler(this.Statistiche_radio_CheckedChanged);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(811, 778);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // Home
             // 
