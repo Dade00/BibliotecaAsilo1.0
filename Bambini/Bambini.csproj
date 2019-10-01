@@ -154,49 +154,55 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sentimenti2.png" />
+    <None Include="Resources\Crediti_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Bambini.png" />
+    <None Include="Resources\Bambini_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Cibo.png" />
+    <None Include="Resources\Storie_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Crediti.png" />
+    <None Include="Resources\Racconti_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\indietro.png" />
+    <None Include="Resources\Scienze_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Maestra.png" />
+    <None Include="Resources\Sentimenti_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Racconti.png" />
+    <None Include="Resources\3anni_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Scienze.png" />
+    <None Include="Resources\Indietro_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sentimenti.png" />
+    <None Include="Resources\4anni_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Storie.png" />
+    <None Include="Resources\Avanti_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3 Anni.png" />
+    <None Include="Resources\5anni_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\4 Anni.png" />
+    <None Include="Resources\Maestra_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\5 Anni.png" />
+    <None Include="Resources\Animali_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Animali.png" />
+    <None Include="Resources\Cibo_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\avanti.png" />
+    <None Include="Resources\Prendi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restituisce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conferma.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

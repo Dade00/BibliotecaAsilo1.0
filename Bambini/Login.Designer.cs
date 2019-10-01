@@ -47,12 +47,12 @@
             // 
             this.return_button.FlatAppearance.BorderSize = 0;
             this.return_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.return_button.Image = global::Bambini.Properties.Resources.Indietro_button;
             this.return_button.Location = new System.Drawing.Point(219, 572);
             this.return_button.Margin = new System.Windows.Forms.Padding(2);
             this.return_button.Name = "return_button";
             this.return_button.Size = new System.Drawing.Size(380, 120);
             this.return_button.TabIndex = 2;
-            this.return_button.Text = "INDIETRO";
             this.return_button.UseVisualStyleBackColor = true;
             this.return_button.Click += new System.EventHandler(this.Return_button_Click);
             // 
@@ -112,12 +112,12 @@
             // 
             this.avanti_button.FlatAppearance.BorderSize = 0;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
             this.avanti_button.Location = new System.Drawing.Point(780, 572);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";
             this.avanti_button.Size = new System.Drawing.Size(380, 120);
             this.avanti_button.TabIndex = 11;
-            this.avanti_button.Text = "AVANTI";
             this.avanti_button.UseVisualStyleBackColor = true;
             this.avanti_button.Click += new System.EventHandler(this.Avanti_button_Click);
             // 
@@ -153,14 +153,16 @@
             // 
             this.radioButton3.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton3.FlatAppearance.BorderSize = 0;
+            this.radioButton3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.radioButton3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton3.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Image = global::Bambini.Properties.Resources._5anni_button;
             this.radioButton3.Location = new System.Drawing.Point(914, 76);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(300, 100);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "5 anni";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -169,12 +171,12 @@
             this.radioButton2.FlatAppearance.BorderSize = 0;
             this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Image = global::Bambini.Properties.Resources._4anni_button;
             this.radioButton2.Location = new System.Drawing.Point(481, 76);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(300, 100);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "4 anni";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
             // 
@@ -184,12 +186,12 @@
             this.radioButton1.FlatAppearance.BorderSize = 0;
             this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton1.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Image = global::Bambini.Properties.Resources._3anni_button;
             this.radioButton1.Location = new System.Drawing.Point(48, 76);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(300, 100);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "3 anni";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 

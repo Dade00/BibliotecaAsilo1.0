@@ -134,6 +134,23 @@ namespace Maestre
         private void Home_VisibleChanged(object sender, EventArgs e)
         {
             TabControl.SelectedIndex = 3;
+            //De-seleziona il radio selezionato prima di ritornare indietro, per poterne selezionare un'altro
+            Bambini_radio.Checked = false;
+            Libri_radio.Checked = false;
+            Statistiche_radio.Checked = false;
+        }
+
+        private void EliminaBambino_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Bambini.CancellaBambino cancellaBambino = new Bambini.CancellaBambino();
+            cancellaBambino.ShowDialog();
+            Show();
+        }
+
+        private void Bambini_page_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

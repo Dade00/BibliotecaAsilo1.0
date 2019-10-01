@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.AnnullaModificaBambini = new System.Windows.Forms.Button();
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             this.AiutoAggiungiBambini = new System.Windows.Forms.Button();
@@ -45,15 +44,11 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
-            this.nascitaAddBambini = new System.Windows.Forms.DateTimePicker();
-            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cogomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rbAnni3 = new System.Windows.Forms.RadioButton();
+            this.rbAnni4 = new System.Windows.Forms.RadioButton();
+            this.rbAnni5 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             this.SuspendLayout();
             // 
             // AnnullaModificaBambini
@@ -74,7 +69,6 @@
             this.ConfermaModificaBambini.TabIndex = 126;
             this.ConfermaModificaBambini.Text = "CONFERMA";
             this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
-            this.ConfermaModificaBambini.Click += new System.EventHandler(this.ConfermaModificaBambini_Click);
             // 
             // AiutoAggiungiBambini
             // 
@@ -110,21 +104,10 @@
             // 
             // TabellaBambini
             // 
-            this.TabellaBambini.AllowUserToAddRows = false;
-            this.TabellaBambini.AllowUserToDeleteRows = false;
-            this.TabellaBambini.AutoGenerateColumns = false;
-            this.TabellaBambini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomeDataGridViewTextBoxColumn,
-            this.cogomeDataGridViewTextBoxColumn,
-            this.anniDataGridViewTextBoxColumn,
-            this.pathDataGridViewTextBoxColumn});
-            this.TabellaBambini.DataSource = this.bsBambini;
             this.TabellaBambini.Location = new System.Drawing.Point(438, 261);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
-            this.TabellaBambini.ReadOnly = true;
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
             this.TabellaBambini.Size = new System.Drawing.Size(690, 200);
@@ -137,9 +120,9 @@
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(99, 13);
+            this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 119;
-            this.label2.Text = "DATA DI NASCITA";
+            this.label2.Text = "ANNI";
             // 
             // ClasseAddBambini
             // 
@@ -218,51 +201,50 @@
             // 
             this.ofdFoto.Filter = "Foto del bambino (*.BMP;*.GIF;*.JPG;*.PNG)|*.BMP;*.GIF;*.JPG;*.PNG";
             // 
-            // nascitaAddBambini
+            // rbAnni3
             // 
-            this.nascitaAddBambini.Location = new System.Drawing.Point(928, 159);
-            this.nascitaAddBambini.Name = "nascitaAddBambini";
-            this.nascitaAddBambini.Size = new System.Drawing.Size(200, 20);
-            this.nascitaAddBambini.TabIndex = 129;
+            this.rbAnni3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbAnni3.AutoSize = true;
+            this.rbAnni3.Location = new System.Drawing.Point(872, 153);
+            this.rbAnni3.Name = "rbAnni3";
+            this.rbAnni3.Size = new System.Drawing.Size(23, 23);
+            this.rbAnni3.TabIndex = 129;
+            this.rbAnni3.TabStop = true;
+            this.rbAnni3.Text = "3";
+            this.rbAnni3.UseVisualStyleBackColor = true;
             // 
-            // bsBambini
+            // rbAnni4
             // 
-            this.bsBambini.DataSource = typeof(Classi.Bambino);
+            this.rbAnni4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbAnni4.AutoSize = true;
+            this.rbAnni4.Location = new System.Drawing.Point(955, 153);
+            this.rbAnni4.Name = "rbAnni4";
+            this.rbAnni4.Size = new System.Drawing.Size(23, 23);
+            this.rbAnni4.TabIndex = 130;
+            this.rbAnni4.TabStop = true;
+            this.rbAnni4.Text = "4";
+            this.rbAnni4.UseVisualStyleBackColor = true;
             // 
-            // nomeDataGridViewTextBoxColumn
+            // rbAnni5
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cogomeDataGridViewTextBoxColumn
-            // 
-            this.cogomeDataGridViewTextBoxColumn.DataPropertyName = "Cogome";
-            this.cogomeDataGridViewTextBoxColumn.HeaderText = "Cogome";
-            this.cogomeDataGridViewTextBoxColumn.Name = "cogomeDataGridViewTextBoxColumn";
-            this.cogomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // anniDataGridViewTextBoxColumn
-            // 
-            this.anniDataGridViewTextBoxColumn.DataPropertyName = "Anni";
-            this.anniDataGridViewTextBoxColumn.HeaderText = "Anni";
-            this.anniDataGridViewTextBoxColumn.Name = "anniDataGridViewTextBoxColumn";
-            this.anniDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pathDataGridViewTextBoxColumn
-            // 
-            this.pathDataGridViewTextBoxColumn.DataPropertyName = "Path";
-            this.pathDataGridViewTextBoxColumn.HeaderText = "Path";
-            this.pathDataGridViewTextBoxColumn.Name = "pathDataGridViewTextBoxColumn";
-            this.pathDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rbAnni5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbAnni5.AutoSize = true;
+            this.rbAnni5.Location = new System.Drawing.Point(1038, 153);
+            this.rbAnni5.Name = "rbAnni5";
+            this.rbAnni5.Size = new System.Drawing.Size(23, 23);
+            this.rbAnni5.TabIndex = 131;
+            this.rbAnni5.TabStop = true;
+            this.rbAnni5.Text = "5";
+            this.rbAnni5.UseVisualStyleBackColor = true;
             // 
             // AggiungiBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.nascitaAddBambini);
+            this.Controls.Add(this.rbAnni5);
+            this.Controls.Add(this.rbAnni4);
+            this.Controls.Add(this.rbAnni3);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
@@ -284,7 +266,6 @@
             this.Text = "AggiungiBambino";
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,11 +289,8 @@
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.PictureBox Bambini_pic;
         private System.Windows.Forms.OpenFileDialog ofdFoto;
-        private System.Windows.Forms.DateTimePicker nascitaAddBambini;
-        private System.Windows.Forms.BindingSource bsBambini;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cogomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anniDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pathDataGridViewTextBoxColumn;
+        private System.Windows.Forms.RadioButton rbAnni3;
+        private System.Windows.Forms.RadioButton rbAnni4;
+        private System.Windows.Forms.RadioButton rbAnni5;
     }
 }

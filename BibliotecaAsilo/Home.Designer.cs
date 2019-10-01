@@ -37,26 +37,29 @@
             // maestre_button
             // 
             this.maestre_button.FlatAppearance.BorderSize = 0;
+            this.maestre_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.maestre_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.maestre_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maestre_button.Image = global::BibliotecaAsilo.Properties.Resources.Maestra_button;
             this.maestre_button.Location = new System.Drawing.Point(736, 148);
             this.maestre_button.Margin = new System.Windows.Forms.Padding(2);
             this.maestre_button.Name = "maestre_button";
             this.maestre_button.Size = new System.Drawing.Size(540, 200);
             this.maestre_button.TabIndex = 0;
-            this.maestre_button.Text = "MAESTRE";
             this.maestre_button.UseVisualStyleBackColor = true;
             this.maestre_button.Click += new System.EventHandler(this.Maestre_button_Click);
             // 
             // bambini_button
             // 
             this.bambini_button.FlatAppearance.BorderSize = 0;
+            this.bambini_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.bambini_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bambini_button.Image = global::BibliotecaAsilo.Properties.Resources.Bambini_button;
             this.bambini_button.Location = new System.Drawing.Point(76, 148);
             this.bambini_button.Margin = new System.Windows.Forms.Padding(2);
             this.bambini_button.Name = "bambini_button";
             this.bambini_button.Size = new System.Drawing.Size(540, 200);
             this.bambini_button.TabIndex = 1;
-            this.bambini_button.Text = "BAMBINI";
             this.bambini_button.UseVisualStyleBackColor = true;
             this.bambini_button.Click += new System.EventHandler(this.Bambini_button_Click);
             // 

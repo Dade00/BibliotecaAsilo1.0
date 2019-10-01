@@ -117,4 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Animali_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Animali_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Avanti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avanti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cibo_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cibo_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Conferma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\conferma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Indietro_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Indietro_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prendi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\prendi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Racconti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\racconti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restituisce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\restituisce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scienze_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scienze_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sentimenti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sentimenti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Storie_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Storie_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3anni_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3anni_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4anni_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4anni_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5anni_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5anni_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

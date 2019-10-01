@@ -67,10 +67,10 @@
             // 
             // TabControl
             // 
-            this.TabControl.Controls.Add(this.Bambini_page);
             this.TabControl.Controls.Add(this.Libri_page);
             this.TabControl.Controls.Add(this.Statistiche_page);
             this.TabControl.Controls.Add(this.tabPage1);
+            this.TabControl.Controls.Add(this.Bambini_page);
             this.TabControl.Location = new System.Drawing.Point(588, -30);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
@@ -90,6 +90,7 @@
             this.Bambini_page.Padding = new System.Windows.Forms.Padding(3);
             this.Bambini_page.Size = new System.Drawing.Size(811, 796);
             this.Bambini_page.TabIndex = 0;
+            this.Bambini_page.Click += new System.EventHandler(this.Bambini_page_Click);
             // 
             // EliminaBambino
             // 
@@ -99,6 +100,7 @@
             this.EliminaBambino.TabIndex = 5;
             this.EliminaBambino.Text = "ELIMINA BAMBINO";
             this.EliminaBambino.UseVisualStyleBackColor = true;
+            this.EliminaBambino.Click += new System.EventHandler(this.EliminaBambino_Click);
             // 
             // ModificaBambino
             // 
@@ -164,7 +166,7 @@
             // 
             // Statistiche_page
             // 
-            this.Statistiche_page.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Statistiche_page.BackColor = System.Drawing.SystemColors.Control;
             this.Statistiche_page.Controls.Add(this.DelStat);
             this.Statistiche_page.Controls.Add(this.StatLibri);
             this.Statistiche_page.Controls.Add(this.StatBambini);
@@ -205,12 +207,12 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(811, 796);
             this.tabPage1.TabIndex = 3;
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // Bambini_radio
             // 
