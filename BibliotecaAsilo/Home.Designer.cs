@@ -51,6 +51,7 @@
             // 
             this.bambini_button.FlatAppearance.BorderSize = 0;
             this.bambini_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bambini_button.Image = global::BibliotecaAsilo.Properties.Resources.Bambini_button;
             this.bambini_button.Location = new System.Drawing.Point(76, 148);
             this.bambini_button.Margin = new System.Windows.Forms.Padding(2);
             this.bambini_button.Name = "bambini_button";
