@@ -42,8 +42,10 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.AnniModBambini = new System.Windows.Forms.TextBox();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
+            this.rbAnni5 = new System.Windows.Forms.RadioButton();
+            this.rbAnni4 = new System.Windows.Forms.RadioButton();
+            this.rbAnni3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
@@ -185,14 +187,6 @@
             this.label2.TabIndex = 103;
             this.label2.Text = "ANNI";
             // 
-            // AnniModBambini
-            // 
-            this.AnniModBambini.Location = new System.Drawing.Point(878, 163);
-            this.AnniModBambini.Margin = new System.Windows.Forms.Padding(2);
-            this.AnniModBambini.Name = "AnniModBambini";
-            this.AnniModBambini.Size = new System.Drawing.Size(54, 20);
-            this.AnniModBambini.TabIndex = 104;
-            // 
             // Bambini_pic
             // 
             this.Bambini_pic.Location = new System.Drawing.Point(226, 275);
@@ -201,11 +195,50 @@
             this.Bambini_pic.TabIndex = 130;
             this.Bambini_pic.TabStop = false;
             // 
+            // rbAnni5
+            // 
+            this.rbAnni5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbAnni5.AutoSize = true;
+            this.rbAnni5.Location = new System.Drawing.Point(1044, 161);
+            this.rbAnni5.Name = "rbAnni5";
+            this.rbAnni5.Size = new System.Drawing.Size(23, 23);
+            this.rbAnni5.TabIndex = 134;
+            this.rbAnni5.TabStop = true;
+            this.rbAnni5.Text = "5";
+            this.rbAnni5.UseVisualStyleBackColor = true;
+            // 
+            // rbAnni4
+            // 
+            this.rbAnni4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbAnni4.AutoSize = true;
+            this.rbAnni4.Location = new System.Drawing.Point(961, 161);
+            this.rbAnni4.Name = "rbAnni4";
+            this.rbAnni4.Size = new System.Drawing.Size(23, 23);
+            this.rbAnni4.TabIndex = 133;
+            this.rbAnni4.TabStop = true;
+            this.rbAnni4.Text = "4";
+            this.rbAnni4.UseVisualStyleBackColor = true;
+            // 
+            // rbAnni3
+            // 
+            this.rbAnni3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbAnni3.AutoSize = true;
+            this.rbAnni3.Location = new System.Drawing.Point(878, 161);
+            this.rbAnni3.Name = "rbAnni3";
+            this.rbAnni3.Size = new System.Drawing.Size(23, 23);
+            this.rbAnni3.TabIndex = 132;
+            this.rbAnni3.TabStop = true;
+            this.rbAnni3.Text = "3";
+            this.rbAnni3.UseVisualStyleBackColor = true;
+            // 
             // ModificaBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.rbAnni5);
+            this.Controls.Add(this.rbAnni4);
+            this.Controls.Add(this.rbAnni3);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
@@ -213,7 +246,6 @@
             this.Controls.Add(this.CercaFotoBambini);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TabellaBambini);
-            this.Controls.Add(this.AnniModBambini);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ClasseModBambini);
             this.Controls.Add(this.label1);
@@ -249,7 +281,9 @@
         private System.Windows.Forms.Label cognome_label;
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox AnniModBambini;
         private System.Windows.Forms.PictureBox Bambini_pic;
+        private System.Windows.Forms.RadioButton rbAnni5;
+        private System.Windows.Forms.RadioButton rbAnni4;
+        private System.Windows.Forms.RadioButton rbAnni3;
     }
 }

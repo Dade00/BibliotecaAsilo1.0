@@ -205,7 +205,7 @@
             // 
             this.rbAnni3.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbAnni3.AutoSize = true;
-            this.rbAnni3.Location = new System.Drawing.Point(874, 159);
+            this.rbAnni3.Location = new System.Drawing.Point(872, 153);
             this.rbAnni3.Name = "rbAnni3";
             this.rbAnni3.Size = new System.Drawing.Size(23, 23);
             this.rbAnni3.TabIndex = 129;
@@ -217,7 +217,7 @@
             // 
             this.rbAnni4.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbAnni4.AutoSize = true;
-            this.rbAnni4.Location = new System.Drawing.Point(957, 159);
+            this.rbAnni4.Location = new System.Drawing.Point(955, 153);
             this.rbAnni4.Name = "rbAnni4";
             this.rbAnni4.Size = new System.Drawing.Size(23, 23);
             this.rbAnni4.TabIndex = 130;
@@ -229,7 +229,7 @@
             // 
             this.rbAnni5.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbAnni5.AutoSize = true;
-            this.rbAnni5.Location = new System.Drawing.Point(1040, 159);
+            this.rbAnni5.Location = new System.Drawing.Point(1038, 153);
             this.rbAnni5.Name = "rbAnni5";
             this.rbAnni5.Size = new System.Drawing.Size(23, 23);
             this.rbAnni5.TabIndex = 131;
