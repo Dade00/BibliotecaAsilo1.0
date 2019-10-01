@@ -28,86 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.scienze_button = new System.Windows.Forms.Button();
-            this.animali_button = new System.Windows.Forms.Button();
-            this.cibo_button = new System.Windows.Forms.Button();
             this.racconti_button = new System.Windows.Forms.Button();
-            this.storie_button = new System.Windows.Forms.Button();
             this.scegligenere_label = new System.Windows.Forms.Label();
             this.aiuto_button = new System.Windows.Forms.Button();
             this.indietro_button = new System.Windows.Forms.Button();
+            this.storie_button = new System.Windows.Forms.Button();
+            this.cibo_button = new System.Windows.Forms.Button();
+            this.animali_button = new System.Windows.Forms.Button();
+            this.scienze_button = new System.Windows.Forms.Button();
             this.sentimenti_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // scienze_button
-            // 
-            this.scienze_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.scienze_button.FlatAppearance.BorderSize = 0;
-            this.scienze_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scienze_button.Image = global::Bambini.Properties.Resources.Scienze_button;
-            this.scienze_button.Location = new System.Drawing.Point(179, 302);
-            this.scienze_button.Margin = new System.Windows.Forms.Padding(2);
-            this.scienze_button.Name = "scienze_button";
-            this.scienze_button.Size = new System.Drawing.Size(450, 150);
-            this.scienze_button.TabIndex = 1;
-            this.scienze_button.UseVisualStyleBackColor = true;
-            this.scienze_button.Click += new System.EventHandler(this.Scienze_button_Click);
-            // 
-            // animali_button
-            // 
-            this.animali_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.animali_button.FlatAppearance.BorderSize = 0;
-            this.animali_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.animali_button.Image = global::Bambini.Properties.Resources.Animali_button;
-            this.animali_button.Location = new System.Drawing.Point(179, 470);
-            this.animali_button.Margin = new System.Windows.Forms.Padding(2);
-            this.animali_button.Name = "animali_button";
-            this.animali_button.Size = new System.Drawing.Size(450, 150);
-            this.animali_button.TabIndex = 2;
-            this.animali_button.UseVisualStyleBackColor = true;
-            this.animali_button.Click += new System.EventHandler(this.Animali_button_Click);
-            // 
-            // cibo_button
-            // 
-            this.cibo_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.cibo_button.FlatAppearance.BorderSize = 0;
-            this.cibo_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cibo_button.Image = global::Bambini.Properties.Resources.Cibo_button;
-            this.cibo_button.Location = new System.Drawing.Point(757, 470);
-            this.cibo_button.Margin = new System.Windows.Forms.Padding(2);
-            this.cibo_button.Name = "cibo_button";
-            this.cibo_button.Size = new System.Drawing.Size(450, 150);
-            this.cibo_button.TabIndex = 3;
-            this.cibo_button.UseVisualStyleBackColor = true;
-            this.cibo_button.Click += new System.EventHandler(this.Cibo_button_Click);
             // 
             // racconti_button
             // 
             this.racconti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.racconti_button.FlatAppearance.BorderSize = 0;
             this.racconti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.racconti_button.Image = global::Bambini.Properties.Resources.Racconti_button;
             this.racconti_button.Location = new System.Drawing.Point(757, 104);
             this.racconti_button.Margin = new System.Windows.Forms.Padding(2);
             this.racconti_button.Name = "racconti_button";
             this.racconti_button.Size = new System.Drawing.Size(450, 150);
             this.racconti_button.TabIndex = 4;
-            this.racconti_button.Text = "racconti";
             this.racconti_button.UseVisualStyleBackColor = true;
             this.racconti_button.Click += new System.EventHandler(this.Racconti_button_Click);
-            // 
-            // storie_button
-            // 
-            this.storie_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.storie_button.FlatAppearance.BorderSize = 0;
-            this.storie_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.storie_button.Image = global::Bambini.Properties.Resources.Storie_button;
-            this.storie_button.Location = new System.Drawing.Point(757, 302);
-            this.storie_button.Margin = new System.Windows.Forms.Padding(2);
-            this.storie_button.Name = "storie_button";
-            this.storie_button.Size = new System.Drawing.Size(450, 150);
-            this.storie_button.TabIndex = 5;
-            this.storie_button.UseVisualStyleBackColor = true;
-            this.storie_button.Click += new System.EventHandler(this.Storie_button_Click);
             // 
             // scegligenere_label
             // 
@@ -145,6 +89,62 @@
             this.indietro_button.TabIndex = 8;
             this.indietro_button.UseVisualStyleBackColor = true;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
+            // 
+            // storie_button
+            // 
+            this.storie_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.storie_button.FlatAppearance.BorderSize = 0;
+            this.storie_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.storie_button.Image = global::Bambini.Properties.Resources.Storie_button;
+            this.storie_button.Location = new System.Drawing.Point(757, 302);
+            this.storie_button.Margin = new System.Windows.Forms.Padding(2);
+            this.storie_button.Name = "storie_button";
+            this.storie_button.Size = new System.Drawing.Size(450, 150);
+            this.storie_button.TabIndex = 5;
+            this.storie_button.UseVisualStyleBackColor = true;
+            this.storie_button.Click += new System.EventHandler(this.Storie_button_Click);
+            // 
+            // cibo_button
+            // 
+            this.cibo_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cibo_button.FlatAppearance.BorderSize = 0;
+            this.cibo_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cibo_button.Image = global::Bambini.Properties.Resources.Cibo_button;
+            this.cibo_button.Location = new System.Drawing.Point(757, 470);
+            this.cibo_button.Margin = new System.Windows.Forms.Padding(2);
+            this.cibo_button.Name = "cibo_button";
+            this.cibo_button.Size = new System.Drawing.Size(450, 150);
+            this.cibo_button.TabIndex = 3;
+            this.cibo_button.UseVisualStyleBackColor = true;
+            this.cibo_button.Click += new System.EventHandler(this.Cibo_button_Click);
+            // 
+            // animali_button
+            // 
+            this.animali_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.animali_button.FlatAppearance.BorderSize = 0;
+            this.animali_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.animali_button.Image = global::Bambini.Properties.Resources.Animali_button;
+            this.animali_button.Location = new System.Drawing.Point(179, 470);
+            this.animali_button.Margin = new System.Windows.Forms.Padding(2);
+            this.animali_button.Name = "animali_button";
+            this.animali_button.Size = new System.Drawing.Size(450, 150);
+            this.animali_button.TabIndex = 2;
+            this.animali_button.UseVisualStyleBackColor = true;
+            this.animali_button.Click += new System.EventHandler(this.Animali_button_Click);
+            // 
+            // scienze_button
+            // 
+            this.scienze_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.scienze_button.FlatAppearance.BorderSize = 0;
+            this.scienze_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scienze_button.Image = global::Bambini.Properties.Resources.Scienze_button;
+            this.scienze_button.Location = new System.Drawing.Point(179, 302);
+            this.scienze_button.Margin = new System.Windows.Forms.Padding(2);
+            this.scienze_button.Name = "scienze_button";
+            this.scienze_button.Size = new System.Drawing.Size(450, 150);
+            this.scienze_button.TabIndex = 1;
+            this.scienze_button.UseVisualStyleBackColor = true;
+            this.scienze_button.Click += new System.EventHandler(this.Scienze_button_Click);
             // 
             // sentimenti_button
             // 

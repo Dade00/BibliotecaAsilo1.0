@@ -19,7 +19,7 @@ namespace Bambini.Properties {
     // tramite uno strumento quale ResGen o Visual Studio.
     // Per aggiungere o rimuovere un membro, modificare il file con estensione ResX ed eseguire nuovamente ResGen
     // con l'opzione /str oppure ricompilare il progetto VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -123,16 +123,6 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Conferma {
-            get {
-                object obj = ResourceManager.GetObject("Conferma", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Indietro_button {
             get {
                 object obj = ResourceManager.GetObject("Indietro_button", resourceCulture);
@@ -143,19 +133,9 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Prendi {
+        internal static System.Drawing.Bitmap Racconti_button {
             get {
-                object obj = ResourceManager.GetObject("Prendi", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Restituisce {
-            get {
-                object obj = ResourceManager.GetObject("Restituisce", resourceCulture);
+                object obj = ResourceManager.GetObject("Racconti_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

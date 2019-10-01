@@ -28,29 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.indietro_button = new System.Windows.Forms.Button();
             this.aiuto_button = new System.Windows.Forms.Button();
             this.scegligenere_label = new System.Windows.Forms.Label();
-            this.storie_button = new System.Windows.Forms.Button();
             this.racconti_button = new System.Windows.Forms.Button();
+            this.storie_button = new System.Windows.Forms.Button();
             this.cibo_button = new System.Windows.Forms.Button();
             this.animali_button = new System.Windows.Forms.Button();
             this.scienze_button = new System.Windows.Forms.Button();
             this.sentimenti_button = new System.Windows.Forms.Button();
+            this.indietro_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // indietro_button
-            // 
-            this.indietro_button.FlatAppearance.BorderSize = 0;
-            this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
-            this.indietro_button.Location = new System.Drawing.Point(493, 603);
-            this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
-            this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(380, 120);
-            this.indietro_button.TabIndex = 17;
-            this.indietro_button.UseVisualStyleBackColor = true;
-            this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 
             // aiuto_button
             // 
@@ -75,6 +62,20 @@
             this.scegligenere_label.TabIndex = 15;
             this.scegligenere_label.Text = "SCEGLI UN GENERE";
             // 
+            // racconti_button
+            // 
+            this.racconti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.racconti_button.FlatAppearance.BorderSize = 0;
+            this.racconti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.racconti_button.Image = global::Bambini.Properties.Resources.Racconti_button;
+            this.racconti_button.Location = new System.Drawing.Point(789, 103);
+            this.racconti_button.Margin = new System.Windows.Forms.Padding(2);
+            this.racconti_button.Name = "racconti_button";
+            this.racconti_button.Size = new System.Drawing.Size(450, 150);
+            this.racconti_button.TabIndex = 22;
+            this.racconti_button.UseVisualStyleBackColor = true;
+            this.racconti_button.Click += new System.EventHandler(this.Racconti_button_Click);
+            // 
             // storie_button
             // 
             this.storie_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -88,20 +89,6 @@
             this.storie_button.TabIndex = 23;
             this.storie_button.UseVisualStyleBackColor = true;
             this.storie_button.Click += new System.EventHandler(this.Storie_button_Click);
-            // 
-            // racconti_button
-            // 
-            this.racconti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.racconti_button.FlatAppearance.BorderSize = 0;
-            this.racconti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.racconti_button.Location = new System.Drawing.Point(789, 103);
-            this.racconti_button.Margin = new System.Windows.Forms.Padding(2);
-            this.racconti_button.Name = "racconti_button";
-            this.racconti_button.Size = new System.Drawing.Size(450, 150);
-            this.racconti_button.TabIndex = 22;
-            this.racconti_button.Text = "racconti";
-            this.racconti_button.UseVisualStyleBackColor = true;
-            this.racconti_button.Click += new System.EventHandler(this.Racconti_button_Click);
             // 
             // cibo_button
             // 
@@ -159,6 +146,19 @@
             this.sentimenti_button.TabIndex = 18;
             this.sentimenti_button.UseVisualStyleBackColor = true;
             this.sentimenti_button.Click += new System.EventHandler(this.Sentimenti_button_Click);
+            // 
+            // indietro_button
+            // 
+            this.indietro_button.FlatAppearance.BorderSize = 0;
+            this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
+            this.indietro_button.Location = new System.Drawing.Point(493, 603);
+            this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
+            this.indietro_button.Name = "indietro_button";
+            this.indietro_button.Size = new System.Drawing.Size(380, 120);
+            this.indietro_button.TabIndex = 17;
+            this.indietro_button.UseVisualStyleBackColor = true;
+            this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 
             // RestituisciGenere
             // 
