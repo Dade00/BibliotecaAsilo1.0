@@ -74,6 +74,7 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
             this.indietro_button.Location = new System.Drawing.Point(260, 598);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
@@ -87,6 +88,7 @@
             // 
             this.avanti_button.FlatAppearance.BorderSize = 0;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
             this.avanti_button.Location = new System.Drawing.Point(709, 598);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";

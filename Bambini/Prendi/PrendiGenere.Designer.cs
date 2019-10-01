@@ -44,6 +44,7 @@
             this.scienze_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.scienze_button.FlatAppearance.BorderSize = 0;
             this.scienze_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scienze_button.Image = global::Bambini.Properties.Resources.Scienze_button;
             this.scienze_button.Location = new System.Drawing.Point(179, 302);
             this.scienze_button.Margin = new System.Windows.Forms.Padding(2);
             this.scienze_button.Name = "scienze_button";
@@ -58,6 +59,7 @@
             this.animali_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.animali_button.FlatAppearance.BorderSize = 0;
             this.animali_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.animali_button.Image = global::Bambini.Properties.Resources.Animali_button;
             this.animali_button.Location = new System.Drawing.Point(179, 470);
             this.animali_button.Margin = new System.Windows.Forms.Padding(2);
             this.animali_button.Name = "animali_button";
@@ -72,6 +74,7 @@
             this.cibo_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.cibo_button.FlatAppearance.BorderSize = 0;
             this.cibo_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cibo_button.Image = global::Bambini.Properties.Resources.Cibo_button;
             this.cibo_button.Location = new System.Drawing.Point(757, 470);
             this.cibo_button.Margin = new System.Windows.Forms.Padding(2);
             this.cibo_button.Name = "cibo_button";
@@ -100,6 +103,7 @@
             this.storie_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.storie_button.FlatAppearance.BorderSize = 0;
             this.storie_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.storie_button.Image = global::Bambini.Properties.Resources.Storie_button;
             this.storie_button.Location = new System.Drawing.Point(757, 302);
             this.storie_button.Margin = new System.Windows.Forms.Padding(2);
             this.storie_button.Name = "storie_button";
@@ -151,6 +155,7 @@
             this.sentimenti_button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.sentimenti_button.FlatAppearance.BorderSize = 0;
             this.sentimenti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sentimenti_button.Image = global::Bambini.Properties.Resources.Sentimenti_button;
             this.sentimenti_button.Location = new System.Drawing.Point(179, 104);
             this.sentimenti_button.Margin = new System.Windows.Forms.Padding(0);
             this.sentimenti_button.Name = "sentimenti_button";
