@@ -195,5 +195,14 @@
   <ItemGroup>
     <None Include="Resources\Cibo_button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prendi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restituisce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conferma.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

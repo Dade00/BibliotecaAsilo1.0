@@ -153,6 +153,8 @@
             // 
             this.radioButton3.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton3.FlatAppearance.BorderSize = 0;
+            this.radioButton3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.radioButton3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton3.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Image = global::Bambini.Properties.Resources._5anni_button;
