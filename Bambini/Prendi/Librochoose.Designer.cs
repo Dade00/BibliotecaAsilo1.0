@@ -88,11 +88,11 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libro_label.Location = new System.Drawing.Point(303, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(761, 58);
+            this.libro_label.Size = new System.Drawing.Size(764, 55);
             this.libro_label.TabIndex = 5;
             this.libro_label.Text = "CHE LIBRO VUOI RESTITUIRE?";
             // 
@@ -119,7 +119,6 @@
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 120);
             this.indietro_button.TabIndex = 7;
-            this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 

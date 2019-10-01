@@ -50,7 +50,6 @@
             this.scienze_button.Name = "scienze_button";
             this.scienze_button.Size = new System.Drawing.Size(450, 150);
             this.scienze_button.TabIndex = 1;
-            this.scienze_button.Text = "scienze";
             this.scienze_button.UseVisualStyleBackColor = true;
             this.scienze_button.Click += new System.EventHandler(this.Scienze_button_Click);
             // 
@@ -65,7 +64,6 @@
             this.animali_button.Name = "animali_button";
             this.animali_button.Size = new System.Drawing.Size(450, 150);
             this.animali_button.TabIndex = 2;
-            this.animali_button.Text = "animali";
             this.animali_button.UseVisualStyleBackColor = true;
             this.animali_button.Click += new System.EventHandler(this.Animali_button_Click);
             // 
@@ -80,7 +78,6 @@
             this.cibo_button.Name = "cibo_button";
             this.cibo_button.Size = new System.Drawing.Size(450, 150);
             this.cibo_button.TabIndex = 3;
-            this.cibo_button.Text = "cibo";
             this.cibo_button.UseVisualStyleBackColor = true;
             this.cibo_button.Click += new System.EventHandler(this.Cibo_button_Click);
             // 
@@ -109,18 +106,17 @@
             this.storie_button.Name = "storie_button";
             this.storie_button.Size = new System.Drawing.Size(450, 150);
             this.storie_button.TabIndex = 5;
-            this.storie_button.Text = "storie";
             this.storie_button.UseVisualStyleBackColor = true;
             this.storie_button.Click += new System.EventHandler(this.Storie_button_Click);
             // 
             // scegligenere_label
             // 
             this.scegligenere_label.AutoSize = true;
-            this.scegligenere_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scegligenere_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scegligenere_label.Location = new System.Drawing.Point(431, 11);
             this.scegligenere_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scegligenere_label.Name = "scegligenere_label";
-            this.scegligenere_label.Size = new System.Drawing.Size(505, 58);
+            this.scegligenere_label.Size = new System.Drawing.Size(515, 55);
             this.scegligenere_label.TabIndex = 6;
             this.scegligenere_label.Text = "SCEGLI UN GENERE";
             // 
@@ -141,12 +137,12 @@
             // 
             this.indietro_button.FlatAppearance.BorderSize = 0;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
             this.indietro_button.Location = new System.Drawing.Point(493, 637);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 120);
             this.indietro_button.TabIndex = 8;
-            this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 
@@ -161,7 +157,6 @@
             this.sentimenti_button.Name = "sentimenti_button";
             this.sentimenti_button.Size = new System.Drawing.Size(450, 150);
             this.sentimenti_button.TabIndex = 0;
-            this.sentimenti_button.Text = "Sentimenti";
             this.sentimenti_button.UseVisualStyleBackColor = true;
             this.sentimenti_button.Click += new System.EventHandler(this.Sentimenti_button_Click);
             // 
