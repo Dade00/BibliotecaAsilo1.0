@@ -9,14 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bambini", "Bambini\Bambini.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maestre", "Maestre\Maestre.csproj", "{A2F02186-4064-4A5D-8165-77050EAD541E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{A7922E95-770E-4AF1-BADB-F8F40A4CD998}"
-	ProjectSection(SolutionItems) = preProject
-		Bambino.cs = Bambino.cs
-		ExceptionHandler.cs = ExceptionHandler.cs
-		Genere.cs = Genere.cs
-		Libro.cs = Libro.cs
-		Transazione.cs = Transazione.cs
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classi", "Classi\Classi.csproj", "{06A5A80B-C5E4-46F7-9C8C-484962C21531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +29,10 @@ Global
 		{A2F02186-4064-4A5D-8165-77050EAD541E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2F02186-4064-4A5D-8165-77050EAD541E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2F02186-4064-4A5D-8165-77050EAD541E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A5A80B-C5E4-46F7-9C8C-484962C21531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A5A80B-C5E4-46F7-9C8C-484962C21531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A5A80B-C5E4-46F7-9C8C-484962C21531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A5A80B-C5E4-46F7-9C8C-484962C21531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

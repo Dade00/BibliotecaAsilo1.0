@@ -165,6 +165,7 @@
     <EmbeddedResource Include="Statistiche[WIP]\StatLibri\NumeroDiVolteLetti.resx">
       <DependentUpon>NumeroDiVolteLetti.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Bambino.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -178,6 +179,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Classi\Classi.csproj">
+      <Project>{06a5a80b-c5e4-46f7-9c8c-484962c21531}</Project>
+      <Name>Classi</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
