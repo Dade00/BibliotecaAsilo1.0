@@ -99,6 +99,7 @@
             this.EliminaBambino.TabIndex = 5;
             this.EliminaBambino.Text = "ELIMINA BAMBINO";
             this.EliminaBambino.UseVisualStyleBackColor = true;
+            this.EliminaBambino.Click += new System.EventHandler(this.EliminaBambino_Click);
             // 
             // ModificaBambino
             // 

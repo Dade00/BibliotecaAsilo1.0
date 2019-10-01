@@ -135,5 +135,13 @@ namespace Maestre
         {
             TabControl.SelectedIndex = 3;
         }
+
+        private void EliminaBambino_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Bambini.CancellaBambino cancellaBambino = new Bambini.CancellaBambino();
+            cancellaBambino.ShowDialog();
+            Show();
+        }
     }
 }
