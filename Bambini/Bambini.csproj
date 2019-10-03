@@ -204,5 +204,8 @@
   <ItemGroup>
     <None Include="Resources\Conferma.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PrendiV2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
