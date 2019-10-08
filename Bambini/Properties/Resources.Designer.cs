@@ -93,6 +93,16 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Aiuto {
+            get {
+                object obj = ResourceManager.GetObject("Aiuto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Animali_button {
             get {
                 object obj = ResourceManager.GetObject("Animali_button", resourceCulture);

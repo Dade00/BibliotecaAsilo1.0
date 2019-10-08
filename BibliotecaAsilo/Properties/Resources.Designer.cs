@@ -93,9 +93,9 @@ namespace BibliotecaAsilo.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Maestra_button {
+        internal static System.Drawing.Bitmap Maestra {
             get {
-                object obj = ResourceManager.GetObject("Maestra_button", resourceCulture);
+                object obj = ResourceManager.GetObject("Maestra", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

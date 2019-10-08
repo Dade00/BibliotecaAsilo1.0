@@ -68,10 +68,10 @@
             // 
             this.aiuto_button.FlatAppearance.BorderSize = 0;
             this.aiuto_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aiuto_button.Location = new System.Drawing.Point(1125, 11);
+            this.aiuto_button.Location = new System.Drawing.Point(1243, 11);
             this.aiuto_button.Margin = new System.Windows.Forms.Padding(2);
             this.aiuto_button.Name = "aiuto_button";
-            this.aiuto_button.Size = new System.Drawing.Size(230, 80);
+            this.aiuto_button.Size = new System.Drawing.Size(110, 110);
             this.aiuto_button.TabIndex = 7;
             this.aiuto_button.Text = "AIUTO";
             this.aiuto_button.UseVisualStyleBackColor = true;

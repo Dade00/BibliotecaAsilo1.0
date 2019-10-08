@@ -91,9 +91,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Maestra_button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Bambini_button.png" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\crediti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maestra.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
