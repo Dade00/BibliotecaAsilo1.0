@@ -1,88 +1,66 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Data.SqlClient;
 
 namespace Classi
 {
-    class Queries
+    public class Queries
     {
-        //public static string ConnectionString = "data source = " + Credenziali.sqlServerAddress + ";initial catalog = " + Credenziali.sqlServerDB + ";persist security info=True;user id = " + Credenziali.sqlServerUser + ";password = " + Credenziali.sqlServerPassword + ";MultipleActiveResultSets=True";
-        //public static void addBambino(Bambino bambino)
-        //{
+        public static void addBambino(Bambino bambino)
+        {
+            try
+            {
+                string sql = "INSERT INTO Bambini VALUES (@nome, @cognome, @Data_Nascita, @Classe, @Path_Foto)";
 
-        //    {
-        //        bool result = true;
+                SqlCommand cmd = new SqlCommand(sql, Sql.getInstance());
 
-        //        try
-        //        {
-        //            using (SqlConnection cnn = new SqlConnection(ConnectionString))
-        //            {
-        //                cnn.Open();
+                cmd.Parameters.AddWithValue("@Nome", bambino.Nome);
+                cmd.Parameters.AddWithValue("@Cognome", bambino.Cognome);
+                cmd.Parameters.AddWithValue("@Data_Nascita", bambino.DataNascita);
+                cmd.Parameters.AddWithValue("@Classe", bambino.Classe);
+                cmd.Parameters.AddWithValue("@Path_Foto", bambino.Cognome);
 
-        //                string sql = "INSERT INTO Utenti VALUES (@nome, @cognome, @isAbilitato)";
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
-        //                using (SqlCommand cmd = new SqlCommand(sql, cnn))
-        //                {
-        //                    cmd.Parameters.AddWithValue("@nome", nuovoUtente.Nome);
-        //                    cmd.Parameters.AddWithValue("@cognome", nuovoUtente.Cognome);
-        //                    cmd.Parameters.AddWithValue("@isAbilitato", nuovoUtente.IsAbilitato);
+        public static bool getBambini(ref List<Bambino> listaBambini)
+        {
+            bool result = true;
+            try
+            {
+                string sql = "SELECT * FROM Bambini";
 
-        //                    cmd.ExecuteNonQuery();
-        //                }
+                if (listaBambini.Count > 0)
+                    listaBambini.Clear();
 
-        //                cnn.Close();
-        //            }
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            result = false;
-        //            throw ex;
-        //        }
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                        while (dr.Read())
+                        {
+                            Bambino bambinoTmp = new Bambino();
 
-        //        return result;
-        //    }
-        //}
+                            // DO NOT DO THAT
+                            //if (!dr.IsDBNull(dr.GetOrdinal("ID"))) bambinoTmp.ID = dr.GetInt32(dr.GetOrdinal("ID"));
+                            //if (!dr.IsDBNull(dr.GetOrdinal("Nome"))) bambinoTmp.Nome = dr.GetString(dr.GetOrdinal("Nome"));
+                            //if (!dr.IsDBNull(dr.GetOrdinal("Cognome"))) bambinoTmp.Cognome = dr.GetString(dr.GetOrdinal("Cognome"));
 
-        //public static bool GetAllUtenti(ref List<Datatype.Utente> listaUtenti)
-        //{
-        //    bool result = true;
+                            listaBambini.Add(bambinoTmp);
+                        }
+                }
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                throw ex;
+            }
 
-        //    if (listaUtenti.Count > 0)
-        //        listaUtenti.Clear();
-
-        //    try
-        //    {
-        //        using (SqlConnection cnn = new SqlConnection(ConnectionString))
-        //        {
-        //            cnn.Open();
-
-        //            string sql = "SELECT * FROM Utenti";
-
-        //            using (SqlCommand cmd = new SqlCommand(sql, cnn))
-        //            {
-        //                using (SqlDataReader dr = cmd.ExecuteReader())
-        //                    while (dr.Read())
-        //                    {
-        //                        Datatype.Utente userTmp = new Datatype.Utente();
-
-        //                        if (!dr.IsDBNull(dr.GetOrdinal("ID"))) userTmp.ID = dr.GetInt32(dr.GetOrdinal("ID"));
-        //                        if (!dr.IsDBNull(dr.GetOrdinal("Nome"))) userTmp.Nome = dr.GetString(dr.GetOrdinal("Nome"));
-        //                        if (!dr.IsDBNull(dr.GetOrdinal("Cognome"))) userTmp.Cognome = dr.GetString(dr.GetOrdinal("Cognome"));
-        //                        if (!dr.IsDBNull(dr.GetOrdinal("IsAbilitato"))) userTmp.IsAbilitato = dr.GetBoolean(dr.GetOrdinal("IsAbilitato"));
-
-        //                        listaUtenti.Add(userTmp);
-        //                    }
-        //            }
-        //            cnn.Close();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        result = false;
-        //        throw ex;
-        //    }
-
-        //    return result;
-        //}
+            return result;
+        }
     }
 }

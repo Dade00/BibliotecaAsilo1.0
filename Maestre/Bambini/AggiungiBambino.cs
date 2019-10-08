@@ -27,7 +27,6 @@ namespace Maestre.Bambini
             Dispose();
             Close();
         }
-
         private void CercaFotoBambini_Click(object sender, EventArgs e)
         {
             if (ofdFoto.ShowDialog() == DialogResult.OK)
@@ -44,41 +43,59 @@ namespace Maestre.Bambini
             else
                 ofdFoto.FileName = "";
         }
-
         private void ConfermaModificaBambini_Click(object sender, EventArgs e)
         {
-            if (NomeAddBambini.Text != "" || NomeAddBambini.Text != null)
+            try
             {
-                if (CognomeAddBambini.Text != "" || CognomeAddBambini.Text != null)
+                if (NomeAddBambini.Text == "" || NomeAddBambini.Text == null)
                 {
-                    if (ClasseAddBambini.Text != "" || ClasseAddBambini.Text != null)
-                    {
-                        if (DateTime.Now.Subtract(nascitaAddBambini.Value) < new TimeSpan(365, 0, 0, 0, 0))
-                        {
-                            if (ofdFoto.FileName != "" || ofdFoto.FileName != null)
-                            {
-                                
-                            }
-                            else
-                                MessageBox.Show("Selezionare prima la foto");
-                        }
-                        else
-                            MessageBox.Show("Inserire prima la data di nascita del bambino");
-                    }
-                    else
-                        MessageBox.Show("Inserire prima la classe del bambino");
+                    MessageBox.Show("Inserire prima il nome del bambino");
+                    return;
                 }
-                else
-                    MessageBox.Show("Inserire prima il cognome del bambino");
-            }
-            else
-                MessageBox.Show("Inserire prima il nome del bambino");
-        }
 
-        private void RefreshDgv()
+                if (CognomeAddBambini.Text == "" || CognomeAddBambini.Text == null)
+                {
+                    MessageBox.Show("Inserire prima il cognome del bambino");
+                    return;
+                }
+
+                if (ClasseAddBambini.Text == "" || ClasseAddBambini.Text == null)
+                {
+                    MessageBox.Show("Inserire prima la classe del bambino");
+                    return;
+                }
+
+                if (DateTime.Now.Subtract(nascitaAddBambini.Value) < new TimeSpan(365, 0, 0, 0, 0))
+                {
+                    MessageBox.Show("Inserire prima la data di nascita del bambino");
+                    return;
+                }
+
+                if (ofdFoto.FileName == "" || ofdFoto.FileName == null)
+                {
+                    MessageBox.Show("Selezionare prima la foto");
+                    return;
+                }
+
+                Queries.addBambino(new Bambino(NomeAddBambini.Text, CognomeAddBambini.Text, nascitaAddBambini.Value, ClasseAddBambini.Text, ofdFoto.FileName));
+                MessageBox.Show("Bambino aggiunto!");
+                Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }    
+        private void AggiungiBambino_Load(object sender, EventArgs e)
         {
-            bsBambini.DataSource = listaBambini;
-            bsBambini.ResetBindings(true);
+            try
+            {
+                Queries.
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
