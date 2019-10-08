@@ -63,12 +63,12 @@
             // 
             this.up_button.FlatAppearance.BorderSize = 0;
             this.up_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.up_button.Image = global::Bambini.Properties.Resources.Su;
             this.up_button.Location = new System.Drawing.Point(1137, 114);
             this.up_button.Margin = new System.Windows.Forms.Padding(2);
             this.up_button.Name = "up_button";
             this.up_button.Size = new System.Drawing.Size(190, 210);
             this.up_button.TabIndex = 3;
-            this.up_button.Text = "SU";
             this.up_button.UseVisualStyleBackColor = true;
             this.up_button.Click += new System.EventHandler(this.Up_button_Click);
             // 
@@ -76,23 +76,23 @@
             // 
             this.down_button.FlatAppearance.BorderSize = 0;
             this.down_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.down_button.Image = global::Bambini.Properties.Resources.giù;
             this.down_button.Location = new System.Drawing.Point(1137, 328);
             this.down_button.Margin = new System.Windows.Forms.Padding(2);
             this.down_button.Name = "down_button";
             this.down_button.Size = new System.Drawing.Size(190, 210);
             this.down_button.TabIndex = 4;
-            this.down_button.Text = "GIU";
             this.down_button.UseVisualStyleBackColor = true;
             this.down_button.Click += new System.EventHandler(this.Down_button_Click);
             // 
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
             this.libro_label.Location = new System.Drawing.Point(303, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(764, 55);
+            this.libro_label.Size = new System.Drawing.Size(761, 58);
             this.libro_label.TabIndex = 5;
             this.libro_label.Text = "CHE LIBRO VUOI RESTITUIRE?";
             // 
@@ -100,12 +100,12 @@
             // 
             this.ok_button.FlatAppearance.BorderSize = 0;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ok_button.Location = new System.Drawing.Point(684, 605);
+            this.ok_button.Image = global::Bambini.Properties.Resources.Avanti_button;
+            this.ok_button.Location = new System.Drawing.Point(710, 605);
             this.ok_button.Margin = new System.Windows.Forms.Padding(2);
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(380, 120);
             this.ok_button.TabIndex = 6;
-            this.ok_button.Text = "OK";
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.Ok_button_Click);
             // 

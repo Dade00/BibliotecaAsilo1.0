@@ -56,11 +56,11 @@
             // scegligenere_label
             // 
             this.scegligenere_label.AutoSize = true;
-            this.scegligenere_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scegligenere_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
             this.scegligenere_label.Location = new System.Drawing.Point(431, 11);
             this.scegligenere_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scegligenere_label.Name = "scegligenere_label";
-            this.scegligenere_label.Size = new System.Drawing.Size(515, 55);
+            this.scegligenere_label.Size = new System.Drawing.Size(505, 58);
             this.scegligenere_label.TabIndex = 6;
             this.scegligenere_label.Text = "SCEGLI UN GENERE";
             // 

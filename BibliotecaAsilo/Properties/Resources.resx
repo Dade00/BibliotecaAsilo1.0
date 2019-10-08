@@ -121,6 +121,12 @@
   <data name="Bambini_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bambini_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="crediti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crediti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Esci" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Esci.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Maestra_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maestra_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

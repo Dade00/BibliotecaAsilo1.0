@@ -196,16 +196,28 @@
     <None Include="Resources\Cibo_button.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Conferma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Esci.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Prendi.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Restituisce.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Conferma.png" />
+    <None Include="Resources\Su.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\PrendiV2.png" />
+    <None Include="Resources\giù.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crediti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
