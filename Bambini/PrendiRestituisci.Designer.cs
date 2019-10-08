@@ -38,12 +38,12 @@
             // 
             this.help_button.FlatAppearance.BorderSize = 0;
             this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.help_button.Location = new System.Drawing.Point(1165, 11);
+            this.help_button.Image = global::Bambini.Properties.Resources.Aiuto;
+            this.help_button.Location = new System.Drawing.Point(1120, 11);
             this.help_button.Margin = new System.Windows.Forms.Padding(2);
             this.help_button.Name = "help_button";
-            this.help_button.Size = new System.Drawing.Size(117, 125);
+            this.help_button.Size = new System.Drawing.Size(162, 173);
             this.help_button.TabIndex = 3;
-            this.help_button.Text = "AIUTO";
             this.help_button.UseVisualStyleBackColor = true;
             // 
             // indietro_button

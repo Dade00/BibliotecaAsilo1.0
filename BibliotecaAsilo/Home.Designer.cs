@@ -79,7 +79,7 @@
             this.maestre_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
             this.maestre_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.maestre_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maestre_button.Image = global::BibliotecaAsilo.Properties.Resources.Maestra_button;
+            this.maestre_button.Image = global::BibliotecaAsilo.Properties.Resources.Maestra;
             this.maestre_button.Location = new System.Drawing.Point(706, 148);
             this.maestre_button.Margin = new System.Windows.Forms.Padding(2);
             this.maestre_button.Name = "maestre_button";
