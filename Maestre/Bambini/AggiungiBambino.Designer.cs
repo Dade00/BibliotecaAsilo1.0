@@ -35,8 +35,6 @@
             this.CercaFotoBambini = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             this.ClasseAddBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.libro_label = new System.Windows.Forms.Label();
@@ -48,9 +46,14 @@
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.nascitaAddBambini = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.Cognome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataNascita = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Classe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             this.SuspendLayout();
             // 
             // AnnullaModificaBambini
@@ -113,27 +116,21 @@
             this.TabellaBambini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TabellaBambini.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomeDataGridViewTextBoxColumn});
+            this.nomeDataGridViewTextBoxColumn,
+            this.Cognome,
+            this.DataNascita,
+            this.Classe});
             this.TabellaBambini.DataSource = this.bsBambini;
             this.TabellaBambini.Location = new System.Drawing.Point(438, 261);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
+            this.TabellaBambini.MultiSelect = false;
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.RowHeadersVisible = false;
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
+            this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(690, 200);
             this.TabellaBambini.TabIndex = 121;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bsBambini
-            // 
-            this.bsBambini.DataSource = typeof(Classi.Bambino);
             // 
             // ClasseAddBambini
             // 
@@ -229,6 +226,34 @@
             this.label2.TabIndex = 130;
             this.label2.Text = "DATA DI NASCITA:";
             // 
+            // Cognome
+            // 
+            this.Cognome.DataPropertyName = "Cognome";
+            this.Cognome.HeaderText = "Cognome";
+            this.Cognome.Name = "Cognome";
+            // 
+            // DataNascita
+            // 
+            this.DataNascita.DataPropertyName = "DataNascita";
+            this.DataNascita.HeaderText = "DataNascita";
+            this.DataNascita.Name = "DataNascita";
+            // 
+            // Classe
+            // 
+            this.Classe.DataPropertyName = "Classe";
+            this.Classe.HeaderText = "Classe";
+            this.Classe.Name = "Classe";
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // bsBambini
+            // 
+            this.bsBambini.DataSource = typeof(Classi.Bambino);
+            // 
             // AggiungiBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,8 +281,8 @@
             this.Text = "AggiungiBambino";
             this.Load += new System.EventHandler(this.AggiungiBambino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,7 +308,10 @@
         private System.Windows.Forms.DateTimePicker nascitaAddBambini;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource bsBambini;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cogomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cognome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataNascita;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Classe;
     }
 }

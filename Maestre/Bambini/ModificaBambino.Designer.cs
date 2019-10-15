@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.AnnullaModificaBambini = new System.Windows.Forms.Button();
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             this.AiutoModificaBambini = new System.Windows.Forms.Button();
             this.CercaFotoBambini = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.TabellaBambini = new System.Windows.Forms.DataGridView();
             this.ClasseModBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.libro_label = new System.Windows.Forms.Label();
@@ -42,12 +42,18 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Bambini_pic = new System.Windows.Forms.PictureBox();
-            this.rbAnni5 = new System.Windows.Forms.RadioButton();
-            this.rbAnni4 = new System.Windows.Forms.RadioButton();
-            this.rbAnni3 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
+            this.nascitaModificaBambini = new System.Windows.Forms.DateTimePicker();
+            this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Cognome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataNascita = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Classe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // AnnullaModificaBambini
@@ -68,6 +74,7 @@
             this.ConfermaModificaBambini.TabIndex = 110;
             this.ConfermaModificaBambini.Text = "CONFERMA";
             this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
+            this.ConfermaModificaBambini.Click += new System.EventHandler(this.ConfermaModificaBambini_Click);
             // 
             // AiutoModificaBambini
             // 
@@ -88,6 +95,7 @@
             this.CercaFotoBambini.TabIndex = 108;
             this.CercaFotoBambini.Text = "CERCA FOTO";
             this.CercaFotoBambini.UseVisualStyleBackColor = true;
+            this.CercaFotoBambini.Click += new System.EventHandler(this.CercaFotoBambini_Click);
             // 
             // label3
             // 
@@ -99,17 +107,6 @@
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 106;
             this.label3.Text = "FOTO";
-            // 
-            // TabellaBambini
-            // 
-            this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(452, 275);
-            this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
-            this.TabellaBambini.Name = "TabellaBambini";
-            this.TabellaBambini.RowHeadersWidth = 62;
-            this.TabellaBambini.RowTemplate.Height = 28;
-            this.TabellaBambini.Size = new System.Drawing.Size(689, 200);
-            this.TabellaBambini.TabIndex = 105;
             // 
             // ClasseModBambini
             // 
@@ -138,7 +135,6 @@
             this.libro_label.Size = new System.Drawing.Size(108, 13);
             this.libro_label.TabIndex = 100;
             this.libro_label.Text = "Modifica Un Bambino";
-            this.libro_label.Click += new System.EventHandler(this.Libro_label_Click_1);
             // 
             // CognomeModBambini
             // 
@@ -179,74 +175,101 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(806, 166);
+            this.label2.Location = new System.Drawing.Point(803, 166);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(33, 13);
-            this.label2.TabIndex = 103;
-            this.label2.Text = "ANNI";
+            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.TabIndex = 132;
+            this.label2.Text = "DATA DI NASCITA:";
             // 
-            // Bambini_pic
+            // nascitaModificaBambini
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(226, 275);
-            this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
-            this.Bambini_pic.TabIndex = 130;
-            this.Bambini_pic.TabStop = false;
+            this.nascitaModificaBambini.Location = new System.Drawing.Point(922, 160);
+            this.nascitaModificaBambini.Name = "nascitaModificaBambini";
+            this.nascitaModificaBambini.Size = new System.Drawing.Size(200, 20);
+            this.nascitaModificaBambini.TabIndex = 131;
             // 
-            // rbAnni5
+            // ofdFoto
             // 
-            this.rbAnni5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni5.AutoSize = true;
-            this.rbAnni5.Location = new System.Drawing.Point(1044, 161);
-            this.rbAnni5.Name = "rbAnni5";
-            this.rbAnni5.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni5.TabIndex = 134;
-            this.rbAnni5.TabStop = true;
-            this.rbAnni5.Text = "5";
-            this.rbAnni5.UseVisualStyleBackColor = true;
+            this.ofdFoto.Filter = "Foto del bambino (*.BMP;*.GIF;*.JPG;*.PNG)|*.BMP;*.GIF;*.JPG;*.PNG";
             // 
-            // rbAnni4
+            // dataGridView1
             // 
-            this.rbAnni4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni4.AutoSize = true;
-            this.rbAnni4.Location = new System.Drawing.Point(961, 161);
-            this.rbAnni4.Name = "rbAnni4";
-            this.rbAnni4.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni4.TabIndex = 133;
-            this.rbAnni4.TabStop = true;
-            this.rbAnni4.Text = "4";
-            this.rbAnni4.UseVisualStyleBackColor = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.Cognome,
+            this.DataNascita,
+            this.Classe});
+            this.dataGridView1.DataSource = this.bsBambini;
+            this.dataGridView1.Location = new System.Drawing.Point(452, 275);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(690, 200);
+            this.dataGridView1.TabIndex = 133;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
             // 
-            // rbAnni3
+            // Cognome
             // 
-            this.rbAnni3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni3.AutoSize = true;
-            this.rbAnni3.Location = new System.Drawing.Point(878, 161);
-            this.rbAnni3.Name = "rbAnni3";
-            this.rbAnni3.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni3.TabIndex = 132;
-            this.rbAnni3.TabStop = true;
-            this.rbAnni3.Text = "3";
-            this.rbAnni3.UseVisualStyleBackColor = true;
+            this.Cognome.DataPropertyName = "Cognome";
+            this.Cognome.HeaderText = "Cognome";
+            this.Cognome.Name = "Cognome";
+            // 
+            // DataNascita
+            // 
+            this.DataNascita.DataPropertyName = "DataNascita";
+            this.DataNascita.HeaderText = "DataNascita";
+            this.DataNascita.Name = "DataNascita";
+            // 
+            // Classe
+            // 
+            this.Classe.DataPropertyName = "Classe";
+            this.Classe.HeaderText = "Classe";
+            this.Classe.Name = "Classe";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // bsBambini
+            // 
+            this.bsBambini.DataSource = typeof(Classi.Bambino);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(226, 275);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 134;
+            this.pictureBox1.TabStop = false;
             // 
             // ModificaBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.rbAnni5);
-            this.Controls.Add(this.rbAnni4);
-            this.Controls.Add(this.rbAnni3);
-            this.Controls.Add(this.Bambini_pic);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.nascitaModificaBambini);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
             this.Controls.Add(this.AiutoModificaBambini);
             this.Controls.Add(this.CercaFotoBambini);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TabellaBambini);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.ClasseModBambini);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.libro_label);
@@ -258,8 +281,9 @@
             this.Name = "ModificaBambino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificaBambino";
-            ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,7 +296,6 @@
         private System.Windows.Forms.Button AiutoModificaBambini;
         private System.Windows.Forms.Button CercaFotoBambini;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView TabellaBambini;
         private System.Windows.Forms.TextBox ClasseModBambini;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label libro_label;
@@ -281,9 +304,14 @@
         private System.Windows.Forms.Label cognome_label;
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox Bambini_pic;
-        private System.Windows.Forms.RadioButton rbAnni5;
-        private System.Windows.Forms.RadioButton rbAnni4;
-        private System.Windows.Forms.RadioButton rbAnni3;
+        private System.Windows.Forms.DateTimePicker nascitaModificaBambini;
+        private System.Windows.Forms.BindingSource bsBambini;
+        private System.Windows.Forms.OpenFileDialog ofdFoto;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cognome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataNascita;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Classe;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

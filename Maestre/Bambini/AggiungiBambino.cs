@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Classi;
 
@@ -13,13 +8,14 @@ namespace Maestre.Bambini
 {
     public partial class AggiungiBambino : Form
     {
-        public List<Bambino> listaBambini { get; set; }
+        public List<Bambino> listaBambini;
 
 
         public AggiungiBambino()
         {
             InitializeComponent();
-            listaBambini = new List<Bambino>();
+            if(listaBambini == null)
+                listaBambini = new List<Bambino>();
         }
 
         private void AnnullaModificaBambini_Click(object sender, EventArgs e)
@@ -90,12 +86,18 @@ namespace Maestre.Bambini
         {
             try
             {
-                Queries.
+                Queries.getBambini(ref listaBambini);
+                refresh();
             }
             catch (Exception)
             {
                 throw;
             }
+        }
+        private void refresh()
+        {
+            bsBambini.DataSource = listaBambini;
+            bsBambini.ResetBindings(true);
         }
     }
 }

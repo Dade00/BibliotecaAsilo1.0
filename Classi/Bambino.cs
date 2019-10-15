@@ -24,5 +24,14 @@ namespace Classi
             this.Classe = Classe;
             this.Path = Path;
         }
+        public Bambino(int ID, string Nome, string Cognome, DateTime DataNascita, string Classe, string Path)
+        {
+            this.ID = ID;
+            this.Nome = Nome;
+            this.Cognome = Cognome;
+            this.DataNascita = DataNascita;
+            this.Classe = Classe;
+            this.Path = Path;
+        }
     }
 }
