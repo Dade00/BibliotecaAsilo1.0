@@ -42,52 +42,52 @@
             // seitu_label
             // 
             this.seitu_label.AutoSize = true;
-            this.seitu_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
+            this.seitu_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold);
             this.seitu_label.Location = new System.Drawing.Point(578, 9);
             this.seitu_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.seitu_label.Name = "seitu_label";
-            this.seitu_label.Size = new System.Drawing.Size(211, 58);
+            this.seitu_label.Size = new System.Drawing.Size(212, 55);
             this.seitu_label.TabIndex = 0;
             this.seitu_label.Text = "SEI TU?";
             // 
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 21.75F, System.Drawing.FontStyle.Bold);
+            this.nome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
             this.nome_label.Location = new System.Drawing.Point(491, 123);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(112, 35);
+            this.nome_label.Size = new System.Drawing.Size(115, 33);
             this.nome_label.TabIndex = 2;
             this.nome_label.Text = "NOME:";
             // 
             // Cognome_label
             // 
             this.Cognome_label.AutoSize = true;
-            this.Cognome_label.Font = new System.Drawing.Font("GROBOLD", 21.75F, System.Drawing.FontStyle.Bold);
+            this.Cognome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
             this.Cognome_label.Location = new System.Drawing.Point(420, 172);
             this.Cognome_label.Name = "Cognome_label";
-            this.Cognome_label.Size = new System.Drawing.Size(183, 35);
+            this.Cognome_label.Size = new System.Drawing.Size(185, 33);
             this.Cognome_label.TabIndex = 5;
             this.Cognome_label.Text = "COGNOME:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GROBOLD", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(608, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 35);
+            this.label2.Size = new System.Drawing.Size(93, 33);
             this.label2.TabIndex = 6;
             this.label2.Text = "TEST";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GROBOLD", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(609, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 35);
+            this.label1.Size = new System.Drawing.Size(93, 33);
             this.label1.TabIndex = 7;
             this.label1.Text = "TEST";
             // 
@@ -144,6 +144,7 @@
             this.Name = "seitu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sei tu?";
+            this.Load += new System.EventHandler(this.Seitu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

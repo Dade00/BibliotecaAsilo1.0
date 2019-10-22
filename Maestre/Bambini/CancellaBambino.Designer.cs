@@ -61,7 +61,6 @@
             this.libro_label.Size = new System.Drawing.Size(239, 13);
             this.libro_label.TabIndex = 39;
             this.libro_label.Text = "Cerca Il Nome Del Bambino Che Vuoi Cancellare ";
-            this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
             // 
             // AnnullaEliminaBambini
             // 
@@ -81,6 +80,7 @@
             this.ConfermaEliminaBambini.TabIndex = 78;
             this.ConfermaEliminaBambini.Text = "CONFERMA";
             this.ConfermaEliminaBambini.UseVisualStyleBackColor = true;
+            this.ConfermaEliminaBambini.Click += new System.EventHandler(this.ConfermaEliminaBambini_Click);
             // 
             // NomeDelBambini
             // 
@@ -113,7 +113,7 @@
             // 
             // CognomeDelBambini
             // 
-            this.CognomeDelBambini.Location = new System.Drawing.Point(617, 177);
+            this.CognomeDelBambini.Location = new System.Drawing.Point(617, 180);
             this.CognomeDelBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeDelBambini.Name = "CognomeDelBambini";
             this.CognomeDelBambini.Size = new System.Drawing.Size(237, 20);

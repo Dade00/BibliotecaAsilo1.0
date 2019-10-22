@@ -17,15 +17,34 @@ namespace Bambini
             InitializeComponent();
         }
 
-        private void Login_page_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Avanti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            seitu seitu = new seitu();
+
+            int anni = -1;
+            if (radioButton1.Checked)
+                anni = 3;
+            else if (radioButton1.Checked)
+                anni = 4;
+            else if (radioButton1.Checked)
+                anni = 5;
+            else
+                return;
+
+            if (nome_label.Text == "" || cognome_label.Text == null)
+            {
+                MessageBox.Show("Inserire prima il nome");
+                return;
+            }
+
+
+
+            // query = select * from bambini where nome = ?
+            // if(cognome!=null) query .= AND cognome = ?
+
+            // QUERY PER PRENDERE UN BAMBINO CON
+
+            seitu seitu = new seitu(new Classi.bambino());
             seitu.ShowDialog();
             Show();
         }
@@ -37,16 +56,6 @@ namespace Bambini
         }
 
         private void Help_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }

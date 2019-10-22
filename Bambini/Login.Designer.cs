@@ -178,7 +178,6 @@
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -193,7 +192,6 @@
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
             // Login_page
             // 
@@ -215,7 +213,6 @@
             this.Name = "Login_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi sei?";
-            this.Load += new System.EventHandler(this.Login_page_Load);
             this.maskedGBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

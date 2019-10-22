@@ -12,7 +12,12 @@ namespace Bambini // BASSANO SEI TU?
 {
     public partial class seitu : Form
     {
-        public seitu()
+        string nome { get; set; }
+        string cognome { get; set; }
+        int anni { get; set; }
+
+
+        public seitu(Classi.bambino)
         {
             InitializeComponent();
         }
@@ -28,6 +33,11 @@ namespace Bambini // BASSANO SEI TU?
         private void Indietro_button_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Seitu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

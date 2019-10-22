@@ -17,14 +17,14 @@ namespace Maestre.Bambini
             InitializeComponent();
         }
 
-        private void Libro_label_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AnnullaEliminaBambini_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void ConfermaEliminaBambini_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

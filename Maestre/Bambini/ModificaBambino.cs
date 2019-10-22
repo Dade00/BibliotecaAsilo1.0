@@ -57,7 +57,12 @@ namespace Maestre.Bambini
             {
                 try
                 {
-                    pictureBox1.Image = new Bitmap(ofdFoto.FileName);
+                    Bitmap bmp = new Bitmap(ofdFoto.FileName);
+                    if (bmp.Width <= 350 && bmp.Height <= 350)
+                        pictureBox1.Image = bmp;
+                    else
+                        MessageBox.Show("La foto selezionata deve essere al massimo 350x350");
+                    bmp.Dispose();
                 }
                 catch (Exception ex)
                 {
