@@ -43,9 +43,7 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
-            this.rbAnni5 = new System.Windows.Forms.RadioButton();
-            this.rbAnni4 = new System.Windows.Forms.RadioButton();
-            this.rbAnni3 = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
@@ -113,7 +111,7 @@
             // 
             // ClasseModBambini
             // 
-            this.ClasseModBambini.Location = new System.Drawing.Point(878, 120);
+            this.ClasseModBambini.Location = new System.Drawing.Point(888, 120);
             this.ClasseModBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseModBambini.Name = "ClasseModBambini";
             this.ClasseModBambini.Size = new System.Drawing.Size(54, 20);
@@ -122,7 +120,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(803, 123);
+            this.label1.Location = new System.Drawing.Point(813, 123);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
@@ -179,7 +177,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(806, 166);
+            this.label2.Location = new System.Drawing.Point(816, 166);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -189,56 +187,25 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(226, 275);
+            this.Bambini_pic.Location = new System.Drawing.Point(53, 125);
             this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.TabIndex = 130;
             this.Bambini_pic.TabStop = false;
             // 
-            // rbAnni5
+            // dateTimePicker1
             // 
-            this.rbAnni5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni5.AutoSize = true;
-            this.rbAnni5.Location = new System.Drawing.Point(1044, 161);
-            this.rbAnni5.Name = "rbAnni5";
-            this.rbAnni5.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni5.TabIndex = 134;
-            this.rbAnni5.TabStop = true;
-            this.rbAnni5.Text = "5";
-            this.rbAnni5.UseVisualStyleBackColor = true;
-            // 
-            // rbAnni4
-            // 
-            this.rbAnni4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni4.AutoSize = true;
-            this.rbAnni4.Location = new System.Drawing.Point(961, 161);
-            this.rbAnni4.Name = "rbAnni4";
-            this.rbAnni4.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni4.TabIndex = 133;
-            this.rbAnni4.TabStop = true;
-            this.rbAnni4.Text = "4";
-            this.rbAnni4.UseVisualStyleBackColor = true;
-            // 
-            // rbAnni3
-            // 
-            this.rbAnni3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni3.AutoSize = true;
-            this.rbAnni3.Location = new System.Drawing.Point(878, 161);
-            this.rbAnni3.Name = "rbAnni3";
-            this.rbAnni3.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni3.TabIndex = 132;
-            this.rbAnni3.TabStop = true;
-            this.rbAnni3.Text = "3";
-            this.rbAnni3.UseVisualStyleBackColor = true;
+            this.dateTimePicker1.Location = new System.Drawing.Point(888, 162);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 131;
             // 
             // ModificaBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.rbAnni5);
-            this.Controls.Add(this.rbAnni4);
-            this.Controls.Add(this.rbAnni3);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
@@ -282,8 +249,6 @@
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox Bambini_pic;
-        private System.Windows.Forms.RadioButton rbAnni5;
-        private System.Windows.Forms.RadioButton rbAnni4;
-        private System.Windows.Forms.RadioButton rbAnni3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

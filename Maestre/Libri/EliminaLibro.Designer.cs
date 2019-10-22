@@ -102,9 +102,9 @@
             // 
             // Libri_pic
             // 
-            this.Libri_pic.Location = new System.Drawing.Point(224, 246);
+            this.Libri_pic.Location = new System.Drawing.Point(61, 96);
             this.Libri_pic.Name = "Libri_pic";
-            this.Libri_pic.Size = new System.Drawing.Size(202, 200);
+            this.Libri_pic.Size = new System.Drawing.Size(350, 350);
             this.Libri_pic.TabIndex = 98;
             this.Libri_pic.TabStop = false;
             // 

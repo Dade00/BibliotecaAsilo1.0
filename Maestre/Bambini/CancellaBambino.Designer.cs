@@ -103,7 +103,7 @@
             // Bambini
             // 
             this.Bambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Bambini.Location = new System.Drawing.Point(450, 267);
+            this.Bambini.Location = new System.Drawing.Point(450, 280);
             this.Bambini.Margin = new System.Windows.Forms.Padding(2);
             this.Bambini.Name = "Bambini";
             this.Bambini.RowHeadersWidth = 62;
@@ -131,9 +131,9 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(227, 267);
+            this.Bambini_pic.Location = new System.Drawing.Point(79, 130);
             this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.TabIndex = 129;
             this.Bambini_pic.TabStop = false;
             // 

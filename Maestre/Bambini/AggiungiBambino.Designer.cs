@@ -44,9 +44,7 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
-            this.rbAnni3 = new System.Windows.Forms.RadioButton();
-            this.rbAnni4 = new System.Windows.Forms.RadioButton();
-            this.rbAnni5 = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
@@ -105,7 +103,7 @@
             // TabellaBambini
             // 
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(438, 261);
+            this.TabellaBambini.Location = new System.Drawing.Point(438, 267);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.RowHeadersWidth = 62;
@@ -116,17 +114,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(802, 159);
+            this.label2.Location = new System.Drawing.Point(762, 160);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(101, 13);
             this.label2.TabIndex = 119;
-            this.label2.Text = "ANNI";
+            this.label2.Text = "ANNO DI NASCITA";
             // 
             // ClasseAddBambini
             // 
-            this.ClasseAddBambini.Location = new System.Drawing.Point(874, 114);
+            this.ClasseAddBambini.Location = new System.Drawing.Point(887, 115);
             this.ClasseAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseAddBambini.Name = "ClasseAddBambini";
             this.ClasseAddBambini.Size = new System.Drawing.Size(54, 20);
@@ -135,7 +133,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(799, 117);
+            this.label1.Location = new System.Drawing.Point(812, 118);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
@@ -190,9 +188,9 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(222, 261);
+            this.Bambini_pic.Location = new System.Drawing.Point(41, 117);
             this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Bambini_pic.TabIndex = 128;
             this.Bambini_pic.TabStop = false;
@@ -201,50 +199,19 @@
             // 
             this.ofdFoto.Filter = "Foto del bambino (*.BMP;*.GIF;*.JPG;*.PNG)|*.BMP;*.GIF;*.JPG;*.PNG";
             // 
-            // rbAnni3
+            // dateTimePicker1
             // 
-            this.rbAnni3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni3.AutoSize = true;
-            this.rbAnni3.Location = new System.Drawing.Point(872, 153);
-            this.rbAnni3.Name = "rbAnni3";
-            this.rbAnni3.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni3.TabIndex = 129;
-            this.rbAnni3.TabStop = true;
-            this.rbAnni3.Text = "3";
-            this.rbAnni3.UseVisualStyleBackColor = true;
-            // 
-            // rbAnni4
-            // 
-            this.rbAnni4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni4.AutoSize = true;
-            this.rbAnni4.Location = new System.Drawing.Point(955, 153);
-            this.rbAnni4.Name = "rbAnni4";
-            this.rbAnni4.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni4.TabIndex = 130;
-            this.rbAnni4.TabStop = true;
-            this.rbAnni4.Text = "4";
-            this.rbAnni4.UseVisualStyleBackColor = true;
-            // 
-            // rbAnni5
-            // 
-            this.rbAnni5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbAnni5.AutoSize = true;
-            this.rbAnni5.Location = new System.Drawing.Point(1038, 153);
-            this.rbAnni5.Name = "rbAnni5";
-            this.rbAnni5.Size = new System.Drawing.Size(23, 23);
-            this.rbAnni5.TabIndex = 131;
-            this.rbAnni5.TabStop = true;
-            this.rbAnni5.Text = "5";
-            this.rbAnni5.UseVisualStyleBackColor = true;
+            this.dateTimePicker1.Location = new System.Drawing.Point(887, 160);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 129;
             // 
             // AggiungiBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.rbAnni5);
-            this.Controls.Add(this.rbAnni4);
-            this.Controls.Add(this.rbAnni3);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
@@ -289,8 +256,6 @@
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.PictureBox Bambini_pic;
         private System.Windows.Forms.OpenFileDialog ofdFoto;
-        private System.Windows.Forms.RadioButton rbAnni3;
-        private System.Windows.Forms.RadioButton rbAnni4;
-        private System.Windows.Forms.RadioButton rbAnni5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

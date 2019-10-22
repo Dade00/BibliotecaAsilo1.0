@@ -41,14 +41,15 @@
             // 
             // aiuto_button
             // 
+            this.aiuto_button.BackgroundImage = global::Bambini.Properties.Resources.Aiuto;
+            this.aiuto_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.aiuto_button.FlatAppearance.BorderSize = 0;
             this.aiuto_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aiuto_button.Location = new System.Drawing.Point(1114, 11);
+            this.aiuto_button.Location = new System.Drawing.Point(1235, 11);
             this.aiuto_button.Margin = new System.Windows.Forms.Padding(2);
             this.aiuto_button.Name = "aiuto_button";
-            this.aiuto_button.Size = new System.Drawing.Size(230, 80);
+            this.aiuto_button.Size = new System.Drawing.Size(120, 129);
             this.aiuto_button.TabIndex = 16;
-            this.aiuto_button.Text = "AIUTO";
             this.aiuto_button.UseVisualStyleBackColor = true;
             // 
             // scegligenere_label
@@ -68,7 +69,7 @@
             this.racconti_button.FlatAppearance.BorderSize = 0;
             this.racconti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.racconti_button.Image = global::Bambini.Properties.Resources.Racconti_button;
-            this.racconti_button.Location = new System.Drawing.Point(789, 103);
+            this.racconti_button.Location = new System.Drawing.Point(778, 103);
             this.racconti_button.Margin = new System.Windows.Forms.Padding(2);
             this.racconti_button.Name = "racconti_button";
             this.racconti_button.Size = new System.Drawing.Size(450, 150);
@@ -82,7 +83,7 @@
             this.storie_button.FlatAppearance.BorderSize = 0;
             this.storie_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.storie_button.Image = global::Bambini.Properties.Resources.Storie_button;
-            this.storie_button.Location = new System.Drawing.Point(789, 257);
+            this.storie_button.Location = new System.Drawing.Point(778, 257);
             this.storie_button.Margin = new System.Windows.Forms.Padding(2);
             this.storie_button.Name = "storie_button";
             this.storie_button.Size = new System.Drawing.Size(450, 150);
@@ -96,7 +97,7 @@
             this.cibo_button.FlatAppearance.BorderSize = 0;
             this.cibo_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cibo_button.Image = global::Bambini.Properties.Resources.Cibo_button;
-            this.cibo_button.Location = new System.Drawing.Point(789, 439);
+            this.cibo_button.Location = new System.Drawing.Point(778, 439);
             this.cibo_button.Margin = new System.Windows.Forms.Padding(2);
             this.cibo_button.Name = "cibo_button";
             this.cibo_button.Size = new System.Drawing.Size(450, 150);
@@ -110,7 +111,7 @@
             this.animali_button.FlatAppearance.BorderSize = 0;
             this.animali_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.animali_button.Image = global::Bambini.Properties.Resources.Animali_button;
-            this.animali_button.Location = new System.Drawing.Point(165, 439);
+            this.animali_button.Location = new System.Drawing.Point(154, 439);
             this.animali_button.Margin = new System.Windows.Forms.Padding(2);
             this.animali_button.Name = "animali_button";
             this.animali_button.Size = new System.Drawing.Size(450, 150);
@@ -124,7 +125,7 @@
             this.scienze_button.FlatAppearance.BorderSize = 0;
             this.scienze_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.scienze_button.Image = global::Bambini.Properties.Resources.Scienze_button;
-            this.scienze_button.Location = new System.Drawing.Point(165, 257);
+            this.scienze_button.Location = new System.Drawing.Point(154, 257);
             this.scienze_button.Margin = new System.Windows.Forms.Padding(2);
             this.scienze_button.Name = "scienze_button";
             this.scienze_button.Size = new System.Drawing.Size(450, 150);
@@ -139,7 +140,7 @@
             this.sentimenti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sentimenti_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.sentimenti_button.Image = global::Bambini.Properties.Resources.Sentimenti_button;
-            this.sentimenti_button.Location = new System.Drawing.Point(165, 103);
+            this.sentimenti_button.Location = new System.Drawing.Point(154, 103);
             this.sentimenti_button.Margin = new System.Windows.Forms.Padding(2);
             this.sentimenti_button.Name = "sentimenti_button";
             this.sentimenti_button.Size = new System.Drawing.Size(450, 150);

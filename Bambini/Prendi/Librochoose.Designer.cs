@@ -42,7 +42,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(341, 114);
+            this.dataGridView2.Location = new System.Drawing.Point(364, 114);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
@@ -52,10 +52,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(11, 114);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 114);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(325, 325);
+            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -64,7 +64,7 @@
             this.up_button.FlatAppearance.BorderSize = 0;
             this.up_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.up_button.Image = global::Bambini.Properties.Resources.Su;
-            this.up_button.Location = new System.Drawing.Point(1137, 114);
+            this.up_button.Location = new System.Drawing.Point(1160, 114);
             this.up_button.Margin = new System.Windows.Forms.Padding(2);
             this.up_button.Name = "up_button";
             this.up_button.Size = new System.Drawing.Size(190, 210);
@@ -77,7 +77,7 @@
             this.down_button.FlatAppearance.BorderSize = 0;
             this.down_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.down_button.Image = global::Bambini.Properties.Resources.giù;
-            this.down_button.Location = new System.Drawing.Point(1137, 328);
+            this.down_button.Location = new System.Drawing.Point(1160, 328);
             this.down_button.Margin = new System.Windows.Forms.Padding(2);
             this.down_button.Name = "down_button";
             this.down_button.Size = new System.Drawing.Size(190, 210);

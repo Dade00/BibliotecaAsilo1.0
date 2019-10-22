@@ -60,7 +60,7 @@
             // 
             // CercaFotoLibro
             // 
-            this.CercaFotoLibro.Location = new System.Drawing.Point(460, 231);
+            this.CercaFotoLibro.Location = new System.Drawing.Point(534, 223);
             this.CercaFotoLibro.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoLibro.Name = "CercaFotoLibro";
             this.CercaFotoLibro.Size = new System.Drawing.Size(101, 20);
@@ -71,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(387, 235);
+            this.label3.Location = new System.Drawing.Point(461, 227);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -92,7 +92,7 @@
             // 
             // CodiceModLibro
             // 
-            this.CodiceModLibro.Location = new System.Drawing.Point(827, 197);
+            this.CodiceModLibro.Location = new System.Drawing.Point(901, 189);
             this.CodiceModLibro.Margin = new System.Windows.Forms.Padding(2);
             this.CodiceModLibro.Name = "CodiceModLibro";
             this.CodiceModLibro.Size = new System.Drawing.Size(121, 20);
@@ -101,7 +101,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(755, 200);
+            this.label2.Location = new System.Drawing.Point(829, 192);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -111,7 +111,7 @@
             // 
             // GenereModLibro
             // 
-            this.GenereModLibro.Location = new System.Drawing.Point(827, 157);
+            this.GenereModLibro.Location = new System.Drawing.Point(901, 149);
             this.GenereModLibro.Margin = new System.Windows.Forms.Padding(2);
             this.GenereModLibro.Name = "GenereModLibro";
             this.GenereModLibro.Size = new System.Drawing.Size(121, 20);
@@ -120,7 +120,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(752, 160);
+            this.label1.Location = new System.Drawing.Point(826, 152);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
@@ -140,7 +140,7 @@
             // 
             // AutoreModLibro
             // 
-            this.AutoreModLibro.Location = new System.Drawing.Point(460, 194);
+            this.AutoreModLibro.Location = new System.Drawing.Point(534, 186);
             this.AutoreModLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AutoreModLibro.Name = "AutoreModLibro";
             this.AutoreModLibro.Size = new System.Drawing.Size(237, 20);
@@ -148,7 +148,7 @@
             // 
             // TitotloModLibro
             // 
-            this.TitotloModLibro.Location = new System.Drawing.Point(460, 157);
+            this.TitotloModLibro.Location = new System.Drawing.Point(534, 149);
             this.TitotloModLibro.Margin = new System.Windows.Forms.Padding(2);
             this.TitotloModLibro.Name = "TitotloModLibro";
             this.TitotloModLibro.Size = new System.Drawing.Size(237, 20);
@@ -157,7 +157,7 @@
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
-            this.cognome_label.Location = new System.Drawing.Point(385, 197);
+            this.cognome_label.Location = new System.Drawing.Point(459, 189);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(52, 13);
@@ -167,7 +167,7 @@
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Location = new System.Drawing.Point(385, 160);
+            this.nome_label.Location = new System.Drawing.Point(459, 152);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(46, 13);
@@ -195,9 +195,9 @@
             // 
             // Libri_pic
             // 
-            this.Libri_pic.Location = new System.Drawing.Point(232, 299);
+            this.Libri_pic.Location = new System.Drawing.Point(59, 149);
             this.Libri_pic.Name = "Libri_pic";
-            this.Libri_pic.Size = new System.Drawing.Size(202, 200);
+            this.Libri_pic.Size = new System.Drawing.Size(350, 350);
             this.Libri_pic.TabIndex = 97;
             this.Libri_pic.TabStop = false;
             // 
