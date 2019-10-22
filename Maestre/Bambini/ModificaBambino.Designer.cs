@@ -136,7 +136,7 @@
             this.libro_label.Size = new System.Drawing.Size(108, 13);
             this.libro_label.TabIndex = 100;
             this.libro_label.Text = "Modifica Un Bambino";
-            this.libro_label.Click += new System.EventHandler(this.Libro_label_Click_1);
+            //this.libro_label.Click += new System.EventHandler(this.Libro_label_Click_1);
             // 
             // CognomeModBambini
             // 

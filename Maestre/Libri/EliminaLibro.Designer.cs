@@ -36,6 +36,7 @@
             this.AnnullaEliminaLibro = new System.Windows.Forms.Button();
             this.Libri_pic = new System.Windows.Forms.PictureBox();
             this.AiutoAggiungiLibro = new System.Windows.Forms.Button();
+            this.cerca_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
             this.SuspendLayout();
@@ -118,11 +119,21 @@
             this.AiutoAggiungiLibro.Text = "AIUTO";
             this.AiutoAggiungiLibro.UseVisualStyleBackColor = true;
             // 
+            // cerca_button
+            // 
+            this.cerca_button.Location = new System.Drawing.Point(868, 160);
+            this.cerca_button.Name = "cerca_button";
+            this.cerca_button.Size = new System.Drawing.Size(220, 50);
+            this.cerca_button.TabIndex = 131;
+            this.cerca_button.Text = "button1";
+            this.cerca_button.UseVisualStyleBackColor = true;
+            // 
             // EliminaLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.cerca_button);
             this.Controls.Add(this.AiutoAggiungiLibro);
             this.Controls.Add(this.Libri_pic);
             this.Controls.Add(this.AnnullaEliminaLibro);
@@ -151,5 +162,6 @@
         private System.Windows.Forms.Button AnnullaEliminaLibro;
         private System.Windows.Forms.PictureBox Libri_pic;
         private System.Windows.Forms.Button AiutoAggiungiLibro;
+        private System.Windows.Forms.Button cerca_button;
     }
 }
