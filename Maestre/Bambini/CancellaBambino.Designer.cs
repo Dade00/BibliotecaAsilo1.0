@@ -38,6 +38,7 @@
             this.CognomeDelBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
+            this.cerca_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
@@ -103,7 +104,7 @@
             // Bambini
             // 
             this.Bambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Bambini.Location = new System.Drawing.Point(450, 267);
+            this.Bambini.Location = new System.Drawing.Point(450, 280);
             this.Bambini.Margin = new System.Windows.Forms.Padding(2);
             this.Bambini.Name = "Bambini";
             this.Bambini.RowHeadersWidth = 62;
@@ -131,17 +132,27 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(227, 267);
+            this.Bambini_pic.Location = new System.Drawing.Point(79, 130);
             this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.TabIndex = 129;
             this.Bambini_pic.TabStop = false;
+            // 
+            // cerca_button
+            // 
+            this.cerca_button.Location = new System.Drawing.Point(875, 144);
+            this.cerca_button.Name = "cerca_button";
+            this.cerca_button.Size = new System.Drawing.Size(220, 50);
+            this.cerca_button.TabIndex = 130;
+            this.cerca_button.Text = "button1";
+            this.cerca_button.UseVisualStyleBackColor = true;
             // 
             // CancellaBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.cerca_button);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.CognomeDelBambini);
             this.Controls.Add(this.label1);
@@ -175,5 +186,6 @@
         private System.Windows.Forms.TextBox CognomeDelBambini;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox Bambini_pic;
+        private System.Windows.Forms.Button cerca_button;
     }
 }

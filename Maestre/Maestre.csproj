@@ -76,12 +76,6 @@
     <Compile Include="Libri\AggiungiLibro.Designer.cs">
       <DependentUpon>AggiungiLibro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Libri\ConfermaInserimento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Libri\ConfermaInserimento.Designer.cs">
-      <DependentUpon>ConfermaInserimento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Libri\EliminaLibro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Libri\AggiungiLibro.resx">
       <DependentUpon>AggiungiLibro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Libri\ConfermaInserimento.resx">
-      <DependentUpon>ConfermaInserimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Libri\EliminaLibro.resx">
       <DependentUpon>EliminaLibro.cs</DependentUpon>

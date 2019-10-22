@@ -220,7 +220,14 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\3anni_acceso.png" />
+    <None Include="Resources\4anni_acceso.png" />
+    <None Include="Resources\5anni_acceso.png" />
+    <Content Include="MickyMouseON.cur" />
+    <Content Include="MickyMouseOFF.cur" />
     <Content Include="Resources\Aiuto.png" />
+    <None Include="Resources\cursorclick.png" />
+    <None Include="Resources\cursor.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Classi\Classi.csproj">

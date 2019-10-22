@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.AnnullaModificaBambini = new System.Windows.Forms.Button();
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             this.AiutoAggiungiBambini = new System.Windows.Forms.Button();
             this.CercaFotoBambini = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.ClasseAddBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.libro_label = new System.Windows.Forms.Label();
@@ -44,16 +44,9 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
-            this.nascitaAddBambini = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Cognome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataNascita = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Classe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             this.SuspendLayout();
             // 
             // AnnullaModificaBambini
@@ -74,7 +67,6 @@
             this.ConfermaModificaBambini.TabIndex = 126;
             this.ConfermaModificaBambini.Text = "CONFERMA";
             this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
-            this.ConfermaModificaBambini.Click += new System.EventHandler(this.ConfermaModificaBambini_Click);
             // 
             // AiutoAggiungiBambini
             // 
@@ -110,31 +102,29 @@
             // 
             // TabellaBambini
             // 
-            this.TabellaBambini.AllowUserToAddRows = false;
-            this.TabellaBambini.AllowUserToDeleteRows = false;
-            this.TabellaBambini.AutoGenerateColumns = false;
-            this.TabellaBambini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomeDataGridViewTextBoxColumn,
-            this.Cognome,
-            this.DataNascita,
-            this.Classe});
-            this.TabellaBambini.DataSource = this.bsBambini;
-            this.TabellaBambini.Location = new System.Drawing.Point(438, 261);
+            this.TabellaBambini.Location = new System.Drawing.Point(438, 267);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
-            this.TabellaBambini.MultiSelect = false;
             this.TabellaBambini.Name = "TabellaBambini";
-            this.TabellaBambini.RowHeadersVisible = false;
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
-            this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(690, 200);
             this.TabellaBambini.TabIndex = 121;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(762, 160);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.TabIndex = 119;
+            this.label2.Text = "ANNO DI NASCITA";
+            // 
             // ClasseAddBambini
             // 
-            this.ClasseAddBambini.Location = new System.Drawing.Point(874, 114);
+            this.ClasseAddBambini.Location = new System.Drawing.Point(887, 115);
             this.ClasseAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseAddBambini.Name = "ClasseAddBambini";
             this.ClasseAddBambini.Size = new System.Drawing.Size(54, 20);
@@ -143,7 +133,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(799, 117);
+            this.label1.Location = new System.Drawing.Point(812, 118);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
@@ -198,9 +188,9 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(222, 261);
+            this.Bambini_pic.Location = new System.Drawing.Point(41, 117);
             this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Bambini_pic.TabIndex = 128;
             this.Bambini_pic.TabStop = false;
@@ -209,58 +199,19 @@
             // 
             this.ofdFoto.Filter = "Foto del bambino (*.BMP;*.GIF;*.JPG;*.PNG)|*.BMP;*.GIF;*.JPG;*.PNG";
             // 
-            // nascitaAddBambini
+            // dateTimePicker1
             // 
-            this.nascitaAddBambini.Location = new System.Drawing.Point(918, 153);
-            this.nascitaAddBambini.Name = "nascitaAddBambini";
-            this.nascitaAddBambini.Size = new System.Drawing.Size(200, 20);
-            this.nascitaAddBambini.TabIndex = 129;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(799, 159);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 130;
-            this.label2.Text = "DATA DI NASCITA:";
-            // 
-            // Cognome
-            // 
-            this.Cognome.DataPropertyName = "Cognome";
-            this.Cognome.HeaderText = "Cognome";
-            this.Cognome.Name = "Cognome";
-            // 
-            // DataNascita
-            // 
-            this.DataNascita.DataPropertyName = "DataNascita";
-            this.DataNascita.HeaderText = "DataNascita";
-            this.DataNascita.Name = "DataNascita";
-            // 
-            // Classe
-            // 
-            this.Classe.DataPropertyName = "Classe";
-            this.Classe.HeaderText = "Classe";
-            this.Classe.Name = "Classe";
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            // 
-            // bsBambini
-            // 
-            this.bsBambini.DataSource = typeof(Classi.Bambino);
+            this.dateTimePicker1.Location = new System.Drawing.Point(887, 160);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 129;
             // 
             // AggiungiBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.nascitaAddBambini);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
@@ -268,6 +219,7 @@
             this.Controls.Add(this.CercaFotoBambini);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TabellaBambini);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ClasseAddBambini);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.libro_label);
@@ -279,10 +231,8 @@
             this.Name = "AggiungiBambino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AggiungiBambino";
-            this.Load += new System.EventHandler(this.AggiungiBambino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,6 +246,7 @@
         private System.Windows.Forms.Button CercaFotoBambini;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView TabellaBambini;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ClasseAddBambini;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label libro_label;
@@ -305,13 +256,6 @@
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.PictureBox Bambini_pic;
         private System.Windows.Forms.OpenFileDialog ofdFoto;
-        private System.Windows.Forms.DateTimePicker nascitaAddBambini;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource bsBambini;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cogomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cognome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DataNascita;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Classe;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

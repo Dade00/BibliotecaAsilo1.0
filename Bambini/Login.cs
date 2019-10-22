@@ -59,5 +59,29 @@ namespace Bambini
         {
 
         }
+
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+                radioButton1.Image = Bambini.Properties.Resources._3anni_acceso;
+            else
+                radioButton1.Image = Bambini.Properties.Resources._3anni_button;
+        }
+
+        private void RadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+                radioButton2.Image = Bambini.Properties.Resources._4anni_acceso;
+            else
+                radioButton2.Image = Bambini.Properties.Resources._4anni_button;
+        }
+
+        private void RadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+                radioButton3.Image = Bambini.Properties.Resources._5anni_acceso;
+            else
+                radioButton3.Image = Bambini.Properties.Resources._5anni_button;
+        }
     }
 }

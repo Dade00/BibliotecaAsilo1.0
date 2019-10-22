@@ -66,14 +66,16 @@
             // 
             // aiuto_button
             // 
+            this.aiuto_button.AutoSize = true;
+            this.aiuto_button.BackgroundImage = global::Bambini.Properties.Resources.Aiuto;
+            this.aiuto_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.aiuto_button.FlatAppearance.BorderSize = 0;
             this.aiuto_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aiuto_button.Location = new System.Drawing.Point(1243, 11);
+            this.aiuto_button.Location = new System.Drawing.Point(1233, 11);
             this.aiuto_button.Margin = new System.Windows.Forms.Padding(2);
             this.aiuto_button.Name = "aiuto_button";
-            this.aiuto_button.Size = new System.Drawing.Size(110, 110);
+            this.aiuto_button.Size = new System.Drawing.Size(120, 129);
             this.aiuto_button.TabIndex = 7;
-            this.aiuto_button.Text = "AIUTO";
             this.aiuto_button.UseVisualStyleBackColor = true;
             this.aiuto_button.Click += new System.EventHandler(this.Aiuto_button_Click);
             // 
@@ -152,10 +154,10 @@
             this.sentimenti_button.FlatAppearance.BorderSize = 0;
             this.sentimenti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sentimenti_button.Image = global::Bambini.Properties.Resources.Sentimenti_button;
-            this.sentimenti_button.Location = new System.Drawing.Point(179, 104);
+            this.sentimenti_button.Location = new System.Drawing.Point(171, 104);
             this.sentimenti_button.Margin = new System.Windows.Forms.Padding(0);
             this.sentimenti_button.Name = "sentimenti_button";
-            this.sentimenti_button.Size = new System.Drawing.Size(450, 150);
+            this.sentimenti_button.Size = new System.Drawing.Size(458, 150);
             this.sentimenti_button.TabIndex = 0;
             this.sentimenti_button.UseVisualStyleBackColor = true;
             this.sentimenti_button.Click += new System.EventHandler(this.Sentimenti_button_Click);
