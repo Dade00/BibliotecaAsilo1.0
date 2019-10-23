@@ -12,17 +12,20 @@ namespace Bambini.Prendi
 {
     public partial class ConfermaPresa : Form
     {
+
+        Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
+        Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
+
         public ConfermaPresa()
         {
             InitializeComponent();
         }
 
-        Cursor CursorON = new Cursor(Application.StartupPath + @"\MickyMouseOFF.cur");
 
         private void ConfermaPresa_Load(object sender, EventArgs e)
         {
 
-            ok_button.Cursor = CursorON;
+            ok_button.Cursor = CursorOFF;
         }
 
         private void Ok_button_Click_1(object sender, EventArgs e)

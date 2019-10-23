@@ -191,6 +191,24 @@ namespace Bambini.Properties {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a C:\Users\Davide\source\repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseOFF.cur.
+        /// </summary>
+        internal static string Cursore1 {
+            get {
+                return ResourceManager.GetString("Cursore1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a C:\Users\Davide\source\repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseON.cur.
+        /// </summary>
+        internal static string Cursore2 {
+            get {
+                return ResourceManager.GetString("Cursore2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap giù {

@@ -96,11 +96,11 @@ namespace Classi
             return result;
         }
 
-        public static bool getBambino(ref Bambino bambinoRicercato)
+        /*public static bool getBambino(ref Bambino bambinoRicercato)
         {
             Bambino b = new Bambino();
 
             return b;
-        }
+        }*/
     }
 }

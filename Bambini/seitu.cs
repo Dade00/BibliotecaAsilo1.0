@@ -16,8 +16,10 @@ namespace Bambini // BASSANO SEI TU?
         string cognome { get; set; }
         int anni { get; set; }
 
+        Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
+        Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
 
-        public seitu(Classi.bambino)
+        public seitu(/*Classi.bambino*/)
         {
             InitializeComponent();
         }
@@ -37,7 +39,28 @@ namespace Bambini // BASSANO SEI TU?
 
         private void Seitu_Load(object sender, EventArgs e)
         {
+            avanti_button.Cursor = CursorOFF;
+            indietro_button.Cursor = CursorOFF;
+        }
 
+        private void Indietro_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorON;
+        }
+
+        private void Indietro_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorOFF;
+        }
+
+        private void Avanti_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            avanti_button.Cursor = CursorOFF;
+        }
+
+        private void Avanti_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            avanti_button.Cursor = CursorON;
         }
     }
 }

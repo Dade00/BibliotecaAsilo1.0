@@ -33,11 +33,11 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_textbox = new System.Windows.Forms.TextBox();
             this.cognome_textbox = new System.Windows.Forms.TextBox();
-            this.help_button = new System.Windows.Forms.Button();
             this.maskedGBox = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.help_button = new System.Windows.Forms.Button();
             this.avanti_button = new System.Windows.Forms.Button();
             this.return_button = new System.Windows.Forms.Button();
             this.maskedGBox.SuspendLayout();
@@ -54,6 +54,7 @@
             this.chisei_label.TabIndex = 3;
             this.chisei_label.Text = "CHI SEI?";
             this.chisei_label.UseCompatibleTextRendering = true;
+            this.chisei_label.Click += new System.EventHandler(this.Chisei_label_Click);
             // 
             // nome_label
             // 
@@ -95,19 +96,6 @@
             this.cognome_textbox.Size = new System.Drawing.Size(392, 36);
             this.cognome_textbox.TabIndex = 7;
             // 
-            // help_button
-            // 
-            this.help_button.FlatAppearance.BorderSize = 0;
-            this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.help_button.Image = global::Bambini.Properties.Resources.Aiuto;
-            this.help_button.Location = new System.Drawing.Point(1191, 7);
-            this.help_button.Margin = new System.Windows.Forms.Padding(2);
-            this.help_button.Name = "help_button";
-            this.help_button.Size = new System.Drawing.Size(164, 170);
-            this.help_button.TabIndex = 12;
-            this.help_button.UseVisualStyleBackColor = true;
-            this.help_button.Click += new System.EventHandler(this.Help_button_Click);
-            // 
             // maskedGBox
             // 
             this.maskedGBox.BackColor = System.Drawing.SystemColors.Control;
@@ -136,11 +124,13 @@
             this.radioButton3.Image = global::Bambini.Properties.Resources._5anni_button;
             this.radioButton3.Location = new System.Drawing.Point(914, 76);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(300, 100);
+            this.radioButton3.Size = new System.Drawing.Size(315, 100);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.RadioButton3_CheckedChanged);
+            this.radioButton3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RadioButton3_MouseDown);
+            this.radioButton3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.RadioButton3_MouseUp);
             // 
             // radioButton2
             // 
@@ -155,10 +145,13 @@
             this.radioButton2.Image = global::Bambini.Properties.Resources._4anni_button;
             this.radioButton2.Location = new System.Drawing.Point(481, 76);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(300, 100);
+            this.radioButton2.Size = new System.Drawing.Size(315, 100);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
+            this.radioButton2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RadioButton2_MouseDown);
+            this.radioButton2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.RadioButton2_MouseUp);
             // 
             // radioButton1
             // 
@@ -173,20 +166,37 @@
             this.radioButton1.Image = global::Bambini.Properties.Resources._3anni_button;
             this.radioButton1.Location = new System.Drawing.Point(48, 76);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(300, 100);
+            this.radioButton1.Size = new System.Drawing.Size(315, 100);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
+            this.radioButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RadioButton1_MouseDown);
+            this.radioButton1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.RadioButton1_MouseUp);
+            // 
+            // help_button
+            // 
+            this.help_button.BackgroundImage = global::Bambini.Properties.Resources.Aiuto;
+            this.help_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.help_button.FlatAppearance.BorderSize = 0;
+            this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.help_button.Location = new System.Drawing.Point(1236, 7);
+            this.help_button.Margin = new System.Windows.Forms.Padding(2);
+            this.help_button.Name = "help_button";
+            this.help_button.Size = new System.Drawing.Size(119, 110);
+            this.help_button.TabIndex = 12;
+            this.help_button.UseVisualStyleBackColor = true;
+            this.help_button.Click += new System.EventHandler(this.Help_button_Click);
             // 
             // avanti_button
             // 
             this.avanti_button.FlatAppearance.BorderSize = 0;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
-            this.avanti_button.Location = new System.Drawing.Point(780, 572);
+            this.avanti_button.Location = new System.Drawing.Point(780, 590);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";
-            this.avanti_button.Size = new System.Drawing.Size(380, 120);
+            this.avanti_button.Size = new System.Drawing.Size(380, 85);
             this.avanti_button.TabIndex = 11;
             this.avanti_button.UseVisualStyleBackColor = true;
             this.avanti_button.Click += new System.EventHandler(this.Avanti_button_Click);
@@ -196,10 +206,10 @@
             this.return_button.FlatAppearance.BorderSize = 0;
             this.return_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.return_button.Image = global::Bambini.Properties.Resources.Indietro_button;
-            this.return_button.Location = new System.Drawing.Point(219, 572);
+            this.return_button.Location = new System.Drawing.Point(218, 590);
             this.return_button.Margin = new System.Windows.Forms.Padding(2);
             this.return_button.Name = "return_button";
-            this.return_button.Size = new System.Drawing.Size(380, 120);
+            this.return_button.Size = new System.Drawing.Size(380, 85);
             this.return_button.TabIndex = 2;
             this.return_button.UseVisualStyleBackColor = true;
             this.return_button.Click += new System.EventHandler(this.Return_button_Click);
@@ -224,6 +234,7 @@
             this.Name = "Login_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi sei?";
+            this.Load += new System.EventHandler(this.Login_page_Load);
             this.maskedGBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

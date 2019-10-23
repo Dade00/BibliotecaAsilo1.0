@@ -92,9 +92,9 @@
             this.libro_label.Location = new System.Drawing.Point(303, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(761, 58);
+            this.libro_label.Size = new System.Drawing.Size(745, 58);
             this.libro_label.TabIndex = 5;
-            this.libro_label.Text = "CHE LIBRO VUOI RESTITUIRE?";
+            this.libro_label.Text = "CHE LIBRO VUOI PRENDERE?";
             // 
             // ok_button
             // 
