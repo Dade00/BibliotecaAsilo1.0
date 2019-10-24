@@ -22,7 +22,7 @@ namespace Bambini.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Bambini.Properties {
         ///   Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Bambini.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Bambini.Properties {
         ///   ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _3anni_acceso {
+        public static System.Drawing.Bitmap _3anni_acceso {
             get {
                 object obj = ResourceManager.GetObject("_3anni_acceso", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _3anni_button {
+        public static System.Drawing.Bitmap _3anni_button {
             get {
                 object obj = ResourceManager.GetObject("_3anni_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _4anni_acceso {
+        public static System.Drawing.Bitmap _4anni_acceso {
             get {
                 object obj = ResourceManager.GetObject("_4anni_acceso", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _4anni_button {
+        public static System.Drawing.Bitmap _4anni_button {
             get {
                 object obj = ResourceManager.GetObject("_4anni_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _5anni_acceso {
+        public static System.Drawing.Bitmap _5anni_acceso {
             get {
                 object obj = ResourceManager.GetObject("_5anni_acceso", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _5anni_button {
+        public static System.Drawing.Bitmap _5anni_button {
             get {
                 object obj = ResourceManager.GetObject("_5anni_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Aiuto {
+        public static System.Drawing.Bitmap Aiuto {
             get {
                 object obj = ResourceManager.GetObject("Aiuto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Animali_button {
+        public static System.Drawing.Bitmap Animali_button {
             get {
                 object obj = ResourceManager.GetObject("Animali_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Avanti_button {
+        public static System.Drawing.Bitmap Avanti_button {
             get {
                 object obj = ResourceManager.GetObject("Avanti_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cibo_button {
+        public static System.Drawing.Bitmap Cibo_button {
             get {
                 object obj = ResourceManager.GetObject("Cibo_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Conferma {
+        public static System.Drawing.Bitmap Conferma {
             get {
                 object obj = ResourceManager.GetObject("Conferma", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cursor {
+        public static System.Drawing.Bitmap cursor {
             get {
                 object obj = ResourceManager.GetObject("cursor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cursorclick {
+        public static System.Drawing.Bitmap cursorclick {
             get {
                 object obj = ResourceManager.GetObject("cursorclick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una stringa localizzata simile a C:\Users\Davide\source\repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseOFF.cur.
         /// </summary>
-        internal static string Cursore1 {
+        public static string Cursore1 {
             get {
                 return ResourceManager.GetString("Cursore1", resourceCulture);
             }
@@ -202,7 +202,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una stringa localizzata simile a C:\Users\Davide\source\repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseON.cur.
         /// </summary>
-        internal static string Cursore2 {
+        public static string Cursore2 {
             get {
                 return ResourceManager.GetString("Cursore2", resourceCulture);
             }
@@ -211,7 +211,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap giù {
+        public static System.Drawing.Bitmap giù {
             get {
                 object obj = ResourceManager.GetObject("giù", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -221,7 +221,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Indietro_button {
+        public static System.Drawing.Bitmap Indietro_button {
             get {
                 object obj = ResourceManager.GetObject("Indietro_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -231,7 +231,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ok {
+        public static System.Drawing.Bitmap Ok {
             get {
                 object obj = ResourceManager.GetObject("Ok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -241,7 +241,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Prendi {
+        public static System.Drawing.Bitmap Prendi {
             get {
                 object obj = ResourceManager.GetObject("Prendi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -251,7 +251,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Racconti_button {
+        public static System.Drawing.Bitmap Racconti_button {
             get {
                 object obj = ResourceManager.GetObject("Racconti_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -261,7 +261,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Restituisce {
+        public static System.Drawing.Bitmap Restituisce {
             get {
                 object obj = ResourceManager.GetObject("Restituisce", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -271,7 +271,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Scienze_button {
+        public static System.Drawing.Bitmap Scienze_button {
             get {
                 object obj = ResourceManager.GetObject("Scienze_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -281,7 +281,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sentimenti_button {
+        public static System.Drawing.Bitmap Sentimenti_button {
             get {
                 object obj = ResourceManager.GetObject("Sentimenti_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -291,7 +291,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Storie_button {
+        public static System.Drawing.Bitmap Storie_button {
             get {
                 object obj = ResourceManager.GetObject("Storie_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -301,7 +301,7 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Su {
+        public static System.Drawing.Bitmap Su {
             get {
                 object obj = ResourceManager.GetObject("Su", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
