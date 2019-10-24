@@ -84,5 +84,15 @@ namespace Bambini
         {
             Cursor = CursorOFF;
         }
+
+        private void Help_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            Cursor = CursorOFF;
+        }
+
+        private void Help_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            Cursor = CursorON;
+        }
     }
 }

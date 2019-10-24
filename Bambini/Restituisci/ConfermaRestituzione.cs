@@ -17,10 +17,28 @@ namespace Bambini.Restituiusci
             InitializeComponent();
         }
 
+        Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
+        Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
+
         private void Ok_button_Click(object sender, EventArgs e)
         {
             GUIServices.ToPrendiRestituisci = true;
             Close();
+        }
+
+        private void Ok_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            ok_button.Cursor = CursorOFF;
+        }
+
+        private void Ok_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            ok_button.Cursor = CursorON;
+        }
+
+        private void ConfermaRestituzione_Load(object sender, EventArgs e)
+        {
+            ok_button.Cursor = CursorOFF;
         }
     }
 }

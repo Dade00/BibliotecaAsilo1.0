@@ -37,7 +37,10 @@
             // 
             // ok_button
             // 
+            this.ok_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ok_button.FlatAppearance.BorderSize = 0;
+            this.ok_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.ok_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ok_button.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
             this.ok_button.Image = global::Bambini.Properties.Resources.Ok;
@@ -48,6 +51,8 @@
             this.ok_button.TabIndex = 5;
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.Ok_button_Click);
+            this.ok_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseDown);
+            this.ok_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseUp);
             // 
             // nomelibro_label
             // 
@@ -93,6 +98,7 @@
             this.Name = "ConfermaRestituzione";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConfermaRestituzione";
+            this.Load += new System.EventHandler(this.ConfermaRestituzione_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

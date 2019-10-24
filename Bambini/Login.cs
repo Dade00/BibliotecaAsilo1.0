@@ -103,6 +103,7 @@ namespace Bambini
             radioButton3.Cursor = CursorOFF;
             return_button.Cursor = CursorOFF;
             avanti_button.Cursor = CursorOFF;
+            help_button.Cursor = CursorOFF;
         }
 
         private void RadioButton2_MouseUp(object sender, MouseEventArgs e)
@@ -133,6 +134,36 @@ namespace Bambini
         private void RadioButton3_MouseDown(object sender, MouseEventArgs e)
         {
             radioButton3.Cursor = CursorON;
+        }
+
+        private void Help_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            help_button.Cursor = CursorOFF;
+        }
+
+        private void Help_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            help_button.Cursor = CursorON;
+        }
+
+        private void Avanti_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            avanti_button.Cursor = CursorOFF;
+        }
+
+        private void Avanti_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            avanti_button.Cursor = CursorON;
+        }
+
+        private void Return_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            return_button.Cursor = CursorOFF;
+        }
+
+        private void Return_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            return_button.Cursor = CursorON;
         }
     }
 }

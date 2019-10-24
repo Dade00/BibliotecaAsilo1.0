@@ -82,6 +82,8 @@
             this.ok_button.TabIndex = 11;
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.Ok_button_Click_1);
+            this.ok_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseDown);
+            this.ok_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseUp);
             // 
             // nomelibro_label
             // 

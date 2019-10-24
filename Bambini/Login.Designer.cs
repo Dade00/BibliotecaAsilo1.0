@@ -178,19 +178,27 @@
             // 
             this.help_button.BackgroundImage = global::Bambini.Properties.Resources.Aiuto;
             this.help_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.help_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.help_button.FlatAppearance.BorderSize = 0;
+            this.help_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.help_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.help_button.Location = new System.Drawing.Point(1236, 7);
+            this.help_button.Location = new System.Drawing.Point(1251, 7);
             this.help_button.Margin = new System.Windows.Forms.Padding(2);
             this.help_button.Name = "help_button";
-            this.help_button.Size = new System.Drawing.Size(119, 110);
+            this.help_button.Size = new System.Drawing.Size(104, 110);
             this.help_button.TabIndex = 12;
             this.help_button.UseVisualStyleBackColor = true;
             this.help_button.Click += new System.EventHandler(this.Help_button_Click);
+            this.help_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Help_button_MouseDown);
+            this.help_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Help_button_MouseUp);
             // 
             // avanti_button
             // 
+            this.avanti_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.avanti_button.FlatAppearance.BorderSize = 0;
+            this.avanti_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
             this.avanti_button.Location = new System.Drawing.Point(780, 590);
@@ -200,10 +208,15 @@
             this.avanti_button.TabIndex = 11;
             this.avanti_button.UseVisualStyleBackColor = true;
             this.avanti_button.Click += new System.EventHandler(this.Avanti_button_Click);
+            this.avanti_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseDown);
+            this.avanti_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseUp);
             // 
             // return_button
             // 
+            this.return_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.return_button.FlatAppearance.BorderSize = 0;
+            this.return_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.return_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.return_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.return_button.Image = global::Bambini.Properties.Resources.Indietro_button;
             this.return_button.Location = new System.Drawing.Point(218, 590);
@@ -213,6 +226,8 @@
             this.return_button.TabIndex = 2;
             this.return_button.UseVisualStyleBackColor = true;
             this.return_button.Click += new System.EventHandler(this.Return_button_Click);
+            this.return_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Return_button_MouseDown);
+            this.return_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Return_button_MouseUp);
             // 
             // Login_page
             // 

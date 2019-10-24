@@ -33,5 +33,15 @@ namespace Bambini.Prendi
             GUIServices.ToPrendiRestituisci = true;
             Close();
         }
+
+        private void Ok_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            ok_button.Cursor = CursorOFF;
+        }
+
+        private void Ok_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            ok_button.Cursor = CursorON;
+        }
     }
 }

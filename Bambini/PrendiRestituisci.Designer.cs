@@ -38,14 +38,19 @@
             // 
             this.help_button.BackgroundImage = global::Bambini.Properties.Resources.Aiuto;
             this.help_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.help_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.help_button.FlatAppearance.BorderSize = 0;
+            this.help_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.help_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.help_button.Location = new System.Drawing.Point(1149, 11);
+            this.help_button.Location = new System.Drawing.Point(1159, 11);
             this.help_button.Margin = new System.Windows.Forms.Padding(2);
             this.help_button.Name = "help_button";
-            this.help_button.Size = new System.Drawing.Size(133, 138);
+            this.help_button.Size = new System.Drawing.Size(123, 129);
             this.help_button.TabIndex = 3;
             this.help_button.UseVisualStyleBackColor = true;
+            this.help_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Help_button_MouseDown);
+            this.help_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Help_button_MouseUp);
             // 
             // indietro_button
             // 

@@ -17,6 +17,9 @@ namespace Bambini.Restituiusci
             InitializeComponent();
         }
 
+        Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
+        Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
+
         private void Ok_button_Click(object sender, EventArgs e)
         {
             Hide();
@@ -36,6 +39,55 @@ namespace Bambini.Restituiusci
             {
                 Close();
             }
+        }
+
+        private void Librochoose_Load(object sender, EventArgs e)
+        {
+            up_button.Cursor = CursorOFF;
+            down_button.Cursor = CursorOFF;
+            avanti_button.Cursor = CursorOFF;
+            indietro_button.Cursor = CursorOFF;
+        }
+
+
+        private void Up_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            up_button.Cursor = CursorOFF;
+        }
+
+        private void Up_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            up_button.Cursor = CursorON;
+        }
+
+        private void Down_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            down_button.Cursor = CursorOFF;
+        }
+
+        private void Down_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            down_button.Cursor = CursorON;
+        }
+
+        private void Indietro_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorON;
+        }
+
+        private void Indietro_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorOFF;
+        }
+
+        private void Avanti_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorOFF;
+        }
+
+        private void Avanti_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorON;
         }
     }
 }

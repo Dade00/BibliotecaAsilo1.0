@@ -33,7 +33,7 @@
             this.up_button = new System.Windows.Forms.Button();
             this.down_button = new System.Windows.Forms.Button();
             this.libro_label = new System.Windows.Forms.Label();
-            this.ok_button = new System.Windows.Forms.Button();
+            this.avanti_button = new System.Windows.Forms.Button();
             this.indietro_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,7 +61,10 @@
             // 
             // up_button
             // 
+            this.up_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.up_button.FlatAppearance.BorderSize = 0;
+            this.up_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.up_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.up_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.up_button.Image = global::Bambini.Properties.Resources.Su;
             this.up_button.Location = new System.Drawing.Point(1160, 114);
@@ -71,10 +74,15 @@
             this.up_button.TabIndex = 3;
             this.up_button.UseVisualStyleBackColor = true;
             this.up_button.Click += new System.EventHandler(this.Up_button_Click);
+            this.up_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Up_button_MouseDown);
+            this.up_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Up_button_MouseUp);
             // 
             // down_button
             // 
+            this.down_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.down_button.FlatAppearance.BorderSize = 0;
+            this.down_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.down_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.down_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.down_button.Image = global::Bambini.Properties.Resources.giù;
             this.down_button.Location = new System.Drawing.Point(1160, 328);
@@ -84,6 +92,8 @@
             this.down_button.TabIndex = 4;
             this.down_button.UseVisualStyleBackColor = true;
             this.down_button.Click += new System.EventHandler(this.Down_button_Click);
+            this.down_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Down_button_MouseDown);
+            this.down_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Down_button_MouseUp);
             // 
             // libro_label
             // 
@@ -96,31 +106,41 @@
             this.libro_label.TabIndex = 5;
             this.libro_label.Text = "CHE LIBRO VUOI PRENDERE?";
             // 
-            // ok_button
+            // avanti_button
             // 
-            this.ok_button.FlatAppearance.BorderSize = 0;
-            this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ok_button.Image = global::Bambini.Properties.Resources.Avanti_button;
-            this.ok_button.Location = new System.Drawing.Point(710, 605);
-            this.ok_button.Margin = new System.Windows.Forms.Padding(2);
-            this.ok_button.Name = "ok_button";
-            this.ok_button.Size = new System.Drawing.Size(380, 120);
-            this.ok_button.TabIndex = 6;
-            this.ok_button.UseVisualStyleBackColor = true;
-            this.ok_button.Click += new System.EventHandler(this.Ok_button_Click);
+            this.avanti_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.FlatAppearance.BorderSize = 0;
+            this.avanti_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
+            this.avanti_button.Location = new System.Drawing.Point(691, 628);
+            this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
+            this.avanti_button.Name = "avanti_button";
+            this.avanti_button.Size = new System.Drawing.Size(380, 75);
+            this.avanti_button.TabIndex = 6;
+            this.avanti_button.UseVisualStyleBackColor = true;
+            this.avanti_button.Click += new System.EventHandler(this.Ok_button_Click);
+            this.avanti_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseDown);
+            this.avanti_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseUp);
             // 
             // indietro_button
             // 
+            this.indietro_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatAppearance.BorderSize = 0;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
-            this.indietro_button.Location = new System.Drawing.Point(300, 605);
+            this.indietro_button.Location = new System.Drawing.Point(296, 628);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(380, 120);
+            this.indietro_button.Size = new System.Drawing.Size(380, 75);
             this.indietro_button.TabIndex = 7;
             this.indietro_button.UseVisualStyleBackColor = true;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
+            this.indietro_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseDown);
+            this.indietro_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseUp);
             // 
             // Librochoose
             // 
@@ -128,7 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.indietro_button);
-            this.Controls.Add(this.ok_button);
+            this.Controls.Add(this.avanti_button);
             this.Controls.Add(this.libro_label);
             this.Controls.Add(this.down_button);
             this.Controls.Add(this.up_button);
@@ -139,6 +159,7 @@
             this.Name = "Librochoose";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Librochoose";
+            this.Load += new System.EventHandler(this.Librochoose_Load);
             this.VisibleChanged += new System.EventHandler(this.Librochoose_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -154,7 +175,7 @@
         private System.Windows.Forms.Button up_button;
         private System.Windows.Forms.Button down_button;
         private System.Windows.Forms.Label libro_label;
-        private System.Windows.Forms.Button ok_button;
+        private System.Windows.Forms.Button avanti_button;
         private System.Windows.Forms.Button indietro_button;
     }
 }
