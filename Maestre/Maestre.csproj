@@ -143,6 +143,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Statistiche[WIP]\StatLibri\BambiniLettoUnLibro.resx">
       <DependentUpon>BambiniLettoUnLibro.cs</DependentUpon>
@@ -171,12 +172,47 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\N libri.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Classi\Classi.csproj">
       <Project>{06a5a80b-c5e4-46f7-9c8c-484962c21531}</Project>
       <Name>Classi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rimuovi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aggiungi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elimina Stat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modifica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N bambini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aggiungiunbambino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aggiungiunlibro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificaunlibro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificaunbambino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rimuoviunbambino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rimuoviunlibro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
