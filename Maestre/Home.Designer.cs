@@ -33,19 +33,19 @@
             this.Libri_page = new System.Windows.Forms.TabPage();
             this.EliminaLibro = new System.Windows.Forms.Button();
             this.ModificaLibro = new System.Windows.Forms.Button();
+            this.AggiungiLibro = new System.Windows.Forms.Button();
             this.Statistiche_page = new System.Windows.Forms.TabPage();
+            this.DelStat = new System.Windows.Forms.Button();
+            this.StatLibri = new System.Windows.Forms.Button();
+            this.StatBambini = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Bambini_page = new System.Windows.Forms.TabPage();
             this.EliminaBambino = new System.Windows.Forms.Button();
             this.ModificaBambino = new System.Windows.Forms.Button();
+            this.AggiungiBambino = new System.Windows.Forms.Button();
             this.Bambini_radio = new System.Windows.Forms.RadioButton();
             this.Libri_radio = new System.Windows.Forms.RadioButton();
             this.Statistiche_radio = new System.Windows.Forms.RadioButton();
-            this.AggiungiLibro = new System.Windows.Forms.Button();
-            this.DelStat = new System.Windows.Forms.Button();
-            this.StatLibri = new System.Windows.Forms.Button();
-            this.StatBambini = new System.Windows.Forms.Button();
-            this.AggiungiBambino = new System.Windows.Forms.Button();
             this.TabControl.SuspendLayout();
             this.Libri_page.SuspendLayout();
             this.Statistiche_page.SuspendLayout();
@@ -71,7 +71,7 @@
             this.TabControl.Controls.Add(this.Statistiche_page);
             this.TabControl.Controls.Add(this.tabPage1);
             this.TabControl.Controls.Add(this.Bambini_page);
-            this.TabControl.Location = new System.Drawing.Point(588, -30);
+            this.TabControl.Location = new System.Drawing.Point(588, 10);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
             this.TabControl.ShowToolTips = true;
@@ -110,6 +110,7 @@
             // ModificaLibro
             // 
             this.ModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Modificaunlibro;
+            this.ModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ModificaLibro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ModificaLibro.FlatAppearance.BorderSize = 0;
             this.ModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -122,6 +123,22 @@
             this.ModificaLibro.UseVisualStyleBackColor = true;
             this.ModificaLibro.Click += new System.EventHandler(this.ModificaLibro_Click);
             // 
+            // AggiungiLibro
+            // 
+            this.AggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aggiungiunlibro;
+            this.AggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AggiungiLibro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.AggiungiLibro.FlatAppearance.BorderSize = 0;
+            this.AggiungiLibro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.AggiungiLibro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AggiungiLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AggiungiLibro.Location = new System.Drawing.Point(151, 111);
+            this.AggiungiLibro.Name = "AggiungiLibro";
+            this.AggiungiLibro.Size = new System.Drawing.Size(380, 120);
+            this.AggiungiLibro.TabIndex = 6;
+            this.AggiungiLibro.UseVisualStyleBackColor = true;
+            this.AggiungiLibro.Click += new System.EventHandler(this.AggiungiLibro_Click);
+            // 
             // Statistiche_page
             // 
             this.Statistiche_page.BackColor = System.Drawing.SystemColors.Control;
@@ -133,6 +150,53 @@
             this.Statistiche_page.Name = "Statistiche_page";
             this.Statistiche_page.Size = new System.Drawing.Size(811, 796);
             this.Statistiche_page.TabIndex = 2;
+            // 
+            // DelStat
+            // 
+            this.DelStat.BackgroundImage = global::Maestre.Properties.Resources.Elimina_Stat;
+            this.DelStat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DelStat.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.DelStat.FlatAppearance.BorderSize = 0;
+            this.DelStat.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.DelStat.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.DelStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DelStat.Location = new System.Drawing.Point(151, 489);
+            this.DelStat.Name = "DelStat";
+            this.DelStat.Size = new System.Drawing.Size(380, 120);
+            this.DelStat.TabIndex = 6;
+            this.DelStat.UseVisualStyleBackColor = true;
+            // 
+            // StatLibri
+            // 
+            this.StatLibri.BackgroundImage = global::Maestre.Properties.Resources.N_bambini;
+            this.StatLibri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.StatLibri.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.StatLibri.FlatAppearance.BorderSize = 0;
+            this.StatLibri.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.StatLibri.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.StatLibri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatLibri.Location = new System.Drawing.Point(151, 300);
+            this.StatLibri.Name = "StatLibri";
+            this.StatLibri.Size = new System.Drawing.Size(380, 120);
+            this.StatLibri.TabIndex = 5;
+            this.StatLibri.UseVisualStyleBackColor = true;
+            this.StatLibri.Click += new System.EventHandler(this.StatLibri_Click_1);
+            // 
+            // StatBambini
+            // 
+            this.StatBambini.BackgroundImage = global::Maestre.Properties.Resources.N_libri;
+            this.StatBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.StatBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.StatBambini.FlatAppearance.BorderSize = 0;
+            this.StatBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.StatBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.StatBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatBambini.Location = new System.Drawing.Point(151, 111);
+            this.StatBambini.Name = "StatBambini";
+            this.StatBambini.Size = new System.Drawing.Size(380, 120);
+            this.StatBambini.TabIndex = 4;
+            this.StatBambini.UseVisualStyleBackColor = true;
+            this.StatBambini.Click += new System.EventHandler(this.StatBambini_Click_1);
             // 
             // tabPage1
             // 
@@ -188,6 +252,22 @@
             this.ModificaBambino.UseVisualStyleBackColor = true;
             this.ModificaBambino.Click += new System.EventHandler(this.ModificaBambino_Click);
             // 
+            // AggiungiBambino
+            // 
+            this.AggiungiBambino.BackgroundImage = global::Maestre.Properties.Resources.Aggiungiunbambino;
+            this.AggiungiBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AggiungiBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.AggiungiBambino.FlatAppearance.BorderSize = 0;
+            this.AggiungiBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.AggiungiBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AggiungiBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AggiungiBambino.Location = new System.Drawing.Point(145, 111);
+            this.AggiungiBambino.Name = "AggiungiBambino";
+            this.AggiungiBambino.Size = new System.Drawing.Size(380, 120);
+            this.AggiungiBambino.TabIndex = 3;
+            this.AggiungiBambino.UseVisualStyleBackColor = true;
+            this.AggiungiBambino.Click += new System.EventHandler(this.AggiungiBambino_Click);
+            // 
             // Bambini_radio
             // 
             this.Bambini_radio.Appearance = System.Windows.Forms.Appearance.Button;
@@ -226,85 +306,6 @@
             this.Statistiche_radio.Text = "STATISTICHE";
             this.Statistiche_radio.UseVisualStyleBackColor = true;
             this.Statistiche_radio.CheckedChanged += new System.EventHandler(this.Statistiche_radio_CheckedChanged);
-            // 
-            // AggiungiLibro
-            // 
-            this.AggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aggiungiunlibro;
-            this.AggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AggiungiLibro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.AggiungiLibro.FlatAppearance.BorderSize = 0;
-            this.AggiungiLibro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AggiungiLibro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.AggiungiLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AggiungiLibro.Location = new System.Drawing.Point(151, 111);
-            this.AggiungiLibro.Name = "AggiungiLibro";
-            this.AggiungiLibro.Size = new System.Drawing.Size(380, 120);
-            this.AggiungiLibro.TabIndex = 6;
-            this.AggiungiLibro.UseVisualStyleBackColor = true;
-            this.AggiungiLibro.Click += new System.EventHandler(this.AggiungiLibro_Click);
-            // 
-            // DelStat
-            // 
-            this.DelStat.BackgroundImage = global::Maestre.Properties.Resources.Elimina_Stat;
-            this.DelStat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DelStat.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.DelStat.FlatAppearance.BorderSize = 0;
-            this.DelStat.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.DelStat.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.DelStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DelStat.Location = new System.Drawing.Point(151, 489);
-            this.DelStat.Name = "DelStat";
-            this.DelStat.Size = new System.Drawing.Size(380, 120);
-            this.DelStat.TabIndex = 6;
-            this.DelStat.UseVisualStyleBackColor = true;
-            // 
-            // StatLibri
-            // 
-            this.StatLibri.BackgroundImage = global::Maestre.Properties.Resources.N_bambini;
-            this.StatLibri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.StatLibri.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.StatLibri.FlatAppearance.BorderSize = 0;
-            this.StatLibri.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.StatLibri.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.StatLibri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatLibri.Location = new System.Drawing.Point(151, 300);
-            this.StatLibri.Name = "StatLibri";
-            this.StatLibri.Size = new System.Drawing.Size(380, 120);
-            this.StatLibri.TabIndex = 5;
-            this.StatLibri.UseVisualStyleBackColor = true;
-            this.StatLibri.Click += new System.EventHandler(this.StatLibri_Click_1);
-            // 
-            // StatBambini
-            // 
-            this.StatBambini.BackgroundImage = global::Maestre.Properties.Resources.N_libri;
-            this.StatBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.StatBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.StatBambini.FlatAppearance.BorderSize = 0;
-            this.StatBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.StatBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.StatBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatBambini.Location = new System.Drawing.Point(151, 111);
-            this.StatBambini.Name = "StatBambini";
-            this.StatBambini.Size = new System.Drawing.Size(380, 120);
-            this.StatBambini.TabIndex = 4;
-            this.StatBambini.UseVisualStyleBackColor = true;
-            this.StatBambini.Click += new System.EventHandler(this.StatBambini_Click_1);
-            // 
-            // AggiungiBambino
-            // 
-            this.AggiungiBambino.BackgroundImage = global::Maestre.Properties.Resources.Aggiungiunbambino;
-            this.AggiungiBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AggiungiBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.AggiungiBambino.FlatAppearance.BorderSize = 0;
-            this.AggiungiBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AggiungiBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.AggiungiBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AggiungiBambino.Location = new System.Drawing.Point(145, 111);
-            this.AggiungiBambino.Name = "AggiungiBambino";
-            this.AggiungiBambino.Size = new System.Drawing.Size(380, 120);
-            this.AggiungiBambino.TabIndex = 3;
-            this.AggiungiBambino.UseVisualStyleBackColor = true;
-            this.AggiungiBambino.Click += new System.EventHandler(this.AggiungiBambino_Click);
             // 
             // Home
             // 
