@@ -52,7 +52,7 @@
             this.aiuto_button.Location = new System.Drawing.Point(1235, 11);
             this.aiuto_button.Margin = new System.Windows.Forms.Padding(2);
             this.aiuto_button.Name = "aiuto_button";
-            this.aiuto_button.Size = new System.Drawing.Size(120, 129);
+            this.aiuto_button.Size = new System.Drawing.Size(120, 120);
             this.aiuto_button.TabIndex = 16;
             this.aiuto_button.UseVisualStyleBackColor = true;
             this.aiuto_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Aiuto_button_MouseDown);

@@ -62,36 +62,43 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Location = new System.Drawing.Point(564, 45);
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Location = new System.Drawing.Point(50, 28);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(239, 13);
+            this.libro_label.Size = new System.Drawing.Size(1170, 58);
             this.libro_label.TabIndex = 39;
-            this.libro_label.Text = "Cerca Il Nome Del Bambino Che Vuoi Cancellare ";
+            this.libro_label.Text = "Cerca il nome del bambino che vuoi cancellare ";
             // 
             // AnnullaEliminaBambini
             // 
+            this.AnnullaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
+            this.AnnullaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AnnullaEliminaBambini.FlatAppearance.BorderSize = 0;
+            this.AnnullaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnnullaEliminaBambini.Location = new System.Drawing.Point(227, 536);
             this.AnnullaEliminaBambini.Name = "AnnullaEliminaBambini";
             this.AnnullaEliminaBambini.Size = new System.Drawing.Size(380, 120);
             this.AnnullaEliminaBambini.TabIndex = 79;
-            this.AnnullaEliminaBambini.Text = "ANNULLA";
             this.AnnullaEliminaBambini.UseVisualStyleBackColor = true;
             this.AnnullaEliminaBambini.Click += new System.EventHandler(this.AnnullaEliminaBambini_Click);
             // 
             // ConfermaEliminaBambini
             // 
+            this.ConfermaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
+            this.ConfermaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ConfermaEliminaBambini.FlatAppearance.BorderSize = 0;
+            this.ConfermaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfermaEliminaBambini.Location = new System.Drawing.Point(760, 536);
             this.ConfermaEliminaBambini.Name = "ConfermaEliminaBambini";
             this.ConfermaEliminaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaEliminaBambini.TabIndex = 78;
-            this.ConfermaEliminaBambini.Text = "CONFERMA";
             this.ConfermaEliminaBambini.UseVisualStyleBackColor = true;
             this.ConfermaEliminaBambini.Click += new System.EventHandler(this.ConfermaEliminaBambini_Click);
             // 
             // NomeDelBambini
             // 
-            this.NomeDelBambini.Location = new System.Drawing.Point(617, 141);
+            this.NomeDelBambini.Location = new System.Drawing.Point(723, 143);
             this.NomeDelBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeDelBambini.Name = "NomeDelBambini";
             this.NomeDelBambini.Size = new System.Drawing.Size(237, 20);
@@ -100,17 +107,18 @@
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Location = new System.Drawing.Point(512, 144);
+            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_label.Location = new System.Drawing.Point(552, 141);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(78, 13);
+            this.nome_label.Size = new System.Drawing.Size(160, 25);
             this.nome_label.TabIndex = 76;
             this.nome_label.Text = "CERCA NOME";
             // 
             // Bambini
             // 
             this.Bambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Bambini.Location = new System.Drawing.Point(450, 280);
+            this.Bambini.Location = new System.Drawing.Point(508, 281);
             this.Bambini.Margin = new System.Windows.Forms.Padding(2);
             this.Bambini.Name = "Bambini";
             this.Bambini.RowHeadersWidth = 62;
@@ -120,7 +128,7 @@
             // 
             // CognomeDelBambini
             // 
-            this.CognomeDelBambini.Location = new System.Drawing.Point(617, 180);
+            this.CognomeDelBambini.Location = new System.Drawing.Point(723, 185);
             this.CognomeDelBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeDelBambini.Name = "CognomeDelBambini";
             this.CognomeDelBambini.Size = new System.Drawing.Size(237, 20);
@@ -129,16 +137,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(512, 180);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(504, 182);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(209, 25);
             this.label1.TabIndex = 80;
             this.label1.Text = "CERCA COGNOME";
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(79, 130);
+            this.Bambini_pic.Location = new System.Drawing.Point(137, 131);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.TabIndex = 129;
@@ -146,7 +155,7 @@
             // 
             // cerca_button
             // 
-            this.cerca_button.Location = new System.Drawing.Point(875, 144);
+            this.cerca_button.Location = new System.Drawing.Point(978, 147);
             this.cerca_button.Name = "cerca_button";
             this.cerca_button.Size = new System.Drawing.Size(220, 50);
             this.cerca_button.TabIndex = 130;

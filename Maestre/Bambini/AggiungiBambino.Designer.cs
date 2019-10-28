@@ -58,7 +58,7 @@
             this.AiutoAggiungiBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.AiutoAggiungiBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.AiutoAggiungiBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AiutoAggiungiBambini.Location = new System.Drawing.Point(1234, 11);
+            this.AiutoAggiungiBambini.Location = new System.Drawing.Point(1235, 11);
             this.AiutoAggiungiBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoAggiungiBambini.Name = "AiutoAggiungiBambini";
             this.AiutoAggiungiBambini.Size = new System.Drawing.Size(120, 120);
@@ -74,10 +74,10 @@
             this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CercaFotoBambini.Location = new System.Drawing.Point(498, 188);
+            this.CercaFotoBambini.Location = new System.Drawing.Point(633, 205);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
-            this.CercaFotoBambini.Size = new System.Drawing.Size(129, 45);
+            this.CercaFotoBambini.Size = new System.Drawing.Size(130, 45);
             this.CercaFotoBambini.TabIndex = 124;
             this.CercaFotoBambini.UseVisualStyleBackColor = true;
             this.CercaFotoBambini.Click += new System.EventHandler(this.CercaFotoBambini_Click);
@@ -85,18 +85,19 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(427, 204);
+            this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(562, 212);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.Size = new System.Drawing.Size(67, 25);
             this.label3.TabIndex = 122;
             this.label3.Text = "FOTO";
             // 
             // TabellaBambini
             // 
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(438, 267);
+            this.TabellaBambini.Location = new System.Drawing.Point(507, 278);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.RowHeadersWidth = 62;
@@ -107,17 +108,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(762, 160);
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(900, 167);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.Size = new System.Drawing.Size(215, 25);
             this.label2.TabIndex = 119;
             this.label2.Text = "ANNO DI NASCITA";
             // 
             // ClasseAddBambini
             // 
-            this.ClasseAddBambini.Location = new System.Drawing.Point(887, 115);
+            this.ClasseAddBambini.Location = new System.Drawing.Point(1006, 134);
             this.ClasseAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseAddBambini.Name = "ClasseAddBambini";
             this.ClasseAddBambini.Size = new System.Drawing.Size(54, 20);
@@ -126,26 +128,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(812, 118);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(898, 131);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 117;
             this.label1.Text = "CLASSE";
             // 
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Location = new System.Drawing.Point(621, 45);
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Location = new System.Drawing.Point(468, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(109, 13);
+            this.libro_label.Size = new System.Drawing.Size(543, 58);
             this.libro_label.TabIndex = 116;
-            this.libro_label.Text = "Aggiungi Un Bambino";
+            this.libro_label.Text = "Aggiungi un bambino";
+            this.libro_label.Click += new System.EventHandler(this.libro_label_Click);
             // 
             // CognomeAddBambini
             // 
-            this.CognomeAddBambini.Location = new System.Drawing.Point(498, 156);
+            this.CognomeAddBambini.Location = new System.Drawing.Point(633, 169);
             this.CognomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeAddBambini.Name = "CognomeAddBambini";
             this.CognomeAddBambini.Size = new System.Drawing.Size(237, 20);
@@ -153,7 +158,7 @@
             // 
             // NomeAddBambini
             // 
-            this.NomeAddBambini.Location = new System.Drawing.Point(498, 114);
+            this.NomeAddBambini.Location = new System.Drawing.Point(633, 128);
             this.NomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeAddBambini.Name = "NomeAddBambini";
             this.NomeAddBambini.Size = new System.Drawing.Size(237, 20);
@@ -162,20 +167,22 @@
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
-            this.cognome_label.Location = new System.Drawing.Point(423, 159);
+            this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.cognome_label.Location = new System.Drawing.Point(504, 167);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
-            this.cognome_label.Size = new System.Drawing.Size(62, 13);
+            this.cognome_label.Size = new System.Drawing.Size(125, 25);
             this.cognome_label.TabIndex = 113;
             this.cognome_label.Text = "COGNOME";
             // 
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Location = new System.Drawing.Point(423, 117);
+            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.nome_label.Location = new System.Drawing.Point(550, 126);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(39, 13);
+            this.nome_label.Size = new System.Drawing.Size(76, 25);
             this.nome_label.TabIndex = 112;
             this.nome_label.Text = "NOME";
             // 
@@ -185,14 +192,14 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(887, 160);
+            this.dateTimePicker1.Location = new System.Drawing.Point(910, 197);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(190, 20);
             this.dateTimePicker1.TabIndex = 129;
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(41, 117);
+            this.Bambini_pic.Location = new System.Drawing.Point(131, 128);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
