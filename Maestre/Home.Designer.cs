@@ -54,14 +54,18 @@
             // 
             // indietro_button
             // 
+            this.indietro_button.BackgroundImage = global::Maestre.Properties.Resources.Indietro;
+            this.indietro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.indietro_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatAppearance.BorderSize = 0;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Location = new System.Drawing.Point(11, 637);
+            this.indietro_button.Location = new System.Drawing.Point(11, 666);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(380, 120);
+            this.indietro_button.Size = new System.Drawing.Size(256, 91);
             this.indietro_button.TabIndex = 3;
-            this.indietro_button.Text = "INDIETRO";
             this.indietro_button.UseVisualStyleBackColor = true;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 

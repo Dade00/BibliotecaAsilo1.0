@@ -220,6 +220,7 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\aiuto1.png" />
     <None Include="Resources\Storie.png" />
     <None Include="Resources\Sentimenti.png" />
     <None Include="Resources\Scienze.png" />

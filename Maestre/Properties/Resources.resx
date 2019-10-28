@@ -127,8 +127,23 @@
   <data name="Aggiungiunlibro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aggiungiunlibro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Aiuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aiuto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Annulla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Annulla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Conferma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conferma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Elimina_Stat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Elimina Stat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Indietro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Indietro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Inserisci_foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inserisci foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Modifica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Modifica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

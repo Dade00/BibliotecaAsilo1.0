@@ -45,12 +45,18 @@
             // 
             // AiutoCancellaBambino
             // 
-            this.AiutoCancellaBambino.Location = new System.Drawing.Point(1125, 11);
+            this.AiutoCancellaBambino.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
+            this.AiutoCancellaBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AiutoCancellaBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.AiutoCancellaBambino.FlatAppearance.BorderSize = 0;
+            this.AiutoCancellaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoCancellaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoCancellaBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AiutoCancellaBambino.Location = new System.Drawing.Point(1235, 11);
             this.AiutoCancellaBambino.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoCancellaBambino.Name = "AiutoCancellaBambino";
-            this.AiutoCancellaBambino.Size = new System.Drawing.Size(230, 80);
+            this.AiutoCancellaBambino.Size = new System.Drawing.Size(120, 120);
             this.AiutoCancellaBambino.TabIndex = 48;
-            this.AiutoCancellaBambino.Text = "AIUTO";
             this.AiutoCancellaBambino.UseVisualStyleBackColor = true;
             // 
             // libro_label
@@ -144,7 +150,7 @@
             this.cerca_button.Name = "cerca_button";
             this.cerca_button.Size = new System.Drawing.Size(220, 50);
             this.cerca_button.TabIndex = 130;
-            this.cerca_button.Text = "button1";
+            this.cerca_button.Text = "Cerca";
             this.cerca_button.UseVisualStyleBackColor = true;
             // 
             // CancellaBambino
@@ -167,6 +173,7 @@
             this.Name = "CancellaBambino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancellaBambino";
+            this.Load += new System.EventHandler(this.CancellaBambino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Bambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
             this.ResumeLayout(false);

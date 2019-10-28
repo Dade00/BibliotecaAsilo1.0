@@ -214,5 +214,20 @@
   <ItemGroup>
     <None Include="Resources\Rimuoviunlibro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Indietro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inserisci foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Annulla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conferma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aiuto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AnnullaModificaBambini = new System.Windows.Forms.Button();
-            this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             this.AiutoAggiungiBambini = new System.Windows.Forms.Button();
             this.CercaFotoBambini = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,57 +40,52 @@
             this.NomeAddBambini = new System.Windows.Forms.TextBox();
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
-            this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Bambini_pic = new System.Windows.Forms.PictureBox();
+            this.AnnullaModificaBambini = new System.Windows.Forms.Button();
+            this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
             // 
-            // AnnullaModificaBambini
-            // 
-            this.AnnullaModificaBambini.Location = new System.Drawing.Point(222, 529);
-            this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
-            this.AnnullaModificaBambini.Size = new System.Drawing.Size(380, 120);
-            this.AnnullaModificaBambini.TabIndex = 127;
-            this.AnnullaModificaBambini.Text = "ANNULLA";
-            this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
-            this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
-            // 
-            // ConfermaModificaBambini
-            // 
-            this.ConfermaModificaBambini.Location = new System.Drawing.Point(748, 529);
-            this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
-            this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
-            this.ConfermaModificaBambini.TabIndex = 126;
-            this.ConfermaModificaBambini.Text = "CONFERMA";
-            this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
-            // 
             // AiutoAggiungiBambini
             // 
-            this.AiutoAggiungiBambini.Location = new System.Drawing.Point(1125, 11);
+            this.AiutoAggiungiBambini.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
+            this.AiutoAggiungiBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AiutoAggiungiBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.AiutoAggiungiBambini.FlatAppearance.BorderSize = 0;
+            this.AiutoAggiungiBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoAggiungiBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoAggiungiBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AiutoAggiungiBambini.Location = new System.Drawing.Point(1234, 11);
             this.AiutoAggiungiBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoAggiungiBambini.Name = "AiutoAggiungiBambini";
-            this.AiutoAggiungiBambini.Size = new System.Drawing.Size(230, 80);
+            this.AiutoAggiungiBambini.Size = new System.Drawing.Size(120, 120);
             this.AiutoAggiungiBambini.TabIndex = 125;
-            this.AiutoAggiungiBambini.Text = "AIUTO";
             this.AiutoAggiungiBambini.UseVisualStyleBackColor = true;
             // 
             // CercaFotoBambini
             // 
-            this.CercaFotoBambini.Location = new System.Drawing.Point(498, 192);
+            this.CercaFotoBambini.BackgroundImage = global::Maestre.Properties.Resources.Inserisci_foto;
+            this.CercaFotoBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CercaFotoBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.CercaFotoBambini.FlatAppearance.BorderSize = 0;
+            this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CercaFotoBambini.Location = new System.Drawing.Point(498, 188);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
-            this.CercaFotoBambini.Size = new System.Drawing.Size(124, 21);
+            this.CercaFotoBambini.Size = new System.Drawing.Size(129, 45);
             this.CercaFotoBambini.TabIndex = 124;
-            this.CercaFotoBambini.Text = "CERCA FOTO";
             this.CercaFotoBambini.UseVisualStyleBackColor = true;
             this.CercaFotoBambini.Click += new System.EventHandler(this.CercaFotoBambini_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(426, 196);
+            this.label3.Location = new System.Drawing.Point(427, 204);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -186,15 +179,6 @@
             this.nome_label.TabIndex = 112;
             this.nome_label.Text = "NOME";
             // 
-            // Bambini_pic
-            // 
-            this.Bambini_pic.Location = new System.Drawing.Point(41, 117);
-            this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
-            this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Bambini_pic.TabIndex = 128;
-            this.Bambini_pic.TabStop = false;
-            // 
             // ofdFoto
             // 
             this.ofdFoto.Filter = "Foto del bambino (*.BMP;*.GIF;*.JPG;*.PNG)|*.BMP;*.GIF;*.JPG;*.PNG";
@@ -205,6 +189,45 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 129;
+            // 
+            // Bambini_pic
+            // 
+            this.Bambini_pic.Location = new System.Drawing.Point(41, 117);
+            this.Bambini_pic.Name = "Bambini_pic";
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
+            this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Bambini_pic.TabIndex = 128;
+            this.Bambini_pic.TabStop = false;
+            // 
+            // AnnullaModificaBambini
+            // 
+            this.AnnullaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
+            this.AnnullaModificaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AnnullaModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.AnnullaModificaBambini.FlatAppearance.BorderSize = 0;
+            this.AnnullaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.AnnullaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AnnullaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AnnullaModificaBambini.Location = new System.Drawing.Point(219, 529);
+            this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
+            this.AnnullaModificaBambini.Size = new System.Drawing.Size(383, 120);
+            this.AnnullaModificaBambini.TabIndex = 127;
+            this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
+            this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
+            // 
+            // ConfermaModificaBambini
+            // 
+            this.ConfermaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
+            this.ConfermaModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.ConfermaModificaBambini.FlatAppearance.BorderSize = 0;
+            this.ConfermaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.ConfermaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.ConfermaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfermaModificaBambini.Location = new System.Drawing.Point(748, 529);
+            this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
+            this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
+            this.ConfermaModificaBambini.TabIndex = 126;
+            this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
             // 
             // AggiungiBambino
             // 

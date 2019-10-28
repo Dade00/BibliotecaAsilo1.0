@@ -26,5 +26,10 @@ namespace Maestre.Bambini
         {
 
         }
+
+        private void CancellaBambino_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
