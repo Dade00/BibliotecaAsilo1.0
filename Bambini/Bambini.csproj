@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AiutoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AiutoLogin.Designer.cs">
+      <DependentUpon>AiutoLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUIServices.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -103,6 +109,9 @@
     <Compile Include="seitu.Designer.cs">
       <DependentUpon>seitu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AiutoLogin.resx">
+      <DependentUpon>AiutoLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +229,13 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Bambini.png" />
+    <None Include="Resources\Statistiche-ON.png" />
+    <None Include="Resources\Statistiche.png" />
+    <None Include="Resources\Libri-ON.png" />
+    <None Include="Resources\Libri.png" />
+    <None Include="Resources\Bambini_ON.png" />
+    <None Include="Resources\Bambini-ON.png" />
     <None Include="Resources\aiuto1.png" />
     <None Include="Resources\Storie.png" />
     <None Include="Resources\Sentimenti.png" />

@@ -230,16 +230,25 @@
     <None Include="Resources\aiuto.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Libri-ON.png" />
+    <None Include="Resources\Bambini-ON.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bambini.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Bambini-ON.png" />
+    <None Include="Resources\Bambini_ON.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Libri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libri-ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistiche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistiche-ON.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

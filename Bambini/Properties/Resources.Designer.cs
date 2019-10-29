@@ -191,7 +191,7 @@ namespace Bambini.Properties {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a C:\Users\Davide\source\repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseOFF.cur.
+        ///   Cerca una stringa localizzata simile a C:\Users\bussolinomatteo\Source\Repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseOFF.cur.
         /// </summary>
         public static string Cursore1 {
             get {
@@ -200,7 +200,7 @@ namespace Bambini.Properties {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a C:\Users\Davide\source\repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseON.cur.
+        ///   Cerca una stringa localizzata simile a C:\Users\bussolinomatteo\Source\Repos\Dade00\BibliotecaAsilo1.0\Bambini\MickyMouseON.cur.
         /// </summary>
         public static string Cursore2 {
             get {
