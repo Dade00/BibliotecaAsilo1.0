@@ -133,6 +133,16 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bambini_ON1 {
+            get {
+                object obj = ResourceManager.GetObject("Bambini_ON1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Conferma {
             get {
                 object obj = ResourceManager.GetObject("Conferma", resourceCulture);
@@ -266,6 +276,26 @@ namespace Maestre.Properties {
         internal static System.Drawing.Bitmap Rimuoviunlibro {
             get {
                 object obj = ResourceManager.GetObject("Rimuoviunlibro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Statistiche {
+            get {
+                object obj = ResourceManager.GetObject("Statistiche", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Statistiche_ON {
+            get {
+                object obj = ResourceManager.GetObject("Statistiche_ON", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
