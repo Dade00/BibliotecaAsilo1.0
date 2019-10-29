@@ -48,11 +48,11 @@
             // data_label
             // 
             this.data_label.AutoSize = true;
-            this.data_label.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
+            this.data_label.Font = new System.Drawing.Font("GROBOLD", 26F, System.Drawing.FontStyle.Bold);
             this.data_label.Location = new System.Drawing.Point(620, 402);
             this.data_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.data_label.Name = "data_label";
-            this.data_label.Size = new System.Drawing.Size(314, 49);
+            this.data_label.Size = new System.Drawing.Size(277, 43);
             this.data_label.TabIndex = 13;
             this.data_label.Text = "DD/MM/YYYY";
             this.data_label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -60,11 +60,11 @@
             // datastatic_label
             // 
             this.datastatic_label.AutoSize = true;
-            this.datastatic_label.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
+            this.datastatic_label.Font = new System.Drawing.Font("GROBOLD", 26F, System.Drawing.FontStyle.Bold);
             this.datastatic_label.Location = new System.Drawing.Point(620, 329);
             this.datastatic_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.datastatic_label.Name = "datastatic_label";
-            this.datastatic_label.Size = new System.Drawing.Size(204, 49);
+            this.datastatic_label.Size = new System.Drawing.Size(180, 43);
             this.datastatic_label.TabIndex = 12;
             this.datastatic_label.Text = "IN DATA";
             this.datastatic_label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -82,26 +82,28 @@
             this.ok_button.TabIndex = 11;
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.Ok_button_Click_1);
+            this.ok_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseDown);
+            this.ok_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseUp);
             // 
             // nomelibro_label
             // 
             this.nomelibro_label.AutoSize = true;
-            this.nomelibro_label.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
+            this.nomelibro_label.Font = new System.Drawing.Font("GROBOLD", 26F, System.Drawing.FontStyle.Bold);
             this.nomelibro_label.Location = new System.Drawing.Point(620, 256);
             this.nomelibro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nomelibro_label.Name = "nomelibro_label";
-            this.nomelibro_label.Size = new System.Drawing.Size(394, 49);
+            this.nomelibro_label.Size = new System.Drawing.Size(347, 43);
             this.nomelibro_label.TabIndex = 10;
             this.nomelibro_label.Text = "NOME LIBRO TEST";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GROBOLD", 40F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(148, 62);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 36.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(149, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1070, 65);
+            this.label1.Size = new System.Drawing.Size(976, 59);
             this.label1.TabIndex = 9;
             this.label1.Text = "IL LIBRO CHE HAI PRESO SI INTITOLA";
             // 

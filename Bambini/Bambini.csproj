@@ -119,7 +119,7 @@
       <DependentUpon>PrendiRestituisci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -220,11 +220,17 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\aiuto1.png" />
+    <None Include="Resources\Storie.png" />
+    <None Include="Resources\Sentimenti.png" />
+    <None Include="Resources\Scienze.png" />
+    <None Include="Resources\Racconti.png" />
+    <None Include="Resources\Cibo.png" />
     <None Include="Resources\3anni_acceso.png" />
     <None Include="Resources\4anni_acceso.png" />
     <None Include="Resources\5anni_acceso.png" />
-    <Content Include="MickyMouseON.cur" />
     <Content Include="MickyMouseOFF.cur" />
+    <Content Include="MickyMouseON.cur" />
     <Content Include="Resources\Aiuto.png" />
     <None Include="Resources\cursorclick.png" />
     <None Include="Resources\cursor.png" />

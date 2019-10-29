@@ -37,5 +37,56 @@ namespace BibliotecaAsilo
         {
             Close();
         }
+
+        Cursor CursorOFF = new Cursor(Bambini.Properties.Resources.Cursore1);
+        Cursor CursorON = new Cursor(Bambini.Properties.Resources.Cursore2);
+
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+            maestre_button.Cursor = CursorOFF;
+            bambini_button.Cursor = CursorOFF;
+            Esci_button.Cursor = CursorOFF;
+            crediti_button.Cursor = CursorOFF;
+        }
+
+        private void Bambini_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            bambini_button.Cursor = CursorOFF;
+        }
+
+        private void Bambini_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            bambini_button.Cursor = CursorON;
+        }
+
+        private void Maestre_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            maestre_button.Cursor = CursorON;
+        }
+
+        private void Maestre_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            maestre_button.Cursor = CursorOFF;
+        }
+
+        private void Esci_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            Esci_button.Cursor = CursorON;
+        }
+
+        private void Esci_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            Esci_button.Cursor = CursorON;
+        }
+
+        private void Crediti_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            crediti_button.Cursor = CursorOFF;
+        }
+
+        private void Crediti_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            crediti_button.Cursor = CursorON;
+        }
     }
 }

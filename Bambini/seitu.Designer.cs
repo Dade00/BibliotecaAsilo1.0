@@ -42,80 +42,90 @@
             // seitu_label
             // 
             this.seitu_label.AutoSize = true;
-            this.seitu_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold);
-            this.seitu_label.Location = new System.Drawing.Point(578, 9);
+            this.seitu_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seitu_label.Location = new System.Drawing.Point(541, 9);
             this.seitu_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.seitu_label.Name = "seitu_label";
-            this.seitu_label.Size = new System.Drawing.Size(212, 55);
+            this.seitu_label.Size = new System.Drawing.Size(211, 58);
             this.seitu_label.TabIndex = 0;
             this.seitu_label.Text = "SEI TU?";
             // 
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(491, 123);
+            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_label.Location = new System.Drawing.Point(482, 131);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(115, 33);
+            this.nome_label.Size = new System.Drawing.Size(107, 33);
             this.nome_label.TabIndex = 2;
             this.nome_label.Text = "NOME:";
             // 
             // Cognome_label
             // 
             this.Cognome_label.AutoSize = true;
-            this.Cognome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
-            this.Cognome_label.Location = new System.Drawing.Point(420, 172);
+            this.Cognome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cognome_label.Location = new System.Drawing.Point(416, 226);
             this.Cognome_label.Name = "Cognome_label";
-            this.Cognome_label.Size = new System.Drawing.Size(185, 33);
+            this.Cognome_label.Size = new System.Drawing.Size(173, 33);
             this.Cognome_label.TabIndex = 5;
             this.Cognome_label.Text = "COGNOME:";
             // 
             // lblNome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
-            this.lblNome.Location = new System.Drawing.Point(608, 123);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(93, 33);
-            this.lblNome.TabIndex = 6;
-            this.lblNome.Text = "TEST";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(594, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 33);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "TEST";
             // 
             // lblCognome
             // 
-            this.lblCognome.AutoSize = true;
-            this.lblCognome.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold);
-            this.lblCognome.Location = new System.Drawing.Point(609, 172);
-            this.lblCognome.Name = "lblCognome";
-            this.lblCognome.Size = new System.Drawing.Size(93, 33);
-            this.lblCognome.TabIndex = 7;
-            this.lblCognome.Text = "TEST";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(595, 226);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 33);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "TEST";
             // 
             // avanti_button
             // 
+            this.avanti_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.avanti_button.FlatAppearance.BorderSize = 0;
+            this.avanti_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
-            this.avanti_button.Location = new System.Drawing.Point(712, 577);
+            this.avanti_button.Location = new System.Drawing.Point(711, 597);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";
-            this.avanti_button.Size = new System.Drawing.Size(380, 120);
+            this.avanti_button.Size = new System.Drawing.Size(380, 80);
             this.avanti_button.TabIndex = 4;
             this.avanti_button.UseVisualStyleBackColor = true;
             this.avanti_button.Click += new System.EventHandler(this.Avanti_button_Click);
+            this.avanti_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseDown);
+            this.avanti_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseUp);
             // 
             // indietro_button
             // 
+            this.indietro_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatAppearance.BorderSize = 0;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
-            this.indietro_button.Location = new System.Drawing.Point(225, 577);
+            this.indietro_button.Location = new System.Drawing.Point(225, 597);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
-            this.indietro_button.Size = new System.Drawing.Size(380, 120);
+            this.indietro_button.Size = new System.Drawing.Size(380, 80);
             this.indietro_button.TabIndex = 3;
             this.indietro_button.UseVisualStyleBackColor = true;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
+            this.indietro_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseDown);
+            this.indietro_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseUp);
             // 
             // pbFoto
             // 

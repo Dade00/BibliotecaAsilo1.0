@@ -46,6 +46,8 @@
             this.crediti_button.Size = new System.Drawing.Size(150, 174);
             this.crediti_button.TabIndex = 2;
             this.crediti_button.UseVisualStyleBackColor = true;
+            this.crediti_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Crediti_button_MouseDown);
+            this.crediti_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Crediti_button_MouseUp);
             // 
             // Esci_button
             // 
@@ -58,10 +60,14 @@
             this.Esci_button.TabIndex = 3;
             this.Esci_button.UseVisualStyleBackColor = true;
             this.Esci_button.Click += new System.EventHandler(this.Esci_button_Click);
+            this.Esci_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Esci_button_MouseDown);
+            this.Esci_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Esci_button_MouseUp);
             // 
             // bambini_button
             // 
+            this.bambini_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.bambini_button.FlatAppearance.BorderSize = 0;
+            this.bambini_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.bambini_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.bambini_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bambini_button.Image = global::BibliotecaAsilo.Properties.Resources.Bambini_button;
@@ -72,11 +78,14 @@
             this.bambini_button.TabIndex = 1;
             this.bambini_button.UseVisualStyleBackColor = true;
             this.bambini_button.Click += new System.EventHandler(this.Bambini_button_Click);
+            this.bambini_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Bambini_button_MouseDown);
+            this.bambini_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Bambini_button_MouseUp);
             // 
             // maestre_button
             // 
+            this.maestre_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.maestre_button.FlatAppearance.BorderSize = 0;
-            this.maestre_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.maestre_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.maestre_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.maestre_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.maestre_button.Image = global::BibliotecaAsilo.Properties.Resources.Maestra;
@@ -87,6 +96,8 @@
             this.maestre_button.TabIndex = 0;
             this.maestre_button.UseVisualStyleBackColor = true;
             this.maestre_button.Click += new System.EventHandler(this.Maestre_button_Click);
+            this.maestre_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Maestre_button_MouseDown);
+            this.maestre_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Maestre_button_MouseUp);
             // 
             // Homepage
             // 
@@ -102,6 +113,7 @@
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Homepage_Load);
             this.ResumeLayout(false);
 
         }

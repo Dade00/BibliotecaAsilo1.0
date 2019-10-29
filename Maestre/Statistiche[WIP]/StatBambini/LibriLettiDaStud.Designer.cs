@@ -47,7 +47,7 @@
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(517, 63);
+            this.Bambini_pic.Location = new System.Drawing.Point(521, 79);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
             this.Bambini_pic.TabIndex = 132;
@@ -67,15 +67,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(598, 523);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(564, 517);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.Size = new System.Drawing.Size(219, 25);
             this.label1.TabIndex = 133;
             this.label1.Text = "TOTALE LIBRI LETTI";
             // 
             // NLibriLetti
             // 
-            this.NLibriLetti.Location = new System.Drawing.Point(731, 520);
+            this.NLibriLetti.Location = new System.Drawing.Point(789, 519);
             this.NLibriLetti.Name = "NLibriLetti";
             this.NLibriLetti.Size = new System.Drawing.Size(38, 20);
             this.NLibriLetti.TabIndex = 134;
@@ -83,9 +84,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(745, 116);
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(798, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.Size = new System.Drawing.Size(81, 25);
             this.label2.TabIndex = 135;
             this.label2.Text = "NOME:";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
@@ -93,25 +95,27 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(745, 150);
+            this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(746, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(130, 25);
             this.label3.TabIndex = 136;
             this.label3.Text = "COGNOME:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(745, 186);
+            this.label4.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(777, 197);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(102, 25);
             this.label4.TabIndex = 137;
             this.label4.Text = "CLASSE:";
             // 
             // ClasseStudScelto
             // 
             this.ClasseStudScelto.AutoSize = true;
-            this.ClasseStudScelto.Location = new System.Drawing.Point(802, 186);
+            this.ClasseStudScelto.Location = new System.Drawing.Point(882, 204);
             this.ClasseStudScelto.Name = "ClasseStudScelto";
             this.ClasseStudScelto.Size = new System.Drawing.Size(35, 13);
             this.ClasseStudScelto.TabIndex = 138;
@@ -120,7 +124,7 @@
             // CogomeStudScelto
             // 
             this.CogomeStudScelto.AutoSize = true;
-            this.CogomeStudScelto.Location = new System.Drawing.Point(816, 150);
+            this.CogomeStudScelto.Location = new System.Drawing.Point(882, 168);
             this.CogomeStudScelto.Name = "CogomeStudScelto";
             this.CogomeStudScelto.Size = new System.Drawing.Size(35, 13);
             this.CogomeStudScelto.TabIndex = 139;
@@ -129,7 +133,7 @@
             // NomeStudScelto
             // 
             this.NomeStudScelto.AutoSize = true;
-            this.NomeStudScelto.Location = new System.Drawing.Point(793, 116);
+            this.NomeStudScelto.Location = new System.Drawing.Point(882, 129);
             this.NomeStudScelto.Name = "NomeStudScelto";
             this.NomeStudScelto.Size = new System.Drawing.Size(35, 13);
             this.NomeStudScelto.TabIndex = 140;
@@ -137,17 +141,20 @@
             // 
             // Indietro_button
             // 
+            this.Indietro_button.BackgroundImage = global::Maestre.Properties.Resources.Indietro;
+            this.Indietro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Indietro_button.FlatAppearance.BorderSize = 0;
+            this.Indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Indietro_button.Location = new System.Drawing.Point(222, 565);
             this.Indietro_button.Name = "Indietro_button";
             this.Indietro_button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_button.TabIndex = 141;
-            this.Indietro_button.Text = "INDIETRO";
             this.Indietro_button.UseVisualStyleBackColor = true;
             this.Indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 
             // StampaStatStudente
             // 
-            this.StampaStatStudente.Location = new System.Drawing.Point(764, 565);
+            this.StampaStatStudente.Location = new System.Drawing.Point(762, 565);
             this.StampaStatStudente.Name = "StampaStatStudente";
             this.StampaStatStudente.Size = new System.Drawing.Size(380, 120);
             this.StampaStatStudente.TabIndex = 142;
@@ -157,11 +164,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(598, 24);
+            this.label8.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(300, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(165, 13);
+            this.label8.Size = new System.Drawing.Size(782, 58);
             this.label8.TabIndex = 143;
-            this.label8.Text = "Quanti Libri Ha Letto Lo Studente";
+            this.label8.Text = "Quanti libri ha letto lo studente";
             // 
             // LibriLetti
             // 

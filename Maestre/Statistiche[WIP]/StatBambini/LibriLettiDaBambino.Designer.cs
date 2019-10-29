@@ -40,17 +40,23 @@
             // 
             // Indietro_Button
             // 
-            this.Indietro_Button.Location = new System.Drawing.Point(258, 426);
+            this.Indietro_Button.BackgroundImage = global::Maestre.Properties.Resources.Indietro;
+            this.Indietro_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Indietro_Button.FlatAppearance.BorderSize = 0;
+            this.Indietro_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Indietro_Button.Location = new System.Drawing.Point(266, 418);
             this.Indietro_Button.Name = "Indietro_Button";
             this.Indietro_Button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_Button.TabIndex = 0;
-            this.Indietro_Button.Text = "INDIETRO";
             this.Indietro_Button.UseVisualStyleBackColor = true;
             this.Indietro_Button.Click += new System.EventHandler(this.Indietro_Button_Click);
             // 
             // RicercaStatBambini
             // 
-            this.RicercaStatBambini.Location = new System.Drawing.Point(728, 426);
+            this.RicercaStatBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.RicercaStatBambini.FlatAppearance.BorderSize = 0;
+            this.RicercaStatBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RicercaStatBambini.Location = new System.Drawing.Point(736, 418);
             this.RicercaStatBambini.Name = "RicercaStatBambini";
             this.RicercaStatBambini.Size = new System.Drawing.Size(380, 120);
             this.RicercaStatBambini.TabIndex = 1;
@@ -61,24 +67,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(537, 233);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(559, 226);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(76, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "NOME";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(537, 278);
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(507, 271);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.Size = new System.Drawing.Size(125, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "COGNOME";
             // 
             // NomeBambino
             // 
-            this.NomeBambino.Location = new System.Drawing.Point(619, 230);
+            this.NomeBambino.Location = new System.Drawing.Point(639, 227);
             this.NomeBambino.Name = "NomeBambino";
             this.NomeBambino.Size = new System.Drawing.Size(210, 20);
             this.NomeBambino.TabIndex = 4;
@@ -86,7 +94,7 @@
             // 
             // CognomeBambino
             // 
-            this.CognomeBambino.Location = new System.Drawing.Point(619, 275);
+            this.CognomeBambino.Location = new System.Drawing.Point(640, 272);
             this.CognomeBambino.Name = "CognomeBambino";
             this.CognomeBambino.Size = new System.Drawing.Size(210, 20);
             this.CognomeBambino.TabIndex = 5;
@@ -94,20 +102,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(643, 97);
+            this.label3.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(524, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.Size = new System.Drawing.Size(389, 58);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Cerca Studente";
+            this.label3.Text = "Cerca studente";
             this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // AiutoStatistiche
             // 
-            this.AiutoStatistiche.Location = new System.Drawing.Point(1108, 12);
+            this.AiutoStatistiche.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
+            this.AiutoStatistiche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AiutoStatistiche.FlatAppearance.BorderSize = 0;
+            this.AiutoStatistiche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AiutoStatistiche.Location = new System.Drawing.Point(1234, 12);
             this.AiutoStatistiche.Name = "AiutoStatistiche";
-            this.AiutoStatistiche.Size = new System.Drawing.Size(230, 80);
+            this.AiutoStatistiche.Size = new System.Drawing.Size(120, 120);
             this.AiutoStatistiche.TabIndex = 7;
-            this.AiutoStatistiche.Text = "AIUTO";
             this.AiutoStatistiche.UseVisualStyleBackColor = true;
             // 
             // LibriLettiDaBambino

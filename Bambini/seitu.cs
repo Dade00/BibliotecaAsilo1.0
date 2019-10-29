@@ -15,7 +15,10 @@ namespace Bambini // BASSANO SEI TU?
     {
         Bambino bambinoDaConfermare;
 
-        public seitu(Bambino bambino)
+        Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
+        Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
+
+        public seitu(/*Classi.bambino*/)
         {
             InitializeComponent();
         }
@@ -35,16 +38,28 @@ namespace Bambini // BASSANO SEI TU?
 
         private void Seitu_Load(object sender, EventArgs e)
         {
-            try
-            {
-                lblNome.Text = bambinoDaConfermare.Nome;
-                lblCognome.Text = bambinoDaConfermare.Cognome;
-                pbFoto.Image = new Bitmap(bambinoDaConfermare.Path);
-            }
-            catch(Exception ex)
-            {
-                ExceptionHandler.HandleException(ex);
-            }
+            avanti_button.Cursor = CursorOFF;
+            indietro_button.Cursor = CursorOFF;
+        }
+
+        private void Indietro_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorON;
+        }
+
+        private void Indietro_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            indietro_button.Cursor = CursorOFF;
+        }
+
+        private void Avanti_button_MouseUp(object sender, MouseEventArgs e)
+        {
+            avanti_button.Cursor = CursorOFF;
+        }
+
+        private void Avanti_button_MouseDown(object sender, MouseEventArgs e)
+        {
+            avanti_button.Cursor = CursorON;
         }
     }
 }
