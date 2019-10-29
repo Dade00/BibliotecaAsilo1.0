@@ -46,11 +46,11 @@
             // chisei_label
             // 
             this.chisei_label.AutoSize = true;
-            this.chisei_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chisei_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
             this.chisei_label.Location = new System.Drawing.Point(562, 7);
             this.chisei_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.chisei_label.Name = "chisei_label";
-            this.chisei_label.Size = new System.Drawing.Size(229, 64);
+            this.chisei_label.Size = new System.Drawing.Size(242, 67);
             this.chisei_label.TabIndex = 3;
             this.chisei_label.Text = "CHI SEI?";
             this.chisei_label.UseCompatibleTextRendering = true;
@@ -59,41 +59,41 @@
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
             this.nome_label.Location = new System.Drawing.Point(405, 131);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(99, 31);
+            this.nome_label.Size = new System.Drawing.Size(101, 33);
             this.nome_label.TabIndex = 4;
             this.nome_label.Text = "NOME";
             // 
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
-            this.cognome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
             this.cognome_label.Location = new System.Drawing.Point(339, 175);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
-            this.cognome_label.Size = new System.Drawing.Size(164, 31);
+            this.cognome_label.Size = new System.Drawing.Size(167, 33);
             this.cognome_label.TabIndex = 5;
             this.cognome_label.Text = "COGNOME";
             // 
             // nome_textbox
             // 
-            this.nome_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_textbox.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
             this.nome_textbox.Location = new System.Drawing.Point(546, 131);
             this.nome_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.nome_textbox.Name = "nome_textbox";
-            this.nome_textbox.Size = new System.Drawing.Size(392, 35);
+            this.nome_textbox.Size = new System.Drawing.Size(392, 40);
             this.nome_textbox.TabIndex = 6;
             // 
             // cognome_textbox
             // 
-            this.cognome_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cognome_textbox.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
             this.cognome_textbox.Location = new System.Drawing.Point(546, 175);
             this.cognome_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.cognome_textbox.Name = "cognome_textbox";
-            this.cognome_textbox.Size = new System.Drawing.Size(392, 35);
+            this.cognome_textbox.Size = new System.Drawing.Size(392, 40);
             this.cognome_textbox.TabIndex = 7;
             // 
             // maskedGBox

@@ -242,7 +242,7 @@ namespace Maestre.Bambini
             this.nascitaAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
             this.nascitaAddBambini.Location = new System.Drawing.Point(1007, 173);
             this.nascitaAddBambini.Name = "nascitaAddBambini";
-            this.nascitaAddBambini.Size = new System.Drawing.Size(224, 23);
+            this.nascitaAddBambini.Size = new System.Drawing.Size(237, 23);
             this.nascitaAddBambini.TabIndex = 129;
             // 
             // Bambini_pic
