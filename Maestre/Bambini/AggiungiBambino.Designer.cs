@@ -1,4 +1,6 @@
-﻿namespace Maestre.Bambini
+﻿using System.Windows.Forms;
+
+namespace Maestre.Bambini
 {
     partial class AggiungiBambino
     {
@@ -41,7 +43,7 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.nascitaAddBambini = new System.Windows.Forms.DateTimePicker();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.AnnullaModificaBambini = new System.Windows.Forms.Button();
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
@@ -203,11 +205,11 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(1007, 173);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 23);
-            this.dateTimePicker1.TabIndex = 129;
+            this.nascitaAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.nascitaAddBambini.Location = new System.Drawing.Point(1007, 173);
+            this.nascitaAddBambini.Name = "nascitaAddBambini";
+            this.nascitaAddBambini.Size = new System.Drawing.Size(224, 23);
+            this.nascitaAddBambini.TabIndex = 129;
             // 
             // Bambini_pic
             // 
@@ -233,13 +235,7 @@
             this.AnnullaModificaBambini.TabIndex = 127;
             this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
             this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
-            // 
-            // nascitaAddBambini
-            // 
-            this.nascitaAddBambini.Location = new System.Drawing.Point(887, 160);
-            this.nascitaAddBambini.Name = "nascitaAddBambini";
-            this.nascitaAddBambini.Size = new System.Drawing.Size(200, 20);
-            this.nascitaAddBambini.TabIndex = 129;
+            
             // 
             // bsBambini
             // 

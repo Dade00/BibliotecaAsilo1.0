@@ -73,23 +73,23 @@
             // 
             // lblNome
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(594, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 33);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "TEST";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(594, 131);
+            this.lblNome.Name = "label2";
+            this.lblNome.Size = new System.Drawing.Size(79, 33);
+            this.lblNome.TabIndex = 6;
+            this.lblNome.Text = "TEST";
             // 
             // lblCognome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(595, 226);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 33);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "TEST";
+            this.lblCognome.AutoSize = true;
+            this.lblCognome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCognome.Location = new System.Drawing.Point(595, 226);
+            this.lblCognome.Name = "label1";
+            this.lblCognome.Size = new System.Drawing.Size(79, 33);
+            this.lblCognome.TabIndex = 7;
+            this.lblCognome.Text = "TEST";
             // 
             // avanti_button
             // 

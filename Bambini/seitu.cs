@@ -18,8 +18,9 @@ namespace Bambini // BASSANO SEI TU?
         Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
         Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
 
-        public seitu(/*Classi.bambino*/)
+        public seitu(Bambino da)
         {
+            bambinoDaConfermare = da;
             InitializeComponent();
         }
 
