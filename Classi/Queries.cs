@@ -96,9 +96,47 @@ namespace Classi
             return result;
         }
 
-        public static bool getBambino(ref Bambino bambinoRicercato)
+        public static Bambino getBambino(Bambino bambinoRicercato, int anni)
         {
-            Bambino b = new Bambino();
+            Bambino b = null;
+            List<Bambino> listaBambini = new List<Bambino>();
+
+            try
+            {
+                string sql = "SELECT * FROM Bambini WHERE Nome = @Nome and Cognome = @Cognome";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        cmd.Parameters.AddWithValue("@nome", bambinoRicercato.Nome);
+                        cmd.Parameters.AddWithValue("@cognome", bambinoRicercato.Cognome);
+
+                        while (dr.Read())
+                        {
+                            Bambino bambinoTmp = new Bambino();
+
+                            if (!dr.IsDBNull(dr.GetOrdinal("ID"))) bambinoTmp.ID = dr.GetInt32(dr.GetOrdinal("ID"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("Nome"))) bambinoTmp.Nome = dr.GetString(dr.GetOrdinal("Nome"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("Cognome"))) bambinoTmp.Cognome = dr.GetString(dr.GetOrdinal("Cognome"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("Data_Nascita"))) bambinoTmp.DataNascita = dr.GetDateTime(dr.GetOrdinal("DataNascita"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("Classe"))) bambinoTmp.Classe = dr.GetString(dr.GetOrdinal("Classe"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("Path_Foto"))) bambinoTmp.Path = dr.GetString(dr.GetOrdinal("Path"));
+
+                            listaBambini.Add(bambinoTmp);
+                        }
+                    }
+                }
+                foreach (Bambino bam in listaBambini)
+                {
+                    if (DateTime.Now.Subtract(bam.DataNascita).TotalDays / 365 == anni)
+                        b = bam;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
             return b;
         }

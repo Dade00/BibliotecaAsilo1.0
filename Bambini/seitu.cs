@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,9 @@ namespace Bambini // BASSANO SEI TU?
 {
     public partial class seitu : Form
     {
-        string nome { get; set; }
-        string cognome { get; set; }
-        int anni { get; set; }
+        Bambino bambinoDaConfermare;
 
-
-        public seitu(Classi.bambino)
+        public seitu(Bambino bambino)
         {
             InitializeComponent();
         }
@@ -37,7 +35,16 @@ namespace Bambini // BASSANO SEI TU?
 
         private void Seitu_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                lblNome.Text = bambinoDaConfermare.Nome;
+                lblCognome.Text = bambinoDaConfermare.Cognome;
+                pbFoto.Image = new Bitmap(bambinoDaConfermare.Path);
+            }
+            catch(Exception ex)
+            {
+                ExceptionHandler.HandleException(ex);
+            }
         }
     }
 }

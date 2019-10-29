@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,24 +32,30 @@ namespace Bambini
             else
                 return;
 
-            if (nome_label.Text == "" || cognome_label.Text == null)
+            if (nome_textbox.Text == "" || nome_textbox.Text == null)
             {
                 MessageBox.Show("Inserire prima il nome");
                 return;
             }
 
+            if (cognome_textbox.Text == "" || cognome_textbox.Text == null)
+            {
+                MessageBox.Show("Inserire prima il cognome");
+                return;
+            }
 
+            Bambino daPassare = Queries.getBambino(new Bambino(nome_textbox.Text, cognome_textbox.Text), anni);
 
-            // query = select * from bambini where nome = ?
-            // if(cognome!=null) query .= AND cognome = ?
+            if(daPassare == null)
+            {
+                MessageBox.Show("Bambino non trovato");
+                return;
+            }
 
-            // QUERY PER PRENDERE UN BAMBINO CON
-
-            seitu seitu = new seitu(new Classi.bambino());
+            seitu seitu = new seitu(daPassare);
             seitu.ShowDialog();
             Show();
         }
-
 
         private void Return_button_Click(object sender, EventArgs e)
         {

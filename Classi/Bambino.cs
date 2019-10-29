@@ -16,6 +16,11 @@ namespace Classi
         {
             this.ID = ID;
         }
+        public Bambino(string Nome, string Cognome)
+        {
+            this.Nome = Nome;
+            this.Cognome = Cognome;
+        }
         public Bambino(string Nome, string Cognome, DateTime DataNascita, string Classe, string Path)
         {
             this.Nome = Nome;
