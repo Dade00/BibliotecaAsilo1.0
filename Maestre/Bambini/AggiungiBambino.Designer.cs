@@ -1,4 +1,6 @@
-﻿namespace Maestre.Bambini
+﻿using System.Windows.Forms;
+
+namespace Maestre.Bambini
 {
     partial class AggiungiBambino
     {
@@ -41,12 +43,13 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.nascitaAddBambini = new System.Windows.Forms.DateTimePicker();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.AnnullaModificaBambini = new System.Windows.Forms.Button();
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             this.SuspendLayout();
             // 
             // AiutoAggiungiBambini
@@ -96,8 +99,15 @@
             // 
             // TabellaBambini
             // 
+            this.TabellaBambini.AutoGenerateColumns = false;
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(507, 278);
+            this.TabellaBambini.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomeDataGridViewTextBoxColumn,
+            this.cognomeDataGridViewTextBoxColumn,
+            this.dataNascitaDataGridViewTextBoxColumn,
+            this.classeDataGridViewTextBoxColumn});
+            this.TabellaBambini.DataSource = this.bsBambini;
+            this.TabellaBambini.Location = new System.Drawing.Point(438, 267);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.RowHeadersWidth = 62;
@@ -195,11 +205,11 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(1007, 173);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 23);
-            this.dateTimePicker1.TabIndex = 129;
+            this.nascitaAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.nascitaAddBambini.Location = new System.Drawing.Point(1007, 173);
+            this.nascitaAddBambini.Name = "nascitaAddBambini";
+            this.nascitaAddBambini.Size = new System.Drawing.Size(224, 23);
+            this.nascitaAddBambini.TabIndex = 129;
             // 
             // Bambini_pic
             // 
@@ -225,9 +235,35 @@
             this.AnnullaModificaBambini.TabIndex = 127;
             this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
             this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
+            
             // 
-            // ConfermaModificaBambini
+            // bsBambini
             // 
+            this.bsBambini.DataSource = typeof(Classi.Bambino);
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // cognomeDataGridViewTextBoxColumn
+            // 
+            this.cognomeDataGridViewTextBoxColumn.DataPropertyName = "Cognome";
+            this.cognomeDataGridViewTextBoxColumn.HeaderText = "Cognome";
+            this.cognomeDataGridViewTextBoxColumn.Name = "cognomeDataGridViewTextBoxColumn";
+            // 
+            // dataNascitaDataGridViewTextBoxColumn
+            // 
+            this.dataNascitaDataGridViewTextBoxColumn.DataPropertyName = "DataNascita";
+            this.dataNascitaDataGridViewTextBoxColumn.HeaderText = "DataNascita";
+            this.dataNascitaDataGridViewTextBoxColumn.Name = "dataNascitaDataGridViewTextBoxColumn";
+            // 
+            // classeDataGridViewTextBoxColumn
+            // 
+            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
+            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe";
+            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
             this.ConfermaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
             this.ConfermaModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ConfermaModificaBambini.FlatAppearance.BorderSize = 0;
@@ -245,7 +281,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.nascitaAddBambini);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
@@ -267,6 +303,7 @@
             this.Text = "AggiungiBambino";
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,6 +327,11 @@
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.PictureBox Bambini_pic;
         private System.Windows.Forms.OpenFileDialog ofdFoto;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker nascitaAddBambini;
+        private System.Windows.Forms.BindingSource bsBambini;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cognomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataNascitaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn classeDataGridViewTextBoxColumn;
     }
 }

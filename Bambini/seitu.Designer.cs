@@ -31,12 +31,12 @@
             this.seitu_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.Cognome_label = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblCognome = new System.Windows.Forms.Label();
             this.avanti_button = new System.Windows.Forms.Button();
             this.indietro_button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbFoto = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // seitu_label
@@ -71,25 +71,25 @@
             this.Cognome_label.TabIndex = 5;
             this.Cognome_label.Text = "COGNOME:";
             // 
-            // label2
+            // lblNome
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(594, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 33);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "TEST";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(594, 131);
+            this.lblNome.Name = "label2";
+            this.lblNome.Size = new System.Drawing.Size(79, 33);
+            this.lblNome.TabIndex = 6;
+            this.lblNome.Text = "TEST";
             // 
-            // label1
+            // lblCognome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(595, 226);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 33);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "TEST";
+            this.lblCognome.AutoSize = true;
+            this.lblCognome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCognome.Location = new System.Drawing.Point(595, 226);
+            this.lblCognome.Name = "label1";
+            this.lblCognome.Size = new System.Drawing.Size(79, 33);
+            this.lblCognome.TabIndex = 7;
+            this.lblCognome.Text = "TEST";
             // 
             // avanti_button
             // 
@@ -127,27 +127,27 @@
             this.indietro_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseDown);
             this.indietro_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseUp);
             // 
-            // pictureBox1
+            // pbFoto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(38, 123);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pbFoto.Location = new System.Drawing.Point(38, 123);
+            this.pbFoto.Margin = new System.Windows.Forms.Padding(2);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(350, 350);
+            this.pbFoto.TabIndex = 1;
+            this.pbFoto.TabStop = false;
             // 
             // seitu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 715);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCognome);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.Cognome_label);
             this.Controls.Add(this.avanti_button);
             this.Controls.Add(this.indietro_button);
             this.Controls.Add(this.nome_label);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.seitu_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -155,7 +155,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sei tu?";
             this.Load += new System.EventHandler(this.Seitu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,12 +164,12 @@
         #endregion
 
         private System.Windows.Forms.Label seitu_label;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbFoto;
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.Button indietro_button;
         private System.Windows.Forms.Button avanti_button;
         private System.Windows.Forms.Label Cognome_label;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblCognome;
     }
 }

@@ -34,7 +34,7 @@ namespace Maestre.Bambini
         {
             try
             {
-                selectedId = (int)dataGridView1.SelectedCells[0].Value;
+                selectedId = (int)TabellaBambini.SelectedCells[0].Value;
                 int i = 0;
                 while (listaBambini[i].ID != selectedId)
                     i++;
@@ -43,7 +43,7 @@ namespace Maestre.Bambini
                 ClasseModBambini.Text = listaBambini[i].Classe;
                 nascitaModificaBambini.Value = listaBambini[i].DataNascita;
                 ofdFoto.FileName = listaBambini[i].Path;
-                pictureBox1.Image = new Bitmap(ofdFoto.FileName);
+                Bambini_pic.Image = new Bitmap(ofdFoto.FileName);
             }
             catch (Exception ex)
             {
@@ -59,7 +59,7 @@ namespace Maestre.Bambini
                 {
                     Bitmap bmp = new Bitmap(ofdFoto.FileName);
                     if (bmp.Width <= 350 && bmp.Height <= 350)
-                        pictureBox1.Image = bmp;
+                        Bambini_pic.Image = bmp;
                     else
                         MessageBox.Show("La foto selezionata deve essere al massimo 350x350");
                     bmp.Dispose();

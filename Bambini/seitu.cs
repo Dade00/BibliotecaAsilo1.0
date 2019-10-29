@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,15 +13,14 @@ namespace Bambini // BASSANO SEI TU?
 {
     public partial class seitu : Form
     {
-        string nome { get; set; }
-        string cognome { get; set; }
-        int anni { get; set; }
+        Bambino bambinoDaConfermare;
 
         Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
         Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
 
-        public seitu(/*Classi.bambino*/)
+        public seitu(Bambino da)
         {
+            bambinoDaConfermare = da;
             InitializeComponent();
         }
 
