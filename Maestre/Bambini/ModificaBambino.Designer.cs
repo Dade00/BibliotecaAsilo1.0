@@ -125,12 +125,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(560, 224);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(73, 25);
+            this.label3.Size = new System.Drawing.Size(67, 25);
             this.label3.TabIndex = 106;
             this.label3.Text = "FOTO";
             // 
@@ -199,22 +199,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(901, 116);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 25);
+            this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 101;
             this.label1.Text = "CLASSE";
             // 
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(486, 55);
+            this.libro_label.Size = new System.Drawing.Size(540, 58);
             this.libro_label.TabIndex = 100;
             this.libro_label.Text = "Modifica un bambino";
             // 
@@ -239,7 +239,7 @@
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
-            this.cognome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
             this.cognome_label.Location = new System.Drawing.Point(504, 177);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
@@ -250,7 +250,7 @@
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
             this.nome_label.Location = new System.Drawing.Point(550, 116);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
@@ -260,7 +260,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(884, 156);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -279,10 +279,10 @@
             // 
             // nascitaModificaBambini
             // 
-            this.nascitaModificaBambini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.nascitaModificaBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
             this.nascitaModificaBambini.Location = new System.Drawing.Point(1003, 179);
             this.nascitaModificaBambini.Name = "nascitaModificaBambini";
-            this.nascitaModificaBambini.Size = new System.Drawing.Size(221, 23);
+            this.nascitaModificaBambini.Size = new System.Drawing.Size(279, 23);
             this.nascitaModificaBambini.TabIndex = 131;
             // 
             // ModificaBambino

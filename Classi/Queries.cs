@@ -103,14 +103,15 @@ namespace Classi
 
             try
             {
-                string sql = "SELECT * FROM Bambini WHERE Nome = @Nome and Cognome = @Cognome";
+                string sql = "SELECT * FROM Bambini WHERE Nome = @nome and Cognome = @cognome";  //Case sensitive
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
+                    cmd.Parameters.AddWithValue("@nome", bambinoRicercato.Nome);
+                    cmd.Parameters.AddWithValue("@cognome", bambinoRicercato.Cognome);
+
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
-                        cmd.Parameters.AddWithValue("@nome", bambinoRicercato.Nome);
-                        cmd.Parameters.AddWithValue("@cognome", bambinoRicercato.Cognome);
 
                         while (dr.Read())
                         {
