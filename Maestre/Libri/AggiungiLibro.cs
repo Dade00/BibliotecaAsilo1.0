@@ -91,5 +91,12 @@ namespace Maestre.Libri
         {
             Close();
         }
+
+        private void ConfermaModificaLibro_Click(object sender, EventArgs e)
+        {
+            Maestre.Libri.AggiungiLibro aggiungiLibro = new Maestre.Libri.AggiungiLibro();
+            aggiungiLibro.ShowDialog();
+            Show();
+        }
     }
 }

@@ -31,5 +31,12 @@ namespace Maestre.Libri
         {
             Close();
         }
+
+        private void ConfermaEliminaLibro_Click(object sender, EventArgs e)
+        {
+            Maestre.Libri.EliminaLibro eliminaLibro = new Maestre.Libri.EliminaLibro();
+            eliminaLibro.ShowDialog();
+            Show();
+        }
     }
 }

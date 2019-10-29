@@ -28,36 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AiutoCancellaBambino = new System.Windows.Forms.Button();
             this.libro_label = new System.Windows.Forms.Label();
-            this.AnnullaEliminaBambini = new System.Windows.Forms.Button();
-            this.ConfermaEliminaBambini = new System.Windows.Forms.Button();
             this.NomeDelBambini = new System.Windows.Forms.TextBox();
             this.nome_label = new System.Windows.Forms.Label();
             this.Bambini = new System.Windows.Forms.DataGridView();
             this.CognomeDelBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.cerca_button = new System.Windows.Forms.Button();
+            this.Bambini_pic = new System.Windows.Forms.PictureBox();
+            this.AnnullaEliminaBambini = new System.Windows.Forms.Button();
+            this.ConfermaEliminaBambini = new System.Windows.Forms.Button();
+            this.AiutoCancellaBambino = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
-            // 
-            // AiutoCancellaBambino
-            // 
-            this.AiutoCancellaBambino.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
-            this.AiutoCancellaBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AiutoCancellaBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.AiutoCancellaBambino.FlatAppearance.BorderSize = 0;
-            this.AiutoCancellaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AiutoCancellaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.AiutoCancellaBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AiutoCancellaBambino.Location = new System.Drawing.Point(1235, 11);
-            this.AiutoCancellaBambino.Margin = new System.Windows.Forms.Padding(2);
-            this.AiutoCancellaBambino.Name = "AiutoCancellaBambino";
-            this.AiutoCancellaBambino.Size = new System.Drawing.Size(120, 120);
-            this.AiutoCancellaBambino.TabIndex = 48;
-            this.AiutoCancellaBambino.UseVisualStyleBackColor = true;
             // 
             // libro_label
             // 
@@ -66,35 +50,9 @@
             this.libro_label.Location = new System.Drawing.Point(87, 28);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(1170, 58);
+            this.libro_label.Size = new System.Drawing.Size(1173, 58);
             this.libro_label.TabIndex = 39;
             this.libro_label.Text = "Cerca il nome del bambino che vuoi cancellare ";
-            // 
-            // AnnullaEliminaBambini
-            // 
-            this.AnnullaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
-            this.AnnullaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AnnullaEliminaBambini.FlatAppearance.BorderSize = 0;
-            this.AnnullaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaEliminaBambini.Location = new System.Drawing.Point(227, 536);
-            this.AnnullaEliminaBambini.Name = "AnnullaEliminaBambini";
-            this.AnnullaEliminaBambini.Size = new System.Drawing.Size(380, 120);
-            this.AnnullaEliminaBambini.TabIndex = 79;
-            this.AnnullaEliminaBambini.UseVisualStyleBackColor = true;
-            this.AnnullaEliminaBambini.Click += new System.EventHandler(this.AnnullaEliminaBambini_Click);
-            // 
-            // ConfermaEliminaBambini
-            // 
-            this.ConfermaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
-            this.ConfermaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ConfermaEliminaBambini.FlatAppearance.BorderSize = 0;
-            this.ConfermaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaEliminaBambini.Location = new System.Drawing.Point(760, 536);
-            this.ConfermaEliminaBambini.Name = "ConfermaEliminaBambini";
-            this.ConfermaEliminaBambini.Size = new System.Drawing.Size(380, 120);
-            this.ConfermaEliminaBambini.TabIndex = 78;
-            this.ConfermaEliminaBambini.UseVisualStyleBackColor = true;
-            this.ConfermaEliminaBambini.Click += new System.EventHandler(this.ConfermaEliminaBambini_Click);
             // 
             // NomeDelBambini
             // 
@@ -147,14 +105,6 @@
             this.label1.TabIndex = 80;
             this.label1.Text = "CERCA COGNOME";
             // 
-            // Bambini_pic
-            // 
-            this.Bambini_pic.Location = new System.Drawing.Point(137, 131);
-            this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
-            this.Bambini_pic.TabIndex = 129;
-            this.Bambini_pic.TabStop = false;
-            // 
             // cerca_button
             // 
             this.cerca_button.Location = new System.Drawing.Point(978, 152);
@@ -163,6 +113,57 @@
             this.cerca_button.TabIndex = 130;
             this.cerca_button.Text = "Cerca";
             this.cerca_button.UseVisualStyleBackColor = true;
+            // 
+            // Bambini_pic
+            // 
+            this.Bambini_pic.Location = new System.Drawing.Point(137, 131);
+            this.Bambini_pic.Name = "Bambini_pic";
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
+            this.Bambini_pic.TabIndex = 129;
+            this.Bambini_pic.TabStop = false;
+            // 
+            // AnnullaEliminaBambini
+            // 
+            this.AnnullaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
+            this.AnnullaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AnnullaEliminaBambini.FlatAppearance.BorderSize = 0;
+            this.AnnullaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AnnullaEliminaBambini.Location = new System.Drawing.Point(227, 536);
+            this.AnnullaEliminaBambini.Name = "AnnullaEliminaBambini";
+            this.AnnullaEliminaBambini.Size = new System.Drawing.Size(380, 120);
+            this.AnnullaEliminaBambini.TabIndex = 79;
+            this.AnnullaEliminaBambini.UseVisualStyleBackColor = true;
+            this.AnnullaEliminaBambini.Click += new System.EventHandler(this.AnnullaEliminaBambini_Click);
+            // 
+            // ConfermaEliminaBambini
+            // 
+            this.ConfermaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
+            this.ConfermaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ConfermaEliminaBambini.FlatAppearance.BorderSize = 0;
+            this.ConfermaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfermaEliminaBambini.Location = new System.Drawing.Point(760, 536);
+            this.ConfermaEliminaBambini.Name = "ConfermaEliminaBambini";
+            this.ConfermaEliminaBambini.Size = new System.Drawing.Size(380, 120);
+            this.ConfermaEliminaBambini.TabIndex = 78;
+            this.ConfermaEliminaBambini.UseVisualStyleBackColor = true;
+            this.ConfermaEliminaBambini.Click += new System.EventHandler(this.ConfermaEliminaBambini_Click);
+            // 
+            // AiutoCancellaBambino
+            // 
+            this.AiutoCancellaBambino.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
+            this.AiutoCancellaBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AiutoCancellaBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.AiutoCancellaBambino.FlatAppearance.BorderSize = 0;
+            this.AiutoCancellaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoCancellaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoCancellaBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AiutoCancellaBambino.Location = new System.Drawing.Point(1235, 11);
+            this.AiutoCancellaBambino.Margin = new System.Windows.Forms.Padding(2);
+            this.AiutoCancellaBambino.Name = "AiutoCancellaBambino";
+            this.AiutoCancellaBambino.Size = new System.Drawing.Size(120, 120);
+            this.AiutoCancellaBambino.TabIndex = 48;
+            this.AiutoCancellaBambino.UseVisualStyleBackColor = true;
+            this.AiutoCancellaBambino.Click += new System.EventHandler(this.AiutoCancellaBambino_Click);
             // 
             // CancellaBambino
             // 

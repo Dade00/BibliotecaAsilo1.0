@@ -112,7 +112,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.ResumeLayout(false);
 

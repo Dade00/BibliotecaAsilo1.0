@@ -31,5 +31,12 @@ namespace Maestre.Libri
         {
 
         }
+
+        private void ConfermaModificaLibro_Click(object sender, EventArgs e)
+        {
+            Maestre.Libri.ModificaLibro modificaLibro = new Maestre.Libri.ModificaLibro();
+            modificaLibro.ShowDialog();
+            Show();
+        }
     }
 }

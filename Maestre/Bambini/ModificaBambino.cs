@@ -72,5 +72,17 @@ namespace Maestre.Bambini
             else
                 ofdFoto.FileName = "";
         }
+
+        private void ConfermaModificaBambini_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AiutoModificaBambini_Click(object sender, EventArgs e)
+        {
+            Maestre.Bambini.ModificaBambino modificaBambino= new Maestre.Bambini.ModificaBambino();
+            modificaBambino.ShowDialog();
+            Show();
+        }
     }
 }

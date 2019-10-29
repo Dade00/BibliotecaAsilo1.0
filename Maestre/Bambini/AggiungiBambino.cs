@@ -104,5 +104,12 @@ namespace Maestre.Bambini
         {
 
         }
+
+        private void AiutoAggiungiBambini_Click(object sender, EventArgs e)
+        {
+            Maestre.Bambini.AggiungiBambino aggiungiBambino = new Maestre.Bambini.AggiungiBambino();
+            aggiungiBambino.ShowDialog();
+            Show();
+        }
     }
 }

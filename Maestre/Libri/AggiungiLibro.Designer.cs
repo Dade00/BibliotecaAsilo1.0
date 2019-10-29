@@ -72,6 +72,7 @@
             this.ConfermaModificaLibro.Size = new System.Drawing.Size(380, 120);
             this.ConfermaModificaLibro.TabIndex = 94;
             this.ConfermaModificaLibro.UseVisualStyleBackColor = true;
+            this.ConfermaModificaLibro.Click += new System.EventHandler(this.ConfermaModificaLibro_Click);
             // 
             // AiutoModificaLibro
             // 
@@ -159,7 +160,7 @@
             this.libro_label.Location = new System.Drawing.Point(491, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(444, 58);
+            this.libro_label.Size = new System.Drawing.Size(447, 58);
             this.libro_label.TabIndex = 84;
             this.libro_label.Text = "Aggiungi un libro";
             // 

@@ -31,5 +31,12 @@ namespace Maestre.Bambini
         {
 
         }
+
+        private void AiutoCancellaBambino_Click(object sender, EventArgs e)
+        {
+            Maestre.Bambini.CancellaBambino cancellaBambino = new Maestre.Bambini.CancellaBambino();
+            cancellaBambino.ShowDialog();
+            Show();
+        }
     }
 }
