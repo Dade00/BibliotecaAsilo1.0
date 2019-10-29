@@ -63,7 +63,9 @@ namespace Bambini
 
         private void Help_button_Click(object sender, EventArgs e)
         {
-
+            AiutoLogin aiutoLogin = new AiutoLogin();
+            aiutoLogin.ShowDialog();
+            Show();
         }
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)

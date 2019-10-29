@@ -49,6 +49,7 @@
             this.help_button.Size = new System.Drawing.Size(123, 129);
             this.help_button.TabIndex = 3;
             this.help_button.UseVisualStyleBackColor = true;
+            this.help_button.Click += new System.EventHandler(this.Help_button_Click);
             this.help_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Help_button_MouseDown);
             this.help_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Help_button_MouseUp);
             // 

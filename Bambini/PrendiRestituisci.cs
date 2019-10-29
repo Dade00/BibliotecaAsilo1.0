@@ -94,5 +94,12 @@ namespace Bambini
         {
             Cursor = CursorON;
         }
+
+        private void Help_button_Click(object sender, EventArgs e)
+        {
+            AiutoPrendiRestituisci aiutoPrendiRestituisci = new AiutoPrendiRestituisci();
+            aiutoPrendiRestituisci.ShowDialog();
+            Show();
+        }
     }
 }
