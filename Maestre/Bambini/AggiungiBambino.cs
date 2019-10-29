@@ -89,7 +89,7 @@ namespace Maestre.Bambini
                 Queries.getBambini(ref listaBambini);
                 refresh();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw;
             }

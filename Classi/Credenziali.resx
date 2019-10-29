@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="sqlServerAddress" xml:space="preserve">
-    <value>192.168.4.106</value>
+    <value>127.0.0.1</value>
   </data>
   <data name="sqlServerDB" xml:space="preserve">
     <value>Asilo</value>
@@ -127,6 +127,6 @@
     <value>einaudi</value>
   </data>
   <data name="sqlServerUser" xml:space="preserve">
-    <value>sa2</value>
+    <value>sa</value>
   </data>
 </root>

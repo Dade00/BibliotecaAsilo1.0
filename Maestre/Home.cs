@@ -113,40 +113,42 @@ namespace Maestre
 
         private void Libri_radio_CheckedChanged(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 1;
             if (Libri_radio.Checked)
             {
-                this.BackgroundImage = Maestre.Properties.Resources.Libri_ON;
+                Libri_radio.BackgroundImage = Maestre.Properties.Resources.Libri_ON;
+                TabControl.SelectedIndex = 1;
             }
             else
             {
-                this.BackgroundImage = Maestre.Properties.Resources.Libri;
+                Libri_radio.BackgroundImage = Maestre.Properties.Resources.Libri;
             }
         }
 
         private void Statistiche_radio_CheckedChanged(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 2;
+            
             if (Statistiche_radio.Checked)
             {
-                this.BackgroundImage = Maestre.Properties.Resources.Statistiche_ON;
+                Statistiche_radio.BackgroundImage = Maestre.Properties.Resources.Statistiche_ON;
+                TabControl.SelectedIndex = 2;
             }
             else
             {
-                this.BackgroundImage = Maestre.Properties.Resources.Statistiche;
+                Statistiche_radio.BackgroundImage = Maestre.Properties.Resources.Statistiche;
             }
         }
 
         private void Bambini_radio_CheckedChanged(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 0;
+            
             if (Bambini_radio.Checked)
             {
-                this.BackgroundImage = Maestre.Properties.Resources.Bambini_ON;
+                Bambini_radio.BackgroundImage = Maestre.Properties.Resources.Bambini_ON;
+                TabControl.SelectedIndex = 0;
             }
             else
             {
-                this.BackgroundImage = Maestre.Properties.Resources.Bambini;
+                Bambini_radio.BackgroundImage = Maestre.Properties.Resources.Bambini;
             }
         }
 

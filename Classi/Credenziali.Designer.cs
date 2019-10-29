@@ -61,7 +61,7 @@ namespace Classi {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a 192.168.4.106.
+        ///   Cerca una stringa localizzata simile a 127.0.0.1.
         /// </summary>
         internal static string sqlServerAddress {
             get {
@@ -88,7 +88,7 @@ namespace Classi {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a sa2.
+        ///   Cerca una stringa localizzata simile a sa.
         /// </summary>
         internal static string sqlServerUser {
             get {
