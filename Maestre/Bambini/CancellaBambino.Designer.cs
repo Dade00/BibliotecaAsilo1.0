@@ -63,7 +63,7 @@
             // 
             this.libro_label.AutoSize = true;
             this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.libro_label.Location = new System.Drawing.Point(50, 28);
+            this.libro_label.Location = new System.Drawing.Point(87, 28);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
             this.libro_label.Size = new System.Drawing.Size(1170, 58);
@@ -98,10 +98,11 @@
             // 
             // NomeDelBambini
             // 
-            this.NomeDelBambini.Location = new System.Drawing.Point(723, 143);
+            this.NomeDelBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.NomeDelBambini.Location = new System.Drawing.Point(723, 141);
             this.NomeDelBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeDelBambini.Name = "NomeDelBambini";
-            this.NomeDelBambini.Size = new System.Drawing.Size(237, 20);
+            this.NomeDelBambini.Size = new System.Drawing.Size(237, 23);
             this.NomeDelBambini.TabIndex = 77;
             // 
             // nome_label
@@ -128,17 +129,18 @@
             // 
             // CognomeDelBambini
             // 
-            this.CognomeDelBambini.Location = new System.Drawing.Point(723, 185);
+            this.CognomeDelBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.CognomeDelBambini.Location = new System.Drawing.Point(723, 194);
             this.CognomeDelBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeDelBambini.Name = "CognomeDelBambini";
-            this.CognomeDelBambini.Size = new System.Drawing.Size(237, 20);
+            this.CognomeDelBambini.Size = new System.Drawing.Size(237, 23);
             this.CognomeDelBambini.TabIndex = 81;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(504, 182);
+            this.label1.Location = new System.Drawing.Point(504, 190);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 25);
@@ -155,7 +157,7 @@
             // 
             // cerca_button
             // 
-            this.cerca_button.Location = new System.Drawing.Point(978, 147);
+            this.cerca_button.Location = new System.Drawing.Point(978, 152);
             this.cerca_button.Name = "cerca_button";
             this.cerca_button.Size = new System.Drawing.Size(220, 50);
             this.cerca_button.TabIndex = 130;

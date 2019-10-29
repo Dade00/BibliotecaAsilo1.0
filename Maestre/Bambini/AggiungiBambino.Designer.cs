@@ -74,7 +74,7 @@
             this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CercaFotoBambini.Location = new System.Drawing.Point(633, 205);
+            this.CercaFotoBambini.Location = new System.Drawing.Point(633, 213);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
             this.CercaFotoBambini.Size = new System.Drawing.Size(130, 45);
@@ -86,7 +86,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(562, 212);
+            this.label3.Location = new System.Drawing.Point(562, 220);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -107,29 +107,30 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(900, 167);
+            this.label2.Location = new System.Drawing.Point(884, 156);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(215, 25);
+            this.label2.Size = new System.Drawing.Size(118, 54);
             this.label2.TabIndex = 119;
             this.label2.Text = "ANNO DI NASCITA";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ClasseAddBambini
             // 
-            this.ClasseAddBambini.Location = new System.Drawing.Point(1006, 134);
+            this.ClasseAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.ClasseAddBambini.Location = new System.Drawing.Point(1007, 116);
             this.ClasseAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseAddBambini.Name = "ClasseAddBambini";
-            this.ClasseAddBambini.Size = new System.Drawing.Size(54, 20);
+            this.ClasseAddBambini.Size = new System.Drawing.Size(66, 23);
             this.ClasseAddBambini.TabIndex = 118;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(898, 131);
+            this.label1.Location = new System.Drawing.Point(900, 112);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 25);
@@ -140,7 +141,7 @@
             // 
             this.libro_label.AutoSize = true;
             this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.libro_label.Location = new System.Drawing.Point(468, 9);
+            this.libro_label.Location = new System.Drawing.Point(412, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
             this.libro_label.Size = new System.Drawing.Size(543, 58);
@@ -150,25 +151,27 @@
             // 
             // CognomeAddBambini
             // 
-            this.CognomeAddBambini.Location = new System.Drawing.Point(633, 169);
+            this.CognomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.CognomeAddBambini.Location = new System.Drawing.Point(633, 175);
             this.CognomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeAddBambini.Name = "CognomeAddBambini";
-            this.CognomeAddBambini.Size = new System.Drawing.Size(237, 20);
+            this.CognomeAddBambini.Size = new System.Drawing.Size(237, 23);
             this.CognomeAddBambini.TabIndex = 115;
             // 
             // NomeAddBambini
             // 
-            this.NomeAddBambini.Location = new System.Drawing.Point(633, 128);
+            this.NomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.NomeAddBambini.Location = new System.Drawing.Point(630, 116);
             this.NomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeAddBambini.Name = "NomeAddBambini";
-            this.NomeAddBambini.Size = new System.Drawing.Size(237, 20);
+            this.NomeAddBambini.Size = new System.Drawing.Size(237, 23);
             this.NomeAddBambini.TabIndex = 114;
             // 
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(504, 167);
+            this.cognome_label.Location = new System.Drawing.Point(504, 171);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(125, 25);
@@ -179,7 +182,7 @@
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(550, 126);
+            this.nome_label.Location = new System.Drawing.Point(550, 116);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(76, 25);
@@ -192,9 +195,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(910, 197);
+            this.dateTimePicker1.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1007, 173);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(190, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(224, 23);
             this.dateTimePicker1.TabIndex = 129;
             // 
             // Bambini_pic

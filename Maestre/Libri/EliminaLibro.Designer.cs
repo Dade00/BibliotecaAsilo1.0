@@ -45,18 +45,18 @@
             // 
             this.libro_label.AutoSize = true;
             this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
-            this.libro_label.Location = new System.Drawing.Point(513, 11);
+            this.libro_label.Location = new System.Drawing.Point(481, 11);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(420, 58);
+            this.libro_label.Size = new System.Drawing.Size(404, 58);
             this.libro_label.TabIndex = 68;
-            this.libro_label.Text = "Elimina Un Libro";
+            this.libro_label.Text = "Elimina un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
             // 
             // Libri
             // 
             this.Libri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Libri.Location = new System.Drawing.Point(508, 230);
+            this.Libri.Location = new System.Drawing.Point(491, 268);
             this.Libri.Margin = new System.Windows.Forms.Padding(2);
             this.Libri.Name = "Libri";
             this.Libri.RowHeadersWidth = 62;
@@ -66,22 +66,23 @@
             // 
             // TitotloDelLibro
             // 
-            this.TitotloDelLibro.Location = new System.Drawing.Point(695, 150);
+            this.TitotloDelLibro.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.TitotloDelLibro.Location = new System.Drawing.Point(606, 155);
             this.TitotloDelLibro.Margin = new System.Windows.Forms.Padding(2);
             this.TitotloDelLibro.Name = "TitotloDelLibro";
-            this.TitotloDelLibro.Size = new System.Drawing.Size(237, 20);
+            this.TitotloDelLibro.Size = new System.Drawing.Size(237, 23);
             this.TitotloDelLibro.TabIndex = 71;
             // 
             // nome_label
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(521, 148);
+            this.nome_label.Location = new System.Drawing.Point(486, 151);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(170, 25);
+            this.nome_label.Size = new System.Drawing.Size(86, 25);
             this.nome_label.TabIndex = 70;
-            this.nome_label.Text = "CERCA TITOLO";
+            this.nome_label.Text = "TITOLO";
             this.nome_label.Click += new System.EventHandler(this.Nome_label_Click);
             // 
             // ConfermaEliminaLibro
@@ -136,7 +137,7 @@
             this.cerca_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cerca_button.FlatAppearance.BorderSize = 0;
             this.cerca_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cerca_button.Location = new System.Drawing.Point(988, 137);
+            this.cerca_button.Location = new System.Drawing.Point(899, 142);
             this.cerca_button.Name = "cerca_button";
             this.cerca_button.Size = new System.Drawing.Size(130, 45);
             this.cerca_button.TabIndex = 131;
