@@ -96,7 +96,9 @@ namespace Bambini.Prendi
 
         private void Aiuto_button_Click(object sender, EventArgs e)
         {
-
+            Prendi.AiutoGenere aiutoGenere = new Prendi.AiutoGenere();
+            aiutoGenere.ShowDialog();
+            Show();
         }
 
         private void PrendiGeneree_VisibleChanged(object sender, EventArgs e)

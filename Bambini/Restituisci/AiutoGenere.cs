@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bambini
+namespace Bambini.Restituisci
 {
-    public partial class AiutoLogin : Form
+    public partial class AiutoGenere : Form
     {
-        public AiutoLogin()
+        public AiutoGenere()
         {
             InitializeComponent();
         }

@@ -173,5 +173,12 @@ namespace Bambini.Restituiusci
         {
             indietro_button.Cursor = CursorON;
         }
+
+        private void Aiuto_button_Click(object sender, EventArgs e)
+        {
+            Restituisci.AiutoGenere aiutoGenere = new Restituisci.AiutoGenere();
+            aiutoGenere.ShowDialog();
+            Show();
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Bambini
 {
-    public partial class AiutoLogin : Form
+    public partial class AiutoPrendiRestituisci : Form
     {
-        public AiutoLogin()
+        public AiutoPrendiRestituisci()
         {
             InitializeComponent();
         }

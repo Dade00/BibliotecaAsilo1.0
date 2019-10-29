@@ -55,6 +55,7 @@
             this.aiuto_button.Size = new System.Drawing.Size(120, 120);
             this.aiuto_button.TabIndex = 16;
             this.aiuto_button.UseVisualStyleBackColor = true;
+            this.aiuto_button.Click += new System.EventHandler(this.Aiuto_button_Click);
             this.aiuto_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Aiuto_button_MouseDown);
             this.aiuto_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Aiuto_button_MouseUp);
             // 
