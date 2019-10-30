@@ -117,12 +117,12 @@ namespace Classi
                         {
                             Bambino bambinoTmp = new Bambino();
 
-                            if (!dr.IsDBNull(dr.GetOrdinal("ID"))) bambinoTmp.ID = dr.GetInt32(dr.GetOrdinal("ID"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("ID"))) bambinoTmp.ID = dr.GetOrdinal("ID");
                             if (!dr.IsDBNull(dr.GetOrdinal("Nome"))) bambinoTmp.Nome = dr.GetString(dr.GetOrdinal("Nome"));
                             if (!dr.IsDBNull(dr.GetOrdinal("Cognome"))) bambinoTmp.Cognome = dr.GetString(dr.GetOrdinal("Cognome"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Data_Nascita"))) bambinoTmp.DataNascita = dr.GetDateTime(dr.GetOrdinal("DataNascita"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("Data_Nascita"))) bambinoTmp.DataNascita = dr.GetDateTime(dr.GetOrdinal("Data_Nascita"));
                             if (!dr.IsDBNull(dr.GetOrdinal("Classe"))) bambinoTmp.Classe = dr.GetString(dr.GetOrdinal("Classe"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Path_Foto"))) bambinoTmp.Path = dr.GetString(dr.GetOrdinal("Path"));
+                            if (!dr.IsDBNull(dr.GetOrdinal("Path_Foto"))) bambinoTmp.Path = dr.GetString(dr.GetOrdinal("Path_Foto"));
 
                             listaBambini.Add(bambinoTmp);
                         }
@@ -130,7 +130,7 @@ namespace Classi
                 }
                 foreach (Bambino bam in listaBambini)
                 {
-                    if (DateTime.Now.Subtract(bam.DataNascita).TotalDays / 365 == anni)
+                    if (Math.Truncate(DateTime.Now.Subtract(bam.DataNascita).TotalDays / 365) == anni) //Il risultato della prima non può mai essere esattamente il numero di anni quindi, troncando, considero solo la prima cifra senza quelle dopo la virgola e quindi rendo possibile il confonto
                         b = bam;
                 }
             }
