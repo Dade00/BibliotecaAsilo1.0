@@ -84,6 +84,9 @@ namespace Maestre.Bambini
         }    
         private void AggiungiBambino_Load(object sender, EventArgs e)
         {
+            Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+            TabellaBambini.DefaultCellStyle.Font = new Font("GROBOLD", 15);
+            TabellaBambini.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
             try
             {
                 Queries.getBambini(ref listaBambini);
@@ -107,7 +110,7 @@ namespace Maestre.Bambini
 
         private void AiutoAggiungiBambini_Click(object sender, EventArgs e)
         {
-            Maestre.Bambini.AggiungiBambino aggiungiBambino = new Maestre.Bambini.AggiungiBambino();
+            AiutoAddBambino aggiungiBambino = new AiutoAddBambino();
             aggiungiBambino.ShowDialog();
             Show();
         }

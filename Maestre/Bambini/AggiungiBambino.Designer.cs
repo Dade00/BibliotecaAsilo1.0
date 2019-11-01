@@ -48,11 +48,11 @@ namespace Maestre.Bambini
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
             this.AiutoAggiungiBambini = new System.Windows.Forms.Button();
             this.CercaFotoBambini = new System.Windows.Forms.Button();
+            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
@@ -62,7 +62,7 @@ namespace Maestre.Bambini
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(562, 220);
+            this.label3.Location = new System.Drawing.Point(373, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -72,26 +72,37 @@ namespace Maestre.Bambini
             // 
             // TabellaBambini
             // 
+            this.TabellaBambini.AllowUserToAddRows = false;
+            this.TabellaBambini.AllowUserToDeleteRows = false;
+            this.TabellaBambini.AllowUserToOrderColumns = true;
             this.TabellaBambini.AutoGenerateColumns = false;
-            this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TabellaBambini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.TabellaBambini.ColumnHeadersHeight = 35;
+            this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.TabellaBambini.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn3});
             this.TabellaBambini.DataSource = this.bsBambini;
             this.TabellaBambini.Location = new System.Drawing.Point(509, 278);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
-            this.TabellaBambini.RowHeadersWidth = 62;
+            this.TabellaBambini.ReadOnly = true;
+            this.TabellaBambini.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.TabellaBambini.RowHeadersVisible = false;
+            this.TabellaBambini.RowHeadersWidth = 100;
+            this.TabellaBambini.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.TabellaBambini.RowTemplate.Height = 28;
-            this.TabellaBambini.Size = new System.Drawing.Size(690, 200);
+            this.TabellaBambini.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.TabellaBambini.Size = new System.Drawing.Size(690, 350);
             this.TabellaBambini.TabIndex = 121;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(884, 156);
+            this.label2.Location = new System.Drawing.Point(693, 145);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -103,7 +114,7 @@ namespace Maestre.Bambini
             // ClasseAddBambini
             // 
             this.ClasseAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.ClasseAddBambini.Location = new System.Drawing.Point(1007, 116);
+            this.ClasseAddBambini.Location = new System.Drawing.Point(816, 105);
             this.ClasseAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseAddBambini.Name = "ClasseAddBambini";
             this.ClasseAddBambini.Size = new System.Drawing.Size(66, 23);
@@ -113,7 +124,7 @@ namespace Maestre.Bambini
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(900, 112);
+            this.label1.Location = new System.Drawing.Point(709, 101);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 25);
@@ -127,7 +138,7 @@ namespace Maestre.Bambini
             this.libro_label.Location = new System.Drawing.Point(412, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(546, 58);
+            this.libro_label.Size = new System.Drawing.Size(543, 58);
             this.libro_label.TabIndex = 116;
             this.libro_label.Text = "Aggiungi un bambino";
             this.libro_label.Click += new System.EventHandler(this.libro_label_Click);
@@ -135,7 +146,7 @@ namespace Maestre.Bambini
             // CognomeAddBambini
             // 
             this.CognomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.CognomeAddBambini.Location = new System.Drawing.Point(633, 175);
+            this.CognomeAddBambini.Location = new System.Drawing.Point(442, 164);
             this.CognomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeAddBambini.Name = "CognomeAddBambini";
             this.CognomeAddBambini.Size = new System.Drawing.Size(237, 23);
@@ -144,7 +155,7 @@ namespace Maestre.Bambini
             // NomeAddBambini
             // 
             this.NomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.NomeAddBambini.Location = new System.Drawing.Point(630, 116);
+            this.NomeAddBambini.Location = new System.Drawing.Point(439, 105);
             this.NomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeAddBambini.Name = "NomeAddBambini";
             this.NomeAddBambini.Size = new System.Drawing.Size(237, 23);
@@ -154,7 +165,7 @@ namespace Maestre.Bambini
             // 
             this.cognome_label.AutoSize = true;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(504, 171);
+            this.cognome_label.Location = new System.Drawing.Point(313, 160);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(125, 25);
@@ -165,7 +176,7 @@ namespace Maestre.Bambini
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(550, 116);
+            this.nome_label.Location = new System.Drawing.Point(359, 105);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(76, 25);
@@ -178,15 +189,17 @@ namespace Maestre.Bambini
             // 
             // nascitaAddBambini
             // 
+            this.nascitaAddBambini.CustomFormat = "";
             this.nascitaAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.nascitaAddBambini.Location = new System.Drawing.Point(1007, 173);
+            this.nascitaAddBambini.Location = new System.Drawing.Point(816, 162);
             this.nascitaAddBambini.Name = "nascitaAddBambini";
-            this.nascitaAddBambini.Size = new System.Drawing.Size(237, 23);
+            this.nascitaAddBambini.Size = new System.Drawing.Size(260, 23);
             this.nascitaAddBambini.TabIndex = 129;
             // 
             // Bambini_pic
             // 
-            this.Bambini_pic.Location = new System.Drawing.Point(131, 128);
+            this.Bambini_pic.InitialImage = null;
+            this.Bambini_pic.Location = new System.Drawing.Point(140, 278);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -202,7 +215,7 @@ namespace Maestre.Bambini
             this.AnnullaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.AnnullaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.AnnullaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaModificaBambini.Location = new System.Drawing.Point(219, 529);
+            this.AnnullaModificaBambini.Location = new System.Drawing.Point(219, 636);
             this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
             this.AnnullaModificaBambini.Size = new System.Drawing.Size(383, 120);
             this.AnnullaModificaBambini.TabIndex = 127;
@@ -217,7 +230,7 @@ namespace Maestre.Bambini
             this.ConfermaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.ConfermaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.ConfermaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaModificaBambini.Location = new System.Drawing.Point(748, 529);
+            this.ConfermaModificaBambini.Location = new System.Drawing.Point(748, 637);
             this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
             this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaModificaBambini.TabIndex = 126;
@@ -250,7 +263,7 @@ namespace Maestre.Bambini
             this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CercaFotoBambini.Location = new System.Drawing.Point(633, 213);
+            this.CercaFotoBambini.Location = new System.Drawing.Point(444, 207);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
             this.CercaFotoBambini.Size = new System.Drawing.Size(130, 45);
@@ -258,33 +271,37 @@ namespace Maestre.Bambini
             this.CercaFotoBambini.UseVisualStyleBackColor = true;
             this.CercaFotoBambini.Click += new System.EventHandler(this.CercaFotoBambini_Click);
             // 
+            // bsBambini
+            // 
+            this.bsBambini.DataSource = typeof(Classi.Bambino);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
             this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Cognome";
             this.dataGridViewTextBoxColumn2.HeaderText = "Cognome";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "DataNascita";
-            this.dataGridViewTextBoxColumn3.HeaderText = "DataNascita";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Classe";
             this.dataGridViewTextBoxColumn4.HeaderText = "Classe";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // bsBambini
+            // dataGridViewTextBoxColumn3
             // 
-            this.bsBambini.DataSource = typeof(Classi.Bambino);
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "DataNascita";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Data di nascita";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // AggiungiBambino
             // 
@@ -346,7 +363,7 @@ namespace Maestre.Bambini
         private BindingSource bsBambini;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }
