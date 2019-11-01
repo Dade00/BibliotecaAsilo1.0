@@ -231,6 +231,16 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap No_image {
+            get {
+                object obj = ResourceManager.GetObject("No_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Ok {
             get {
                 object obj = ResourceManager.GetObject("Ok", resourceCulture);

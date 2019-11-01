@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Classi;
 
 namespace Bambini
 {
     public partial class PrendiRestituisci : Form
     {
-        public PrendiRestituisci()
+        Bambino bambinoLoggato = new Bambino();
+        public PrendiRestituisci(Bambino da)
         {
+            bambinoLoggato = da;
             InitializeComponent();
         }
 
@@ -22,7 +25,7 @@ namespace Bambini
         private void Prendi_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Prendi.PrendiGeneree prendiGeneree = new Prendi.PrendiGeneree();
+            Prendi.PrendiGeneree prendiGeneree = new Prendi.PrendiGeneree(bambinoLoggato);
             prendiGeneree.ShowDialog();
             Show();
         }
@@ -30,7 +33,7 @@ namespace Bambini
         private void Restituisci_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Restituiusci.RestituisciGenere restituisciGenere = new Restituiusci.RestituisciGenere();
+            Restituiusci.RestituisciGenere restituisciGenere = new Restituiusci.RestituisciGenere(bambinoLoggato);
             restituisciGenere.ShowDialog();
             Show();
         }

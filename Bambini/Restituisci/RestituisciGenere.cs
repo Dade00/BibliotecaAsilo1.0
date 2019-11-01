@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Classi;
 
 namespace Bambini.Restituiusci
 {
     public partial class RestituisciGenere : Form
     {
-        public RestituisciGenere()
+        Bambino bambinoLoggato = new Bambino();
+        public RestituisciGenere(Bambino da)
         {
+            bambinoLoggato = da;
             InitializeComponent();
         }
 

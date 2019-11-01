@@ -27,7 +27,7 @@ namespace Bambini // BASSANO SEI TU?
         private void Avanti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            PrendiRestituisci PrendiRestituisci = new PrendiRestituisci();
+            PrendiRestituisci PrendiRestituisci = new PrendiRestituisci(bambinoDaConfermare);
             PrendiRestituisci.ShowDialog();
             Show();
         }
@@ -41,6 +41,12 @@ namespace Bambini // BASSANO SEI TU?
         {
             avanti_button.Cursor = CursorOFF;
             indietro_button.Cursor = CursorOFF;
+            lblNome.Text = bambinoDaConfermare.Nome;
+            lblCognome.Text = bambinoDaConfermare.Cognome;
+            if(bambinoDaConfermare.Path == "foto")
+            {
+                pbFoto.BackgroundImage = Bambini.Properties.Resources.No_image;
+            }
         }
 
         private void Indietro_button_MouseDown(object sender, MouseEventArgs e)

@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Classi;
 
 namespace Bambini.Prendi
 {
     public partial class PrendiGeneree : Form
     {
-        public PrendiGeneree()
+        Bambino bambinoLoggato = new Bambino();
+        public PrendiGeneree(Bambino da)
         {
+            bambinoLoggato = da;
             InitializeComponent();
         }
 

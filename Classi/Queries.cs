@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace Classi
 {
@@ -30,6 +31,7 @@ namespace Classi
 
         public static bool getBambini(ref List<Bambino> listaBambini)
         {
+            DataTable dataTable = new DataTable();
             bool result = true;
             try
             {
@@ -40,23 +42,26 @@ namespace Classi
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
-                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+                    
+                    //Converto la tabella della query in Classi.Bambino
+                    for(int i=0; i<dataTable.Rows.Count; i++)
                     {
-                        while (dr.Read())
-                        {
-                            Bambino bambinoTmp = new Bambino();
+                        Bambino bambinoTmp = new Bambino();
 
-                            if (!dr.IsDBNull(dr.GetOrdinal("ID"))) bambinoTmp.ID = dr.GetInt32(dr.GetOrdinal("ID"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Nome"))) bambinoTmp.Nome = dr.GetString(dr.GetOrdinal("Nome"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Cognome"))) bambinoTmp.Cognome = dr.GetString(dr.GetOrdinal("Cognome"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Data_Nascita"))) bambinoTmp.DataNascita = dr.GetDateTime(dr.GetOrdinal("DataNascita"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Classe"))) bambinoTmp.Classe = dr.GetString(dr.GetOrdinal("Classe"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Path_Foto"))) bambinoTmp.Path = dr.GetString(dr.GetOrdinal("Path"));
+                        bambinoTmp.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        bambinoTmp.Nome = dataTable.Rows[i]["Nome"].ToString();
+                        bambinoTmp.Cognome = dataTable.Rows[i]["Cognome"].ToString();
+                        bambinoTmp.Classe = dataTable.Rows[i]["Classe"].ToString();
+                        bambinoTmp.DataNascita = (DateTime)dataTable.Rows[i]["Data_Nascita"];
+                        bambinoTmp.Path = dataTable.Rows[i]["Path_Foto"].ToString();
 
-                            listaBambini.Add(bambinoTmp);
-                        }
+                        listaBambini.Add(bambinoTmp);
                     }
                 }
+
+                
             }
             catch (Exception ex)
             {

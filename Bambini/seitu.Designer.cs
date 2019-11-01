@@ -76,7 +76,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(594, 131);
-            this.lblNome.Name = "label2";
+            this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(79, 33);
             this.lblNome.TabIndex = 6;
             this.lblNome.Text = "TEST";
@@ -86,7 +86,7 @@
             this.lblCognome.AutoSize = true;
             this.lblCognome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCognome.Location = new System.Drawing.Point(595, 226);
-            this.lblCognome.Name = "label1";
+            this.lblCognome.Name = "lblCognome";
             this.lblCognome.Size = new System.Drawing.Size(79, 33);
             this.lblCognome.TabIndex = 7;
             this.lblCognome.Text = "TEST";
@@ -129,6 +129,7 @@
             // 
             // pbFoto
             // 
+            this.pbFoto.InitialImage = global::Bambini.Properties.Resources.No_image;
             this.pbFoto.Location = new System.Drawing.Point(38, 123);
             this.pbFoto.Margin = new System.Windows.Forms.Padding(2);
             this.pbFoto.Name = "pbFoto";
@@ -140,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 715);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.lblCognome);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.Cognome_label);
