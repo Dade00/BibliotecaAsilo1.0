@@ -75,6 +75,8 @@ namespace Maestre.Bambini
             this.TabellaBambini.AllowUserToAddRows = false;
             this.TabellaBambini.AllowUserToDeleteRows = false;
             this.TabellaBambini.AllowUserToOrderColumns = true;
+            this.TabellaBambini.AllowUserToResizeColumns = false;
+            this.TabellaBambini.AllowUserToResizeRows = false;
             this.TabellaBambini.AutoGenerateColumns = false;
             this.TabellaBambini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TabellaBambini.ColumnHeadersHeight = 35;
