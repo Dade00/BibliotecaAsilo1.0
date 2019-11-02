@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Classi
 {
@@ -44,9 +44,9 @@ namespace Classi
                 {
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dataTable);
-                    
+
                     //Converto la tabella della query in Classi.Bambino
-                    for(int i=0; i<dataTable.Rows.Count; i++)
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
                     {
                         Bambino bambinoTmp = new Bambino();
 
@@ -61,7 +61,7 @@ namespace Classi
                     }
                 }
 
-                
+
             }
             catch (Exception ex)
             {
@@ -78,7 +78,7 @@ namespace Classi
 
             try
             {
-                string sql = "UPDATE Bambini SET Nome = @nome, Cognome = @cognome, DataNascita = @DataNascita, Classe = @Classe, Path = @Path WHERE ID = @id";
+                string sql = "UPDATE Bambini SET Nome = @nome, Cognome = @cognome, Data_Nascita = @Data_Nascita, Classe = @Classe, Path_Foto = @Path WHERE ID = @id";
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
@@ -87,7 +87,7 @@ namespace Classi
                     cmd.Parameters.AddWithValue("@cognome", nuovoBambino.Cognome);
                     cmd.Parameters.AddWithValue("@Data_Nascita", nuovoBambino.DataNascita);
                     cmd.Parameters.AddWithValue("@Classe", nuovoBambino.Classe);
-                    cmd.Parameters.AddWithValue("@Path_Foto", nuovoBambino.Path);
+                    cmd.Parameters.AddWithValue("@Path", nuovoBambino.Path);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -105,7 +105,7 @@ namespace Classi
         {
             Bambino b = null;
             List<Bambino> listaBambini = new List<Bambino>();
-
+            DataTable dataTable = new DataTable();
             try
             {
                 string sql = "SELECT * FROM Bambini WHERE Nome = @nome and Cognome = @cognome";  //Case sensitive
@@ -115,22 +115,22 @@ namespace Classi
                     cmd.Parameters.AddWithValue("@nome", bambinoRicercato.Nome);
                     cmd.Parameters.AddWithValue("@cognome", bambinoRicercato.Cognome);
 
-                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
                     {
+                        Bambino bambinoTmp = new Bambino();
 
-                        while (dr.Read())
-                        {
-                            Bambino bambinoTmp = new Bambino();
+                        bambinoTmp.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        bambinoTmp.Nome = dataTable.Rows[i]["Nome"].ToString();
+                        bambinoTmp.Cognome = dataTable.Rows[i]["Cognome"].ToString();
+                        bambinoTmp.Classe = dataTable.Rows[i]["Classe"].ToString();
+                        bambinoTmp.DataNascita = (DateTime)dataTable.Rows[i]["Data_Nascita"];
+                        bambinoTmp.Path = dataTable.Rows[i]["Path_Foto"].ToString();
 
-                            if (!dr.IsDBNull(dr.GetOrdinal("ID"))) bambinoTmp.ID = dr.GetOrdinal("ID");
-                            if (!dr.IsDBNull(dr.GetOrdinal("Nome"))) bambinoTmp.Nome = dr.GetString(dr.GetOrdinal("Nome"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Cognome"))) bambinoTmp.Cognome = dr.GetString(dr.GetOrdinal("Cognome"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Data_Nascita"))) bambinoTmp.DataNascita = dr.GetDateTime(dr.GetOrdinal("Data_Nascita"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Classe"))) bambinoTmp.Classe = dr.GetString(dr.GetOrdinal("Classe"));
-                            if (!dr.IsDBNull(dr.GetOrdinal("Path_Foto"))) bambinoTmp.Path = dr.GetString(dr.GetOrdinal("Path_Foto"));
-
-                            listaBambini.Add(bambinoTmp);
-                        }
+                        listaBambini.Add(bambinoTmp);
                     }
                 }
                 foreach (Bambino bam in listaBambini)
@@ -146,5 +146,47 @@ namespace Classi
 
             return b;
         }
+        public static List<Bambino> getBambino(string NomeBambino, string CognomeBambino)
+        {
+            Bambino b = null;
+            List<Bambino> listaBambini = new List<Bambino>();
+            DataTable dataTable = new DataTable();
+            try
+            {
+                string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome";  //Case sensitive
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@nome", NomeBambino);
+                    cmd.Parameters.AddWithValue("@cognome", CognomeBambino);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Bambino bambinoTmp = new Bambino();
+
+                        bambinoTmp.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        bambinoTmp.Nome = dataTable.Rows[i]["Nome"].ToString();
+                        bambinoTmp.Cognome = dataTable.Rows[i]["Cognome"].ToString();
+                        bambinoTmp.Classe = dataTable.Rows[i]["Classe"].ToString();
+                        bambinoTmp.DataNascita = (DateTime)dataTable.Rows[i]["Data_Nascita"];
+                        bambinoTmp.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+
+                        listaBambini.Add(bambinoTmp);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listaBambini;
+        }
     }
+
 }

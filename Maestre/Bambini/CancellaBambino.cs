@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,10 @@ namespace Maestre.Bambini
 {
     public partial class CancellaBambino : Form
     {
+
+        Bambino bambino = new Bambino();
+        List<Bambino> listaBambini = new List<Bambino>();
+
         public CancellaBambino()
         {
             InitializeComponent();
@@ -29,14 +34,59 @@ namespace Maestre.Bambini
 
         private void CancellaBambino_Load(object sender, EventArgs e)
         {
+            TabellaBambini.DefaultCellStyle.Font = new Font("GROBOLD", 15);
+            TabellaBambini.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
+            try
+            {
+                Queries.getBambini(ref listaBambini);
+                refresh();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
+        private void refresh()
+        {
+            bsBambini.DataSource = listaBambini;
+            bsBambini.ResetBindings(true);
         }
 
         private void AiutoCancellaBambino_Click(object sender, EventArgs e)
         {
-            Maestre.Bambini.CancellaBambino cancellaBambino = new Maestre.Bambini.CancellaBambino();
+            AiutoDelBambino cancellaBambino = new AiutoDelBambino();
             cancellaBambino.ShowDialog();
             Show();
+        }
+
+        private void Cerca_button_Click(object sender, EventArgs e)
+        {
+            if(NomeDelBambini.Text != "" && CognomeDelBambini.Text != "" )
+            {
+                try
+                {
+                    listaBambini = Queries.getBambino(NomeDelBambini.Text, CognomeDelBambini.Text);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+            else if(NomeDelBambini.Text != "") //Per "resettare" la ricerca dei nome (WIP) da pensare in modo più ottimale
+            {
+                try
+                {
+                    listaBambini.Clear();
+                    Queries.getBambini(ref listaBambini);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
         }
     }
 }
