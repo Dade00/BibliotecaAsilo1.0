@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.AnnullaModificaLibro = new System.Windows.Forms.Button();
             this.ConfermaModificaLibro = new System.Windows.Forms.Button();
             this.AiutoModificaLibro = new System.Windows.Forms.Button();
@@ -44,8 +45,14 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.Libri_pic = new System.Windows.Forms.PictureBox();
             this.Libri = new System.Windows.Forms.DataGridView();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             this.SuspendLayout();
             // 
             // AnnullaModificaLibro
@@ -160,7 +167,7 @@
             this.libro_label.Location = new System.Drawing.Point(491, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(447, 58);
+            this.libro_label.Size = new System.Drawing.Size(444, 58);
             this.libro_label.TabIndex = 84;
             this.libro_label.Text = "Aggiungi un libro";
             // 
@@ -214,14 +221,57 @@
             // 
             // Libri
             // 
+            this.Libri.AllowUserToAddRows = false;
+            this.Libri.AllowUserToDeleteRows = false;
+            this.Libri.AllowUserToOrderColumns = true;
+            this.Libri.AutoGenerateColumns = false;
             this.Libri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Libri.Location = new System.Drawing.Point(509, 278);
+            this.Libri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.titoloDataGridViewTextBoxColumn,
+            this.autoreDataGridViewTextBoxColumn,
+            this.genereDataGridViewTextBoxColumn,
+            this.prestitoDataGridViewCheckBoxColumn});
+            this.Libri.DataSource = this.bsLibri;
             this.Libri.Margin = new System.Windows.Forms.Padding(2);
             this.Libri.Name = "Libri";
+            this.Libri.ReadOnly = true;
             this.Libri.RowHeadersWidth = 62;
             this.Libri.RowTemplate.Height = 28;
             this.Libri.Size = new System.Drawing.Size(690, 350);
             this.Libri.TabIndex = 97;
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
+            // 
+            // titoloDataGridViewTextBoxColumn
+            // 
+            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
+            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // autoreDataGridViewTextBoxColumn
+            // 
+            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
+            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
+            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
+            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genereDataGridViewTextBoxColumn
+            // 
+            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
+            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
+            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
+            this.genereDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prestitoDataGridViewCheckBoxColumn
+            // 
+            this.prestitoDataGridViewCheckBoxColumn.DataPropertyName = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.HeaderText = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.Name = "prestitoDataGridViewCheckBoxColumn";
+            this.prestitoDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // AggiungiLibro
             // 
@@ -248,8 +298,10 @@
             this.Name = "AggiungiLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AggiungiLibro";
+            this.Load += new System.EventHandler(this.AggiungiLibro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,5 +325,10 @@
         private System.Windows.Forms.Label nome_label;
         private System.Windows.Forms.PictureBox Libri_pic;
         private System.Windows.Forms.DataGridView Libri;
+        private System.Windows.Forms.BindingSource bsLibri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genereDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn prestitoDataGridViewCheckBoxColumn;
     }
 }
