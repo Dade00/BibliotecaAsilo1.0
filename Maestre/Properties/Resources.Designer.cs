@@ -143,6 +143,16 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerca {
+            get {
+                object obj = ResourceManager.GetObject("cerca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Conferma {
             get {
                 object obj = ResourceManager.GetObject("Conferma", resourceCulture);

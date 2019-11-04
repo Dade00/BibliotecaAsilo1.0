@@ -32,15 +32,15 @@
             this.Libri = new System.Windows.Forms.DataGridView();
             this.TitotloDelLibro = new System.Windows.Forms.TextBox();
             this.nome_label = new System.Windows.Forms.Label();
-            this.ConfermaEliminaLibro = new System.Windows.Forms.Button();
-            this.AnnullaEliminaLibro = new System.Windows.Forms.Button();
-            this.Libri_pic = new System.Windows.Forms.PictureBox();
-            this.AiutoAggiungiLibro = new System.Windows.Forms.Button();
-            this.cerca_button = new System.Windows.Forms.Button();
             this.CognomeDelBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cerca_button = new System.Windows.Forms.Button();
+            this.AiutoAggiungiLibro = new System.Windows.Forms.Button();
+            this.Libri_pic = new System.Windows.Forms.PictureBox();
+            this.AnnullaEliminaLibro = new System.Windows.Forms.Button();
+            this.ConfermaEliminaLibro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
             this.SuspendLayout();
@@ -89,65 +89,6 @@
             this.nome_label.Text = "CERCA TITOLO";
             this.nome_label.Click += new System.EventHandler(this.Nome_label_Click);
             // 
-            // ConfermaEliminaLibro
-            // 
-            this.ConfermaEliminaLibro.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
-            this.ConfermaEliminaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ConfermaEliminaLibro.FlatAppearance.BorderSize = 0;
-            this.ConfermaEliminaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaEliminaLibro.Location = new System.Drawing.Point(758, 637);
-            this.ConfermaEliminaLibro.Name = "ConfermaEliminaLibro";
-            this.ConfermaEliminaLibro.Size = new System.Drawing.Size(380, 120);
-            this.ConfermaEliminaLibro.TabIndex = 72;
-            this.ConfermaEliminaLibro.UseVisualStyleBackColor = true;
-            this.ConfermaEliminaLibro.Click += new System.EventHandler(this.ConfermaEliminaLibro_Click);
-            // 
-            // AnnullaEliminaLibro
-            // 
-            this.AnnullaEliminaLibro.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
-            this.AnnullaEliminaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AnnullaEliminaLibro.FlatAppearance.BorderSize = 0;
-            this.AnnullaEliminaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaEliminaLibro.Location = new System.Drawing.Point(229, 636);
-            this.AnnullaEliminaLibro.Name = "AnnullaEliminaLibro";
-            this.AnnullaEliminaLibro.Size = new System.Drawing.Size(380, 120);
-            this.AnnullaEliminaLibro.TabIndex = 73;
-            this.AnnullaEliminaLibro.UseVisualStyleBackColor = true;
-            this.AnnullaEliminaLibro.Click += new System.EventHandler(this.AnnullaEliminaLibro_Click);
-            // 
-            // Libri_pic
-            // 
-            this.Libri_pic.Location = new System.Drawing.Point(140, 240);
-            this.Libri_pic.Name = "Libri_pic";
-            this.Libri_pic.Size = new System.Drawing.Size(350, 350);
-            this.Libri_pic.TabIndex = 98;
-            this.Libri_pic.TabStop = false;
-            // 
-            // AiutoAggiungiLibro
-            // 
-            this.AiutoAggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
-            this.AiutoAggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AiutoAggiungiLibro.FlatAppearance.BorderSize = 0;
-            this.AiutoAggiungiLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AiutoAggiungiLibro.Location = new System.Drawing.Point(1235, 11);
-            this.AiutoAggiungiLibro.Margin = new System.Windows.Forms.Padding(2);
-            this.AiutoAggiungiLibro.Name = "AiutoAggiungiLibro";
-            this.AiutoAggiungiLibro.Size = new System.Drawing.Size(120, 120);
-            this.AiutoAggiungiLibro.TabIndex = 99;
-            this.AiutoAggiungiLibro.UseVisualStyleBackColor = true;
-            // 
-            // cerca_button
-            // 
-            this.cerca_button.BackgroundImage = global::Maestre.Properties.Resources.Inserisci_foto;
-            this.cerca_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cerca_button.FlatAppearance.BorderSize = 0;
-            this.cerca_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cerca_button.Location = new System.Drawing.Point(918, 132);
-            this.cerca_button.Name = "cerca_button";
-            this.cerca_button.Size = new System.Drawing.Size(130, 45);
-            this.cerca_button.TabIndex = 131;
-            this.cerca_button.UseVisualStyleBackColor = true;
-            // 
             // CognomeDelBambini
             // 
             this.CognomeDelBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
@@ -187,6 +128,65 @@
             this.label2.Size = new System.Drawing.Size(182, 25);
             this.label2.TabIndex = 134;
             this.label2.Text = "CERCA GENERE";
+            // 
+            // cerca_button
+            // 
+            this.cerca_button.BackgroundImage = global::Maestre.Properties.Resources.cerca;
+            this.cerca_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cerca_button.FlatAppearance.BorderSize = 0;
+            this.cerca_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cerca_button.Location = new System.Drawing.Point(908, 129);
+            this.cerca_button.Name = "cerca_button";
+            this.cerca_button.Size = new System.Drawing.Size(220, 50);
+            this.cerca_button.TabIndex = 131;
+            this.cerca_button.UseVisualStyleBackColor = true;
+            // 
+            // AiutoAggiungiLibro
+            // 
+            this.AiutoAggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
+            this.AiutoAggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AiutoAggiungiLibro.FlatAppearance.BorderSize = 0;
+            this.AiutoAggiungiLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AiutoAggiungiLibro.Location = new System.Drawing.Point(1235, 11);
+            this.AiutoAggiungiLibro.Margin = new System.Windows.Forms.Padding(2);
+            this.AiutoAggiungiLibro.Name = "AiutoAggiungiLibro";
+            this.AiutoAggiungiLibro.Size = new System.Drawing.Size(120, 120);
+            this.AiutoAggiungiLibro.TabIndex = 99;
+            this.AiutoAggiungiLibro.UseVisualStyleBackColor = true;
+            // 
+            // Libri_pic
+            // 
+            this.Libri_pic.Location = new System.Drawing.Point(140, 240);
+            this.Libri_pic.Name = "Libri_pic";
+            this.Libri_pic.Size = new System.Drawing.Size(350, 350);
+            this.Libri_pic.TabIndex = 98;
+            this.Libri_pic.TabStop = false;
+            // 
+            // AnnullaEliminaLibro
+            // 
+            this.AnnullaEliminaLibro.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
+            this.AnnullaEliminaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AnnullaEliminaLibro.FlatAppearance.BorderSize = 0;
+            this.AnnullaEliminaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AnnullaEliminaLibro.Location = new System.Drawing.Point(229, 636);
+            this.AnnullaEliminaLibro.Name = "AnnullaEliminaLibro";
+            this.AnnullaEliminaLibro.Size = new System.Drawing.Size(380, 120);
+            this.AnnullaEliminaLibro.TabIndex = 73;
+            this.AnnullaEliminaLibro.UseVisualStyleBackColor = true;
+            this.AnnullaEliminaLibro.Click += new System.EventHandler(this.AnnullaEliminaLibro_Click);
+            // 
+            // ConfermaEliminaLibro
+            // 
+            this.ConfermaEliminaLibro.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
+            this.ConfermaEliminaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ConfermaEliminaLibro.FlatAppearance.BorderSize = 0;
+            this.ConfermaEliminaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfermaEliminaLibro.Location = new System.Drawing.Point(758, 637);
+            this.ConfermaEliminaLibro.Name = "ConfermaEliminaLibro";
+            this.ConfermaEliminaLibro.Size = new System.Drawing.Size(380, 120);
+            this.ConfermaEliminaLibro.TabIndex = 72;
+            this.ConfermaEliminaLibro.UseVisualStyleBackColor = true;
+            this.ConfermaEliminaLibro.Click += new System.EventHandler(this.ConfermaEliminaLibro_Click);
             // 
             // EliminaLibro
             // 
