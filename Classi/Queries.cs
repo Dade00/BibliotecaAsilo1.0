@@ -146,18 +146,32 @@ namespace Classi
 
             return b;
         }
+
         public static List<Bambino> getBambino(string NomeBambino, string CognomeBambino)
         {
+            bool Nome = true, Cognome = true;
             Bambino b = null;
             List<Bambino> listaBambini = new List<Bambino>();
             DataTable dataTable = new DataTable();
+            string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome";  //Case sensitive (Di base ci sono tutti e due)
+            if (CognomeBambino == "" && NomeBambino != "")
+            {
+                sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome";
+                Cognome = false;
+            }
+            else if (CognomeBambino != "" && NomeBambino == "")
+            {
+                sql = "SELECT * FROM Bambini WHERE Cognome LIKE @cognome";
+                Nome = false;
+            }
             try
             {
-                string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome";  //Case sensitive
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
+                    if(Nome)
                     cmd.Parameters.AddWithValue("@nome", NomeBambino);
+                    if(Cognome)
                     cmd.Parameters.AddWithValue("@cognome", CognomeBambino);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -187,6 +201,63 @@ namespace Classi
 
             return listaBambini;
         }
+
+        public static List<Libro> getLibro(string NomeBambino, string CognomeBambino)
+        {
+            bool Nome = true, Cognome = true;
+            Bambino b = null;
+            List<Bambino> listaBambini = new List<Bambino>();
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome";  //Case sensitive (Di base ci sono tutti e due)
+            if (CognomeBambino == "" && NomeBambino != "")
+            {
+                sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome";
+                Cognome = false;
+            }
+            else if (CognomeBambino != "" && NomeBambino == "")
+            {
+                sql = "SELECT * FROM Bambini WHERE Cognome LIKE @cognome";
+                Nome = false;
+            }
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    if (Nome)
+                        cmd.Parameters.AddWithValue("@nome", NomeBambino);
+                    if (Cognome)
+                        cmd.Parameters.AddWithValue("@cognome", CognomeBambino);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Bambino bambinoTmp = new Bambino();
+
+                        bambinoTmp.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        bambinoTmp.Nome = dataTable.Rows[i]["Nome"].ToString();
+                        bambinoTmp.Cognome = dataTable.Rows[i]["Cognome"].ToString();
+                        bambinoTmp.Classe = dataTable.Rows[i]["Classe"].ToString();
+                        bambinoTmp.DataNascita = (DateTime)dataTable.Rows[i]["Data_Nascita"];
+                        bambinoTmp.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+
+                        listaBambini.Add(bambinoTmp);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listaBambini;
+        }
+
+
     }
 
 }

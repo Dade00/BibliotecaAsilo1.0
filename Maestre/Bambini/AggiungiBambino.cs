@@ -77,7 +77,7 @@ namespace Maestre.Bambini
                 MessageBox.Show("Bambino aggiunto!");
                 Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw;
             }

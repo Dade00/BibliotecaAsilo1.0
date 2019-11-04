@@ -62,11 +62,12 @@ namespace Maestre.Bambini
 
         private void Cerca_button_Click(object sender, EventArgs e)
         {
-            if(NomeDelBambini.Text != "" && CognomeDelBambini.Text != "" )
+            if(NomeDelBambini.Text == "" && CognomeDelBambini.Text == "" )
             {
                 try
                 {
-                    listaBambini = Queries.getBambino(NomeDelBambini.Text, CognomeDelBambini.Text);
+                    listaBambini.Clear();
+                    Queries.getBambini(ref listaBambini);
                     refresh();
                 }
                 catch (Exception ex)
@@ -74,12 +75,12 @@ namespace Maestre.Bambini
                     throw;
                 }
             }
-            else if(NomeDelBambini.Text != "") //Per "resettare" la ricerca dei nome (WIP) da pensare in modo più ottimale
+            else  //
             {
                 try
                 {
                     listaBambini.Clear();
-                    Queries.getBambini(ref listaBambini);
+                    listaBambini = Queries.getBambino(NomeDelBambini.Text, CognomeDelBambini.Text);
                     refresh();
                 }
                 catch (Exception ex)
