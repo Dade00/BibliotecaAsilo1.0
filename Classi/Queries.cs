@@ -202,32 +202,19 @@ namespace Classi
             return listaBambini;
         }
 
-        public static List<Libro> getLibro(string NomeBambino, string CognomeBambino)
+        public static List<Libro> getLibri()
         {
-            bool Nome = true, Cognome = true;
-            Bambino b = null;
-            List<Bambino> listaBambini = new List<Bambino>();
+            
+            List<Libro> listaLibri = new List<Libro>();
             DataTable dataTable = new DataTable();
-            string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome";  //Case sensitive (Di base ci sono tutti e due)
-            if (CognomeBambino == "" && NomeBambino != "")
-            {
-                sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome";
-                Cognome = false;
-            }
-            else if (CognomeBambino != "" && NomeBambino == "")
-            {
-                sql = "SELECT * FROM Bambini WHERE Cognome LIKE @cognome";
-                Nome = false;
-            }
+            string sql = "SELECT Libri.ID, libri.Autore, libri.Titolo, Generi.Genere, libri.Path_Foto, libri.In_Prestito " +
+                "FROM[Asilo].[dbo].[Libri], [Asilo].[dbo].[Generi]" +
+                "where Libri.ID_Genere = Generi.ID";
             try
             {
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
-                    if (Nome)
-                        cmd.Parameters.AddWithValue("@nome", NomeBambino);
-                    if (Cognome)
-                        cmd.Parameters.AddWithValue("@cognome", CognomeBambino);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dataTable);
@@ -235,16 +222,16 @@ namespace Classi
                     //Converto la tabella della query in Classi.Bambino
                     for (int i = 0; i < dataTable.Rows.Count; i++)
                     {
-                        Bambino bambinoTmp = new Bambino();
+                        Libro libro = new Libro();
 
-                        bambinoTmp.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
-                        bambinoTmp.Nome = dataTable.Rows[i]["Nome"].ToString();
-                        bambinoTmp.Cognome = dataTable.Rows[i]["Cognome"].ToString();
-                        bambinoTmp.Classe = dataTable.Rows[i]["Classe"].ToString();
-                        bambinoTmp.DataNascita = (DateTime)dataTable.Rows[i]["Data_Nascita"];
-                        bambinoTmp.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+                        libro.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        libro.Titolo = dataTable.Rows[i]["Titolo"].ToString();
+                        libro.Autore = dataTable.Rows[i]["Autore"].ToString();
+                        libro.Genere = dataTable.Rows[i]["Genere"].ToString();
+                        libro.Prestito = (bool)dataTable.Rows[i]["In_Prestito"];
+                        libro.Path = dataTable.Rows[i]["Path_Foto"].ToString();
 
-                        listaBambini.Add(bambinoTmp);
+                        listaLibri.Add(libro);
                     }
                 }
 
@@ -254,7 +241,7 @@ namespace Classi
                 throw ex;
             }
 
-            return listaBambini;
+            return listaLibri;
         }
 
 

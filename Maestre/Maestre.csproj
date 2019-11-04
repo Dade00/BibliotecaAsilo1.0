@@ -217,6 +217,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Bambino.datasource" />
     <None Include="Properties\DataSources\Classi.Bambino.datasource" />
+    <None Include="Properties\DataSources\Classi.Libro.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

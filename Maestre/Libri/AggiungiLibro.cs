@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,75 +18,7 @@ namespace Maestre.Libri
             InitializeComponent();
         }
 
-        private void Nome_label_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Ok_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FotoAddBambino_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AiutoAggiungi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AnniAddBambino_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ClasseAddBambino_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Libro_label_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CogAddBambino_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NomeAddBambino_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cognome_label_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TabellaBambini_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        List<Libro> listaLibri = new List<Libro>();
 
         private void AnnullaModificaLibro_Click(object sender, EventArgs e)
         {
@@ -97,6 +30,25 @@ namespace Maestre.Libri
             Maestre.Libri.AggiungiLibro aggiungiLibro = new Maestre.Libri.AggiungiLibro();
             aggiungiLibro.ShowDialog();
             Show();
+        }
+
+        private void AggiungiLibro_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                listaLibri = Queries.getLibri();
+                refresh();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        private void refresh()
+        {
+            bsLibri.DataSource = listaLibri;
+            bsLibri.ResetBindings(true);
         }
     }
 }
