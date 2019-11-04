@@ -20,6 +20,9 @@ namespace Maestre.Libri
 
         List<Libro> listaLibri = new List<Libro>();
 
+        
+
+
         private void AnnullaModificaLibro_Click(object sender, EventArgs e)
         {
             Close();
@@ -27,16 +30,44 @@ namespace Maestre.Libri
 
         private void ConfermaModificaLibro_Click(object sender, EventArgs e)
         {
-            Maestre.Libri.AggiungiLibro aggiungiLibro = new Maestre.Libri.AggiungiLibro();
-            aggiungiLibro.ShowDialog();
-            Show();
+            Libro libro = new Libro(); 
+
+            try
+            {
+                libro.Autore = AutoreAddLibro.Text;
+                libro.Titolo = TitoloAddLibro.Text;
+                libro.Genere = genereCB.Text;
+                libro.Path = ofdFoto.FileName;
+
+                Queries.addLibro(libro);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         private void AggiungiLibro_Load(object sender, EventArgs e)
         {
+            Libri_pic.Image = Maestre.Properties.Resources.No_image;
+            Libri.DefaultCellStyle.Font = new Font("GROBOLD", 15);
+            Libri.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
+
             try
             {
                 listaLibri = Queries.getLibri();
+                refresh();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            try
+            {
+                List<string> itemsGenere = Queries.getGenere();
+                genereCB.DataSource = itemsGenere;
                 refresh();
             }
             catch (Exception ex)
@@ -49,6 +80,23 @@ namespace Maestre.Libri
         {
             bsLibri.DataSource = listaLibri;
             bsLibri.ResetBindings(true);
+        }
+
+        private void InserisciFotoLibro_Click(object sender, EventArgs e)
+        {
+            if (ofdFoto.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Libri_pic.Image = new Bitmap(ofdFoto.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+            else
+                ofdFoto.FileName = "foto";
         }
     }
 }

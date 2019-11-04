@@ -11,12 +11,12 @@ namespace Classi
         {
             try
             {
-                string sql = "INSERT INTO Bambini VALUES (@nome, @cognome, @Data_Nascita, @Classe, @Path_Foto)";
+                string sql = "INSERT INTO Bambini (Nome, Cognome, Data_Nascita, Classe, Path_Foto)  VALUES (@nome, @cognome, @Data_Nascita, @Classe, @Path_Foto)";
 
                 SqlCommand cmd = new SqlCommand(sql, Sql.getInstance());
 
-                cmd.Parameters.AddWithValue("@Nome", bambino.Nome);
-                cmd.Parameters.AddWithValue("@Cognome", bambino.Cognome);
+                cmd.Parameters.AddWithValue("@nome", bambino.Nome);
+                cmd.Parameters.AddWithValue("@cognome", bambino.Cognome);
                 cmd.Parameters.AddWithValue("@Data_Nascita", bambino.DataNascita);
                 cmd.Parameters.AddWithValue("@Classe", bambino.Classe);
                 cmd.Parameters.AddWithValue("@Path_Foto", bambino.Path);
@@ -169,10 +169,10 @@ namespace Classi
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
-                    if(Nome)
-                    cmd.Parameters.AddWithValue("@nome", NomeBambino);
-                    if(Cognome)
-                    cmd.Parameters.AddWithValue("@cognome", CognomeBambino);
+                    if (Nome)
+                        cmd.Parameters.AddWithValue("@nome", NomeBambino);
+                    if (Cognome)
+                        cmd.Parameters.AddWithValue("@cognome", CognomeBambino);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dataTable);
@@ -204,7 +204,7 @@ namespace Classi
 
         public static List<Libro> getLibri()
         {
-            
+
             List<Libro> listaLibri = new List<Libro>();
             DataTable dataTable = new DataTable();
             string sql = "SELECT Libri.ID, libri.Autore, libri.Titolo, Generi.Genere, libri.Path_Foto, libri.In_Prestito " +
@@ -244,7 +244,81 @@ namespace Classi
             return listaLibri;
         }
 
+        private static int getIDfromGenere(string Genere)
+        {
+            int queryResult = 0;
+            DataTable dataTable = new DataTable();
+            try
+            {
+                string sql = "SELECT ID FROM [Asilo].[dbo].[Generi] WHERE Genere = @genere";
 
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@genere", Genere);
+
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                    sqlDataAdapter.Fill(dataTable);
+                }
+
+                queryResult = Int32.Parse(dataTable.Rows[0]["ID"].ToString());
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return queryResult;
+        }
+
+        public static List<string> getGenere()
+        {
+            List<string> vs = new List<string>();
+            string queryResult = "";
+            DataTable dataTable = new DataTable();
+            try
+            {
+                string sql = "SELECT Genere FROM [Asilo].[dbo].[Generi]";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                    sqlDataAdapter.Fill(dataTable);
+                }
+
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    vs.Add(dataTable.Rows[i]["Genere"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return vs;
+        }
+
+        public static void addLibro(Libro libro)
+        {
+            try
+            {
+                string sql = "INSERT INTO Libri (Titolo, Autore, ID_Genere, Path_Foto, In_Prestito) VALUES (@Titolo, @Autore, @ID_Genere, @Path_Foto, @In_Prestito)";
+
+                SqlCommand cmd = new SqlCommand(sql, Sql.getInstance());
+
+                cmd.Parameters.AddWithValue("@Titolo", libro.Titolo);
+                cmd.Parameters.AddWithValue("@Autore", libro.Autore);
+                cmd.Parameters.AddWithValue("@ID_Genere", getIDfromGenere(libro.Genere));
+                cmd.Parameters.AddWithValue("@Path_Foto", libro.Path);
+                cmd.Parameters.AddWithValue("@In_Prestito", false);
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 
 }

@@ -37,7 +37,7 @@ namespace Maestre.Bambini
                 }
             }
             else
-                ofdFoto.FileName = "";
+                ofdFoto.FileName = "foto";
         }
         private void ConfermaModificaBambini_Click(object sender, EventArgs e)
         {
