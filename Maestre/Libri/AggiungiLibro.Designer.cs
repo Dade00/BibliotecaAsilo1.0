@@ -61,7 +61,7 @@
             this.AnnullaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AnnullaModificaLibro.FlatAppearance.BorderSize = 0;
             this.AnnullaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaModificaLibro.Location = new System.Drawing.Point(223, 536);
+            this.AnnullaModificaLibro.Location = new System.Drawing.Point(229, 636);
             this.AnnullaModificaLibro.Name = "AnnullaModificaLibro";
             this.AnnullaModificaLibro.Size = new System.Drawing.Size(380, 120);
             this.AnnullaModificaLibro.TabIndex = 95;
@@ -74,7 +74,7 @@
             this.ConfermaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ConfermaModificaLibro.FlatAppearance.BorderSize = 0;
             this.ConfermaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaModificaLibro.Location = new System.Drawing.Point(764, 536);
+            this.ConfermaModificaLibro.Location = new System.Drawing.Point(758, 637);
             this.ConfermaModificaLibro.Name = "ConfermaModificaLibro";
             this.ConfermaModificaLibro.Size = new System.Drawing.Size(380, 120);
             this.ConfermaModificaLibro.TabIndex = 94;
@@ -100,7 +100,7 @@
             this.InserisciFotoLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.InserisciFotoLibro.FlatAppearance.BorderSize = 0;
             this.InserisciFotoLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.InserisciFotoLibro.Location = new System.Drawing.Point(626, 222);
+            this.InserisciFotoLibro.Location = new System.Drawing.Point(444, 207);
             this.InserisciFotoLibro.Margin = new System.Windows.Forms.Padding(2);
             this.InserisciFotoLibro.Name = "InserisciFotoLibro";
             this.InserisciFotoLibro.Size = new System.Drawing.Size(130, 45);
@@ -111,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(555, 227);
+            this.label3.Location = new System.Drawing.Point(373, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -122,7 +122,7 @@
             // CodiceAddLibro
             // 
             this.CodiceAddLibro.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.CodiceAddLibro.Location = new System.Drawing.Point(1008, 179);
+            this.CodiceAddLibro.Location = new System.Drawing.Point(816, 162);
             this.CodiceAddLibro.Margin = new System.Windows.Forms.Padding(2);
             this.CodiceAddLibro.Name = "CodiceAddLibro";
             this.CodiceAddLibro.Size = new System.Drawing.Size(121, 23);
@@ -132,7 +132,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(908, 176);
+            this.label2.Location = new System.Drawing.Point(714, 164);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -143,7 +143,7 @@
             // GenereAddLibro
             // 
             this.GenereAddLibro.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.GenereAddLibro.Location = new System.Drawing.Point(1008, 121);
+            this.GenereAddLibro.Location = new System.Drawing.Point(816, 105);
             this.GenereAddLibro.Margin = new System.Windows.Forms.Padding(2);
             this.GenereAddLibro.Name = "GenereAddLibro";
             this.GenereAddLibro.Size = new System.Drawing.Size(121, 23);
@@ -153,7 +153,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(906, 116);
+            this.label1.Location = new System.Drawing.Point(709, 101);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 25);
@@ -174,7 +174,7 @@
             // AutoreAddLibro
             // 
             this.AutoreAddLibro.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.AutoreAddLibro.Location = new System.Drawing.Point(652, 179);
+            this.AutoreAddLibro.Location = new System.Drawing.Point(442, 164);
             this.AutoreAddLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AutoreAddLibro.Name = "AutoreAddLibro";
             this.AutoreAddLibro.Size = new System.Drawing.Size(237, 23);
@@ -183,7 +183,7 @@
             // TitoloAddLibro
             // 
             this.TitoloAddLibro.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.TitoloAddLibro.Location = new System.Drawing.Point(652, 121);
+            this.TitoloAddLibro.Location = new System.Drawing.Point(439, 105);
             this.TitoloAddLibro.Margin = new System.Windows.Forms.Padding(2);
             this.TitoloAddLibro.Name = "TitoloAddLibro";
             this.TitoloAddLibro.Size = new System.Drawing.Size(237, 23);
@@ -193,7 +193,7 @@
             // 
             this.cognome_label.AutoSize = true;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(550, 176);
+            this.cognome_label.Location = new System.Drawing.Point(337, 162);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(98, 25);
@@ -204,7 +204,7 @@
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(562, 117);
+            this.nome_label.Location = new System.Drawing.Point(349, 105);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(86, 25);
@@ -213,7 +213,7 @@
             // 
             // Libri_pic
             // 
-            this.Libri_pic.Location = new System.Drawing.Point(123, 131);
+            this.Libri_pic.Location = new System.Drawing.Point(140, 278);
             this.Libri_pic.Name = "Libri_pic";
             this.Libri_pic.Size = new System.Drawing.Size(350, 350);
             this.Libri_pic.TabIndex = 96;
@@ -226,19 +226,19 @@
             this.Libri.AllowUserToOrderColumns = true;
             this.Libri.AutoGenerateColumns = false;
             this.Libri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Libri.Location = new System.Drawing.Point(509, 278);
             this.Libri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.titoloDataGridViewTextBoxColumn,
             this.autoreDataGridViewTextBoxColumn,
             this.genereDataGridViewTextBoxColumn,
             this.prestitoDataGridViewCheckBoxColumn});
             this.Libri.DataSource = this.bsLibri;
-            this.Libri.Location = new System.Drawing.Point(516, 281);
             this.Libri.Margin = new System.Windows.Forms.Padding(2);
             this.Libri.Name = "Libri";
             this.Libri.ReadOnly = true;
             this.Libri.RowHeadersWidth = 62;
             this.Libri.RowTemplate.Height = 28;
-            this.Libri.Size = new System.Drawing.Size(700, 200);
+            this.Libri.Size = new System.Drawing.Size(690, 350);
             this.Libri.TabIndex = 97;
             // 
             // bsLibri
