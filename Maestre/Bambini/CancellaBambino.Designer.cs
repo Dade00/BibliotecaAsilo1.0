@@ -33,6 +33,11 @@
             this.NomeDelBambini = new System.Windows.Forms.TextBox();
             this.nome_label = new System.Windows.Forms.Label();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             this.CognomeDelBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cerca_button = new System.Windows.Forms.Button();
@@ -40,14 +45,9 @@
             this.AnnullaEliminaBambini = new System.Windows.Forms.Button();
             this.ConfermaEliminaBambini = new System.Windows.Forms.Button();
             this.AiutoCancellaBambino = new System.Windows.Forms.Button();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // libro_label
@@ -57,7 +57,7 @@
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(536, 58);
+            this.libro_label.Size = new System.Drawing.Size(537, 58);
             this.libro_label.TabIndex = 39;
             this.libro_label.Text = "Cancella un bambino";
             // 
@@ -107,6 +107,38 @@
             this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(690, 350);
             this.TabellaBambini.TabIndex = 75;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cognomeDataGridViewTextBoxColumn
+            // 
+            this.cognomeDataGridViewTextBoxColumn.DataPropertyName = "Cognome";
+            this.cognomeDataGridViewTextBoxColumn.HeaderText = "Cognome";
+            this.cognomeDataGridViewTextBoxColumn.Name = "cognomeDataGridViewTextBoxColumn";
+            this.cognomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // classeDataGridViewTextBoxColumn
+            // 
+            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
+            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe";
+            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
+            this.classeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataNascitaDataGridViewTextBoxColumn
+            // 
+            this.dataNascitaDataGridViewTextBoxColumn.DataPropertyName = "DataNascita";
+            this.dataNascitaDataGridViewTextBoxColumn.HeaderText = "Data di nascita";
+            this.dataNascitaDataGridViewTextBoxColumn.Name = "dataNascitaDataGridViewTextBoxColumn";
+            this.dataNascitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bsBambini
+            // 
+            this.bsBambini.DataSource = typeof(Classi.Bambino);
             // 
             // CognomeDelBambini
             // 
@@ -189,38 +221,6 @@
             this.AiutoCancellaBambino.UseVisualStyleBackColor = true;
             this.AiutoCancellaBambino.Click += new System.EventHandler(this.AiutoCancellaBambino_Click);
             // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cognomeDataGridViewTextBoxColumn
-            // 
-            this.cognomeDataGridViewTextBoxColumn.DataPropertyName = "Cognome";
-            this.cognomeDataGridViewTextBoxColumn.HeaderText = "Cognome";
-            this.cognomeDataGridViewTextBoxColumn.Name = "cognomeDataGridViewTextBoxColumn";
-            this.cognomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // classeDataGridViewTextBoxColumn
-            // 
-            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
-            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe";
-            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
-            this.classeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dataNascitaDataGridViewTextBoxColumn
-            // 
-            this.dataNascitaDataGridViewTextBoxColumn.DataPropertyName = "DataNascita";
-            this.dataNascitaDataGridViewTextBoxColumn.HeaderText = "Data di nascita";
-            this.dataNascitaDataGridViewTextBoxColumn.Name = "dataNascitaDataGridViewTextBoxColumn";
-            this.dataNascitaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bsBambini
-            // 
-            this.bsBambini.DataSource = typeof(Classi.Bambino);
-            // 
             // CancellaBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,8 +243,8 @@
             this.Text = "CancellaBambino";
             this.Load += new System.EventHandler(this.CancellaBambino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

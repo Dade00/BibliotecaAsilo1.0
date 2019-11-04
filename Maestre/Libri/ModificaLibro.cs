@@ -38,5 +38,10 @@ namespace Maestre.Libri
             modificaLibro.ShowDialog();
             Show();
         }
+
+        private void TabellaBambini_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
