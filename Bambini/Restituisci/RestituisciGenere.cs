@@ -43,7 +43,7 @@ namespace Bambini.Restituiusci
         private void Sentimenti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose();
+            Librochoose librochoose = new Librochoose("Sentimenti");
             librochoose.ShowDialog();
             Show();
         }
@@ -51,7 +51,7 @@ namespace Bambini.Restituiusci
         private void Scienze_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose();
+            Librochoose librochoose = new Librochoose("Scienze");
             librochoose.ShowDialog();
             Show();
         }
@@ -59,7 +59,7 @@ namespace Bambini.Restituiusci
         private void Animali_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose();
+            Librochoose librochoose = new Librochoose("Animali");
             librochoose.ShowDialog();
             Show();
         }
@@ -67,7 +67,7 @@ namespace Bambini.Restituiusci
         private void Racconti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose();
+            Librochoose librochoose = new Librochoose("Racconti");
             librochoose.ShowDialog();
             Show();
         }
@@ -75,7 +75,7 @@ namespace Bambini.Restituiusci
         private void Storie_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose();
+            Librochoose librochoose = new Librochoose("Storie");
             librochoose.ShowDialog();
             Show();
         }
@@ -83,7 +83,7 @@ namespace Bambini.Restituiusci
         private void Cibo_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose();
+            Librochoose librochoose = new Librochoose("Cibo");
             librochoose.ShowDialog();
             Show();
         }
@@ -183,5 +183,6 @@ namespace Bambini.Restituiusci
             aiutoGenere.ShowDialog();
             Show();
         }
+
     }
 }

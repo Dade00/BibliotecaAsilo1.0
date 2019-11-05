@@ -29,6 +29,7 @@ namespace Classi
             }
         }
 
+
         public static bool getBambini(ref List<Bambino> listaBambini)
         {
             DataTable dataTable = new DataTable();

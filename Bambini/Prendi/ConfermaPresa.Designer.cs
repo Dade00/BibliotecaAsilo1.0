@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb_LIBRO = new System.Windows.Forms.PictureBox();
             this.data_label = new System.Windows.Forms.Label();
             this.datastatic_label = new System.Windows.Forms.Label();
             this.ok_button = new System.Windows.Forms.Button();
             this.nomelibro_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_LIBRO)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pb_LIBRO
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(159, 192);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.pb_LIBRO.Location = new System.Drawing.Point(159, 192);
+            this.pb_LIBRO.Name = "pb_LIBRO";
+            this.pb_LIBRO.Size = new System.Drawing.Size(350, 350);
+            this.pb_LIBRO.TabIndex = 14;
+            this.pb_LIBRO.TabStop = false;
             // 
             // data_label
             // 
@@ -71,16 +71,21 @@
             // 
             // ok_button
             // 
+            this.ok_button.BackColor = System.Drawing.Color.Transparent;
+            this.ok_button.BackgroundImage = global::Bambini.Properties.Resources.Ok;
+            this.ok_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ok_button.FlatAppearance.BorderSize = 0;
+            this.ok_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ok_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ok_button.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
-            this.ok_button.Image = global::Bambini.Properties.Resources.Ok;
             this.ok_button.Location = new System.Drawing.Point(531, 592);
             this.ok_button.Margin = new System.Windows.Forms.Padding(2);
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(391, 130);
             this.ok_button.TabIndex = 11;
-            this.ok_button.UseVisualStyleBackColor = true;
+            this.ok_button.TabStop = false;
+            this.ok_button.UseVisualStyleBackColor = false;
             this.ok_button.Click += new System.EventHandler(this.Ok_button_Click_1);
             this.ok_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseDown);
             this.ok_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseUp);
@@ -113,7 +118,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_LIBRO);
             this.Controls.Add(this.data_label);
             this.Controls.Add(this.datastatic_label);
             this.Controls.Add(this.ok_button);
@@ -125,7 +130,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hai preso";
             this.Load += new System.EventHandler(this.ConfermaPresa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_LIBRO)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +138,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_LIBRO;
         private System.Windows.Forms.Label data_label;
         private System.Windows.Forms.Label datastatic_label;
         private System.Windows.Forms.Button ok_button;

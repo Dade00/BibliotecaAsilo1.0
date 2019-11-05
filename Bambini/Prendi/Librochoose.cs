@@ -1,13 +1,8 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Classi;
 
 namespace Bambini.Prendi
 {
@@ -30,12 +25,21 @@ namespace Bambini.Prendi
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
-            Hide();
-            ConfermaPresa confermaPresa = new ConfermaPresa();
-            confermaPresa.ShowDialog();
-            Show();
+            //Passare la classe del libro selezionato al form successivo che andrà ad effettuare la transazione
 
-            
+            Libro libroSelezionato = new Libro();
+            libroSelezionato = (Libro)bsLibri[bsLibri.Position];
+            if (libroSelezionato != null)
+            {
+                Hide();
+                ConfermaPresa confermaPresa = new ConfermaPresa(libroSelezionato);
+                confermaPresa.ShowDialog();
+                Show();
+            }
+            else
+                return;
+
+
         }
 
         private void Librochoose_VisibleChanged(object sender, EventArgs e)
@@ -112,6 +116,13 @@ namespace Bambini.Prendi
         private void Avanti_button_MouseDown(object sender, MouseEventArgs e)
         {
             indietro_button.Cursor = CursorON;
+        }
+
+        private void ElencoLibri_CurrentCellChanged(object sender, EventArgs e)
+        {
+            Libro libri = new Libro();
+            libri = (Libro)bsLibri[bsLibri.Position];
+            immagineLibro.ImageLocation = libri.Path;
         }
     }
 }

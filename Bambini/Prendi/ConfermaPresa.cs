@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Classi;
 
 namespace Bambini.Prendi
 {
@@ -16,16 +17,21 @@ namespace Bambini.Prendi
         Cursor CursorOFF = new Cursor(Properties.Resources.Cursore1);
         Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
 
-        public ConfermaPresa()
+        Libro LibroDaConfermare = new Libro();
+
+        public ConfermaPresa(Libro libro)
         {
+            LibroDaConfermare = libro;
             InitializeComponent();
         }
 
 
         private void ConfermaPresa_Load(object sender, EventArgs e)
         {
-
             ok_button.Cursor = CursorOFF;
+            nomelibro_label.Text = LibroDaConfermare.Titolo;
+            data_label.Text = DateTime.Now.ToString();
+            pb_LIBRO.ImageLocation = LibroDaConfermare.Path;
         }
 
         private void Ok_button_Click_1(object sender, EventArgs e)

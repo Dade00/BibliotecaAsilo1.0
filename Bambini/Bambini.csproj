@@ -201,18 +201,6 @@
     <None Include="Resources\Bambini_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Storie_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Racconti_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Scienze_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sentimenti_button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\3anni_button.png" />
   </ItemGroup>
   <ItemGroup>
@@ -226,12 +214,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Maestra_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Animali_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Cibo_button.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Conferma.png" />
@@ -258,6 +240,12 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Racconti_button.png" />
+    <None Include="Resources\Scienze_button.png" />
+    <None Include="Resources\Sentimenti_button.png" />
+    <None Include="Resources\Storie_button.png" />
+    <None Include="Resources\Cibo_button.png" />
+    <None Include="Resources\Animali_button.png" />
     <None Include="Resources\Indietro_button.png" />
     <None Include="Resources\Avanti.png" />
     <None Include="Resources\Sfondo 2.jpg" />

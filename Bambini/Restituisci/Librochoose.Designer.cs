@@ -28,15 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.indietro_button = new System.Windows.Forms.Button();
             this.avanti_button = new System.Windows.Forms.Button();
             this.libro_label = new System.Windows.Forms.Label();
             this.down_button = new System.Windows.Forms.Button();
             this.up_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.datagrid = new System.Windows.Forms.DataGridView();
+            this.ElencoLibri = new System.Windows.Forms.DataGridView();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             this.SuspendLayout();
             // 
             // indietro_button
@@ -122,27 +127,58 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Bambini.Properties.Resources.No_image;
             this.pictureBox1.Location = new System.Drawing.Point(11, 102);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(325, 325);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // datagrid
+            // ElencoLibri
             // 
-            this.datagrid.AllowUserToAddRows = false;
-            this.datagrid.AllowUserToDeleteRows = false;
-            this.datagrid.AllowUserToOrderColumns = true;
-            this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagrid.Location = new System.Drawing.Point(340, 102);
-            this.datagrid.Margin = new System.Windows.Forms.Padding(2);
-            this.datagrid.Name = "datagrid";
-            this.datagrid.ReadOnly = true;
-            this.datagrid.RowHeadersWidth = 62;
-            this.datagrid.RowTemplate.Height = 28;
-            this.datagrid.Size = new System.Drawing.Size(792, 424);
-            this.datagrid.TabIndex = 8;
+            this.ElencoLibri.AllowUserToAddRows = false;
+            this.ElencoLibri.AllowUserToDeleteRows = false;
+            this.ElencoLibri.AllowUserToOrderColumns = true;
+            this.ElencoLibri.AllowUserToResizeRows = false;
+            this.ElencoLibri.AutoGenerateColumns = false;
+            this.ElencoLibri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ElencoLibri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ElencoLibri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.titoloDataGridViewTextBoxColumn,
+            this.autoreDataGridViewTextBoxColumn});
+            this.ElencoLibri.DataSource = this.bsLibri;
+            this.ElencoLibri.Location = new System.Drawing.Point(340, 102);
+            this.ElencoLibri.Margin = new System.Windows.Forms.Padding(2);
+            this.ElencoLibri.Name = "ElencoLibri";
+            this.ElencoLibri.ReadOnly = true;
+            this.ElencoLibri.RowHeadersVisible = false;
+            this.ElencoLibri.RowHeadersWidth = 62;
+            this.ElencoLibri.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.ElencoLibri.RowTemplate.Height = 28;
+            this.ElencoLibri.Size = new System.Drawing.Size(792, 424);
+            this.ElencoLibri.TabIndex = 8;
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
+            // 
+            // titoloDataGridViewTextBoxColumn
+            // 
+            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
+            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // autoreDataGridViewTextBoxColumn
+            // 
+            this.autoreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
+            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
+            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
+            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.autoreDataGridViewTextBoxColumn.Width = 63;
             // 
             // Librochoose
             // 
@@ -155,7 +191,7 @@
             this.Controls.Add(this.down_button);
             this.Controls.Add(this.up_button);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.datagrid);
+            this.Controls.Add(this.ElencoLibri);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Librochoose";
@@ -164,7 +200,8 @@
             this.Load += new System.EventHandler(this.Librochoose_Load);
             this.VisibleChanged += new System.EventHandler(this.Librochoose_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,6 +215,9 @@
         private System.Windows.Forms.Button down_button;
         private System.Windows.Forms.Button up_button;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView datagrid;
+        private System.Windows.Forms.DataGridView ElencoLibri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource bsLibri;
     }
 }

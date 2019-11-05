@@ -7,13 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Classi;
 
 namespace Bambini.Restituiusci
 {
     public partial class Librochoose : Form
     {
-        public Librochoose()
+        string genereDaRestituire = "";
+
+        public Librochoose(string genere)
         {
+            genereDaRestituire = genere;
             InitializeComponent();
         }
 
@@ -47,6 +51,10 @@ namespace Bambini.Restituiusci
             down_button.Cursor = CursorOFF;
             avanti_button.Cursor = CursorOFF;
             indietro_button.Cursor = CursorOFF;
+
+            //Modifica font datagrid
+            ElencoLibri.DefaultCellStyle.Font = new Font("GROBOLD", 15);
+            ElencoLibri.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
         }
 
 

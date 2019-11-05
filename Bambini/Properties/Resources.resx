@@ -128,7 +128,7 @@
     <value>..\Resources\Avanti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cibo_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cibo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Cibo_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Conferma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Conferma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -140,10 +140,10 @@
     <value>..\Resources\cursorclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cursore1" xml:space="preserve">
-    <value>D:\Davide\Documenti\Biblio\BibliotecaAsilo1.0\Bambini\MickyMouseOFF.cur</value>
+    <value>C:\BibliotecaAsilo\GUI_ELEMENTS\MickyMouseOFF.cur</value>
   </data>
   <data name="Cursore2" xml:space="preserve">
-    <value>D:\Davide\Documenti\Biblio\BibliotecaAsilo1.0\Bambini\MickyMouseON.cur</value>
+    <value>C:\BibliotecaAsilo\GUI_ELEMENTS\MickyMouseON.cur</value>
   </data>
   <data name="DirectoryBase" xml:space="preserve">
     <value>C:\BibliotecaAsilo</value>
@@ -165,22 +165,22 @@
     <value>..\resources\prendi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Racconti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Racconti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Racconti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Restituisce" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\restituisce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Scienze_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scienze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Scienze_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sentimenti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sentimenti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Sentimenti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sfondo_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sfondo 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Storie_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Storie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Storie_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Su" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Su.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -37,18 +37,26 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.Libri = new System.Windows.Forms.DataGridView();
-            this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
-            this.genereCB = new System.Windows.Forms.ComboBox();
             this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
+            this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
+            this.genereCB = new System.Windows.Forms.ComboBox();
             this.Libri_pic = new System.Windows.Forms.PictureBox();
             this.AnnullaModificaLibro = new System.Windows.Forms.Button();
             this.ConfermaModificaLibro = new System.Windows.Forms.Button();
             this.AiutoModificaLibro = new System.Windows.Forms.Button();
             this.InserisciFotoLibro = new System.Windows.Forms.Button();
+            this.label = new System.Windows.Forms.Label();
+            this.labeltitolo = new System.Windows.Forms.Label();
+            this.titolo_tb = new System.Windows.Forms.TextBox();
+            this.autore_tb = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.search_button = new System.Windows.Forms.Button();
+            this.genere_tb = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
@@ -58,7 +66,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(300, 214);
+            this.label3.Location = new System.Drawing.Point(421, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -70,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(753, 107);
+            this.label1.Location = new System.Drawing.Point(874, 107);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 25);
@@ -91,7 +99,7 @@
             // AutoreAddLibro
             // 
             this.AutoreAddLibro.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.AutoreAddLibro.Location = new System.Drawing.Point(372, 164);
+            this.AutoreAddLibro.Location = new System.Drawing.Point(493, 164);
             this.AutoreAddLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AutoreAddLibro.Name = "AutoreAddLibro";
             this.AutoreAddLibro.Size = new System.Drawing.Size(333, 30);
@@ -100,7 +108,7 @@
             // TitoloAddLibro
             // 
             this.TitoloAddLibro.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.TitoloAddLibro.Location = new System.Drawing.Point(371, 105);
+            this.TitoloAddLibro.Location = new System.Drawing.Point(492, 105);
             this.TitoloAddLibro.Margin = new System.Windows.Forms.Padding(2);
             this.TitoloAddLibro.Name = "TitoloAddLibro";
             this.TitoloAddLibro.Size = new System.Drawing.Size(334, 30);
@@ -110,7 +118,7 @@
             // 
             this.cognome_label.AutoSize = true;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(264, 162);
+            this.cognome_label.Location = new System.Drawing.Point(385, 162);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(98, 25);
@@ -121,7 +129,7 @@
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(276, 105);
+            this.nome_label.Location = new System.Drawing.Point(397, 105);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(86, 25);
@@ -144,7 +152,7 @@
             this.genereDataGridViewTextBoxColumn,
             this.prestitoDataGridViewCheckBoxColumn});
             this.Libri.DataSource = this.bsLibri;
-            this.Libri.Location = new System.Drawing.Point(367, 278);
+            this.Libri.Location = new System.Drawing.Point(410, 281);
             this.Libri.Margin = new System.Windows.Forms.Padding(2);
             this.Libri.Name = "Libri";
             this.Libri.ReadOnly = true;
@@ -155,19 +163,6 @@
             this.Libri.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Libri.Size = new System.Drawing.Size(945, 350);
             this.Libri.TabIndex = 97;
-            // 
-            // ofdFoto
-            // 
-            this.ofdFoto.FileName = "openFileDialog1";
-            // 
-            // genereCB
-            // 
-            this.genereCB.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.genereCB.FormattingEnabled = true;
-            this.genereCB.Location = new System.Drawing.Point(865, 103);
-            this.genereCB.Name = "genereCB";
-            this.genereCB.Size = new System.Drawing.Size(250, 31);
-            this.genereCB.TabIndex = 98;
             // 
             // titoloDataGridViewTextBoxColumn
             // 
@@ -205,11 +200,25 @@
             // 
             this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
+            // ofdFoto
+            // 
+            this.ofdFoto.FileName = "openFileDialog1";
+            // 
+            // genereCB
+            // 
+            this.genereCB.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.genereCB.FormattingEnabled = true;
+            this.genereCB.Location = new System.Drawing.Point(986, 103);
+            this.genereCB.Name = "genereCB";
+            this.genereCB.Size = new System.Drawing.Size(250, 31);
+            this.genereCB.TabIndex = 98;
+            // 
             // Libri_pic
             // 
-            this.Libri_pic.Location = new System.Drawing.Point(12, 278);
+            this.Libri_pic.Location = new System.Drawing.Point(130, 18);
             this.Libri_pic.Name = "Libri_pic";
-            this.Libri_pic.Size = new System.Drawing.Size(350, 350);
+            this.Libri_pic.Size = new System.Drawing.Size(250, 250);
+            this.Libri_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Libri_pic.TabIndex = 96;
             this.Libri_pic.TabStop = false;
             // 
@@ -220,7 +229,7 @@
             this.AnnullaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AnnullaModificaLibro.FlatAppearance.BorderSize = 0;
             this.AnnullaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaModificaLibro.Location = new System.Drawing.Point(229, 636);
+            this.AnnullaModificaLibro.Location = new System.Drawing.Point(585, 636);
             this.AnnullaModificaLibro.Name = "AnnullaModificaLibro";
             this.AnnullaModificaLibro.Size = new System.Drawing.Size(380, 120);
             this.AnnullaModificaLibro.TabIndex = 95;
@@ -234,9 +243,9 @@
             this.ConfermaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ConfermaModificaLibro.FlatAppearance.BorderSize = 0;
             this.ConfermaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaModificaLibro.Location = new System.Drawing.Point(758, 637);
+            this.ConfermaModificaLibro.Location = new System.Drawing.Point(990, 190);
             this.ConfermaModificaLibro.Name = "ConfermaModificaLibro";
-            this.ConfermaModificaLibro.Size = new System.Drawing.Size(380, 120);
+            this.ConfermaModificaLibro.Size = new System.Drawing.Size(246, 78);
             this.ConfermaModificaLibro.TabIndex = 94;
             this.ConfermaModificaLibro.UseVisualStyleBackColor = false;
             this.ConfermaModificaLibro.Click += new System.EventHandler(this.ConfermaModificaLibro_Click);
@@ -247,10 +256,10 @@
             this.AiutoModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AiutoModificaLibro.FlatAppearance.BorderSize = 0;
             this.AiutoModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AiutoModificaLibro.Location = new System.Drawing.Point(1235, 11);
+            this.AiutoModificaLibro.Location = new System.Drawing.Point(11, 9);
             this.AiutoModificaLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoModificaLibro.Name = "AiutoModificaLibro";
-            this.AiutoModificaLibro.Size = new System.Drawing.Size(120, 120);
+            this.AiutoModificaLibro.Size = new System.Drawing.Size(81, 86);
             this.AiutoModificaLibro.TabIndex = 93;
             this.AiutoModificaLibro.UseVisualStyleBackColor = true;
             // 
@@ -261,7 +270,7 @@
             this.InserisciFotoLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.InserisciFotoLibro.FlatAppearance.BorderSize = 0;
             this.InserisciFotoLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.InserisciFotoLibro.Location = new System.Drawing.Point(371, 207);
+            this.InserisciFotoLibro.Location = new System.Drawing.Point(492, 207);
             this.InserisciFotoLibro.Margin = new System.Windows.Forms.Padding(2);
             this.InserisciFotoLibro.Name = "InserisciFotoLibro";
             this.InserisciFotoLibro.Size = new System.Drawing.Size(130, 45);
@@ -269,11 +278,99 @@
             this.InserisciFotoLibro.UseVisualStyleBackColor = false;
             this.InserisciFotoLibro.Click += new System.EventHandler(this.InserisciFotoLibro_Click);
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("GROBOLD", 20F);
+            this.label.Location = new System.Drawing.Point(12, 271);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(205, 33);
+            this.label.TabIndex = 99;
+            this.label.Text = "Cerca un libro:";
+            // 
+            // labeltitolo
+            // 
+            this.labeltitolo.AutoSize = true;
+            this.labeltitolo.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.labeltitolo.Location = new System.Drawing.Point(14, 311);
+            this.labeltitolo.Name = "labeltitolo";
+            this.labeltitolo.Size = new System.Drawing.Size(77, 27);
+            this.labeltitolo.TabIndex = 100;
+            this.labeltitolo.Text = "Titolo:";
+            // 
+            // titolo_tb
+            // 
+            this.titolo_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.titolo_tb.Location = new System.Drawing.Point(18, 341);
+            this.titolo_tb.Name = "titolo_tb";
+            this.titolo_tb.Size = new System.Drawing.Size(362, 30);
+            this.titolo_tb.TabIndex = 101;
+            // 
+            // autore_tb
+            // 
+            this.autore_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.autore_tb.Location = new System.Drawing.Point(18, 433);
+            this.autore_tb.Name = "autore_tb";
+            this.autore_tb.Size = new System.Drawing.Size(362, 30);
+            this.autore_tb.TabIndex = 103;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.label2.Location = new System.Drawing.Point(14, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 27);
+            this.label2.TabIndex = 102;
+            this.label2.Text = "Autore:";
+            // 
+            // search_button
+            // 
+            this.search_button.BackColor = System.Drawing.Color.Transparent;
+            this.search_button.BackgroundImage = global::Maestre.Properties.Resources.cerca;
+            this.search_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.search_button.FlatAppearance.BorderSize = 0;
+            this.search_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_button.Location = new System.Drawing.Point(170, 573);
+            this.search_button.Name = "search_button";
+            this.search_button.Size = new System.Drawing.Size(210, 58);
+            this.search_button.TabIndex = 104;
+            this.search_button.UseVisualStyleBackColor = false;
+            this.search_button.Click += new System.EventHandler(this.Search_button_Click);
+            // 
+            // genere_tb
+            // 
+            this.genere_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.genere_tb.Location = new System.Drawing.Point(18, 525);
+            this.genere_tb.Name = "genere_tb";
+            this.genere_tb.Size = new System.Drawing.Size(362, 30);
+            this.genere_tb.TabIndex = 106;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.label4.Location = new System.Drawing.Point(14, 495);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 27);
+            this.label4.TabIndex = 105;
+            this.label4.Text = "Genere:";
+            // 
             // AggiungiLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.genere_tb);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.search_button);
+            this.Controls.Add(this.autore_tb);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.titolo_tb);
+            this.Controls.Add(this.labeltitolo);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.genereCB);
             this.Controls.Add(this.Libri);
             this.Controls.Add(this.Libri_pic);
@@ -323,5 +420,13 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn prestitoDataGridViewCheckBoxColumn;
         private System.Windows.Forms.OpenFileDialog ofdFoto;
         private System.Windows.Forms.ComboBox genereCB;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label labeltitolo;
+        private System.Windows.Forms.TextBox titolo_tb;
+        private System.Windows.Forms.TextBox autore_tb;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button search_button;
+        private System.Windows.Forms.TextBox genere_tb;
+        private System.Windows.Forms.Label label4;
     }
 }
