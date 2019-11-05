@@ -20,7 +20,7 @@ namespace Maestre.Libri
 
         List<Libro> listaLibri = new List<Libro>();
 
-        
+        bool GUIUpdate = false;
 
 
         private void AnnullaModificaLibro_Click(object sender, EventArgs e)
@@ -46,6 +46,7 @@ namespace Maestre.Libri
                 throw;
             }
 
+            GUIUpdate = true;
         }
 
         private void AggiungiLibro_Load(object sender, EventArgs e)
@@ -67,7 +68,9 @@ namespace Maestre.Libri
             try
             {
                 List<string> itemsGenere = Queries.getGenere();
+                List<string> itemsGenere2 = new List<string>(itemsGenere);
                 genereCB.DataSource = itemsGenere;
+                genereCB_2.DataSource = itemsGenere2;
                 refresh();
             }
             catch (Exception ex)
@@ -101,7 +104,35 @@ namespace Maestre.Libri
 
         private void Search_button_Click(object sender, EventArgs e)
         {
+            if(titolo_tb.Text != "" || autore_tb.Text != "" || genereCB_2.Text != "")
+            {
+                try
+                {
+                    listaLibri =  Queries.getLibri(titolo_tb.Text, autore_tb.Text, genereCB_2.Text); ;
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+        }
 
+        private void Update_Tick(object sender, EventArgs e)
+        {
+            if(GUIUpdate)
+            {
+                GUIUpdate = false;
+                try
+                {
+                    listaLibri = Queries.getLibri();
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
         }
     }
 }

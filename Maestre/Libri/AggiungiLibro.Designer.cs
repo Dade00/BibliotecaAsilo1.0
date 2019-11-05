@@ -37,11 +37,6 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.Libri = new System.Windows.Forms.DataGridView();
-            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.genereCB = new System.Windows.Forms.ComboBox();
             this.Libri_pic = new System.Windows.Forms.PictureBox();
@@ -55,11 +50,17 @@
             this.autore_tb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.search_button = new System.Windows.Forms.Button();
-            this.genere_tb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.update = new System.Windows.Forms.Timer(this.components);
+            this.genereCB_2 = new System.Windows.Forms.ComboBox();
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -163,42 +164,6 @@
             this.Libri.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Libri.Size = new System.Drawing.Size(945, 350);
             this.Libri.TabIndex = 97;
-            // 
-            // titoloDataGridViewTextBoxColumn
-            // 
-            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
-            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // autoreDataGridViewTextBoxColumn
-            // 
-            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
-            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
-            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
-            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // genereDataGridViewTextBoxColumn
-            // 
-            this.genereDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
-            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
-            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
-            this.genereDataGridViewTextBoxColumn.ReadOnly = true;
-            this.genereDataGridViewTextBoxColumn.Width = 67;
-            // 
-            // prestitoDataGridViewCheckBoxColumn
-            // 
-            this.prestitoDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.prestitoDataGridViewCheckBoxColumn.DataPropertyName = "Prestito";
-            this.prestitoDataGridViewCheckBoxColumn.HeaderText = "Prestito";
-            this.prestitoDataGridViewCheckBoxColumn.Name = "prestitoDataGridViewCheckBoxColumn";
-            this.prestitoDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.prestitoDataGridViewCheckBoxColumn.Width = 48;
-            // 
-            // bsLibri
-            // 
-            this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
             // ofdFoto
             // 
@@ -340,14 +305,6 @@
             this.search_button.UseVisualStyleBackColor = false;
             this.search_button.Click += new System.EventHandler(this.Search_button_Click);
             // 
-            // genere_tb
-            // 
-            this.genere_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.genere_tb.Location = new System.Drawing.Point(18, 525);
-            this.genere_tb.Name = "genere_tb";
-            this.genere_tb.Size = new System.Drawing.Size(362, 30);
-            this.genere_tb.TabIndex = 106;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -358,12 +315,61 @@
             this.label4.TabIndex = 105;
             this.label4.Text = "Genere:";
             // 
+            // update
+            // 
+            this.update.Tick += new System.EventHandler(this.Update_Tick);
+            // 
+            // genereCB_2
+            // 
+            this.genereCB_2.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.genereCB_2.FormattingEnabled = true;
+            this.genereCB_2.Location = new System.Drawing.Point(19, 525);
+            this.genereCB_2.Name = "genereCB_2";
+            this.genereCB_2.Size = new System.Drawing.Size(250, 31);
+            this.genereCB_2.TabIndex = 106;
+            // 
+            // titoloDataGridViewTextBoxColumn
+            // 
+            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
+            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // autoreDataGridViewTextBoxColumn
+            // 
+            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
+            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
+            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
+            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genereDataGridViewTextBoxColumn
+            // 
+            this.genereDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
+            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
+            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
+            this.genereDataGridViewTextBoxColumn.ReadOnly = true;
+            this.genereDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // prestitoDataGridViewCheckBoxColumn
+            // 
+            this.prestitoDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.prestitoDataGridViewCheckBoxColumn.DataPropertyName = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.HeaderText = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.Name = "prestitoDataGridViewCheckBoxColumn";
+            this.prestitoDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.prestitoDataGridViewCheckBoxColumn.Width = 48;
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
+            // 
             // AggiungiLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.genere_tb);
+            this.Controls.Add(this.genereCB_2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.search_button);
             this.Controls.Add(this.autore_tb);
@@ -391,8 +397,8 @@
             this.Text = "AggiungiLibro";
             this.Load += new System.EventHandler(this.AggiungiLibro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,7 +432,8 @@
         private System.Windows.Forms.TextBox autore_tb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button search_button;
-        private System.Windows.Forms.TextBox genere_tb;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer update;
+        private System.Windows.Forms.ComboBox genereCB_2;
     }
 }

@@ -360,6 +360,76 @@ namespace Classi
 
             return listaLibri;
         }
+
+        /// <summary>
+        /// Query per prendere libri ma con parametri variabili
+        /// </summary>
+        /// <returns></returns>
+        public static List<Libro> getLibri(string Titolo, string Autore, string Genere)
+        {
+            bool autore = false, titolo = false, genere = false; 
+            List<Libro> listaLibri = new List<Libro>();
+            DataTable dataTable = new DataTable();
+            //Crea la stinga di base (dando per scontato che abbia inserito tutti e tre i parametri)
+            string sql = "SELECT Libri.ID, libri.Autore, libri.Titolo, Generi.Genere, libri.Path_Foto, libri.In_Prestito " +
+                "FROM[Asilo].[dbo].[Libri], [Asilo].[dbo].[Generi]" +
+                "where Libri.ID_Genere = Generi.ID";
+            if (Titolo != "")
+            {
+                sql += " and Libri.Titolo LIKE @titolo";
+                titolo = true;
+            }
+            if (Autore != "")
+            {
+                sql += " and Libri.Autore LIKE @autore";
+                autore = true;
+            }
+            if (Genere != "")
+            {
+                sql += " and Generi.Genere = @genere";
+                genere = true;
+            }
+
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+
+                    if (genere)
+                        cmd.Parameters.AddWithValue("genere", Genere);
+                    if (autore)
+                        cmd.Parameters.AddWithValue("autore", "%" + Autore + "%");
+                    if (titolo)
+                        cmd.Parameters.AddWithValue("titolo", "%" + Titolo + "%");
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Libro libro = new Libro();
+
+                        libro.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        libro.Titolo = dataTable.Rows[i]["Titolo"].ToString();
+                        libro.Autore = dataTable.Rows[i]["Autore"].ToString();
+                        libro.Genere = dataTable.Rows[i]["Genere"].ToString();
+                        libro.Prestito = (bool)dataTable.Rows[i]["In_Prestito"];
+                        libro.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+
+                        listaLibri.Add(libro);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listaLibri;
+        }
     }
 
 }
