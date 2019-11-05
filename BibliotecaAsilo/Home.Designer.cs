@@ -39,6 +39,8 @@
             // 
             this.Esci_button.BackColor = System.Drawing.Color.Transparent;
             this.Esci_button.FlatAppearance.BorderSize = 0;
+            this.Esci_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Esci_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Esci_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Esci_button.Image = global::BibliotecaAsilo.Properties.Resources.Esci;
             this.Esci_button.Location = new System.Drawing.Point(527, 544);
@@ -54,6 +56,8 @@
             // 
             this.crediti_button.BackColor = System.Drawing.Color.Transparent;
             this.crediti_button.FlatAppearance.BorderSize = 0;
+            this.crediti_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.crediti_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.crediti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.crediti_button.Image = ((System.Drawing.Image)(resources.GetObject("crediti_button.Image")));
             this.crediti_button.Location = new System.Drawing.Point(11, 561);
@@ -68,9 +72,12 @@
             // bambini_button
             // 
             this.bambini_button.BackColor = System.Drawing.Color.Transparent;
+            this.bambini_button.BackgroundImage = global::BibliotecaAsilo.Properties.Resources.Bambini_button;
+            this.bambini_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bambini_button.FlatAppearance.BorderSize = 0;
+            this.bambini_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bambini_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bambini_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bambini_button.Image = global::BibliotecaAsilo.Properties.Resources.Bambini_button;
             this.bambini_button.Location = new System.Drawing.Point(78, 161);
             this.bambini_button.Margin = new System.Windows.Forms.Padding(2);
             this.bambini_button.Name = "bambini_button";
@@ -86,14 +93,17 @@
             this.maestre_button.BackColor = System.Drawing.Color.Transparent;
             this.maestre_button.BackgroundImage = global::BibliotecaAsilo.Properties.Resources.Maestra;
             this.maestre_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.maestre_button.CausesValidation = false;
             this.maestre_button.FlatAppearance.BorderSize = 0;
+            this.maestre_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.maestre_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.maestre_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.maestre_button.Location = new System.Drawing.Point(752, 157);
             this.maestre_button.Margin = new System.Windows.Forms.Padding(2);
             this.maestre_button.Name = "maestre_button";
             this.maestre_button.Size = new System.Drawing.Size(552, 208);
             this.maestre_button.TabIndex = 0;
-            this.maestre_button.UseVisualStyleBackColor = false;
+            this.maestre_button.UseVisualStyleBackColor = true;
             this.maestre_button.Click += new System.EventHandler(this.Maestre_button_Click);
             this.maestre_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Maestre_button_MouseDown);
             this.maestre_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Maestre_button_MouseUp);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(seitu));
             this.seitu_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.Cognome_label = new System.Windows.Forms.Label();
@@ -54,7 +55,7 @@
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome_label.Location = new System.Drawing.Point(482, 131);
+            this.nome_label.Location = new System.Drawing.Point(554, 131);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(107, 33);
@@ -65,7 +66,7 @@
             // 
             this.Cognome_label.AutoSize = true;
             this.Cognome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cognome_label.Location = new System.Drawing.Point(416, 226);
+            this.Cognome_label.Location = new System.Drawing.Point(488, 226);
             this.Cognome_label.Name = "Cognome_label";
             this.Cognome_label.Size = new System.Drawing.Size(173, 33);
             this.Cognome_label.TabIndex = 5;
@@ -75,7 +76,7 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(594, 131);
+            this.lblNome.Location = new System.Drawing.Point(705, 131);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(79, 33);
             this.lblNome.TabIndex = 6;
@@ -85,7 +86,7 @@
             // 
             this.lblCognome.AutoSize = true;
             this.lblCognome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCognome.Location = new System.Drawing.Point(595, 226);
+            this.lblCognome.Location = new System.Drawing.Point(705, 226);
             this.lblCognome.Name = "lblCognome";
             this.lblCognome.Size = new System.Drawing.Size(79, 33);
             this.lblCognome.TabIndex = 7;
@@ -93,36 +94,38 @@
             // 
             // avanti_button
             // 
-            this.avanti_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.BackColor = System.Drawing.Color.Transparent;
+            this.avanti_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("avanti_button.BackgroundImage")));
+            this.avanti_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.avanti_button.FlatAppearance.BorderSize = 0;
-            this.avanti_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
-            this.avanti_button.Location = new System.Drawing.Point(711, 597);
+            this.avanti_button.Location = new System.Drawing.Point(717, 597);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";
             this.avanti_button.Size = new System.Drawing.Size(380, 80);
             this.avanti_button.TabIndex = 4;
-            this.avanti_button.UseVisualStyleBackColor = true;
+            this.avanti_button.UseVisualStyleBackColor = false;
             this.avanti_button.Click += new System.EventHandler(this.Avanti_button_Click);
             this.avanti_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseDown);
             this.avanti_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Avanti_button_MouseUp);
             // 
             // indietro_button
             // 
-            this.indietro_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.BackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.BackgroundImage = global::Bambini.Properties.Resources.Indietro_button;
+            this.indietro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.indietro_button.FlatAppearance.BorderSize = 0;
-            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
-            this.indietro_button.Location = new System.Drawing.Point(225, 597);
+            this.indietro_button.Location = new System.Drawing.Point(270, 597);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 80);
             this.indietro_button.TabIndex = 3;
-            this.indietro_button.UseVisualStyleBackColor = true;
+            this.indietro_button.UseVisualStyleBackColor = false;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             this.indietro_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseDown);
             this.indietro_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Indietro_button_MouseUp);

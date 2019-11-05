@@ -108,7 +108,7 @@ namespace Classi
             DataTable dataTable = new DataTable();
             try
             {
-                string sql = "SELECT * FROM Bambini WHERE Nome = @nome and Cognome = @cognome";  //Case sensitive
+                string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome";  //Case sensitive
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
@@ -318,6 +318,46 @@ namespace Classi
             {
                 throw ex;
             }
+        }
+
+        public static List<Libro> getLibribyGenereNOTin_prestito(string Genere)
+        {
+            //Prende tutti i libri di un genere specificato disponibili in deposito 
+            List<Libro> listaLibri = new List<Libro>();
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT Libri.ID, libri.Autore, libri.Titolo, libri.Path_Foto FROM [Asilo].[dbo].[Libri], [Asilo].[dbo].[Generi] " +
+                "where Libri.ID_Genere = Generi.ID and Generi.Genere = @genere and libri.In_Prestito = 0";
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("genere", Genere);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Libro libro = new Libro();
+
+                        libro.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        libro.Titolo = dataTable.Rows[i]["Titolo"].ToString();
+                        libro.Autore = dataTable.Rows[i]["Autore"].ToString();
+                        libro.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+
+                        listaLibri.Add(libro);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listaLibri;
         }
     }
 

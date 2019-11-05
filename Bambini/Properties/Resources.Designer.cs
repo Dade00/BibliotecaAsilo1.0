@@ -209,6 +209,15 @@ namespace Bambini.Properties {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a C:\BibliotecaAsilo.
+        /// </summary>
+        public static string DirectoryBase {
+            get {
+                return ResourceManager.GetString("DirectoryBase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap giù {

@@ -24,8 +24,8 @@ namespace Bambini
 
         private void Avanti_button_Click(object sender, EventArgs e)
         {
-
             int anni = -1;
+
             if (radioButton1.Checked)
                 anni = 3;
             else if (radioButton2.Checked)
@@ -38,13 +38,13 @@ namespace Bambini
                 return;
             }
 
-            if (nome_textbox.Text == "" || nome_textbox.Text == null)
+            if (nome_textbox.Text == "" || nome_textbox.Text == "")
             {
                 MessageBox.Show("Inserire prima il nome");
                 return;
             }
 
-            if (cognome_textbox.Text == "" || cognome_textbox.Text == null)
+            if (cognome_textbox.Text == "" || cognome_textbox.Text == "")
             {
                 MessageBox.Show("Inserire prima il cognome");
                 return;
@@ -57,6 +57,7 @@ namespace Bambini
                 MessageBox.Show("Bambino non trovato");
                 return;
             }
+
             Hide();
             seitu seitu = new seitu(daPassare);
             seitu.ShowDialog();
@@ -78,25 +79,25 @@ namespace Bambini
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
-                radioButton1.Image = Properties.Resources._3anni_acceso;
+                radioButton1.BackgroundImage = Properties.Resources._3anni_acceso;
             else
-                radioButton1.Image = Properties.Resources._3anni_button;
+                radioButton1.BackgroundImage = Properties.Resources._3anni_button;
         }
 
         private void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton2.Checked)
-                radioButton2.Image = Bambini.Properties.Resources._4anni_acceso;
+                radioButton2.BackgroundImage = Bambini.Properties.Resources._4anni_acceso;
             else
-                radioButton2.Image = Bambini.Properties.Resources._4anni_button;
+                radioButton2.BackgroundImage = Bambini.Properties.Resources._4anni_button;
         }
 
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton3.Checked)
-                radioButton3.Image = Bambini.Properties.Resources._5anni_acceso;
+                radioButton3.BackgroundImage = Bambini.Properties.Resources._5anni_acceso;
             else
-                radioButton3.Image = Bambini.Properties.Resources._5anni_button;
+                radioButton3.BackgroundImage = Bambini.Properties.Resources._5anni_button;
         }
 
         private void Chisei_label_Click(object sender, EventArgs e)

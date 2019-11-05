@@ -81,6 +81,15 @@ namespace BibliotecaAsilo.Properties {
         }
         
         /// <summary>
+        ///   Cerca una stringa localizzata simile a C:\BibliotecaAsilo.
+        /// </summary>
+        internal static string DirectoryBase {
+            get {
+                return ResourceManager.GetString("DirectoryBase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Esci {

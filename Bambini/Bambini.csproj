@@ -180,6 +180,7 @@
       <DependentUpon>seitu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Classi.Libro.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -213,9 +214,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3anni_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Indietro_button.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\4anni_button.png" />
@@ -260,6 +258,8 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Indietro_button.png" />
+    <None Include="Resources\Avanti.png" />
     <None Include="Resources\Sfondo 2.jpg" />
     <None Include="Resources\Sfondo 1.2.jpg" />
     <None Include="Resources\no-image_7299.png" />

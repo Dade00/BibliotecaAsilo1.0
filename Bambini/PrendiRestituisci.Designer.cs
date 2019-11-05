@@ -61,7 +61,7 @@
             this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
-            this.indietro_button.Location = new System.Drawing.Point(500, 628);
+            this.indietro_button.Location = new System.Drawing.Point(500, 597);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 76);
@@ -79,7 +79,7 @@
             this.restituisci_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.restituisci_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.restituisci_button.Image = global::Bambini.Properties.Resources.Restituisce;
-            this.restituisci_button.Location = new System.Drawing.Point(731, 228);
+            this.restituisci_button.Location = new System.Drawing.Point(715, 222);
             this.restituisci_button.Margin = new System.Windows.Forms.Padding(2);
             this.restituisci_button.Name = "restituisci_button";
             this.restituisci_button.Size = new System.Drawing.Size(500, 270);
@@ -97,7 +97,7 @@
             this.prendi_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.prendi_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prendi_button.Image = global::Bambini.Properties.Resources.Prendi;
-            this.prendi_button.Location = new System.Drawing.Point(93, 228);
+            this.prendi_button.Location = new System.Drawing.Point(77, 222);
             this.prendi_button.Margin = new System.Windows.Forms.Padding(2);
             this.prendi_button.Name = "prendi_button";
             this.prendi_button.Size = new System.Drawing.Size(500, 270);

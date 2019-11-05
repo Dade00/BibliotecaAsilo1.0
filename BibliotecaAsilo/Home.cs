@@ -47,6 +47,10 @@ namespace BibliotecaAsilo
             bambini_button.Cursor = CursorOFF;
             Esci_button.Cursor = CursorOFF;
             crediti_button.Cursor = CursorOFF;
+
+            //Se primo avvio creazione della cartella di destinazione delle immagini/cursori/oggetti vari da salvare
+            //Sottocartella IMMAGINI_LIBRI 
+
         }
 
         private void Bambini_button_MouseUp(object sender, MouseEventArgs e)

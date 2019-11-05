@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Classi;
 
 namespace Bambini.Prendi
 {
     public partial class Librochoose : Form
     {
-        public Librochoose()
+        string GeneredaPassare = "";
+        public Librochoose(string Genere)
         {
+            GeneredaPassare = Genere;
             InitializeComponent();
         }
 
@@ -60,6 +63,15 @@ namespace Bambini.Prendi
             down_button.Cursor = CursorOFF;
             avanti_button.Cursor = CursorOFF;
             indietro_button.Cursor = CursorOFF;
+
+            //Modifica font datagrid
+            ElencoLibri.DefaultCellStyle.Font = new Font("GROBOLD", 15);
+            ElencoLibri.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
+
+            //Recupero i libri
+            List<Libro> libros = new List<Libro>();
+            libros = Queries.getLibribyGenereNOTin_prestito(GeneredaPassare);
+            bsLibri.DataSource = libros;
         }
 
         private void Up_button_MouseUp(object sender, MouseEventArgs e)
