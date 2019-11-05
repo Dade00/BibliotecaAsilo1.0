@@ -62,7 +62,7 @@ namespace Maestre.Bambini
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(373, 214);
+            this.label3.Location = new System.Drawing.Point(327, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -147,18 +147,18 @@ namespace Maestre.Bambini
             // 
             // ClasseAddBambini
             // 
-            this.ClasseAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.ClasseAddBambini.Location = new System.Drawing.Point(816, 105);
+            this.ClasseAddBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.ClasseAddBambini.Location = new System.Drawing.Point(816, 103);
             this.ClasseAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseAddBambini.Name = "ClasseAddBambini";
-            this.ClasseAddBambini.Size = new System.Drawing.Size(66, 23);
+            this.ClasseAddBambini.Size = new System.Drawing.Size(66, 30);
             this.ClasseAddBambini.TabIndex = 118;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(709, 101);
+            this.label1.Location = new System.Drawing.Point(709, 105);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 25);
@@ -179,27 +179,27 @@ namespace Maestre.Bambini
             // 
             // CognomeAddBambini
             // 
-            this.CognomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.CognomeAddBambini.Location = new System.Drawing.Point(442, 164);
+            this.CognomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.CognomeAddBambini.Location = new System.Drawing.Point(393, 158);
             this.CognomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeAddBambini.Name = "CognomeAddBambini";
-            this.CognomeAddBambini.Size = new System.Drawing.Size(237, 23);
+            this.CognomeAddBambini.Size = new System.Drawing.Size(286, 30);
             this.CognomeAddBambini.TabIndex = 115;
             // 
             // NomeAddBambini
             // 
-            this.NomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.NomeAddBambini.Location = new System.Drawing.Point(439, 105);
+            this.NomeAddBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.NomeAddBambini.Location = new System.Drawing.Point(393, 103);
             this.NomeAddBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeAddBambini.Name = "NomeAddBambini";
-            this.NomeAddBambini.Size = new System.Drawing.Size(237, 23);
+            this.NomeAddBambini.Size = new System.Drawing.Size(283, 30);
             this.NomeAddBambini.TabIndex = 114;
             // 
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(313, 160);
+            this.cognome_label.Location = new System.Drawing.Point(264, 160);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(125, 25);
@@ -210,7 +210,7 @@ namespace Maestre.Bambini
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(359, 105);
+            this.nome_label.Location = new System.Drawing.Point(313, 105);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(76, 25);
@@ -224,10 +224,10 @@ namespace Maestre.Bambini
             // nascitaAddBambini
             // 
             this.nascitaAddBambini.CustomFormat = "";
-            this.nascitaAddBambini.Font = new System.Drawing.Font("GROBOLD", 10F);
-            this.nascitaAddBambini.Location = new System.Drawing.Point(816, 162);
+            this.nascitaAddBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.nascitaAddBambini.Location = new System.Drawing.Point(816, 155);
             this.nascitaAddBambini.Name = "nascitaAddBambini";
-            this.nascitaAddBambini.Size = new System.Drawing.Size(260, 23);
+            this.nascitaAddBambini.Size = new System.Drawing.Size(322, 30);
             this.nascitaAddBambini.TabIndex = 129;
             // 
             // Bambini_pic
@@ -297,7 +297,7 @@ namespace Maestre.Bambini
             this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CercaFotoBambini.Location = new System.Drawing.Point(444, 207);
+            this.CercaFotoBambini.Location = new System.Drawing.Point(398, 207);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
             this.CercaFotoBambini.Size = new System.Drawing.Size(130, 45);
