@@ -36,9 +36,9 @@
             this.up_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ElencoLibri = new System.Windows.Forms.DataGridView();
-            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
@@ -52,7 +52,7 @@
             this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
-            this.indietro_button.Location = new System.Drawing.Point(287, 598);
+            this.indietro_button.Location = new System.Drawing.Point(313, 598);
             this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(380, 75);
@@ -70,7 +70,7 @@
             this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
-            this.avanti_button.Location = new System.Drawing.Point(699, 598);
+            this.avanti_button.Location = new System.Drawing.Point(752, 598);
             this.avanti_button.Margin = new System.Windows.Forms.Padding(2);
             this.avanti_button.Name = "avanti_button";
             this.avanti_button.Size = new System.Drawing.Size(380, 75);
@@ -160,10 +160,6 @@
             this.ElencoLibri.Size = new System.Drawing.Size(792, 424);
             this.ElencoLibri.TabIndex = 8;
             // 
-            // bsLibri
-            // 
-            this.bsLibri.DataSource = typeof(Classi.Libro);
-            // 
             // titoloDataGridViewTextBoxColumn
             // 
             this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
@@ -179,6 +175,10 @@
             this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
             this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
             this.autoreDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
             // Librochoose
             // 
