@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Maestre.Libri
@@ -35,8 +36,9 @@ namespace Maestre.Libri
             Libro libri = new Libro();
             libri = (Libro)bsLibri[bsLibri.Position];
             updateGUI = Queries.delLibro(libri.ID);
-            if(updateGUI)
+            if (updateGUI)
             {
+                File.Delete(libri.Path);
                 MessageBox.Show("Libro eliminato");
             }
         }
