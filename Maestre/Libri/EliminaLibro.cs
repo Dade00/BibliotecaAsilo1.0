@@ -38,7 +38,13 @@ namespace Maestre.Libri
             updateGUI = Queries.delLibro(libri.ID);
             if (updateGUI)
             {
-                File.Delete(libri.Path);
+                try
+                {
+                    File.Delete(libri.Path);
+
+                }
+                catch
+                { }
                 MessageBox.Show("Libro eliminato");
             }
         }

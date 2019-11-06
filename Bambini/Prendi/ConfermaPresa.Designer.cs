@@ -105,12 +105,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 36.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(149, 58);
+            this.label1.Location = new System.Drawing.Point(257, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(976, 59);
+            this.label1.Size = new System.Drawing.Size(853, 59);
             this.label1.TabIndex = 9;
-            this.label1.Text = "IL LIBRO CHE HAI PRESO SI INTITOLA";
+            this.label1.Text = "VUOI PRENDERE QUESTO LIBRO?";
             // 
             // ConfermaPresa
             // 

@@ -91,12 +91,12 @@
             // TabellaBambini
             // 
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(509, 278);
+            this.TabellaBambini.Location = new System.Drawing.Point(373, 278);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
-            this.TabellaBambini.Size = new System.Drawing.Size(690, 350);
+            this.TabellaBambini.Size = new System.Drawing.Size(982, 350);
             this.TabellaBambini.TabIndex = 73;
             this.TabellaBambini.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellContentClick);
             // 
@@ -146,7 +146,7 @@
             this.libro_label.Location = new System.Drawing.Point(476, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(444, 58);
+            this.libro_label.Size = new System.Drawing.Size(441, 58);
             this.libro_label.TabIndex = 68;
             this.libro_label.Text = "Modifica un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
@@ -217,7 +217,7 @@
             // 
             // Libri_pic
             // 
-            this.Libri_pic.Location = new System.Drawing.Point(140, 278);
+            this.Libri_pic.Location = new System.Drawing.Point(12, 278);
             this.Libri_pic.Name = "Libri_pic";
             this.Libri_pic.Size = new System.Drawing.Size(350, 350);
             this.Libri_pic.TabIndex = 97;
