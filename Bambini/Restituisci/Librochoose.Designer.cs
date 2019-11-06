@@ -38,6 +38,7 @@
             this.ElencoLibri = new System.Windows.Forms.DataGridView();
             this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Genere = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).BeginInit();
@@ -147,7 +148,8 @@
             this.ElencoLibri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ElencoLibri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.titoloDataGridViewTextBoxColumn,
-            this.autoreDataGridViewTextBoxColumn});
+            this.autoreDataGridViewTextBoxColumn,
+            this.Genere});
             this.ElencoLibri.DataSource = this.bsLibri;
             this.ElencoLibri.Location = new System.Drawing.Point(340, 102);
             this.ElencoLibri.Margin = new System.Windows.Forms.Padding(2);
@@ -159,6 +161,7 @@
             this.ElencoLibri.RowTemplate.Height = 28;
             this.ElencoLibri.Size = new System.Drawing.Size(792, 424);
             this.ElencoLibri.TabIndex = 8;
+            this.ElencoLibri.SelectionChanged += new System.EventHandler(this.ElencoLibri_SelectionChanged);
             // 
             // titoloDataGridViewTextBoxColumn
             // 
@@ -175,6 +178,15 @@
             this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
             this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
             this.autoreDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // Genere
+            // 
+            this.Genere.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Genere.DataPropertyName = "Genere";
+            this.Genere.HeaderText = "Genere";
+            this.Genere.Name = "Genere";
+            this.Genere.ReadOnly = true;
+            this.Genere.Width = 67;
             // 
             // bsLibri
             // 
@@ -216,8 +228,9 @@
         private System.Windows.Forms.Button up_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView ElencoLibri;
+        private System.Windows.Forms.BindingSource bsLibri;
         private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource bsLibri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Genere;
     }
 }

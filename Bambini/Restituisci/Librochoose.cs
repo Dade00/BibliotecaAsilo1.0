@@ -14,7 +14,7 @@ namespace Bambini.Restituiusci
     public partial class Librochoose : Form
     {
         Bambino bambinoresituente = new Bambino();
-
+        List<Libro> libros = new List<Libro>();
         public Librochoose(Bambino bambinologgato)
         {
             bambinoresituente = bambinologgato;
@@ -57,7 +57,21 @@ namespace Bambini.Restituiusci
             ElencoLibri.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
 
             //Controllo se questo bambino ha una transazione senza data di restituzione, se ne ha almeno una vado a prendere il libro collegato altrimenti Popup non hai libri da restituire e close()
+            try
+            {
+                libros = Queries.getlibridaRestituire(bambinoresituente.ID);
+                refresh();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
+        private void refresh()
+        {
+            bsLibri.DataSource = libros;
+            bsLibri.ResetBindings(true);
         }
 
 
@@ -99,6 +113,13 @@ namespace Bambini.Restituiusci
         private void Avanti_button_MouseDown(object sender, MouseEventArgs e)
         {
             indietro_button.Cursor = CursorON;
+        }
+
+        private void ElencoLibri_SelectionChanged(object sender, EventArgs e)
+        {
+            Libro libri = new Libro();
+            libri = (Libro)bsLibri[bsLibri.Position];
+            pictureBox1.ImageLocation = libri.Path;
         }
     }
 }

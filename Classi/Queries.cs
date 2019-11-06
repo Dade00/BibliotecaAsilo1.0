@@ -458,7 +458,7 @@ namespace Classi
             List<Libro> listaLibri = new List<Libro>();
             DataTable dataTable = new DataTable();
             string sql = "SELECT libri.[ID] ,[Titolo] ,[Autore], Generi.Genere ,libri.[Path_Foto] ,[In_Prestito]" +
-                " FROM[dbo].[Libri], dbo.Transazioni, dbo.Generi where Transazioni.ID_Libro = Libri.ID and Transazioni.ID_Bambino = @id and Generi.ID = ID_Genere GO";
+                " FROM[dbo].[Libri], dbo.Transazioni, dbo.Generi where Transazioni.ID_Libro = Libri.ID and Transazioni.ID_Bambino = @id and Generi.ID = ID_Genere";
             try
             {
 
