@@ -9,8 +9,10 @@ namespace Bambini.Prendi
     public partial class Librochoose : Form
     {
         string GeneredaPassare = "";
-        public Librochoose(string Genere)
+        Bambino BambinoLoggato = new Bambino();
+        public Librochoose(string Genere, Bambino bambino)
         {
+            BambinoLoggato = bambino;
             GeneredaPassare = Genere;
             InitializeComponent();
         }
@@ -32,7 +34,7 @@ namespace Bambini.Prendi
             if (libroSelezionato != null)
             {
                 Hide();
-                ConfermaPresa confermaPresa = new ConfermaPresa(libroSelezionato);
+                ConfermaPresa confermaPresa = new ConfermaPresa(libroSelezionato, BambinoLoggato);
                 confermaPresa.ShowDialog();
                 Show();
             }

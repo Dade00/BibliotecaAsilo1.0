@@ -55,6 +55,9 @@ namespace Bambini.Restituiusci
             //Modifica font datagrid
             ElencoLibri.DefaultCellStyle.Font = new Font("GROBOLD", 15);
             ElencoLibri.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
+
+            //Controllo se questo bambino ha una transazione senza data di restituzione, se ne ha almeno una vado a prendere il libro collegato altrimenti Popup non hai libri da restituire e close()
+
         }
 
 

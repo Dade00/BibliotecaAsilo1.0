@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Classi;
+using System;
 using System.Windows.Forms;
-using Classi;
 
 namespace Bambini.Prendi
 {
@@ -18,9 +11,11 @@ namespace Bambini.Prendi
         Cursor CursorON = new Cursor(Properties.Resources.Cursore2);
 
         Libro LibroDaConfermare = new Libro();
-
-        public ConfermaPresa(Libro libro)
+        Bambino bambinoLoggato = new Bambino();
+        bool allOK = false;
+        public ConfermaPresa(Libro libro, Bambino bambino)
         {
+            bambinoLoggato = bambino;
             LibroDaConfermare = libro;
             InitializeComponent();
         }
@@ -36,6 +31,17 @@ namespace Bambini.Prendi
 
         private void Ok_button_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                allOK = Queries.PrendiLibro(LibroDaConfermare, bambinoLoggato);
+            }
+            catch
+            {
+                MessageBox.Show("Errore, riprovare!");
+                Close();
+                return;
+            }
+            MessageBox.Show("Libro preso!");
             GUIServices.ToPrendiRestituisci = true;
             Close();
         }
