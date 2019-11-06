@@ -240,6 +240,7 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Sfondo_Login.jpg" />
     <None Include="Resources\Racconti_button.png" />
     <None Include="Resources\Scienze_button.png" />
     <None Include="Resources\Sentimenti_button.png" />

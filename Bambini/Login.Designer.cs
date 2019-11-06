@@ -233,7 +233,7 @@
             // 
             // Login_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 11F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_Login;
             this.ClientSize = new System.Drawing.Size(1366, 768);
@@ -246,7 +246,7 @@
             this.Controls.Add(this.nome_label);
             this.Controls.Add(this.chisei_label);
             this.Controls.Add(this.return_button);
-            this.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login_page";
