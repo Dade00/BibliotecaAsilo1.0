@@ -195,6 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_che_libro;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.indietro_button);
             this.Controls.Add(this.avanti_button);

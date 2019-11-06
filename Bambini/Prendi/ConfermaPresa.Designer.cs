@@ -39,7 +39,9 @@
             // 
             // pb_LIBRO
             // 
-            this.pb_LIBRO.Location = new System.Drawing.Point(159, 192);
+            this.pb_LIBRO.BackColor = System.Drawing.Color.Transparent;
+            this.pb_LIBRO.BackgroundImage = global::Bambini.Properties.Resources.No_image;
+            this.pb_LIBRO.Location = new System.Drawing.Point(159, 167);
             this.pb_LIBRO.Name = "pb_LIBRO";
             this.pb_LIBRO.Size = new System.Drawing.Size(350, 350);
             this.pb_LIBRO.TabIndex = 14;
@@ -48,6 +50,7 @@
             // data_label
             // 
             this.data_label.AutoSize = true;
+            this.data_label.BackColor = System.Drawing.Color.Transparent;
             this.data_label.Font = new System.Drawing.Font("GROBOLD", 26F, System.Drawing.FontStyle.Bold);
             this.data_label.Location = new System.Drawing.Point(620, 402);
             this.data_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -60,6 +63,7 @@
             // datastatic_label
             // 
             this.datastatic_label.AutoSize = true;
+            this.datastatic_label.BackColor = System.Drawing.Color.Transparent;
             this.datastatic_label.Font = new System.Drawing.Font("GROBOLD", 26F, System.Drawing.FontStyle.Bold);
             this.datastatic_label.Location = new System.Drawing.Point(620, 329);
             this.datastatic_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -93,6 +97,7 @@
             // nomelibro_label
             // 
             this.nomelibro_label.AutoSize = true;
+            this.nomelibro_label.BackColor = System.Drawing.Color.Transparent;
             this.nomelibro_label.Font = new System.Drawing.Font("GROBOLD", 26F, System.Drawing.FontStyle.Bold);
             this.nomelibro_label.Location = new System.Drawing.Point(620, 256);
             this.nomelibro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -104,6 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 36.75F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(257, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -116,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_che_libro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.pb_LIBRO);

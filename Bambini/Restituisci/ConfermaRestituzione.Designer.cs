@@ -37,6 +37,7 @@
             // 
             // ok_button
             // 
+            this.ok_button.BackColor = System.Drawing.Color.Transparent;
             this.ok_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ok_button.FlatAppearance.BorderSize = 0;
             this.ok_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
@@ -49,7 +50,7 @@
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(391, 130);
             this.ok_button.TabIndex = 5;
-            this.ok_button.UseVisualStyleBackColor = true;
+            this.ok_button.UseVisualStyleBackColor = false;
             this.ok_button.Click += new System.EventHandler(this.Ok_button_Click);
             this.ok_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseDown);
             this.ok_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Ok_button_MouseUp);
@@ -57,6 +58,7 @@
             // nomelibro_label
             // 
             this.nomelibro_label.AutoSize = true;
+            this.nomelibro_label.BackColor = System.Drawing.Color.Transparent;
             this.nomelibro_label.Font = new System.Drawing.Font("GROBOLD", 28F, System.Drawing.FontStyle.Bold);
             this.nomelibro_label.Location = new System.Drawing.Point(571, 183);
             this.nomelibro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -68,6 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(139, 53);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -78,6 +81,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Bambini.Properties.Resources.No_image;
+            this.pictureBox1.InitialImage = global::Bambini.Properties.Resources.No_image;
             this.pictureBox1.Location = new System.Drawing.Point(149, 183);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(350, 350);
@@ -88,6 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_che_libro;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ok_button);

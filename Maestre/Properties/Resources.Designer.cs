@@ -313,6 +313,26 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sfondo_maestre {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_maestre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sfondo_maestre_con_menu {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_maestre_con_menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Statistiche {
             get {
                 object obj = ResourceManager.GetObject("Statistiche", resourceCulture);

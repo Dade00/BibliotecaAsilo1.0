@@ -59,7 +59,7 @@
             this.TabControl.Controls.Add(this.Libri_page);
             this.TabControl.Controls.Add(this.Statistiche_page);
             this.TabControl.Controls.Add(this.Empty_page);
-            this.TabControl.Location = new System.Drawing.Point(588, -30);
+            this.TabControl.Location = new System.Drawing.Point(588, 5);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
             this.TabControl.ShowToolTips = true;
@@ -70,12 +70,13 @@
             // Bambini_page
             // 
             this.Bambini_page.BackColor = System.Drawing.SystemColors.Control;
+            this.Bambini_page.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre_con_menu;
             this.Bambini_page.Controls.Add(this.EliminaBambino);
             this.Bambini_page.Controls.Add(this.ModificaBambino);
             this.Bambini_page.Controls.Add(this.AggiungiBambino);
             this.Bambini_page.Location = new System.Drawing.Point(4, 25);
             this.Bambini_page.Name = "Bambini_page";
-            this.Bambini_page.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Bambini_page.Padding = new System.Windows.Forms.Padding(3);
             this.Bambini_page.Size = new System.Drawing.Size(811, 793);
             this.Bambini_page.TabIndex = 0;
             this.Bambini_page.Click += new System.EventHandler(this.Bambini_page_Click);
@@ -136,7 +137,7 @@
             this.Libri_page.Controls.Add(this.AggiungiLibro);
             this.Libri_page.Location = new System.Drawing.Point(4, 25);
             this.Libri_page.Name = "Libri_page";
-            this.Libri_page.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Libri_page.Padding = new System.Windows.Forms.Padding(3);
             this.Libri_page.Size = new System.Drawing.Size(811, 793);
             this.Libri_page.TabIndex = 1;
             // 
@@ -252,7 +253,7 @@
             this.Empty_page.BackColor = System.Drawing.SystemColors.Control;
             this.Empty_page.Location = new System.Drawing.Point(4, 25);
             this.Empty_page.Name = "Empty_page";
-            this.Empty_page.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Empty_page.Padding = new System.Windows.Forms.Padding(3);
             this.Empty_page.Size = new System.Drawing.Size(811, 793);
             this.Empty_page.TabIndex = 3;
             // 
@@ -324,7 +325,7 @@
             this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Location = new System.Drawing.Point(11, 666);
-            this.indietro_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(256, 91);
             this.indietro_button.TabIndex = 3;
@@ -335,6 +336,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.Statistiche_radio);
             this.Controls.Add(this.Libri_radio);
@@ -342,7 +344,7 @@
             this.Controls.Add(this.TabControl);
             this.Controls.Add(this.indietro_button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home - Maestre";

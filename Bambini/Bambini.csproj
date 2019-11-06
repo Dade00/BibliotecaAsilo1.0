@@ -231,6 +231,10 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Sfondo Prend. e Resti..jpg" />
+    <None Include="Resources\Sfondo che libro.jpg" />
+    <None Include="Resources\Sfondo Sei Tu.jpg" />
+    <None Include="Resources\Sfondo Genere.jpg" />
     <None Include="Resources\Sfondo_Login.jpg" />
     <None Include="Resources\Racconti_button.png" />
     <None Include="Resources\Scienze_button.png" />
