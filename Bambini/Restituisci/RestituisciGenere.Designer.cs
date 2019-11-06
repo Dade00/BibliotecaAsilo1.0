@@ -164,7 +164,7 @@
             this.animali_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.animali_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.animali_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.animali_button.Location = new System.Drawing.Point(161, 491);
+            this.animali_button.Location = new System.Drawing.Point(160, 481);
             this.animali_button.Margin = new System.Windows.Forms.Padding(2);
             this.animali_button.Name = "animali_button";
             this.animali_button.Size = new System.Drawing.Size(458, 152);
@@ -184,7 +184,7 @@
             this.scienze_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.scienze_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.scienze_button.Image = ((System.Drawing.Image)(resources.GetObject("scienze_button.Image")));
-            this.scienze_button.Location = new System.Drawing.Point(161, 308);
+            this.scienze_button.Location = new System.Drawing.Point(160, 298);
             this.scienze_button.Margin = new System.Windows.Forms.Padding(2);
             this.scienze_button.Name = "scienze_button";
             this.scienze_button.Size = new System.Drawing.Size(458, 152);
@@ -204,7 +204,7 @@
             this.sentimenti_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.sentimenti_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.sentimenti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sentimenti_button.Location = new System.Drawing.Point(161, 120);
+            this.sentimenti_button.Location = new System.Drawing.Point(160, 110);
             this.sentimenti_button.Margin = new System.Windows.Forms.Padding(0);
             this.sentimenti_button.Name = "sentimenti_button";
             this.sentimenti_button.Size = new System.Drawing.Size(458, 152);

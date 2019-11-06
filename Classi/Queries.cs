@@ -322,6 +322,26 @@ namespace Classi
             return vs;
         }
 
+        public static bool delLibro(int id)
+        {
+            try
+            {
+                string sql = "DELETE FROM [Asilo].[dbo].[Libri] WHERE ID=@id";
+
+                SqlCommand cmd = new SqlCommand(sql, Sql.getInstance());
+
+                cmd.Parameters.AddWithValue("@id", id);
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+            return true;
+        }
+
         public static void addLibro(Libro libro)
         {
             try
@@ -349,7 +369,7 @@ namespace Classi
 
             try
             {
-                string sql = "UPDATE Libri SET Path = @path WHERE ID = @id";
+                string sql = "UPDATE Libri SET Path_Foto = @path WHERE ID = @id";
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
