@@ -53,12 +53,16 @@ namespace Bambini.Prendi
 
         private void Up_button_Click(object sender, EventArgs e)
         {
-
+            int row_ind = ElencoLibri.CurrentRow.Index;
+            if (row_ind > 0)
+                ElencoLibri.CurrentCell = ElencoLibri.Rows[row_ind-1].Cells[0];
         }
 
         private void Down_button_Click(object sender, EventArgs e)
         {
-
+            int row_ind = ElencoLibri.CurrentRow.Index;
+            if (row_ind < ElencoLibri.Rows.Count-1)
+                ElencoLibri.CurrentCell = ElencoLibri.Rows[row_ind+1].Cells[0];
         }
 
         private void Librochoose_Load(object sender, EventArgs e)
