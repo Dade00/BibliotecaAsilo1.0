@@ -30,8 +30,8 @@ namespace Maestre.Libri
 
         private void ConfermaModificaLibro_Click(object sender, EventArgs e)
         {
-            Libro libro = new Libro(); 
-
+            Libro libro = new Libro();
+            bool flagInserimento = false;
             try
             {
                 libro.Autore = AutoreAddLibro.Text;
@@ -41,18 +41,28 @@ namespace Maestre.Libri
                 Queries.addLibro(libro);
 
                 libro.ID = Queries.getMaxIDfromLibri();
-                libro.Path = "C:\\BibliotecaAsilo\\IMMAGINI_LIBRI\\" + libro.Genere + "\\" + libro.ID + ".jpg";
+                libro.Path = @"C:\BibliotecaAsilo\IMMAGINI_LIBRI\" + libro.Genere + @"\" + libro.ID + ".jpg";
 
-                Queries.editLibro(libro.Path, libro.ID);
+                flagInserimento = Queries.editLibro(libro.Path, libro.ID);
             }
             catch (Exception ex)
             {
                 throw;
             }
 
+            if (flagInserimento)
+            {
+                MessageBox.Show("Inserimento avvenuto!");
+            }
+            else
+                return;
+
             GUIUpdate = true;
 
             Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+
+            
+
         }
 
         private void AggiungiLibro_Load(object sender, EventArgs e)
