@@ -13,11 +13,11 @@ namespace Bambini.Restituiusci
 {
     public partial class Librochoose : Form
     {
-        string genereDaRestituire = "";
+        Bambino bambinoresituente = new Bambino();
 
-        public Librochoose(string genere)
+        public Librochoose(Bambino bambinologgato)
         {
-            genereDaRestituire = genere;
+            bambinoresituente = bambinologgato;
             InitializeComponent();
         }
 
