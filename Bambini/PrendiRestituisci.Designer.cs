@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 715);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.help_button);
             this.Controls.Add(this.indietro_button);
             this.Controls.Add(this.restituisci_button);

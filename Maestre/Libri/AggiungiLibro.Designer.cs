@@ -93,7 +93,7 @@
             this.libro_label.Location = new System.Drawing.Point(491, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(444, 58);
+            this.libro_label.Size = new System.Drawing.Size(447, 58);
             this.libro_label.TabIndex = 84;
             this.libro_label.Text = "Aggiungi un libro";
             // 
@@ -257,12 +257,13 @@
             this.AiutoModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AiutoModificaLibro.FlatAppearance.BorderSize = 0;
             this.AiutoModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AiutoModificaLibro.Location = new System.Drawing.Point(11, 9);
+            this.AiutoModificaLibro.Location = new System.Drawing.Point(1274, 9);
             this.AiutoModificaLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoModificaLibro.Name = "AiutoModificaLibro";
             this.AiutoModificaLibro.Size = new System.Drawing.Size(81, 86);
             this.AiutoModificaLibro.TabIndex = 93;
             this.AiutoModificaLibro.UseVisualStyleBackColor = true;
+            this.AiutoModificaLibro.Click += new System.EventHandler(this.AiutoModificaLibro_Click);
             // 
             // InserisciFotoLibro
             // 

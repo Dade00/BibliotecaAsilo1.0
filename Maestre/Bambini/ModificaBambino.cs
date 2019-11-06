@@ -64,8 +64,8 @@ namespace Maestre.Bambini
 
         private void AiutoModificaBambini_Click(object sender, EventArgs e)
         {
-            ModificaBambino modificaBambino = new ModificaBambino();
-            modificaBambino.ShowDialog();
+            AiutoModBambino aiutoModBambino = new AiutoModBambino();
+            aiutoModBambino.ShowDialog();
             Show();
         }
 

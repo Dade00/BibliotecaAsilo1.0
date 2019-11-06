@@ -151,5 +151,12 @@ namespace Maestre.Libri
                 }
             }
         }
+
+        private void AiutoAggiungiLibro_Click(object sender, EventArgs e)
+        {
+            AiutoDelLibri aiutoDelLibri = new AiutoDelLibri();
+            aiutoDelLibri.ShowDialog();
+            Show();
+        }
     }
 }
