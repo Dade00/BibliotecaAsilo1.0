@@ -37,9 +37,13 @@ namespace Maestre.Libri
                 libro.Autore = AutoreAddLibro.Text;
                 libro.Titolo = TitoloAddLibro.Text;
                 libro.Genere = genereCB.Text;
-                libro.Path = ofdFoto.FileName;
-
+                libro.Path = "path";
                 Queries.addLibro(libro);
+
+                libro.ID = Queries.getMaxIDfromLibri();
+                libro.Path = "C:\\BibliotecaAsilo\\IMMAGINI_LIBRI\\" + libro.Genere + "\\" + libro.ID + ".jpg";
+
+                Queries.editLibro(libro.Path, libro.ID);
             }
             catch (Exception ex)
             {
@@ -47,6 +51,8 @@ namespace Maestre.Libri
             }
 
             GUIUpdate = true;
+
+            Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
 
         private void AggiungiLibro_Load(object sender, EventArgs e)

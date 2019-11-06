@@ -41,6 +41,8 @@ namespace Maestre.Bambini
         }
         private void ConfermaModificaBambini_Click(object sender, EventArgs e)
         {
+            Bambino bambino = new Bambino();
+
             try
             {
                 if (NomeAddBambini.Text == "" || NomeAddBambini.Text == null)
@@ -72,15 +74,30 @@ namespace Maestre.Bambini
                     MessageBox.Show("Selezionare prima la foto");
                     return;
                 }
+                
+                bambino.Nome = NomeAddBambini.Text;
+                bambino.Cognome = CognomeAddBambini.Text;
+                bambino.DataNascita = nascitaAddBambini.Value;
+                bambino.Classe = ClasseAddBambini.Text;
+                bambino.Path = "path";
 
-                Queries.addBambino(new Bambino(NomeAddBambini.Text, CognomeAddBambini.Text, nascitaAddBambini.Value, ClasseAddBambini.Text, ofdFoto.FileName));
+                Queries.addBambino(bambino);
+
+                bambino.ID = Queries.getMaxIDfromBambini();
+                bambino.Path = "C:\\BibliotecaAsilo\\IMMAGINI_BAMBINI\\" + bambino.Nome + bambino.Cognome + bambino.ID + ".jpg";
+                Queries.editBambino(bambino);
+
                 MessageBox.Show("Bambino aggiunto!");
+
                 Close();
             }
             catch (Exception ex)
             {
                 throw;
             }
+
+            Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+
         }    
         private void AggiungiBambino_Load(object sender, EventArgs e)
         {

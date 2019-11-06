@@ -29,7 +29,30 @@ namespace Classi
             }
         }
 
+        public static int getMaxIDfromBambini()
+        {
+            int queryResult = 0;
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT MAX(ID) as n FROM[Asilo].[dbo].[Bambini]";
+            try
+            {
 
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    queryResult = Int32.Parse(dataTable.Rows[0]["nadd"].ToString());
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return queryResult;
+        }
         public static bool getBambini(ref List<Bambino> listaBambini)
         {
             DataTable dataTable = new DataTable();
@@ -320,7 +343,55 @@ namespace Classi
                 throw ex;
             }
         }
+        public static bool editLibro(string path, int id)
+        {
+            bool result = true;
 
+            try
+            {
+                string sql = "UPDATE Libri SET Path = @path WHERE ID = @id";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@path", path);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                throw ex;
+            }
+
+            return result;
+        }
+        public static int getMaxIDfromLibri()
+        {
+            int queryResult = 0;
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT MAX(ID) as n FROM[Asilo].[dbo].[Libri]";
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    queryResult = Int32.Parse(dataTable.Rows[0]["n"].ToString());
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return queryResult;
+        }
         public static List<Libro> getLibribyGenereNOTin_prestito(string Genere)
         {
             //Prende tutti i libri di un genere specificato disponibili in deposito 
