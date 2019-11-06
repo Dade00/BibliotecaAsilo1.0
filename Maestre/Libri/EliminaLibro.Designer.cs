@@ -153,6 +153,7 @@
             this.AiutoAggiungiLibro.Size = new System.Drawing.Size(120, 120);
             this.AiutoAggiungiLibro.TabIndex = 99;
             this.AiutoAggiungiLibro.UseVisualStyleBackColor = true;
+            this.AiutoAggiungiLibro.Click += new System.EventHandler(this.AiutoAggiungiLibro_Click);
             // 
             // Libri_pic
             // 

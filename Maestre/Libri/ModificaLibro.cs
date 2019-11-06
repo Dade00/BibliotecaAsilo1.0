@@ -43,5 +43,12 @@ namespace Maestre.Libri
         {
 
         }
+
+        private void AiutoAggiungiLibro_Click(object sender, EventArgs e)
+        {
+            AiutoModLibri aiutoModLibri = new AiutoModLibri();
+            aiutoModLibri.ShowDialog();
+            Show();
+        }
     }
 }

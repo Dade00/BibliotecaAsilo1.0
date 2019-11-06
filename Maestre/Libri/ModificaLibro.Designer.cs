@@ -60,6 +60,7 @@
             this.AiutoAggiungiLibro.Size = new System.Drawing.Size(120, 120);
             this.AiutoAggiungiLibro.TabIndex = 77;
             this.AiutoAggiungiLibro.UseVisualStyleBackColor = true;
+            this.AiutoAggiungiLibro.Click += new System.EventHandler(this.AiutoAggiungiLibro_Click);
             // 
             // CercaFotoLibro
             // 

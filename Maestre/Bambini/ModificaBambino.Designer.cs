@@ -223,7 +223,7 @@
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(540, 58);
+            this.libro_label.Size = new System.Drawing.Size(543, 58);
             this.libro_label.TabIndex = 100;
             this.libro_label.Text = "Modifica un bambino";
             // 
@@ -275,7 +275,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 54);
             this.label2.TabIndex = 103;
-            this.label2.Text = "ANNO DI NASCITA";
+            this.label2.Text = "DATA DI NASCITA";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Bambini_pic

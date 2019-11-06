@@ -127,8 +127,8 @@ namespace Maestre.Bambini
 
         private void AiutoAggiungiBambini_Click(object sender, EventArgs e)
         {
-            AiutoAddBambino aggiungiBambino = new AiutoAddBambino();
-            aggiungiBambino.ShowDialog();
+            AiutoAddBambino aiutoAddBambino = new AiutoAddBambino();
+            aiutoAddBambino.ShowDialog();
             Show();
         }
     }

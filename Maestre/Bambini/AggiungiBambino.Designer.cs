@@ -142,7 +142,7 @@ namespace Maestre.Bambini
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(118, 54);
             this.label2.TabIndex = 119;
-            this.label2.Text = "ANNO DI NASCITA";
+            this.label2.Text = "DATA DI NASCITA";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ClasseAddBambini
@@ -172,7 +172,7 @@ namespace Maestre.Bambini
             this.libro_label.Location = new System.Drawing.Point(412, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(543, 58);
+            this.libro_label.Size = new System.Drawing.Size(546, 58);
             this.libro_label.TabIndex = 116;
             this.libro_label.Text = "Aggiungi un bambino";
             this.libro_label.Click += new System.EventHandler(this.libro_label_Click);

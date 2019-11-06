@@ -78,10 +78,10 @@
             this.bambini_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.bambini_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bambini_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bambini_button.Location = new System.Drawing.Point(78, 161);
+            this.bambini_button.Location = new System.Drawing.Point(47, 165);
             this.bambini_button.Margin = new System.Windows.Forms.Padding(2);
             this.bambini_button.Name = "bambini_button";
-            this.bambini_button.Size = new System.Drawing.Size(540, 200);
+            this.bambini_button.Size = new System.Drawing.Size(579, 200);
             this.bambini_button.TabIndex = 1;
             this.bambini_button.UseVisualStyleBackColor = false;
             this.bambini_button.Click += new System.EventHandler(this.Bambini_button_Click);
@@ -98,7 +98,7 @@
             this.maestre_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.maestre_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.maestre_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maestre_button.Location = new System.Drawing.Point(752, 157);
+            this.maestre_button.Location = new System.Drawing.Point(749, 165);
             this.maestre_button.Margin = new System.Windows.Forms.Padding(2);
             this.maestre_button.Name = "maestre_button";
             this.maestre_button.Size = new System.Drawing.Size(552, 208);
@@ -113,6 +113,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BibliotecaAsilo.Properties.Resources.Sfondo_Home;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.Esci_button);
             this.Controls.Add(this.crediti_button);
