@@ -10,6 +10,7 @@ namespace Bambini.Restituiusci
     {
         Bambino bambinoresituente = new Bambino();
         List<Libro> libros = new List<Libro>();
+
         public Librochoose(Bambino bambinologgato)
         {
             bambinoresituente = bambinologgato;
@@ -23,7 +24,15 @@ namespace Bambini.Restituiusci
         {
             try
             {
-
+                Libro libro = new Libro();
+                libro = (Libro)bsLibri[bsLibri.Position];
+                if (Queries.RestituisciLibro(Queries.getIDTransazionebyLibro(bambinoresituente.ID, libro.ID), libro.ID))
+                {
+                    Hide();
+                    ConfermaRestituzione confermaRestituzione = new ConfermaRestituzione(libro.Titolo);
+                    confermaRestituzione.ShowDialog();
+                    Show();
+                }
             }
             catch (Exception ex)
             {
@@ -31,10 +40,7 @@ namespace Bambini.Restituiusci
                 throw;
             }
 
-            Hide();
-            ConfermaRestituzione confermaRestituzione = new ConfermaRestituzione();
-            confermaRestituzione.ShowDialog();
-            Show();
+
         }
 
         private void Indietro_button_Click(object sender, EventArgs e)
