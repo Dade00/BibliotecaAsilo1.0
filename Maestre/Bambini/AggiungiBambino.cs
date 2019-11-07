@@ -146,6 +146,18 @@ namespace Maestre.Bambini
                     throw;
                 }
             }
+            else
+            {
+                try
+                {
+                    Queries.getBambini(ref listaBambini);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
         }
     }
 }
