@@ -41,7 +41,6 @@ namespace Maestre.Libri
                 try
                 {
                     File.Delete(libri.Path);
-
                 }
                 catch
                 { }

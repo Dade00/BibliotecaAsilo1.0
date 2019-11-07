@@ -55,7 +55,7 @@
             // 
             this.libro_label.AutoSize = true;
             this.libro_label.BackColor = System.Drawing.Color.Transparent;
-            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
@@ -109,6 +109,7 @@
             this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(690, 350);
             this.TabellaBambini.TabIndex = 75;
+            this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
             // nomeDataGridViewTextBoxColumn
             // 

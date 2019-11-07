@@ -16,6 +16,7 @@ namespace Maestre.Libri
     {
         Libro libro = new Libro();
         List<Libro> listaLibri = new List<Libro>();
+        bool ModFoto = false;
         public ModificaLibro()
         {
             InitializeComponent();
@@ -112,15 +113,14 @@ namespace Maestre.Libri
         private void CercaFotoLibro_Click(object sender, EventArgs e)
         {
             //La foto è già selezionata (Path della foto del libro) ed è solo eventualmente da modificare
+            ModFoto = true;
 
             if (ofdFoto.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    Bitmap bmp = new Bitmap(ofdFoto.FileName);
                     Libri_pic.Image = new Bitmap(ofdFoto.FileName);
-                    bmp.Dispose();
-                }
+                    ofdFoto.FileName = "foto";                }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
@@ -153,9 +153,14 @@ namespace Maestre.Libri
                 else
                 {
                     Close();
+                    if (ModFoto)
+                    {
+                        ModFoto = false;
+                        Libri_pic.ImageLocation = "";
+                        File.Delete(libro.Path);
+                        Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    }
                 }
-                File.Delete(libro.Path);
-                Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
             }
         }
     }

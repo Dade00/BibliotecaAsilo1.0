@@ -11,6 +11,7 @@ namespace Maestre.Bambini
     {
         List<Bambino> listaBambini;
         Bambino bambino = new Bambino(); //Bambino selezionato nel datagridview
+        bool ModFoto = false;
 
         public ModificaBambino()
         {
@@ -27,22 +28,28 @@ namespace Maestre.Bambini
         private void ConfermaModificaBambini_Click(object sender, EventArgs e)
         {
             if (bambino != null)
-                if (!Queries.editBambino(new Bambino(bambino.ID, NomeBambini.Text, CognomeBambini.Text, nascitaBambini.Value, ClasseBambini.Text, ofdFoto.FileName)))
+                if (!Queries.editBambino(new Bambino(bambino.ID, NomeBambini.Text, CognomeBambini.Text, nascitaBambini.Value, ClasseBambini.Text, "")))
                 {
                     MessageBox.Show("Errore");
                 }
                 else
                 {
                     Close();
+                    if (ModFoto)
+                    {
+                        ModFoto = false;
+                        Bambini_pic.ImageLocation = "";
+                        File.Delete(bambino.Path);
+                        Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    }
                 }
-            File.Delete(bambino.Path);
-            Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
 
 
         private void CercaFotoBambini_Click(object sender, EventArgs e)
         {
             //La foto è già selezionata (Path della foto del bambino) ed è solo eventualmente da modificare
+            ModFoto = true;
 
             if (ofdFoto.ShowDialog() == DialogResult.OK)
             {
@@ -99,8 +106,16 @@ namespace Maestre.Bambini
             nascitaBambini.Value = bambino.DataNascita;
             if(bambino.Path != "foto")
             {
-                ofdFoto.FileName = bambino.Path;
-                Bambini_pic.Image = new Bitmap(ofdFoto.FileName);
+                try
+                {
+                    ofdFoto.FileName = bambino.Path;
+                    Bambini_pic.Image = new Bitmap(ofdFoto.FileName);
+                }
+                catch
+                {
+                    Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+                    ofdFoto.FileName = bambino.Path;
+                }
             }
             else
             {

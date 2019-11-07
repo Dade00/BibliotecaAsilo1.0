@@ -117,10 +117,15 @@ namespace Classi
         public static bool editBambino(Bambino nuovoBambino)
         {
             bool result = true;
-
+            string sql = "";
             try
             {
-                string sql = "UPDATE Bambini SET Nome = @nome, Cognome = @cognome, Data_Nascita = @Data_Nascita, Classe = @Classe, Path_Foto = @Path WHERE ID = @id";
+                if (nuovoBambino.Path != "")
+                    sql = "UPDATE Bambini SET Nome = @nome, Cognome = @cognome, Data_Nascita = @Data_Nascita, Classe = @Classe, Path_Foto = @Path WHERE ID = @id";
+                else
+                    sql = "UPDATE Bambini SET Nome = @nome, Cognome = @cognome, Data_Nascita = @Data_Nascita, Classe = @Classe WHERE ID = @id";
+
+
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
@@ -129,7 +134,8 @@ namespace Classi
                     cmd.Parameters.AddWithValue("@cognome", nuovoBambino.Cognome);
                     cmd.Parameters.AddWithValue("@Data_Nascita", nuovoBambino.DataNascita);
                     cmd.Parameters.AddWithValue("@Classe", nuovoBambino.Classe);
-                    cmd.Parameters.AddWithValue("@Path", nuovoBambino.Path);
+                    if (nuovoBambino.Path != "")
+                        cmd.Parameters.AddWithValue("@Path", nuovoBambino.Path);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -543,7 +549,7 @@ namespace Classi
         /// <returns></returns>
         public static List<Libro> getLibri(string Titolo, string Autore, string Genere)
         {
-            bool autore = false, titolo = false, genere = false; 
+            bool autore = false, titolo = false, genere = false;
             List<Libro> listaLibri = new List<Libro>();
             DataTable dataTable = new DataTable();
             //Crea la stinga di base (dando per scontato che abbia inserito tutti e tre i parametri)
@@ -679,7 +685,7 @@ namespace Classi
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
-                    cmd.Parameters.AddWithValue("@id", libro.ID);
+                    cmd.Parameters.AddWithValue("@id", id);
 
 
                     cmd.ExecuteNonQuery();

@@ -84,7 +84,7 @@ namespace Maestre.Bambini
                 Queries.addBambino(bambino);
 
                 bambino.ID = Queries.getMaxIDfromBambini();
-                bambino.Path = "C:\\BibliotecaAsilo\\IMMAGINI_BAMBINI\\" + bambino.Nome + bambino.Cognome + bambino.ID + ".jpg";
+                bambino.Path = @"C:\BibliotecaAsilo\IMMAGINI_BAMBINI\" + bambino.Nome + bambino.Cognome + bambino.ID + ".jpg";
                 Queries.editBambino(bambino);
 
                 MessageBox.Show("Bambino aggiunto!");

@@ -1,13 +1,8 @@
 ﻿using Classi;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Maestre.Bambini
@@ -35,6 +30,7 @@ namespace Maestre.Bambini
             updateGUI = Queries.delBambino(bambino.ID);
             if (updateGUI)
             {
+                Bambini_pic.ImageLocation = "";
                 File.Delete(bambino.Path);
                 MessageBox.Show("Babmino rimosso");
             }
@@ -70,7 +66,7 @@ namespace Maestre.Bambini
 
         private void Cerca_button_Click(object sender, EventArgs e)
         {
-            if(NomeDelBambini.Text == "" && CognomeDelBambini.Text == "" )
+            if (NomeDelBambini.Text == "" && CognomeDelBambini.Text == "")
             {
                 try
                 {
@@ -97,12 +93,12 @@ namespace Maestre.Bambini
                 }
             }
         }
-       private void UpdateDATA_Tick(object sender, EventArgs e)
+        private void UpdateDATA_Tick(object sender, EventArgs e)
         {
             if (updateGUI)
             {
                 updateGUI = false;
-                
+
                 try
                 {
                     Queries.getBambini(ref listaBambini);
@@ -121,11 +117,12 @@ namespace Maestre.Bambini
             {
                 Bambino bambino = new Bambino();
                 bambino = (Bambino)bsBambini[bsBambini.Position];
-                Bambini_pic.ImageLocation = bambino.Path;
-
+                Bambini_pic.Image = new Bitmap(bambino.Path);
             }
             catch
-            { }
+            {
+                Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+            }
         }
     }
 }
