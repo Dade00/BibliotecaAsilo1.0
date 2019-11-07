@@ -45,7 +45,7 @@ namespace Maestre.Libri
                 Libro_mod.ID = libro.ID;
                 Libro_mod.Titolo = TitotloModLibro.Text;
                 Libro_mod.Autore = AutoreModLibro.Text;
-                Libro_mod.Genere = GenereModLibro.Text;
+                Libro_mod.Genere = genere_cb.Text;
 
 
                 if (!Queries.editLibro(Libro_mod))
@@ -84,6 +84,9 @@ namespace Maestre.Libri
                 listaLibri = Queries.getLibri();
                 bsLibri.DataSource = listaLibri;
                 bsLibri.ResetBindings(true);
+                List<string> vs = new List<string>();
+                vs = Queries.getGenere();
+                genere_cb.DataSource = vs;
             }
             catch (Exception ex)
             {
@@ -96,11 +99,11 @@ namespace Maestre.Libri
             libro = (Libro)bsLibri[bsLibri.Position];
             TitotloModLibro.Text = libro.Titolo;
             AutoreModLibro.Text = libro.Autore;
-            GenereModLibro.Text = libro.Genere;
+            genere_cb.Text = libro.Genere;
             if (libro.Path != "foto")
             {
                 ofdFoto.FileName = libro.Path;
-                Libri_pic.Image = new Bitmap(ofdFoto.FileName);
+                Libri_pic.ImageLocation = ofdFoto.FileName;
             }
             else
             {
@@ -144,7 +147,7 @@ namespace Maestre.Libri
                 Libro_mod.ID = libro.ID;
                 Libro_mod.Titolo = TitotloModLibro.Text;
                 Libro_mod.Autore = AutoreModLibro.Text;
-                Libro_mod.Genere = GenereModLibro.Text;
+                Libro_mod.Genere = genere_cb.Text;
 
 
                 if (!Queries.editLibro(Libro_mod))

@@ -331,9 +331,6 @@
     <None Include="Resources\Sfondo maestre.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\reset.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Sfondo Aiuto.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -350,6 +347,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sfondo Msg Brutto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
