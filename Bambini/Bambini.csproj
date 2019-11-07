@@ -231,6 +231,7 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Sfondo Aiuto.jpg" />
     <None Include="Resources\Sfondo Prend. e Resti..jpg" />
     <None Include="Resources\Sfondo che libro.jpg" />
     <None Include="Resources\Sfondo Sei Tu.jpg" />

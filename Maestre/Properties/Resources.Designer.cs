@@ -283,6 +283,16 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reset {
+            get {
+                object obj = ResourceManager.GetObject("reset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rimuovi {
             get {
                 object obj = ResourceManager.GetObject("Rimuovi", resourceCulture);
@@ -306,6 +316,16 @@ namespace Maestre.Properties {
         internal static System.Drawing.Bitmap Rimuoviunlibro {
             get {
                 object obj = ResourceManager.GetObject("Rimuoviunlibro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sfondo_Aiuto {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Aiuto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

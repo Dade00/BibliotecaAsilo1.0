@@ -50,5 +50,20 @@ namespace Maestre.Libri
             aiutoModLibri.ShowDialog();
             Show();
         }
+
+        private void Libri_pic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ModificaLibro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CercaFotoLibro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

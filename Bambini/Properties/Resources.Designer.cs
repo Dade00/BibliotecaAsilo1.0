@@ -310,6 +310,16 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Sfondo_Aiuto {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Aiuto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Sfondo_che_libro {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_che_libro", resourceCulture);

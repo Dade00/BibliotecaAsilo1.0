@@ -36,18 +36,18 @@
             this.autore_tb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Genere_CB = new System.Windows.Forms.ComboBox();
+            this.reset_button = new System.Windows.Forms.Button();
+            this.UpdateDATA = new System.Windows.Forms.Timer(this.components);
             this.cerca_button = new System.Windows.Forms.Button();
             this.AiutoAggiungiLibro = new System.Windows.Forms.Button();
             this.Libri_pic = new System.Windows.Forms.PictureBox();
             this.AnnullaEliminaLibro = new System.Windows.Forms.Button();
             this.ConfermaEliminaLibro = new System.Windows.Forms.Button();
-            this.Genere_CB = new System.Windows.Forms.ComboBox();
-            this.reset_button = new System.Windows.Forms.Button();
             this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
-            this.UpdateDATA = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
@@ -56,6 +56,7 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
+            this.libro_label.BackColor = System.Drawing.Color.Transparent;
             this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
             this.libro_label.Location = new System.Drawing.Point(481, 11);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -145,6 +146,36 @@
             this.label2.TabIndex = 134;
             this.label2.Text = "CERCA GENERE";
             // 
+            // Genere_CB
+            // 
+            this.Genere_CB.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.Genere_CB.FormattingEnabled = true;
+            this.Genere_CB.Location = new System.Drawing.Point(565, 184);
+            this.Genere_CB.Name = "Genere_CB";
+            this.Genere_CB.Size = new System.Drawing.Size(312, 31);
+            this.Genere_CB.TabIndex = 135;
+            // 
+            // reset_button
+            // 
+            this.reset_button.BackColor = System.Drawing.Color.Transparent;
+            this.reset_button.BackgroundImage = global::Maestre.Properties.Resources.reset;
+            this.reset_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.reset_button.FlatAppearance.BorderSize = 0;
+            this.reset_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.reset_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.reset_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reset_button.Location = new System.Drawing.Point(908, 139);
+            this.reset_button.Name = "reset_button";
+            this.reset_button.Size = new System.Drawing.Size(220, 50);
+            this.reset_button.TabIndex = 136;
+            this.reset_button.UseVisualStyleBackColor = false;
+            this.reset_button.Click += new System.EventHandler(this.Reset_button_Click);
+            // 
+            // UpdateDATA
+            // 
+            this.UpdateDATA.Enabled = true;
+            this.UpdateDATA.Tick += new System.EventHandler(this.UpdateDATA_Tick);
+            // 
             // cerca_button
             // 
             this.cerca_button.BackColor = System.Drawing.Color.Transparent;
@@ -163,6 +194,7 @@
             // 
             // AiutoAggiungiLibro
             // 
+            this.AiutoAggiungiLibro.BackColor = System.Drawing.Color.Transparent;
             this.AiutoAggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
             this.AiutoAggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AiutoAggiungiLibro.FlatAppearance.BorderSize = 0;
@@ -172,7 +204,7 @@
             this.AiutoAggiungiLibro.Name = "AiutoAggiungiLibro";
             this.AiutoAggiungiLibro.Size = new System.Drawing.Size(120, 120);
             this.AiutoAggiungiLibro.TabIndex = 99;
-            this.AiutoAggiungiLibro.UseVisualStyleBackColor = true;
+            this.AiutoAggiungiLibro.UseVisualStyleBackColor = false;
             this.AiutoAggiungiLibro.Click += new System.EventHandler(this.AiutoAggiungiLibro_Click);
             // 
             // Libri_pic
@@ -217,31 +249,6 @@
             this.ConfermaEliminaLibro.UseVisualStyleBackColor = false;
             this.ConfermaEliminaLibro.Click += new System.EventHandler(this.ConfermaEliminaLibro_Click);
             // 
-            // Genere_CB
-            // 
-            this.Genere_CB.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.Genere_CB.FormattingEnabled = true;
-            this.Genere_CB.Location = new System.Drawing.Point(565, 184);
-            this.Genere_CB.Name = "Genere_CB";
-            this.Genere_CB.Size = new System.Drawing.Size(312, 31);
-            this.Genere_CB.TabIndex = 135;
-            // 
-            // reset_button
-            // 
-            this.reset_button.BackColor = System.Drawing.Color.Transparent;
-            this.reset_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.reset_button.FlatAppearance.BorderSize = 0;
-            this.reset_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.reset_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.reset_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reset_button.Location = new System.Drawing.Point(908, 139);
-            this.reset_button.Name = "reset_button";
-            this.reset_button.Size = new System.Drawing.Size(220, 50);
-            this.reset_button.TabIndex = 136;
-            this.reset_button.Text = "RESET";
-            this.reset_button.UseVisualStyleBackColor = false;
-            this.reset_button.Click += new System.EventHandler(this.Reset_button_Click);
-            // 
             // titoloDataGridViewTextBoxColumn
             // 
             this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
@@ -271,15 +278,11 @@
             // 
             this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
-            // UpdateDATA
-            // 
-            this.UpdateDATA.Enabled = true;
-            this.UpdateDATA.Tick += new System.EventHandler(this.UpdateDATA_Tick);
-            // 
             // EliminaLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.reset_button);
             this.Controls.Add(this.Genere_CB);
