@@ -174,5 +174,10 @@ namespace Maestre.Libri
                 }
             }
         }
+
+        private void titolo_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

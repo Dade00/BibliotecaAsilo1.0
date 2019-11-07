@@ -131,5 +131,21 @@ namespace Maestre.Bambini
             aiutoAddBambino.ShowDialog();
             Show();
         }
+
+        private void search_button_Click(object sender, EventArgs e)
+        {
+            if (nome_tb.Text != "" || cognome_tb.Text != "")
+            {
+                try
+                {
+                    listaBambini = Queries.getBambino(nome_tb.Text, cognome_tb.Text);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+        }
     }
 }

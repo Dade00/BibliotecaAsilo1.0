@@ -246,6 +246,7 @@
             this.titolo_tb.Name = "titolo_tb";
             this.titolo_tb.Size = new System.Drawing.Size(362, 30);
             this.titolo_tb.TabIndex = 101;
+            this.titolo_tb.TextChanged += new System.EventHandler(this.titolo_tb_TextChanged);
             // 
             // autore_tb
             // 
