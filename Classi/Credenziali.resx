@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="sqlServerAddress" xml:space="preserve">
-    <value>DESKTOP-D13969O\SQLEXPRESS</value>
+    <value>LAPTOP-H03OA999</value>
     <comment>LAPTOP-H03OA999</comment>
   </data>
   <data name="sqlServerDB" xml:space="preserve">
     <value>Asilo</value>
   </data>
   <data name="sqlServerPassword" xml:space="preserve">
-    <value>einaudi</value>
+    <value>Einaudi</value>
     <comment>Einaudi</comment>
   </data>
   <data name="sqlServerUser" xml:space="preserve">
