@@ -37,6 +37,11 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.Libri = new System.Windows.Forms.DataGridView();
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.genereCB = new System.Windows.Forms.ComboBox();
             this.label = new System.Windows.Forms.Label();
@@ -48,16 +53,12 @@
             this.update = new System.Windows.Forms.Timer(this.components);
             this.genereCB_2 = new System.Windows.Forms.ComboBox();
             this.search_button = new System.Windows.Forms.Button();
-            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.Libri_pic = new System.Windows.Forms.PictureBox();
             this.AnnullaModificaLibro = new System.Windows.Forms.Button();
             this.ConfermaModificaLibro = new System.Windows.Forms.Button();
             this.AiutoModificaLibro = new System.Windows.Forms.Button();
             this.InserisciFotoLibro = new System.Windows.Forms.Button();
+            this.reset_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
@@ -156,6 +157,7 @@
             this.Libri.DataSource = this.bsLibri;
             this.Libri.Location = new System.Drawing.Point(410, 281);
             this.Libri.Margin = new System.Windows.Forms.Padding(2);
+            this.Libri.MultiSelect = false;
             this.Libri.Name = "Libri";
             this.Libri.ReadOnly = true;
             this.Libri.RowHeadersVisible = false;
@@ -165,6 +167,42 @@
             this.Libri.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Libri.Size = new System.Drawing.Size(945, 350);
             this.Libri.TabIndex = 97;
+            // 
+            // titoloDataGridViewTextBoxColumn
+            // 
+            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
+            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // autoreDataGridViewTextBoxColumn
+            // 
+            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
+            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
+            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
+            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genereDataGridViewTextBoxColumn
+            // 
+            this.genereDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
+            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
+            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
+            this.genereDataGridViewTextBoxColumn.ReadOnly = true;
+            this.genereDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // prestitoDataGridViewCheckBoxColumn
+            // 
+            this.prestitoDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.prestitoDataGridViewCheckBoxColumn.DataPropertyName = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.HeaderText = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.Name = "prestitoDataGridViewCheckBoxColumn";
+            this.prestitoDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.prestitoDataGridViewCheckBoxColumn.Width = 48;
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
             // ofdFoto
             // 
@@ -262,48 +300,12 @@
             this.search_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.search_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search_button.Location = new System.Drawing.Point(170, 573);
+            this.search_button.Location = new System.Drawing.Point(200, 573);
             this.search_button.Name = "search_button";
-            this.search_button.Size = new System.Drawing.Size(210, 58);
+            this.search_button.Size = new System.Drawing.Size(182, 58);
             this.search_button.TabIndex = 104;
             this.search_button.UseVisualStyleBackColor = false;
             this.search_button.Click += new System.EventHandler(this.Search_button_Click);
-            // 
-            // titoloDataGridViewTextBoxColumn
-            // 
-            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
-            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // autoreDataGridViewTextBoxColumn
-            // 
-            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
-            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
-            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
-            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // genereDataGridViewTextBoxColumn
-            // 
-            this.genereDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
-            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
-            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
-            this.genereDataGridViewTextBoxColumn.ReadOnly = true;
-            this.genereDataGridViewTextBoxColumn.Width = 67;
-            // 
-            // prestitoDataGridViewCheckBoxColumn
-            // 
-            this.prestitoDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.prestitoDataGridViewCheckBoxColumn.DataPropertyName = "Prestito";
-            this.prestitoDataGridViewCheckBoxColumn.HeaderText = "Prestito";
-            this.prestitoDataGridViewCheckBoxColumn.Name = "prestitoDataGridViewCheckBoxColumn";
-            this.prestitoDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.prestitoDataGridViewCheckBoxColumn.Width = 48;
-            // 
-            // bsLibri
-            // 
-            this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
             // Libri_pic
             // 
@@ -325,7 +327,7 @@
             this.AnnullaModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.AnnullaModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AnnullaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaModificaLibro.Location = new System.Drawing.Point(585, 636);
+            this.AnnullaModificaLibro.Location = new System.Drawing.Point(493, 636);
             this.AnnullaModificaLibro.Name = "AnnullaModificaLibro";
             this.AnnullaModificaLibro.Size = new System.Drawing.Size(380, 120);
             this.AnnullaModificaLibro.TabIndex = 95;
@@ -385,12 +387,30 @@
             this.InserisciFotoLibro.UseVisualStyleBackColor = false;
             this.InserisciFotoLibro.Click += new System.EventHandler(this.InserisciFotoLibro_Click);
             // 
+            // reset_button
+            // 
+            this.reset_button.BackColor = System.Drawing.Color.Transparent;
+            this.reset_button.BackgroundImage = global::Maestre.Properties.Resources.reset;
+            this.reset_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.reset_button.FlatAppearance.BorderSize = 0;
+            this.reset_button.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.reset_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.reset_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.reset_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reset_button.Location = new System.Drawing.Point(12, 573);
+            this.reset_button.Name = "reset_button";
+            this.reset_button.Size = new System.Drawing.Size(182, 58);
+            this.reset_button.TabIndex = 107;
+            this.reset_button.UseVisualStyleBackColor = false;
+            this.reset_button.Click += new System.EventHandler(this.Reset_button_Click);
+            // 
             // AggiungiLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.reset_button);
             this.Controls.Add(this.genereCB_2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.search_button);
@@ -457,5 +477,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Timer update;
         private System.Windows.Forms.ComboBox genereCB_2;
+        private System.Windows.Forms.Button reset_button;
     }
 }

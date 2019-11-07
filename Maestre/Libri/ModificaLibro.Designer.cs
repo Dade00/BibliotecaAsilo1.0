@@ -72,7 +72,8 @@
             // 
             // CercaFotoLibro
             // 
-            this.CercaFotoLibro.BackgroundImage = global::Maestre.Properties.Resources.Inserisci_foto;
+            this.CercaFotoLibro.BackColor = System.Drawing.Color.Transparent;
+            this.CercaFotoLibro.BackgroundImage = global::Maestre.Properties.Resources.Modifica_foto;
             this.CercaFotoLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CercaFotoLibro.FlatAppearance.BorderSize = 0;
             this.CercaFotoLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -81,38 +82,39 @@
             this.CercaFotoLibro.Name = "CercaFotoLibro";
             this.CercaFotoLibro.Size = new System.Drawing.Size(130, 45);
             this.CercaFotoLibro.TabIndex = 76;
-            this.CercaFotoLibro.UseVisualStyleBackColor = true;
+            this.CercaFotoLibro.UseVisualStyleBackColor = false;
             this.CercaFotoLibro.Click += new System.EventHandler(this.CercaFotoLibro_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("GROBOLD", 15F);
             this.label3.Location = new System.Drawing.Point(373, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(73, 25);
+            this.label3.Size = new System.Drawing.Size(63, 25);
             this.label3.TabIndex = 74;
             this.label3.Text = "FOTO";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // GenereModLibro
             // 
-            this.GenereModLibro.Location = new System.Drawing.Point(811, 106);
+            this.GenereModLibro.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.GenereModLibro.Location = new System.Drawing.Point(811, 110);
             this.GenereModLibro.Margin = new System.Windows.Forms.Padding(2);
             this.GenereModLibro.Name = "GenereModLibro";
-            this.GenereModLibro.Size = new System.Drawing.Size(121, 20);
+            this.GenereModLibro.Size = new System.Drawing.Size(146, 30);
             this.GenereModLibro.TabIndex = 70;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(709, 106);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F);
+            this.label1.Location = new System.Drawing.Point(709, 112);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 25);
+            this.label1.Size = new System.Drawing.Size(92, 25);
             this.label1.TabIndex = 69;
             this.label1.Text = "GENERE";
             // 
@@ -120,50 +122,52 @@
             // 
             this.libro_label.AutoSize = true;
             this.libro_label.BackColor = System.Drawing.Color.Transparent;
-            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.libro_label.Location = new System.Drawing.Point(476, 9);
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 30F);
+            this.libro_label.Location = new System.Drawing.Point(504, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(389, 55);
+            this.libro_label.Size = new System.Drawing.Size(358, 49);
             this.libro_label.TabIndex = 68;
             this.libro_label.Text = "Modifica un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
             // 
             // AutoreModLibro
             // 
+            this.AutoreModLibro.Font = new System.Drawing.Font("GROBOLD", 14F);
             this.AutoreModLibro.Location = new System.Drawing.Point(449, 164);
             this.AutoreModLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AutoreModLibro.Name = "AutoreModLibro";
-            this.AutoreModLibro.Size = new System.Drawing.Size(237, 20);
+            this.AutoreModLibro.Size = new System.Drawing.Size(237, 30);
             this.AutoreModLibro.TabIndex = 67;
             // 
             // TitotloModLibro
             // 
+            this.TitotloModLibro.Font = new System.Drawing.Font("GROBOLD", 14F);
             this.TitotloModLibro.Location = new System.Drawing.Point(449, 110);
             this.TitotloModLibro.Margin = new System.Windows.Forms.Padding(2);
             this.TitotloModLibro.Name = "TitotloModLibro";
-            this.TitotloModLibro.Size = new System.Drawing.Size(237, 20);
+            this.TitotloModLibro.Size = new System.Drawing.Size(237, 30);
             this.TitotloModLibro.TabIndex = 66;
             // 
             // cognome_label
             // 
             this.cognome_label.AutoSize = true;
-            this.cognome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(347, 159);
+            this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F);
+            this.cognome_label.Location = new System.Drawing.Point(347, 166);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
-            this.cognome_label.Size = new System.Drawing.Size(101, 25);
+            this.cognome_label.Size = new System.Drawing.Size(92, 25);
             this.cognome_label.TabIndex = 65;
             this.cognome_label.Text = "AUTORE";
             // 
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(359, 106);
+            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F);
+            this.nome_label.Location = new System.Drawing.Point(359, 112);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(92, 25);
+            this.nome_label.Size = new System.Drawing.Size(80, 25);
             this.nome_label.TabIndex = 64;
             this.nome_label.Text = "TITOLO";
             // 

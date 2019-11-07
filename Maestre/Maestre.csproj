@@ -316,9 +316,6 @@
     <None Include="Resources\no-image_7299.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cerca.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Sfondo maestre con menu.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -332,6 +329,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Modifica foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stampa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sfondo Msg Bello.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sfondo Msg Brutto.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.NLibriLetti = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,45 +41,61 @@
             this.Indietro_button = new System.Windows.Forms.Button();
             this.StampaStatStudente = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.NLibriLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             this.SuspendLayout();
             // 
             // Bambini_pic
             // 
+            this.Bambini_pic.BackgroundImage = global::Maestre.Properties.Resources.No_image;
+            this.Bambini_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Bambini_pic.Location = new System.Drawing.Point(521, 79);
             this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(204, 200);
+            this.Bambini_pic.Size = new System.Drawing.Size(200, 200);
             this.Bambini_pic.TabIndex = 132;
             this.Bambini_pic.TabStop = false;
             // 
             // TabellaBambini
             // 
+            this.TabellaBambini.AllowUserToAddRows = false;
+            this.TabellaBambini.AllowUserToDeleteRows = false;
+            this.TabellaBambini.AllowUserToOrderColumns = true;
+            this.TabellaBambini.AllowUserToResizeColumns = false;
+            this.TabellaBambini.AllowUserToResizeRows = false;
+            this.TabellaBambini.AutoGenerateColumns = false;
+            this.TabellaBambini.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TabellaBambini.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TabellaBambini.Location = new System.Drawing.Point(319, 293);
+            this.TabellaBambini.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.titoloDataGridViewTextBoxColumn,
+            this.autoreDataGridViewTextBoxColumn,
+            this.genereDataGridViewTextBoxColumn,
+            this.prestitoDataGridViewCheckBoxColumn});
+            this.TabellaBambini.DataSource = this.bsLibri;
+            this.TabellaBambini.Location = new System.Drawing.Point(11, 293);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
+            this.TabellaBambini.RowHeadersVisible = false;
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
-            this.TabellaBambini.Size = new System.Drawing.Size(728, 200);
+            this.TabellaBambini.Size = new System.Drawing.Size(1344, 268);
             this.TabellaBambini.TabIndex = 131;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(564, 517);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(471, 573);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 25);
+            this.label1.Size = new System.Drawing.Size(299, 33);
             this.label1.TabIndex = 133;
-            this.label1.Text = "TOTALE LIBRI LETTI";
-            // 
-            // NLibriLetti
-            // 
-            this.NLibriLetti.Location = new System.Drawing.Point(789, 519);
-            this.NLibriLetti.Name = "NLibriLetti";
-            this.NLibriLetti.Size = new System.Drawing.Size(38, 20);
-            this.NLibriLetti.TabIndex = 134;
+            this.label1.Text = "TOTALE LIBRI LETTI:";
             // 
             // label2
             // 
@@ -115,27 +131,30 @@
             // ClasseStudScelto
             // 
             this.ClasseStudScelto.AutoSize = true;
-            this.ClasseStudScelto.Location = new System.Drawing.Point(882, 204);
+            this.ClasseStudScelto.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.ClasseStudScelto.Location = new System.Drawing.Point(885, 199);
             this.ClasseStudScelto.Name = "ClasseStudScelto";
-            this.ClasseStudScelto.Size = new System.Drawing.Size(35, 13);
+            this.ClasseStudScelto.Size = new System.Drawing.Size(67, 23);
             this.ClasseStudScelto.TabIndex = 138;
             this.ClasseStudScelto.Text = "label5";
             // 
             // CogomeStudScelto
             // 
             this.CogomeStudScelto.AutoSize = true;
-            this.CogomeStudScelto.Location = new System.Drawing.Point(882, 168);
+            this.CogomeStudScelto.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.CogomeStudScelto.Location = new System.Drawing.Point(885, 163);
             this.CogomeStudScelto.Name = "CogomeStudScelto";
-            this.CogomeStudScelto.Size = new System.Drawing.Size(35, 13);
+            this.CogomeStudScelto.Size = new System.Drawing.Size(67, 23);
             this.CogomeStudScelto.TabIndex = 139;
             this.CogomeStudScelto.Text = "label6";
             // 
             // NomeStudScelto
             // 
             this.NomeStudScelto.AutoSize = true;
-            this.NomeStudScelto.Location = new System.Drawing.Point(882, 129);
+            this.NomeStudScelto.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.NomeStudScelto.Location = new System.Drawing.Point(885, 124);
             this.NomeStudScelto.Name = "NomeStudScelto";
-            this.NomeStudScelto.Size = new System.Drawing.Size(35, 13);
+            this.NomeStudScelto.Size = new System.Drawing.Size(66, 23);
             this.NomeStudScelto.TabIndex = 140;
             this.NomeStudScelto.Text = "label7";
             // 
@@ -145,7 +164,7 @@
             this.Indietro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Indietro_button.FlatAppearance.BorderSize = 0;
             this.Indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Indietro_button.Location = new System.Drawing.Point(222, 565);
+            this.Indietro_button.Location = new System.Drawing.Point(222, 636);
             this.Indietro_button.Name = "Indietro_button";
             this.Indietro_button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_button.TabIndex = 141;
@@ -154,7 +173,7 @@
             // 
             // StampaStatStudente
             // 
-            this.StampaStatStudente.Location = new System.Drawing.Point(762, 565);
+            this.StampaStatStudente.Location = new System.Drawing.Point(762, 636);
             this.StampaStatStudente.Name = "StampaStatStudente";
             this.StampaStatStudente.Size = new System.Drawing.Size(380, 120);
             this.StampaStatStudente.TabIndex = 142;
@@ -171,11 +190,56 @@
             this.label8.TabIndex = 143;
             this.label8.Text = "Quanti libri ha letto lo studente";
             // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
+            // 
+            // titoloDataGridViewTextBoxColumn
+            // 
+            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
+            // 
+            // autoreDataGridViewTextBoxColumn
+            // 
+            this.autoreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
+            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
+            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
+            this.autoreDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // genereDataGridViewTextBoxColumn
+            // 
+            this.genereDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
+            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
+            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
+            this.genereDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // prestitoDataGridViewCheckBoxColumn
+            // 
+            this.prestitoDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.prestitoDataGridViewCheckBoxColumn.DataPropertyName = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.HeaderText = "Prestito";
+            this.prestitoDataGridViewCheckBoxColumn.Name = "prestitoDataGridViewCheckBoxColumn";
+            this.prestitoDataGridViewCheckBoxColumn.Width = 48;
+            // 
+            // NLibriLabel
+            // 
+            this.NLibriLabel.AutoSize = true;
+            this.NLibriLabel.Font = new System.Drawing.Font("GROBOLD", 20F);
+            this.NLibriLabel.Location = new System.Drawing.Point(776, 573);
+            this.NLibriLabel.Name = "NLibriLabel";
+            this.NLibriLabel.Size = new System.Drawing.Size(33, 33);
+            this.NLibriLabel.TabIndex = 144;
+            this.NLibriLabel.Text = "0";
+            // 
             // LibriLetti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.NLibriLabel);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.StampaStatStudente);
             this.Controls.Add(this.Indietro_button);
@@ -185,7 +249,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.NLibriLetti);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.TabellaBambini);
@@ -195,6 +258,7 @@
             this.Text = "LibriLetti";
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,7 +269,6 @@
         private System.Windows.Forms.PictureBox Bambini_pic;
         private System.Windows.Forms.DataGridView TabellaBambini;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox NLibriLetti;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -215,5 +278,11 @@
         private System.Windows.Forms.Button Indietro_button;
         private System.Windows.Forms.Button StampaStatStudente;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genereDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn prestitoDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.BindingSource bsLibri;
+        private System.Windows.Forms.Label NLibriLabel;
     }
 }

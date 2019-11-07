@@ -119,11 +119,12 @@ namespace Maestre.Libri
             {
                 try
                 {
-                    Libri_pic.Image = new Bitmap(ofdFoto.FileName);
-                    ofdFoto.FileName = "foto";                }
+                    Libri_pic.ImageLocation = ofdFoto.FileName;
+                    ofdFoto.FileName = "foto";
+                }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.ToString());
+                    throw;
                 }
             }
             else
@@ -156,7 +157,7 @@ namespace Maestre.Libri
                     if (ModFoto)
                     {
                         ModFoto = false;
-                        Libri_pic.ImageLocation = "";
+                        ofdFoto.Dispose();
                         File.Delete(libro.Path);
                         Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
                     }

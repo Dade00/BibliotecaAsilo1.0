@@ -138,12 +138,13 @@
             // pbFoto
             // 
             this.pbFoto.BackColor = System.Drawing.Color.Transparent;
-            this.pbFoto.BackgroundImage = global::Bambini.Properties.Resources.No_image;
+            this.pbFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbFoto.InitialImage = global::Bambini.Properties.Resources.No_image;
             this.pbFoto.Location = new System.Drawing.Point(38, 123);
             this.pbFoto.Margin = new System.Windows.Forms.Padding(2);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(350, 350);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFoto.TabIndex = 1;
             this.pbFoto.TabStop = false;
             // 

@@ -157,5 +157,22 @@ namespace Maestre.Libri
             aiutoAddLibri.ShowDialog();
             Show();
         }
+
+        private void Reset_button_Click(object sender, EventArgs e)
+        {
+            if (GUIUpdate)
+            {
+                GUIUpdate = false;
+                try
+                {
+                    listaLibri = Queries.getLibri();
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+        }
     }
 }

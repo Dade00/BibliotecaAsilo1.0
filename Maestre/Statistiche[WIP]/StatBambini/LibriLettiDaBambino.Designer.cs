@@ -44,7 +44,7 @@
             this.Indietro_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Indietro_Button.FlatAppearance.BorderSize = 0;
             this.Indietro_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Indietro_Button.Location = new System.Drawing.Point(266, 418);
+            this.Indietro_Button.Location = new System.Drawing.Point(252, 580);
             this.Indietro_Button.Name = "Indietro_Button";
             this.Indietro_Button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_Button.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.RicercaStatBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.RicercaStatBambini.FlatAppearance.BorderSize = 0;
             this.RicercaStatBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RicercaStatBambini.Location = new System.Drawing.Point(736, 418);
+            this.RicercaStatBambini.Location = new System.Drawing.Point(736, 580);
             this.RicercaStatBambini.Name = "RicercaStatBambini";
             this.RicercaStatBambini.Size = new System.Drawing.Size(380, 120);
             this.RicercaStatBambini.TabIndex = 1;
@@ -67,43 +67,45 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(559, 226);
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(439, 227);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 25);
+            this.label1.Size = new System.Drawing.Size(131, 41);
             this.label1.TabIndex = 2;
-            this.label1.Text = "NOME";
+            this.label1.Text = "NOME:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(507, 271);
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(357, 303);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.Size = new System.Drawing.Size(213, 41);
             this.label2.TabIndex = 3;
-            this.label2.Text = "COGNOME";
+            this.label2.Text = "COGNOME:";
             // 
             // NomeBambino
             // 
-            this.NomeBambino.Location = new System.Drawing.Point(639, 227);
+            this.NomeBambino.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.NomeBambino.Location = new System.Drawing.Point(576, 231);
             this.NomeBambino.Name = "NomeBambino";
-            this.NomeBambino.Size = new System.Drawing.Size(210, 20);
+            this.NomeBambino.Size = new System.Drawing.Size(427, 38);
             this.NomeBambino.TabIndex = 4;
             this.NomeBambino.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // CognomeBambino
             // 
-            this.CognomeBambino.Location = new System.Drawing.Point(640, 272);
+            this.CognomeBambino.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.CognomeBambino.Location = new System.Drawing.Point(576, 307);
             this.CognomeBambino.Name = "CognomeBambino";
-            this.CognomeBambino.Size = new System.Drawing.Size(210, 20);
+            this.CognomeBambino.Size = new System.Drawing.Size(427, 38);
             this.CognomeBambino.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(524, 9);
+            this.label3.Location = new System.Drawing.Point(489, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(389, 58);
             this.label3.TabIndex = 6;

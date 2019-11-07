@@ -43,9 +43,13 @@ namespace Bambini // BASSANO SEI TU?
             indietro_button.Cursor = CursorOFF;
             lblNome.Text = bambinoDaConfermare.Nome;
             lblCognome.Text = bambinoDaConfermare.Cognome;
-            if(bambinoDaConfermare.Path == "foto")
+            if(bambinoDaConfermare.Path == "")
             {
                 pbFoto.BackgroundImage = Bambini.Properties.Resources.No_image;
+            }
+            else
+            {
+                pbFoto.ImageLocation = bambinoDaConfermare.Path;
             }
         }
 
