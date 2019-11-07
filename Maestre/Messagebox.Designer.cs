@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.ok_button = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Titolo = new System.Windows.Forms.Label();
+            this.testo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ok_button
@@ -45,37 +45,39 @@
             this.ok_button.TabIndex = 0;
             this.ok_button.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // Titolo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(183, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.Titolo.AutoSize = true;
+            this.Titolo.Location = new System.Drawing.Point(183, 9);
+            this.Titolo.Name = "Titolo";
+            this.Titolo.Size = new System.Drawing.Size(35, 13);
+            this.Titolo.TabIndex = 1;
+            this.Titolo.Text = "label1";
             // 
-            // label2
+            // testo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(183, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.testo.AutoSize = true;
+            this.testo.Location = new System.Drawing.Point(183, 67);
+            this.testo.Name = "testo";
+            this.testo.Size = new System.Drawing.Size(35, 13);
+            this.testo.TabIndex = 2;
+            this.testo.Text = "label2";
             // 
             // Messagebox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(400, 250);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.testo);
+            this.Controls.Add(this.Titolo);
             this.Controls.Add(this.ok_button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Messagebox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Messagebox";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Messagebox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,7 +86,7 @@
         #endregion
 
         private System.Windows.Forms.Button ok_button;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Titolo;
+        private System.Windows.Forms.Label testo;
     }
 }
