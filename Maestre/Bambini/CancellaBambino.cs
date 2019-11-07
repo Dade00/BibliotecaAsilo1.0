@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Maestre.Bambini
 
         Bambino bambino = new Bambino();
         List<Bambino> listaBambini = new List<Bambino>();
-
+        bool updateGUI = false;
         public CancellaBambino()
         {
             InitializeComponent();
@@ -29,7 +30,14 @@ namespace Maestre.Bambini
 
         private void ConfermaEliminaBambini_Click(object sender, EventArgs e)
         {
-
+            Bambino bambino = new Bambino();
+            bambino = (Bambino)bsBambini[bsBambini.Position];
+            updateGUI = Queries.delBambino(bambino.ID);
+            if (updateGUI)
+            {
+                File.Delete(bambino.Path);
+                MessageBox.Show("Babmino rimosso");
+            }
         }
 
         private void CancellaBambino_Load(object sender, EventArgs e)
@@ -88,6 +96,36 @@ namespace Maestre.Bambini
                     throw;
                 }
             }
+        }
+       private void UpdateDATA_Tick(object sender, EventArgs e)
+        {
+            if (updateGUI)
+            {
+                updateGUI = false;
+                
+                try
+                {
+                    Queries.getBambini(ref listaBambini);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+        }
+
+        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Bambino bambino = new Bambino();
+                bambino = (Bambino)bsBambini[bsBambini.Position];
+                Bambini_pic.ImageLocation = bambino.Path;
+
+            }
+            catch
+            { }
         }
     }
 }

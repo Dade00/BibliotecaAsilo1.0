@@ -35,11 +35,6 @@
             this.CercaFotoBambini = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             this.ClasseBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.libro_label = new System.Windows.Forms.Label();
@@ -51,9 +46,14 @@
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.nascitaBambini = new System.Windows.Forms.DateTimePicker();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             this.SuspendLayout();
             // 
             // AnnullaModificaBambini
@@ -120,16 +120,17 @@
             this.CercaFotoBambini.Size = new System.Drawing.Size(130, 45);
             this.CercaFotoBambini.TabIndex = 108;
             this.CercaFotoBambini.UseVisualStyleBackColor = true;
+            this.CercaFotoBambini.Click += new System.EventHandler(this.CercaFotoBambini_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(373, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(67, 25);
+            this.label3.Size = new System.Drawing.Size(73, 25);
             this.label3.TabIndex = 106;
             this.label3.Text = "FOTO";
             // 
@@ -164,6 +165,105 @@
             this.TabellaBambini.TabIndex = 105;
             this.TabellaBambini.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellClick);
             // 
+            // ClasseBambini
+            // 
+            this.ClasseBambini.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.ClasseBambini.Location = new System.Drawing.Point(810, 99);
+            this.ClasseBambini.Margin = new System.Windows.Forms.Padding(2);
+            this.ClasseBambini.Name = "ClasseBambini";
+            this.ClasseBambini.Size = new System.Drawing.Size(67, 29);
+            this.ClasseBambini.TabIndex = 102;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(709, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 25);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "CLASSE";
+            // 
+            // libro_label
+            // 
+            this.libro_label.AutoSize = true;
+            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold);
+            this.libro_label.Location = new System.Drawing.Point(413, 9);
+            this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.libro_label.Name = "libro_label";
+            this.libro_label.Size = new System.Drawing.Size(486, 55);
+            this.libro_label.TabIndex = 100;
+            this.libro_label.Text = "Modifica un bambino";
+            // 
+            // CognomeBambini
+            // 
+            this.CognomeBambini.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.CognomeBambini.Location = new System.Drawing.Point(439, 158);
+            this.CognomeBambini.Margin = new System.Windows.Forms.Padding(2);
+            this.CognomeBambini.Name = "CognomeBambini";
+            this.CognomeBambini.Size = new System.Drawing.Size(237, 29);
+            this.CognomeBambini.TabIndex = 99;
+            // 
+            // NomeBambini
+            // 
+            this.NomeBambini.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.NomeBambini.Location = new System.Drawing.Point(439, 103);
+            this.NomeBambini.Margin = new System.Windows.Forms.Padding(2);
+            this.NomeBambini.Name = "NomeBambini";
+            this.NomeBambini.Size = new System.Drawing.Size(237, 29);
+            this.NomeBambini.TabIndex = 98;
+            // 
+            // cognome_label
+            // 
+            this.cognome_label.AutoSize = true;
+            this.cognome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.cognome_label.Location = new System.Drawing.Point(313, 160);
+            this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cognome_label.Name = "cognome_label";
+            this.cognome_label.Size = new System.Drawing.Size(125, 25);
+            this.cognome_label.TabIndex = 97;
+            this.cognome_label.Text = "COGNOME";
+            // 
+            // nome_label
+            // 
+            this.nome_label.AutoSize = true;
+            this.nome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.nome_label.Location = new System.Drawing.Point(359, 105);
+            this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nome_label.Name = "nome_label";
+            this.nome_label.Size = new System.Drawing.Size(76, 25);
+            this.nome_label.TabIndex = 96;
+            this.nome_label.Text = "NOME";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(693, 145);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 54);
+            this.label2.TabIndex = 103;
+            this.label2.Text = "DATA DI NASCITA";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Bambini_pic
+            // 
+            this.Bambini_pic.Location = new System.Drawing.Point(140, 278);
+            this.Bambini_pic.Name = "Bambini_pic";
+            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
+            this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Bambini_pic.TabIndex = 130;
+            this.Bambini_pic.TabStop = false;
+            // 
+            // nascitaBambini
+            // 
+            this.nascitaBambini.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.nascitaBambini.Location = new System.Drawing.Point(816, 155);
+            this.nascitaBambini.Name = "nascitaBambini";
+            this.nascitaBambini.Size = new System.Drawing.Size(322, 29);
+            this.nascitaBambini.TabIndex = 131;
+            // 
             // nomeDataGridViewTextBoxColumn
             // 
             this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
@@ -196,104 +296,6 @@
             // 
             this.bsBambini.DataSource = typeof(Classi.Bambino);
             // 
-            // ClasseBambini
-            // 
-            this.ClasseBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.ClasseBambini.Location = new System.Drawing.Point(810, 99);
-            this.ClasseBambini.Margin = new System.Windows.Forms.Padding(2);
-            this.ClasseBambini.Name = "ClasseBambini";
-            this.ClasseBambini.Size = new System.Drawing.Size(67, 30);
-            this.ClasseBambini.TabIndex = 102;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(709, 101);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 25);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "CLASSE";
-            // 
-            // libro_label
-            // 
-            this.libro_label.AutoSize = true;
-            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
-            this.libro_label.Location = new System.Drawing.Point(413, 9);
-            this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(543, 58);
-            this.libro_label.TabIndex = 100;
-            this.libro_label.Text = "Modifica un bambino";
-            // 
-            // CognomeBambini
-            // 
-            this.CognomeBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.CognomeBambini.Location = new System.Drawing.Point(439, 158);
-            this.CognomeBambini.Margin = new System.Windows.Forms.Padding(2);
-            this.CognomeBambini.Name = "CognomeBambini";
-            this.CognomeBambini.Size = new System.Drawing.Size(237, 30);
-            this.CognomeBambini.TabIndex = 99;
-            // 
-            // NomeBambini
-            // 
-            this.NomeBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.NomeBambini.Location = new System.Drawing.Point(439, 103);
-            this.NomeBambini.Margin = new System.Windows.Forms.Padding(2);
-            this.NomeBambini.Name = "NomeBambini";
-            this.NomeBambini.Size = new System.Drawing.Size(237, 30);
-            this.NomeBambini.TabIndex = 98;
-            // 
-            // cognome_label
-            // 
-            this.cognome_label.AutoSize = true;
-            this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(313, 160);
-            this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cognome_label.Name = "cognome_label";
-            this.cognome_label.Size = new System.Drawing.Size(125, 25);
-            this.cognome_label.TabIndex = 97;
-            this.cognome_label.Text = "COGNOME";
-            // 
-            // nome_label
-            // 
-            this.nome_label.AutoSize = true;
-            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(359, 105);
-            this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(76, 25);
-            this.nome_label.TabIndex = 96;
-            this.nome_label.Text = "NOME";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(693, 145);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 54);
-            this.label2.TabIndex = 103;
-            this.label2.Text = "DATA DI NASCITA";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Bambini_pic
-            // 
-            this.Bambini_pic.Location = new System.Drawing.Point(140, 278);
-            this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
-            this.Bambini_pic.TabIndex = 130;
-            this.Bambini_pic.TabStop = false;
-            // 
-            // nascitaBambini
-            // 
-            this.nascitaBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.nascitaBambini.Location = new System.Drawing.Point(816, 155);
-            this.nascitaBambini.Name = "nascitaBambini";
-            this.nascitaBambini.Size = new System.Drawing.Size(322, 30);
-            this.nascitaBambini.TabIndex = 131;
-            // 
             // ModificaBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,8 +323,8 @@
             this.Text = "ModificaBambino";
             this.Load += new System.EventHandler(this.ModificaBambino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

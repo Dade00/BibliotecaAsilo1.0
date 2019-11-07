@@ -3,6 +3,7 @@ using Classi;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 
 namespace Maestre.Bambini
 {
@@ -31,9 +32,11 @@ namespace Maestre.Bambini
                     MessageBox.Show("Errore");
                 }
                 else
+                {
                     Close();
-
-
+                }
+            File.Delete(bambino.Path);
+            Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
 
 
@@ -46,10 +49,7 @@ namespace Maestre.Bambini
                 try
                 {
                     Bitmap bmp = new Bitmap(ofdFoto.FileName);
-                    if (bmp.Width <= 350 && bmp.Height <= 350)
-                        Bambini_pic.Image = bmp;
-                    else
-                        MessageBox.Show("La foto selezionata deve essere al massimo 350x350");
+                    Bambini_pic.Image = new Bitmap(ofdFoto.FileName);
                     bmp.Dispose();
                 }
                 catch (Exception ex)

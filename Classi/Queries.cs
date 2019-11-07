@@ -28,7 +28,25 @@ namespace Classi
                 throw ex;
             }
         }
+        public static bool delBambino(int id)
+        {
+            try
+            {
+                string sql = "DELETE FROM [Asilo].[dbo].[Bambini] WHERE ID=@id";
 
+                SqlCommand cmd = new SqlCommand(sql, Sql.getInstance());
+
+                cmd.Parameters.AddWithValue("@id", id);
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw;
+            }
+            return true;
+        }
         public static int getMaxIDfromBambini()
         {
             int queryResult = 0;
@@ -43,7 +61,7 @@ namespace Classi
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dataTable);
 
-                    queryResult = Int32.Parse(dataTable.Rows[0]["nadd"].ToString());
+                    queryResult = Int32.Parse(dataTable.Rows[0]["n"].ToString());
                 }
 
             }
@@ -376,6 +394,32 @@ namespace Classi
                     cmd.Parameters.AddWithValue("@path", path);
                     cmd.Parameters.AddWithValue("@id", id);
 
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                result = false;
+                throw ex;
+            }
+
+            return result;
+        }
+        public static bool editLibro(Libro Libro_mod)
+        {
+            bool result = true;
+
+            try
+            {
+                string sql = "UPDATE Libri SET Titolo = @titolo, Autore = @autore, ID_Genere = @genere WHERE ID = @id";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@titolo", Libro_mod.Titolo);
+                    cmd.Parameters.AddWithValue("@autore", Libro_mod.Autore);
+                    cmd.Parameters.AddWithValue("@genere", getIDfromGenere(Libro_mod.Genere));
+                    cmd.Parameters.AddWithValue("@id", Libro_mod.ID);
 
                     cmd.ExecuteNonQuery();
                 }
