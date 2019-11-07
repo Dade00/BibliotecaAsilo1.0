@@ -41,11 +41,13 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.Libri_pic = new System.Windows.Forms.PictureBox();
             this.ElencoLibri = new System.Windows.Forms.DataGridView();
-            this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
+            this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
+            this.AnnullaModifica = new System.Windows.Forms.Button();
+            this.ConfermaButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
@@ -53,16 +55,19 @@
             // 
             // AiutoAggiungiLibro
             // 
+            this.AiutoAggiungiLibro.BackColor = System.Drawing.Color.Transparent;
             this.AiutoAggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
             this.AiutoAggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AiutoAggiungiLibro.FlatAppearance.BorderSize = 0;
+            this.AiutoAggiungiLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AiutoAggiungiLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AiutoAggiungiLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AiutoAggiungiLibro.Location = new System.Drawing.Point(1235, 11);
             this.AiutoAggiungiLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoAggiungiLibro.Name = "AiutoAggiungiLibro";
             this.AiutoAggiungiLibro.Size = new System.Drawing.Size(120, 120);
             this.AiutoAggiungiLibro.TabIndex = 77;
-            this.AiutoAggiungiLibro.UseVisualStyleBackColor = true;
+            this.AiutoAggiungiLibro.UseVisualStyleBackColor = false;
             this.AiutoAggiungiLibro.Click += new System.EventHandler(this.AiutoAggiungiLibro_Click);
             // 
             // CercaFotoLibro
@@ -114,11 +119,11 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libro_label.Location = new System.Drawing.Point(476, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(444, 58);
+            this.libro_label.Size = new System.Drawing.Size(389, 55);
             this.libro_label.TabIndex = 68;
             this.libro_label.Text = "Modifica un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
@@ -284,15 +289,35 @@
             this.bsLibri.DataSource = typeof(Classi.Libro);
             this.bsLibri.Filter = "";
             // 
+            // AnnullaModifica
+            // 
+            this.AnnullaModifica.Location = new System.Drawing.Point(714, 652);
+            this.AnnullaModifica.Name = "AnnullaModifica";
+            this.AnnullaModifica.Size = new System.Drawing.Size(75, 23);
+            this.AnnullaModifica.TabIndex = 98;
+            this.AnnullaModifica.Text = "button1";
+            this.AnnullaModifica.UseVisualStyleBackColor = true;
+            this.AnnullaModifica.Click += new System.EventHandler(this.AnnullaModifica_Click);
+            // 
+            // ConfermaButton
+            // 
+            this.ConfermaButton.Location = new System.Drawing.Point(864, 183);
+            this.ConfermaButton.Name = "ConfermaButton";
+            this.ConfermaButton.Size = new System.Drawing.Size(107, 43);
+            this.ConfermaButton.TabIndex = 99;
+            this.ConfermaButton.Text = "button1";
+            this.ConfermaButton.UseVisualStyleBackColor = true;
+            this.ConfermaButton.Click += new System.EventHandler(this.ConfermaButton_Click);
+            // 
             // ModificaLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.ConfermaButton);
+            this.Controls.Add(this.AnnullaModifica);
             this.Controls.Add(this.Libri_pic);
-            this.Controls.Add(this.AnnullaModificaLibro);
-            this.Controls.Add(this.ConfermaModificaLibro);
             this.Controls.Add(this.AiutoAggiungiLibro);
             this.Controls.Add(this.CercaFotoLibro);
             this.Controls.Add(this.label3);
@@ -308,7 +333,7 @@
             this.Name = "ModificaLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificaLibro";
-            //((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
+            this.Load += new System.EventHandler(this.ModificaLibro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
@@ -338,5 +363,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn genereDataGridViewTextBoxColumn;
         private System.Windows.Forms.OpenFileDialog ofdFoto;
+        private System.Windows.Forms.Button AnnullaModifica;
+        private System.Windows.Forms.Button ConfermaButton;
     }
 }

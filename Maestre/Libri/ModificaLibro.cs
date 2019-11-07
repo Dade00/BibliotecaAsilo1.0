@@ -129,5 +129,34 @@ namespace Maestre.Libri
             else
                 ofdFoto.FileName = "";
         }
+
+        private void AnnullaModifica_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void ConfermaButton_Click(object sender, EventArgs e)
+        {
+            if (libro != null)
+            {
+                Libro Libro_mod = new Libro();
+                Libro_mod.ID = libro.ID;
+                Libro_mod.Titolo = TitotloModLibro.Text;
+                Libro_mod.Autore = AutoreModLibro.Text;
+                Libro_mod.Genere = GenereModLibro.Text;
+
+
+                if (!Queries.editLibro(Libro_mod))
+                {
+                    MessageBox.Show("Errore");
+                }
+                else
+                {
+                    Close();
+                }
+                File.Delete(libro.Path);
+                Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
+        }
     }
 }
