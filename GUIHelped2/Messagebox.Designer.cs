@@ -1,4 +1,4 @@
-﻿namespace Maestre
+﻿namespace GUIHelped2
 {
     partial class Messagebox
     {
@@ -35,7 +35,7 @@
             // 
             // ok_button
             // 
-            this.ok_button.BackgroundImage = global::Maestre.Properties.Resources.Ok;
+            this.ok_button.BackgroundImage = global::GUIHelped2.Properties.Resources.Ok;
             this.ok_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ok_button.FlatAppearance.BorderSize = 0;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -48,20 +48,23 @@
             // Titolo
             // 
             this.Titolo.AutoSize = true;
-            this.Titolo.Location = new System.Drawing.Point(183, 9);
+            this.Titolo.Font = new System.Drawing.Font("GROBOLD", 15F);
+            this.Titolo.Location = new System.Drawing.Point(165, 9);
             this.Titolo.Name = "Titolo";
-            this.Titolo.Size = new System.Drawing.Size(35, 13);
+            this.Titolo.Size = new System.Drawing.Size(65, 25);
             this.Titolo.TabIndex = 1;
-            this.Titolo.Text = "label1";
+            this.Titolo.Text = "Titolo";
             // 
             // testo
             // 
-            this.testo.AutoSize = true;
-            this.testo.Location = new System.Drawing.Point(183, 67);
+            this.testo.AutoEllipsis = true;
+            this.testo.Font = new System.Drawing.Font("GROBOLD", 10F);
+            this.testo.Location = new System.Drawing.Point(12, 45);
             this.testo.Name = "testo";
-            this.testo.Size = new System.Drawing.Size(35, 13);
+            this.testo.Size = new System.Drawing.Size(376, 121);
             this.testo.TabIndex = 2;
-            this.testo.Text = "label2";
+            this.testo.Text = "aa";
+            this.testo.Click += new System.EventHandler(this.Testo_Click);
             // 
             // Messagebox
             // 

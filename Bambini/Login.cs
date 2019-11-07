@@ -34,7 +34,7 @@ namespace Bambini
                 anni = 5;
             else
             {
-                MessageBox.Show("Inserisci l'età");
+                MessageBox.Show("inserisci la tua etá!");
                 return;
             }
 

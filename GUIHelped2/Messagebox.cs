@@ -8,29 +8,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Maestre
+namespace GUIHelped2
 {
     public partial class Messagebox : Form
     {
         bool ok;
+        public Messagebox()
+        {
+            InitializeComponent();
+        }
         public Messagebox(string Text, string Title, bool OK)
         {
+            InitializeComponent();
             testo.Text = Text;
             Titolo.Text = Title;
             ok = OK;
-            InitializeComponent();
         }
 
         private void Messagebox_Load(object sender, EventArgs e)
         {
             if(ok)
             {
-                this.BackgroundImage = Maestre.Properties.Resources.Sfondo_Msg_Bello;
+                BackgroundImage = GUIHelped2.Properties.Resources.Sfondo_Msg_Bello;
+               //BackgroundImage = 
             }
             else
             {
-                this.BackgroundImage = Properties.Resources.Sfondo_Msg_Brutto;
+                //this.BackgroundImage = Properties.Resources.Sfondo_Msg_Brutto;
+                BackgroundImage = GUIHelped2.Properties.Resources.Sfondo_Msg_Brutto;
             }
+        }
+
+        private void Testo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
