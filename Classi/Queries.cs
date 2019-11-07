@@ -412,6 +412,32 @@ namespace Classi
 
             return result;
         }
+
+        public static int getIDTransazionebyLibro(int idBambino, int idLibro)
+        {
+            bool result = true;
+            DataTable dataTable = new DataTable();
+            try
+            {
+                string sql = "SELECT ID FROM [Transazioni] where ID_Bambino = @idb and ID_Libro = @idl and Data_Restituzione is null";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@idb", idBambino);
+                    cmd.Parameters.AddWithValue("@idl", idLibro);
+
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                    sqlDataAdapter.Fill(dataTable);
+
+                    return Int32.Parse(dataTable.Rows[0][0].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
         public static bool editLibro(Libro Libro_mod)
         {
             bool result = true;
@@ -508,7 +534,7 @@ namespace Classi
             List<Libro> listaLibri = new List<Libro>();
             DataTable dataTable = new DataTable();
             string sql = "SELECT libri.[ID] ,[Titolo] ,[Autore], Generi.Genere ,libri.[Path_Foto] ,[In_Prestito]" +
-                " FROM[dbo].[Libri], dbo.Transazioni, dbo.Generi where Transazioni.ID_Libro = Libri.ID and Transazioni.ID_Bambino = @id and Generi.ID = ID_Genere";
+                " FROM[dbo].[Libri], dbo.Transazioni, dbo.Generi where Transazioni.ID_Libro = Libri.ID and Transazioni.ID_Bambino = @id and Generi.ID = ID_Genere and Libri.In_Prestito = 1";
             try
             {
 
@@ -658,18 +684,19 @@ namespace Classi
             return true;
         }
 
-        public static bool RestituisciLibro(int id)
+        public static bool RestituisciLibro(int idTrans, int idLibro)
         {
             bool result = true;
 
             try
             {
-                string sql = "UPDATE Transazioni  SET Data_Restituizione = @dataNow  when ID = @idTrans ";
+                string sql = "UPDATE [Transazioni] SET [Data_Restituzione] = @dataNow WHERE ID = @idTrans ";
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
-                    cmd.Parameters.AddWithValue("@idTrans", id);
+                    cmd.Parameters.AddWithValue("@idTrans", idTrans);
                     cmd.Parameters.AddWithValue("@dataNow", DateTime.Now);
+
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -681,11 +708,11 @@ namespace Classi
 
             try
             {
-                string sql = "UPDATE Libri SET In_Prestito=1 WHERE ID = @id";
+                string sql = "UPDATE Libri SET In_Prestito=0 WHERE ID = @id";
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
-                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@id", idLibro);
 
 
                     cmd.ExecuteNonQuery();
