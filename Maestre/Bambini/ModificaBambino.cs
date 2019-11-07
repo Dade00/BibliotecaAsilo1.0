@@ -38,7 +38,7 @@ namespace Maestre.Bambini
                     if (ModFoto)
                     {
                         ModFoto = false;
-                        Bambini_pic.ImageLocation = "";
+                        ofdFoto.Dispose();
                         File.Delete(bambino.Path);
                         Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
                     }
@@ -104,7 +104,7 @@ namespace Maestre.Bambini
             CognomeBambini.Text = bambino.Cognome;
             ClasseBambini.Text = bambino.Classe;
             nascitaBambini.Value = bambino.DataNascita;
-            if(bambino.Path != "foto")
+            if(bambino.Path != "")
             {
                 try
                 {

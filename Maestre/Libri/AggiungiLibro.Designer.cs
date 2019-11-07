@@ -337,7 +337,7 @@
             // ConfermaModificaLibro
             // 
             this.ConfermaModificaLibro.BackColor = System.Drawing.Color.Transparent;
-            this.ConfermaModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
+            this.ConfermaModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Aggiungi;
             this.ConfermaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ConfermaModificaLibro.FlatAppearance.BorderSize = 0;
             this.ConfermaModificaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
