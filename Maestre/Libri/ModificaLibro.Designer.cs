@@ -119,6 +119,7 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
+            this.libro_label.BackColor = System.Drawing.Color.Transparent;
             this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libro_label.Location = new System.Drawing.Point(476, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -169,65 +170,6 @@
             // Libri_pic
             // 
             this.Libri_pic.BackColor = System.Drawing.Color.Transparent;
-            this.Libri_pic.Location = new System.Drawing.Point(12, 278);
-            this.Libri_pic.Name = "Libri_pic";
-            this.Libri_pic.Size = new System.Drawing.Size(350, 350);
-            this.Libri_pic.TabIndex = 97;
-            this.Libri_pic.TabStop = false;
-            // 
-            // AnnullaModificaLibro
-            // 
-            this.AnnullaModificaLibro.BackColor = System.Drawing.Color.Transparent;
-            this.AnnullaModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
-            this.AnnullaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AnnullaModificaLibro.FlatAppearance.BorderSize = 0;
-            this.AnnullaModificaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.AnnullaModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.AnnullaModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.AnnullaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaModificaLibro.Location = new System.Drawing.Point(229, 636);
-            this.AnnullaModificaLibro.Name = "AnnullaModificaLibro";
-            this.AnnullaModificaLibro.Size = new System.Drawing.Size(380, 120);
-            this.AnnullaModificaLibro.TabIndex = 79;
-            this.AnnullaModificaLibro.UseVisualStyleBackColor = false;
-            this.AnnullaModificaLibro.Click += new System.EventHandler(this.AnnullaModificaLibro_Click);
-            // 
-            // ConfermaModificaLibro
-            // 
-            this.ConfermaModificaLibro.BackColor = System.Drawing.Color.Transparent;
-            this.ConfermaModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
-            this.ConfermaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ConfermaModificaLibro.FlatAppearance.BorderSize = 0;
-            this.ConfermaModificaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.ConfermaModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.ConfermaModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.ConfermaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaModificaLibro.Location = new System.Drawing.Point(758, 637);
-            this.ConfermaModificaLibro.Name = "ConfermaModificaLibro";
-            this.ConfermaModificaLibro.Size = new System.Drawing.Size(380, 120);
-            this.ConfermaModificaLibro.TabIndex = 78;
-            this.ConfermaModificaLibro.UseVisualStyleBackColor = false;
-            this.ConfermaModificaLibro.Click += new System.EventHandler(this.ConfermaModificaLibro_Click);
-            // 
-            // AiutoAggiungiLibro
-            // 
-            this.AiutoAggiungiLibro.BackColor = System.Drawing.Color.Transparent;
-            this.AiutoAggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
-            this.AiutoAggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AiutoAggiungiLibro.FlatAppearance.BorderSize = 0;
-            this.AiutoAggiungiLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.AiutoAggiungiLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.AiutoAggiungiLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AiutoAggiungiLibro.Location = new System.Drawing.Point(1235, 11);
-            this.AiutoAggiungiLibro.Margin = new System.Windows.Forms.Padding(2);
-            this.AiutoAggiungiLibro.Name = "AiutoAggiungiLibro";
-            this.AiutoAggiungiLibro.Size = new System.Drawing.Size(120, 120);
-            this.AiutoAggiungiLibro.TabIndex = 77;
-            this.AiutoAggiungiLibro.UseVisualStyleBackColor = false;
-            this.AiutoAggiungiLibro.Click += new System.EventHandler(this.AiutoAggiungiLibro_Click);
-            // 
-            // CercaFotoLibro
-            // 
             this.Libri_pic.Location = new System.Drawing.Point(140, 278);
             this.Libri_pic.Name = "Libri_pic";
             this.Libri_pic.Size = new System.Drawing.Size(350, 350);
@@ -291,21 +233,35 @@
             // 
             // AnnullaModifica
             // 
-            this.AnnullaModifica.Location = new System.Drawing.Point(714, 652);
+            this.AnnullaModifica.BackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModifica.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
+            this.AnnullaModifica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AnnullaModifica.FlatAppearance.BorderSize = 0;
+            this.AnnullaModifica.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModifica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModifica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModifica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AnnullaModifica.Location = new System.Drawing.Point(550, 652);
             this.AnnullaModifica.Name = "AnnullaModifica";
-            this.AnnullaModifica.Size = new System.Drawing.Size(75, 23);
+            this.AnnullaModifica.Size = new System.Drawing.Size(267, 88);
             this.AnnullaModifica.TabIndex = 98;
-            this.AnnullaModifica.Text = "button1";
             this.AnnullaModifica.UseVisualStyleBackColor = true;
             this.AnnullaModifica.Click += new System.EventHandler(this.AnnullaModifica_Click);
             // 
             // ConfermaButton
             // 
-            this.ConfermaButton.Location = new System.Drawing.Point(864, 183);
+            this.ConfermaButton.BackColor = System.Drawing.Color.Transparent;
+            this.ConfermaButton.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
+            this.ConfermaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ConfermaButton.FlatAppearance.BorderSize = 0;
+            this.ConfermaButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfermaButton.Location = new System.Drawing.Point(714, 164);
             this.ConfermaButton.Name = "ConfermaButton";
-            this.ConfermaButton.Size = new System.Drawing.Size(107, 43);
+            this.ConfermaButton.Size = new System.Drawing.Size(267, 88);
             this.ConfermaButton.TabIndex = 99;
-            this.ConfermaButton.Text = "button1";
             this.ConfermaButton.UseVisualStyleBackColor = true;
             this.ConfermaButton.Click += new System.EventHandler(this.ConfermaButton_Click);
             // 

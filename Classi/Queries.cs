@@ -652,7 +652,7 @@ namespace Classi
             return true;
         }
 
-        public static bool RestituisciLibro(Libro libro, Bambino bambino)
+        public static bool RestituisciLibro(int id)
         {
             bool result = true;
 
@@ -662,9 +662,8 @@ namespace Classi
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
-                    cmd.Parameters.AddWithValue("@id_l", libro.ID);
-                    cmd.Parameters.AddWithValue("@id_b", bambino.ID);
-                    cmd.Parameters.AddWithValue("@data", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@idTrans", id);
+                    cmd.Parameters.AddWithValue("@dataNow", DateTime.Now);
                     cmd.ExecuteNonQuery();
                 }
             }
