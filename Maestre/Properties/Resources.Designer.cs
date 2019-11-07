@@ -223,6 +223,16 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Modifica_foto {
+            get {
+                object obj = ResourceManager.GetObject("Modifica_foto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Modificaunbambino {
             get {
                 object obj = ResourceManager.GetObject("Modificaunbambino", resourceCulture);

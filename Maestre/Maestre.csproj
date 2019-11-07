@@ -330,5 +330,8 @@
   <ItemGroup>
     <None Include="Resources\Sfondo Aiuto.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modifica foto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

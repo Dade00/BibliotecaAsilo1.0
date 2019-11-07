@@ -61,7 +61,7 @@ namespace Classi {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a LAPTOP-H03OA999.
+        ///   Cerca una stringa localizzata simile a DESKTOP-D13969O\SQLEXPRESS.
         /// </summary>
         internal static string sqlServerAddress {
             get {
@@ -79,7 +79,7 @@ namespace Classi {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a Einaudi.
+        ///   Cerca una stringa localizzata simile a einaudi.
         /// </summary>
         internal static string sqlServerPassword {
             get {
