@@ -292,6 +292,49 @@ namespace Classi
             return listaLibri;
         }
 
+        public static List<Libro> getLibri(int id)
+        {
+
+            List<Libro> listaLibri = new List<Libro>();
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT DISTINCT Libri.ID, libri.Autore, libri.Titolo, Generi.Genere, libri.Path_Foto, libri.In_Prestito " +
+                "FROM[Asilo].[dbo].[Libri], [Asilo].[dbo].[Generi]" +
+                "where Libri.ID_Genere = Generi.ID and Libri.ID = @id";
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Libro libro = new Libro();
+
+                        libro.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        libro.Titolo = dataTable.Rows[i]["Titolo"].ToString();
+                        libro.Autore = dataTable.Rows[i]["Autore"].ToString();
+                        libro.Genere = dataTable.Rows[i]["Genere"].ToString();
+                        libro.Prestito = (bool)dataTable.Rows[i]["In_Prestito"];
+                        libro.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+
+                        listaLibri.Add(libro);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listaLibri;
+        }
+
         private static int getIDfromGenere(string Genere)
         {
             int queryResult = 0;
@@ -411,6 +454,43 @@ namespace Classi
             }
 
             return result;
+        }
+
+        public static List<Transazione> getTransazionibyBambino(int idBambino)
+        {
+            bool result = true;
+            DataTable dataTable = new DataTable();
+            List<Transazione> transaziones = new List<Transazione>();
+            try
+            {
+                string sql = "SELECT * FROM [Transazioni] where ID_Bambino = @idb and Data_Restituzione is not null";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@idb", idBambino);
+
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                    sqlDataAdapter.Fill(dataTable);
+
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Transazione transazione = new Transazione();
+
+                        transazione.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        transazione.ID_Bambino = Int32.Parse(dataTable.Rows[i]["ID_Bambino"].ToString());
+                        transazione.ID_Libro = Int32.Parse(dataTable.Rows[i]["ID_Libro"].ToString());
+
+                        transaziones.Add(transazione);
+                    }
+
+                    return transaziones;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
         public static int getIDTransazionebyLibro(int idBambino, int idLibro)
@@ -533,7 +613,7 @@ namespace Classi
             //Prende tutti i libri di un genere specificato disponibili in deposito 
             List<Libro> listaLibri = new List<Libro>();
             DataTable dataTable = new DataTable();
-            string sql = "SELECT libri.[ID] ,[Titolo] ,[Autore], Generi.Genere ,libri.[Path_Foto] ,[In_Prestito]" +
+            string sql = "SELECT DISTINCT libri.[ID] ,[Titolo] ,[Autore], Generi.Genere ,libri.[Path_Foto] ,[In_Prestito]" +
                 " FROM[dbo].[Libri], dbo.Transazioni, dbo.Generi where Transazioni.ID_Libro = Libri.ID and Transazioni.ID_Bambino = @id and Generi.ID = ID_Genere and Libri.In_Prestito = 1";
             try
             {
@@ -728,6 +808,89 @@ namespace Classi
 
             return true;
         }
+
+        /// <summary>
+        /// Prende tutti i bambini presi singolarmente che hanno letto quel libro
+        /// </summary>
+        /// <param name="id">ID del libro da controllare</param>
+        /// <returns></returns>
+        public static List<Bambino> getBambinichehannolettoillibro(int id)
+        {
+
+            List<Bambino> listaLibri = new List<Bambino>();
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT DISTINCT Bambini.[ID], Bambini.[Nome], Bambini.[Cognome], Bambini.[Classe], Bambini.[Data_Nascita], Bambini.[Path_Foto] " +
+                "FROM [Asilo].[dbo].[Transazioni], [Asilo].[dbo].[Bambini]" +
+                "WHERE Bambini.ID = Transazioni.ID_Bambino and ID_Libro = @id";
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Bambino bambino = new Bambino();
+
+                        bambino.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        bambino.Nome = dataTable.Rows[i]["Nome"].ToString();
+                        bambino.Cognome = dataTable.Rows[i]["Cognome"].ToString();
+                        bambino.Classe = dataTable.Rows[i]["Classe"].ToString();
+                        bambino.DataNascita = (DateTime)dataTable.Rows[i]["Data_Nascita"];
+                        bambino.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+
+                        listaLibri.Add(bambino);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listaLibri;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id">Sempre l'Id del libro</param>
+        /// <returns></returns>
+        public static int nVolteLibroLetto(int id)
+        {
+
+            List<Bambino> listaLibri = new List<Bambino>();
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT ID " +
+                "FROM [Asilo].[dbo].[Transazioni]" +
+                "WHERE ID_Libro = @id";
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+                    return  dataTable.Rows.Count -1;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
     }
 
 }

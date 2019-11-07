@@ -273,7 +273,7 @@ namespace Maestre.Bambini
             // 
             this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
             this.Bambini_pic.InitialImage = null;
-            this.Bambini_pic.Location = new System.Drawing.Point(130, 18);
+            this.Bambini_pic.Location = new System.Drawing.Point(129, 18);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(250, 250);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -324,7 +324,7 @@ namespace Maestre.Bambini
             this.search_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.search_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search_button.Location = new System.Drawing.Point(87, 552);
+            this.search_button.Location = new System.Drawing.Point(92, 552);
             this.search_button.Name = "search_button";
             this.search_button.Size = new System.Drawing.Size(182, 58);
             this.search_button.TabIndex = 135;

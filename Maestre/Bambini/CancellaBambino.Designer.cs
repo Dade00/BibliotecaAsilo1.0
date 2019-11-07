@@ -55,31 +55,31 @@
             // 
             this.libro_label.AutoSize = true;
             this.libro_label.BackColor = System.Drawing.Color.Transparent;
-            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(495, 55);
+            this.libro_label.Size = new System.Drawing.Size(536, 58);
             this.libro_label.TabIndex = 39;
             this.libro_label.Text = "Cancella un bambino";
             // 
             // NomeDelBambini
             // 
-            this.NomeDelBambini.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.NomeDelBambini.Font = new System.Drawing.Font("GROBOLD", 15F);
             this.NomeDelBambini.Location = new System.Drawing.Point(555, 119);
             this.NomeDelBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeDelBambini.Name = "NomeDelBambini";
-            this.NomeDelBambini.Size = new System.Drawing.Size(312, 29);
+            this.NomeDelBambini.Size = new System.Drawing.Size(312, 31);
             this.NomeDelBambini.TabIndex = 77;
             // 
             // nome_label
             // 
             this.nome_label.AutoSize = true;
-            this.nome_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F);
             this.nome_label.Location = new System.Drawing.Point(384, 121);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
-            this.nome_label.Size = new System.Drawing.Size(157, 25);
+            this.nome_label.Size = new System.Drawing.Size(150, 25);
             this.nome_label.TabIndex = 76;
             this.nome_label.Text = "CERCA NOME";
             // 
@@ -97,7 +97,7 @@
             this.classeDataGridViewTextBoxColumn,
             this.dataNascitaDataGridViewTextBoxColumn});
             this.TabellaBambini.DataSource = this.bsBambini;
-            this.TabellaBambini.Location = new System.Drawing.Point(509, 240);
+            this.TabellaBambini.Location = new System.Drawing.Point(389, 240);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.Name = "TabellaBambini";
             this.TabellaBambini.ReadOnly = true;
@@ -107,7 +107,7 @@
             this.TabellaBambini.RowTemplate.Height = 28;
             this.TabellaBambini.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TabellaBambini.Size = new System.Drawing.Size(690, 350);
+            this.TabellaBambini.Size = new System.Drawing.Size(966, 350);
             this.TabellaBambini.TabIndex = 75;
             this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
@@ -145,21 +145,21 @@
             // 
             // CognomeDelBambini
             // 
-            this.CognomeDelBambini.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.CognomeDelBambini.Font = new System.Drawing.Font("GROBOLD", 15F);
             this.CognomeDelBambini.Location = new System.Drawing.Point(555, 168);
             this.CognomeDelBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeDelBambini.Name = "CognomeDelBambini";
-            this.CognomeDelBambini.Size = new System.Drawing.Size(312, 29);
+            this.CognomeDelBambini.Size = new System.Drawing.Size(312, 31);
             this.CognomeDelBambini.TabIndex = 81;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("GROBOLD", 15F);
             this.label1.Location = new System.Drawing.Point(336, 170);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 25);
+            this.label1.Size = new System.Drawing.Size(196, 25);
             this.label1.TabIndex = 80;
             this.label1.Text = "CERCA COGNOME";
             // 
@@ -183,7 +183,7 @@
             // Bambini_pic
             // 
             this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
-            this.Bambini_pic.Location = new System.Drawing.Point(140, 240);
+            this.Bambini_pic.Location = new System.Drawing.Point(12, 240);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,7 +200,7 @@
             this.AnnullaEliminaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.AnnullaEliminaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AnnullaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaEliminaBambini.Location = new System.Drawing.Point(229, 636);
+            this.AnnullaEliminaBambini.Location = new System.Drawing.Point(285, 636);
             this.AnnullaEliminaBambini.Name = "AnnullaEliminaBambini";
             this.AnnullaEliminaBambini.Size = new System.Drawing.Size(380, 120);
             this.AnnullaEliminaBambini.TabIndex = 79;
@@ -217,7 +217,7 @@
             this.ConfermaEliminaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.ConfermaEliminaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ConfermaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaEliminaBambini.Location = new System.Drawing.Point(758, 637);
+            this.ConfermaEliminaBambini.Location = new System.Drawing.Point(702, 637);
             this.ConfermaEliminaBambini.Name = "ConfermaEliminaBambini";
             this.ConfermaEliminaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaEliminaBambini.TabIndex = 78;

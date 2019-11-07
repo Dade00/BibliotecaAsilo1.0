@@ -22,7 +22,7 @@ namespace Maestre.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Maestre.Properties {
         ///   Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Maestre.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Maestre.Properties {
         ///   ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Aggiungi {
+        public static System.Drawing.Bitmap Aggiungi {
             get {
                 object obj = ResourceManager.GetObject("Aggiungi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Aggiungiunbambino {
+        public static System.Drawing.Bitmap Aggiungiunbambino {
             get {
                 object obj = ResourceManager.GetObject("Aggiungiunbambino", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Aggiungiunlibro {
+        public static System.Drawing.Bitmap Aggiungiunlibro {
             get {
                 object obj = ResourceManager.GetObject("Aggiungiunlibro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Aiuto {
+        public static System.Drawing.Bitmap Aiuto {
             get {
                 object obj = ResourceManager.GetObject("Aiuto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Annulla {
+        public static System.Drawing.Bitmap Annulla {
             get {
                 object obj = ResourceManager.GetObject("Annulla", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bambini {
+        public static System.Drawing.Bitmap Bambini {
             get {
                 object obj = ResourceManager.GetObject("Bambini", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bambini_ON {
+        public static System.Drawing.Bitmap Bambini_ON {
             get {
                 object obj = ResourceManager.GetObject("Bambini_ON", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bambini_ON1 {
+        public static System.Drawing.Bitmap Bambini_ON1 {
             get {
                 object obj = ResourceManager.GetObject("Bambini_ON1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cerca {
+        public static System.Drawing.Bitmap cerca {
             get {
                 object obj = ResourceManager.GetObject("cerca", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Conferma {
+        public static System.Drawing.Bitmap Conferma {
             get {
                 object obj = ResourceManager.GetObject("Conferma", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Elimina_Stat {
+        public static System.Drawing.Bitmap Elimina_Stat {
             get {
                 object obj = ResourceManager.GetObject("Elimina_Stat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Indietro {
+        public static System.Drawing.Bitmap Indietro {
             get {
                 object obj = ResourceManager.GetObject("Indietro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Inserisci_foto {
+        public static System.Drawing.Bitmap Inserisci_foto {
             get {
                 object obj = ResourceManager.GetObject("Inserisci_foto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Libri {
+        public static System.Drawing.Bitmap Libri {
             get {
                 object obj = ResourceManager.GetObject("Libri", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Libri_ON {
+        public static System.Drawing.Bitmap Libri_ON {
             get {
                 object obj = ResourceManager.GetObject("Libri_ON", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Modifica {
+        public static System.Drawing.Bitmap Modifica {
             get {
                 object obj = ResourceManager.GetObject("Modifica", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Modifica_foto {
+        public static System.Drawing.Bitmap Modifica_foto {
             get {
                 object obj = ResourceManager.GetObject("Modifica_foto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +233,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Modificaunbambino {
+        public static System.Drawing.Bitmap Modificaunbambino {
             get {
                 object obj = ResourceManager.GetObject("Modificaunbambino", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Modificaunlibro {
+        public static System.Drawing.Bitmap Modificaunlibro {
             get {
                 object obj = ResourceManager.GetObject("Modificaunlibro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap N_bambini {
+        public static System.Drawing.Bitmap N_bambini {
             get {
                 object obj = ResourceManager.GetObject("N_bambini", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap N_libri {
+        public static System.Drawing.Bitmap N_libri {
             get {
                 object obj = ResourceManager.GetObject("N_libri", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap No_image {
+        public static System.Drawing.Bitmap No_image {
             get {
                 object obj = ResourceManager.GetObject("No_image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +283,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ok {
+        public static System.Drawing.Bitmap Ok {
             get {
                 object obj = ResourceManager.GetObject("Ok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +293,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap reset {
+        public static System.Drawing.Bitmap reset {
             get {
                 object obj = ResourceManager.GetObject("reset", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +303,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rimuovi {
+        public static System.Drawing.Bitmap Rimuovi {
             get {
                 object obj = ResourceManager.GetObject("Rimuovi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +313,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rimuoviunbambino {
+        public static System.Drawing.Bitmap Rimuoviunbambino {
             get {
                 object obj = ResourceManager.GetObject("Rimuoviunbambino", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +323,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rimuoviunlibro {
+        public static System.Drawing.Bitmap Rimuoviunlibro {
             get {
                 object obj = ResourceManager.GetObject("Rimuoviunlibro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +333,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sfondo_Aiuto {
+        public static System.Drawing.Bitmap Sfondo_Aiuto {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Aiuto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +343,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sfondo_maestre {
+        public static System.Drawing.Bitmap Sfondo_maestre {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_maestre", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +353,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sfondo_maestre_con_menu {
+        public static System.Drawing.Bitmap Sfondo_maestre_con_menu {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_maestre_con_menu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +363,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sfondo_Msg_Bello {
+        public static System.Drawing.Bitmap Sfondo_Msg_Bello {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Msg_Bello", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +373,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sfondo_Msg_Brutto {
+        public static System.Drawing.Bitmap Sfondo_Msg_Brutto {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Msg_Brutto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +383,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Stampa {
+        public static System.Drawing.Bitmap Stampa {
             get {
                 object obj = ResourceManager.GetObject("Stampa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +393,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Statistiche {
+        public static System.Drawing.Bitmap Statistiche {
             get {
                 object obj = ResourceManager.GetObject("Statistiche", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +403,7 @@ namespace Maestre.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Statistiche_ON {
+        public static System.Drawing.Bitmap Statistiche_ON {
             get {
                 object obj = ResourceManager.GetObject("Statistiche_ON", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

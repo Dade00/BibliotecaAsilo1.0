@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bambini", "Bambini\Bambini.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maestre", "Maestre\Maestre.csproj", "{A2F02186-4064-4A5D-8165-77050EAD541E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classi", "Classi\Classi.csproj", "{06A5A80B-C5E4-46F7-9C8C-484962C21531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classi", "Classi\Classi.csproj", "{06A5A80B-C5E4-46F7-9C8C-484962C21531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
