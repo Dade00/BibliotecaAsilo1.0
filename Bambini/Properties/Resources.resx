@@ -176,8 +176,23 @@
   <data name="Sentimenti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sentimenti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Sfondo_Aiuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sfondo Aiuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sfondo_che_libro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sfondo che libro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sfondo_Genere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sfondo Genere.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sfondo_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sfondo_Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sfondo_Prend__e_Resti_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sfondo Prend. e Resti..jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sfondo_Sei_Tu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sfondo Sei Tu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Storie_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Storie_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

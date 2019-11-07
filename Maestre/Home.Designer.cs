@@ -28,340 +28,282 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TabControl = new System.Windows.Forms.TabControl();
-            this.Bambini_page = new System.Windows.Forms.TabPage();
             this.EliminaBambino = new System.Windows.Forms.Button();
             this.ModificaBambino = new System.Windows.Forms.Button();
             this.AggiungiBambino = new System.Windows.Forms.Button();
-            this.Libri_page = new System.Windows.Forms.TabPage();
             this.EliminaLibro = new System.Windows.Forms.Button();
             this.ModificaLibro = new System.Windows.Forms.Button();
             this.AggiungiLibro = new System.Windows.Forms.Button();
-            this.Statistiche_page = new System.Windows.Forms.TabPage();
             this.DelStat = new System.Windows.Forms.Button();
             this.StatLibri = new System.Windows.Forms.Button();
             this.StatBambini = new System.Windows.Forms.Button();
-            this.Empty_page = new System.Windows.Forms.TabPage();
             this.Statistiche_radio = new System.Windows.Forms.RadioButton();
             this.Libri_radio = new System.Windows.Forms.RadioButton();
             this.Bambini_radio = new System.Windows.Forms.RadioButton();
             this.indietro_button = new System.Windows.Forms.Button();
-            this.TabControl.SuspendLayout();
-            this.Bambini_page.SuspendLayout();
-            this.Libri_page.SuspendLayout();
-            this.Statistiche_page.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // TabControl
-            // 
-            this.TabControl.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.TabControl.Controls.Add(this.Bambini_page);
-            this.TabControl.Controls.Add(this.Libri_page);
-            this.TabControl.Controls.Add(this.Statistiche_page);
-            this.TabControl.Controls.Add(this.Empty_page);
-            this.TabControl.Location = new System.Drawing.Point(588, -30);
-            this.TabControl.Name = "TabControl";
-            this.TabControl.SelectedIndex = 0;
-            this.TabControl.ShowToolTips = true;
-            this.TabControl.Size = new System.Drawing.Size(819, 822);
-            this.TabControl.TabIndex = 4;
-            this.TabControl.TabStop = false;
-            // 
-            // Bambini_page
-            // 
-            this.Bambini_page.BackColor = System.Drawing.SystemColors.Control;
-            this.Bambini_page.Controls.Add(this.EliminaBambino);
-            this.Bambini_page.Controls.Add(this.ModificaBambino);
-            this.Bambini_page.Controls.Add(this.AggiungiBambino);
-            this.Bambini_page.Location = new System.Drawing.Point(4, 25);
-            this.Bambini_page.Name = "Bambini_page";
-            this.Bambini_page.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Bambini_page.Size = new System.Drawing.Size(811, 793);
-            this.Bambini_page.TabIndex = 0;
-            this.Bambini_page.Click += new System.EventHandler(this.Bambini_page_Click);
             // 
             // EliminaBambino
             // 
+            this.EliminaBambino.BackColor = System.Drawing.Color.Transparent;
             this.EliminaBambino.BackgroundImage = global::Maestre.Properties.Resources.Rimuoviunbambino;
             this.EliminaBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.EliminaBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.EliminaBambino.FlatAppearance.BorderSize = 0;
-            this.EliminaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.EliminaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.EliminaBambino.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.EliminaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.EliminaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.EliminaBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EliminaBambino.Location = new System.Drawing.Point(145, 489);
+            this.EliminaBambino.Location = new System.Drawing.Point(747, 481);
             this.EliminaBambino.Name = "EliminaBambino";
             this.EliminaBambino.Size = new System.Drawing.Size(380, 120);
             this.EliminaBambino.TabIndex = 5;
-            this.EliminaBambino.UseVisualStyleBackColor = true;
+            this.EliminaBambino.UseVisualStyleBackColor = false;
             this.EliminaBambino.Click += new System.EventHandler(this.EliminaBambino_Click);
             // 
             // ModificaBambino
             // 
+            this.ModificaBambino.BackColor = System.Drawing.Color.Transparent;
             this.ModificaBambino.BackgroundImage = global::Maestre.Properties.Resources.Modificaunbambino;
             this.ModificaBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ModificaBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ModificaBambino.FlatAppearance.BorderSize = 0;
-            this.ModificaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.ModificaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.ModificaBambino.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ModificaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ModificaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ModificaBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ModificaBambino.Location = new System.Drawing.Point(145, 300);
+            this.ModificaBambino.Location = new System.Drawing.Point(747, 292);
             this.ModificaBambino.Name = "ModificaBambino";
             this.ModificaBambino.Size = new System.Drawing.Size(380, 120);
             this.ModificaBambino.TabIndex = 4;
-            this.ModificaBambino.UseVisualStyleBackColor = true;
+            this.ModificaBambino.UseVisualStyleBackColor = false;
             this.ModificaBambino.Click += new System.EventHandler(this.ModificaBambino_Click);
             // 
             // AggiungiBambino
             // 
+            this.AggiungiBambino.BackColor = System.Drawing.Color.Transparent;
             this.AggiungiBambino.BackgroundImage = global::Maestre.Properties.Resources.Aggiungiunbambino;
             this.AggiungiBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AggiungiBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.AggiungiBambino.FlatAppearance.BorderSize = 0;
-            this.AggiungiBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AggiungiBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AggiungiBambino.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AggiungiBambino.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AggiungiBambino.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AggiungiBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AggiungiBambino.Location = new System.Drawing.Point(145, 111);
+            this.AggiungiBambino.Location = new System.Drawing.Point(747, 103);
             this.AggiungiBambino.Name = "AggiungiBambino";
             this.AggiungiBambino.Size = new System.Drawing.Size(380, 120);
             this.AggiungiBambino.TabIndex = 3;
-            this.AggiungiBambino.UseVisualStyleBackColor = true;
+            this.AggiungiBambino.UseVisualStyleBackColor = false;
             this.AggiungiBambino.Click += new System.EventHandler(this.AggiungiBambino_Click);
-            // 
-            // Libri_page
-            // 
-            this.Libri_page.BackColor = System.Drawing.SystemColors.Control;
-            this.Libri_page.Controls.Add(this.EliminaLibro);
-            this.Libri_page.Controls.Add(this.ModificaLibro);
-            this.Libri_page.Controls.Add(this.AggiungiLibro);
-            this.Libri_page.Location = new System.Drawing.Point(4, 25);
-            this.Libri_page.Name = "Libri_page";
-            this.Libri_page.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Libri_page.Size = new System.Drawing.Size(811, 793);
-            this.Libri_page.TabIndex = 1;
             // 
             // EliminaLibro
             // 
+            this.EliminaLibro.BackColor = System.Drawing.Color.Transparent;
             this.EliminaLibro.BackgroundImage = global::Maestre.Properties.Resources.Rimuoviunlibro;
             this.EliminaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.EliminaLibro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.EliminaLibro.FlatAppearance.BorderSize = 0;
-            this.EliminaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.EliminaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.EliminaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.EliminaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.EliminaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.EliminaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EliminaLibro.Location = new System.Drawing.Point(151, 489);
+            this.EliminaLibro.Location = new System.Drawing.Point(794, 481);
             this.EliminaLibro.Name = "EliminaLibro";
             this.EliminaLibro.Size = new System.Drawing.Size(380, 120);
             this.EliminaLibro.TabIndex = 8;
-            this.EliminaLibro.UseVisualStyleBackColor = true;
+            this.EliminaLibro.UseVisualStyleBackColor = false;
             this.EliminaLibro.Click += new System.EventHandler(this.EliminaLibro_Click);
             // 
             // ModificaLibro
             // 
+            this.ModificaLibro.BackColor = System.Drawing.Color.Transparent;
             this.ModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Modificaunlibro;
             this.ModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ModificaLibro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ModificaLibro.FlatAppearance.BorderSize = 0;
-            this.ModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.ModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.ModificaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ModificaLibro.Location = new System.Drawing.Point(151, 300);
+            this.ModificaLibro.Location = new System.Drawing.Point(794, 292);
             this.ModificaLibro.Name = "ModificaLibro";
             this.ModificaLibro.Size = new System.Drawing.Size(380, 120);
             this.ModificaLibro.TabIndex = 7;
-            this.ModificaLibro.UseVisualStyleBackColor = true;
+            this.ModificaLibro.UseVisualStyleBackColor = false;
             this.ModificaLibro.Click += new System.EventHandler(this.ModificaLibro_Click);
             // 
             // AggiungiLibro
             // 
+            this.AggiungiLibro.BackColor = System.Drawing.Color.Transparent;
             this.AggiungiLibro.BackgroundImage = global::Maestre.Properties.Resources.Aggiungiunlibro;
             this.AggiungiLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AggiungiLibro.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.AggiungiLibro.FlatAppearance.BorderSize = 0;
-            this.AggiungiLibro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AggiungiLibro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AggiungiLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AggiungiLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AggiungiLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AggiungiLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AggiungiLibro.Location = new System.Drawing.Point(151, 111);
+            this.AggiungiLibro.Location = new System.Drawing.Point(794, 103);
             this.AggiungiLibro.Name = "AggiungiLibro";
             this.AggiungiLibro.Size = new System.Drawing.Size(380, 120);
             this.AggiungiLibro.TabIndex = 6;
-            this.AggiungiLibro.UseVisualStyleBackColor = true;
+            this.AggiungiLibro.UseVisualStyleBackColor = false;
             this.AggiungiLibro.Click += new System.EventHandler(this.AggiungiLibro_Click);
-            // 
-            // Statistiche_page
-            // 
-            this.Statistiche_page.BackColor = System.Drawing.SystemColors.Control;
-            this.Statistiche_page.Controls.Add(this.DelStat);
-            this.Statistiche_page.Controls.Add(this.StatLibri);
-            this.Statistiche_page.Controls.Add(this.StatBambini);
-            this.Statistiche_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Statistiche_page.Location = new System.Drawing.Point(4, 25);
-            this.Statistiche_page.Name = "Statistiche_page";
-            this.Statistiche_page.Size = new System.Drawing.Size(811, 793);
-            this.Statistiche_page.TabIndex = 2;
             // 
             // DelStat
             // 
+            this.DelStat.BackColor = System.Drawing.Color.Transparent;
             this.DelStat.BackgroundImage = global::Maestre.Properties.Resources.Elimina_Stat;
             this.DelStat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DelStat.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.DelStat.FlatAppearance.BorderSize = 0;
-            this.DelStat.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.DelStat.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.DelStat.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.DelStat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.DelStat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.DelStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DelStat.Location = new System.Drawing.Point(151, 489);
+            this.DelStat.Location = new System.Drawing.Point(869, 481);
             this.DelStat.Name = "DelStat";
             this.DelStat.Size = new System.Drawing.Size(380, 120);
             this.DelStat.TabIndex = 6;
-            this.DelStat.UseVisualStyleBackColor = true;
+            this.DelStat.UseVisualStyleBackColor = false;
             // 
             // StatLibri
             // 
+            this.StatLibri.BackColor = System.Drawing.Color.Transparent;
             this.StatLibri.BackgroundImage = global::Maestre.Properties.Resources.N_bambini;
             this.StatLibri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.StatLibri.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.StatLibri.FlatAppearance.BorderSize = 0;
-            this.StatLibri.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.StatLibri.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.StatLibri.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.StatLibri.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.StatLibri.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.StatLibri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatLibri.Location = new System.Drawing.Point(151, 300);
+            this.StatLibri.Location = new System.Drawing.Point(869, 103);
             this.StatLibri.Name = "StatLibri";
             this.StatLibri.Size = new System.Drawing.Size(380, 120);
             this.StatLibri.TabIndex = 5;
-            this.StatLibri.UseVisualStyleBackColor = true;
+            this.StatLibri.UseVisualStyleBackColor = false;
             this.StatLibri.Click += new System.EventHandler(this.StatLibri_Click_1);
             // 
             // StatBambini
             // 
+            this.StatBambini.BackColor = System.Drawing.Color.Transparent;
             this.StatBambini.BackgroundImage = global::Maestre.Properties.Resources.N_libri;
             this.StatBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.StatBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.StatBambini.FlatAppearance.BorderSize = 0;
-            this.StatBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.StatBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.StatBambini.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.StatBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.StatBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.StatBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatBambini.Location = new System.Drawing.Point(151, 111);
+            this.StatBambini.Location = new System.Drawing.Point(869, 292);
             this.StatBambini.Name = "StatBambini";
             this.StatBambini.Size = new System.Drawing.Size(380, 120);
             this.StatBambini.TabIndex = 4;
-            this.StatBambini.UseVisualStyleBackColor = true;
+            this.StatBambini.UseVisualStyleBackColor = false;
             this.StatBambini.Click += new System.EventHandler(this.StatBambini_Click_1);
-            // 
-            // Empty_page
-            // 
-            this.Empty_page.BackColor = System.Drawing.SystemColors.Control;
-            this.Empty_page.Location = new System.Drawing.Point(4, 25);
-            this.Empty_page.Name = "Empty_page";
-            this.Empty_page.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Empty_page.Size = new System.Drawing.Size(811, 793);
-            this.Empty_page.TabIndex = 3;
             // 
             // Statistiche_radio
             // 
             this.Statistiche_radio.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Statistiche_radio.BackColor = System.Drawing.Color.Transparent;
             this.Statistiche_radio.BackgroundImage = global::Maestre.Properties.Resources.Statistiche;
             this.Statistiche_radio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Statistiche_radio.Checked = true;
-            this.Statistiche_radio.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.Statistiche_radio.FlatAppearance.BorderSize = 0;
-            this.Statistiche_radio.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
-            this.Statistiche_radio.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.Statistiche_radio.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.Statistiche_radio.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Statistiche_radio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Statistiche_radio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Statistiche_radio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Statistiche_radio.Location = new System.Drawing.Point(59, 481);
             this.Statistiche_radio.Name = "Statistiche_radio";
             this.Statistiche_radio.Size = new System.Drawing.Size(380, 120);
             this.Statistiche_radio.TabIndex = 7;
             this.Statistiche_radio.TabStop = true;
-            this.Statistiche_radio.UseVisualStyleBackColor = true;
+            this.Statistiche_radio.UseVisualStyleBackColor = false;
             this.Statistiche_radio.CheckedChanged += new System.EventHandler(this.Statistiche_radio_CheckedChanged);
             // 
             // Libri_radio
             // 
             this.Libri_radio.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Libri_radio.BackColor = System.Drawing.Color.Transparent;
             this.Libri_radio.BackgroundImage = global::Maestre.Properties.Resources.Libri;
             this.Libri_radio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Libri_radio.Checked = true;
-            this.Libri_radio.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.Libri_radio.FlatAppearance.BorderSize = 0;
-            this.Libri_radio.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
-            this.Libri_radio.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.Libri_radio.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.Libri_radio.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Libri_radio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Libri_radio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Libri_radio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Libri_radio.Location = new System.Drawing.Point(59, 292);
             this.Libri_radio.Name = "Libri_radio";
             this.Libri_radio.Size = new System.Drawing.Size(380, 120);
             this.Libri_radio.TabIndex = 6;
             this.Libri_radio.TabStop = true;
-            this.Libri_radio.UseVisualStyleBackColor = true;
+            this.Libri_radio.UseVisualStyleBackColor = false;
             this.Libri_radio.CheckedChanged += new System.EventHandler(this.Libri_radio_CheckedChanged);
             // 
             // Bambini_radio
             // 
             this.Bambini_radio.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Bambini_radio.BackColor = System.Drawing.Color.Transparent;
             this.Bambini_radio.BackgroundImage = global::Maestre.Properties.Resources.Bambini;
             this.Bambini_radio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bambini_radio.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.Bambini_radio.FlatAppearance.BorderSize = 0;
-            this.Bambini_radio.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.Control;
-            this.Bambini_radio.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.Bambini_radio.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.Bambini_radio.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Bambini_radio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bambini_radio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Bambini_radio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bambini_radio.Location = new System.Drawing.Point(59, 103);
             this.Bambini_radio.Name = "Bambini_radio";
             this.Bambini_radio.Size = new System.Drawing.Size(380, 120);
             this.Bambini_radio.TabIndex = 5;
-            this.Bambini_radio.UseVisualStyleBackColor = true;
+            this.Bambini_radio.UseVisualStyleBackColor = false;
             this.Bambini_radio.CheckedChanged += new System.EventHandler(this.Bambini_radio_CheckedChanged);
             // 
             // indietro_button
             // 
+            this.indietro_button.BackColor = System.Drawing.Color.Transparent;
             this.indietro_button.BackgroundImage = global::Maestre.Properties.Resources.Indietro;
             this.indietro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.indietro_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatAppearance.BorderSize = 0;
-            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Location = new System.Drawing.Point(11, 666);
-            this.indietro_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
             this.indietro_button.Name = "indietro_button";
             this.indietro_button.Size = new System.Drawing.Size(256, 91);
             this.indietro_button.TabIndex = 3;
-            this.indietro_button.UseVisualStyleBackColor = true;
+            this.indietro_button.UseVisualStyleBackColor = false;
             this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre_con_menu;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.EliminaBambino);
+            this.Controls.Add(this.ModificaBambino);
+            this.Controls.Add(this.ModificaLibro);
+            this.Controls.Add(this.AggiungiBambino);
+            this.Controls.Add(this.EliminaLibro);
             this.Controls.Add(this.Statistiche_radio);
+            this.Controls.Add(this.AggiungiLibro);
             this.Controls.Add(this.Libri_radio);
             this.Controls.Add(this.Bambini_radio);
-            this.Controls.Add(this.TabControl);
             this.Controls.Add(this.indietro_button);
+            this.Controls.Add(this.StatBambini);
+            this.Controls.Add(this.StatLibri);
+            this.Controls.Add(this.DelStat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home - Maestre";
             this.Load += new System.EventHandler(this.Home_Load);
             this.VisibleChanged += new System.EventHandler(this.Home_VisibleChanged);
-            this.TabControl.ResumeLayout(false);
-            this.Bambini_page.ResumeLayout(false);
-            this.Libri_page.ResumeLayout(false);
-            this.Statistiche_page.ResumeLayout(false);
+            this.Click += new System.EventHandler(this.Home_Click);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Button indietro_button;
-        private System.Windows.Forms.TabControl TabControl;
-        private System.Windows.Forms.TabPage Bambini_page;
-        private System.Windows.Forms.TabPage Libri_page;
-        private System.Windows.Forms.TabPage Statistiche_page;
         private System.Windows.Forms.Button EliminaBambino;
         private System.Windows.Forms.Button ModificaBambino;
         private System.Windows.Forms.Button AggiungiBambino;
@@ -374,7 +316,6 @@
         private System.Windows.Forms.RadioButton Bambini_radio;
         private System.Windows.Forms.RadioButton Libri_radio;
         private System.Windows.Forms.RadioButton Statistiche_radio;
-        private System.Windows.Forms.TabPage Empty_page;
     }
 }
 

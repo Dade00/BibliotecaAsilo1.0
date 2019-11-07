@@ -33,11 +33,6 @@ namespace Maestre.Bambini
             this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.ClasseAddBambini = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,14 +43,19 @@ namespace Maestre.Bambini
             this.nome_label = new System.Windows.Forms.Label();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.nascitaAddBambini = new System.Windows.Forms.DateTimePicker();
-            this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.AnnullaModificaBambini = new System.Windows.Forms.Button();
             this.ConfermaModificaBambini = new System.Windows.Forms.Button();
+            this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.AiutoAggiungiBambini = new System.Windows.Forms.Button();
             this.CercaFotoBambini = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsBambini = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -101,38 +101,6 @@ namespace Maestre.Bambini
             this.TabellaBambini.Size = new System.Drawing.Size(690, 350);
             this.TabellaBambini.TabIndex = 121;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Cognome";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Cognome";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Classe";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Classe";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "DataNascita";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Data di nascita";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // bsBambini
-            // 
-            this.bsBambini.DataSource = typeof(Classi.Bambino);
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
@@ -168,11 +136,12 @@ namespace Maestre.Bambini
             // libro_label
             // 
             this.libro_label.AutoSize = true;
+            this.libro_label.BackColor = System.Drawing.Color.Transparent;
             this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libro_label.Location = new System.Drawing.Point(412, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(546, 58);
+            this.libro_label.Size = new System.Drawing.Size(543, 58);
             this.libro_label.TabIndex = 116;
             this.libro_label.Text = "Aggiungi un bambino";
             this.libro_label.Click += new System.EventHandler(this.libro_label_Click);
@@ -230,8 +199,40 @@ namespace Maestre.Bambini
             this.nascitaAddBambini.Size = new System.Drawing.Size(322, 30);
             this.nascitaAddBambini.TabIndex = 129;
             // 
+            // AnnullaModificaBambini
+            // 
+            this.AnnullaModificaBambini.BackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
+            this.AnnullaModificaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AnnullaModificaBambini.FlatAppearance.BorderSize = 0;
+            this.AnnullaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AnnullaModificaBambini.Location = new System.Drawing.Point(229, 636);
+            this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
+            this.AnnullaModificaBambini.Size = new System.Drawing.Size(383, 120);
+            this.AnnullaModificaBambini.TabIndex = 127;
+            this.AnnullaModificaBambini.UseVisualStyleBackColor = false;
+            this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
+            // 
+            // ConfermaModificaBambini
+            // 
+            this.ConfermaModificaBambini.BackColor = System.Drawing.Color.Transparent;
+            this.ConfermaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
+            this.ConfermaModificaBambini.FlatAppearance.BorderSize = 0;
+            this.ConfermaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfermaModificaBambini.Location = new System.Drawing.Point(758, 637);
+            this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
+            this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
+            this.ConfermaModificaBambini.TabIndex = 126;
+            this.ConfermaModificaBambini.UseVisualStyleBackColor = false;
+            this.ConfermaModificaBambini.Click += new System.EventHandler(this.ConfermaModificaBambini_Click);
+            // 
             // Bambini_pic
             // 
+            this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
             this.Bambini_pic.InitialImage = null;
             this.Bambini_pic.Location = new System.Drawing.Point(140, 278);
             this.Bambini_pic.Name = "Bambini_pic";
@@ -240,75 +241,77 @@ namespace Maestre.Bambini
             this.Bambini_pic.TabIndex = 128;
             this.Bambini_pic.TabStop = false;
             // 
-            // AnnullaModificaBambini
-            // 
-            this.AnnullaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
-            this.AnnullaModificaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AnnullaModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.AnnullaModificaBambini.FlatAppearance.BorderSize = 0;
-            this.AnnullaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AnnullaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.AnnullaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnnullaModificaBambini.Location = new System.Drawing.Point(229, 636);
-            this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
-            this.AnnullaModificaBambini.Size = new System.Drawing.Size(383, 120);
-            this.AnnullaModificaBambini.TabIndex = 127;
-            this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
-            this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
-            // 
-            // ConfermaModificaBambini
-            // 
-            this.ConfermaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
-            this.ConfermaModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.ConfermaModificaBambini.FlatAppearance.BorderSize = 0;
-            this.ConfermaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.ConfermaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
-            this.ConfermaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfermaModificaBambini.Location = new System.Drawing.Point(758, 637);
-            this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
-            this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
-            this.ConfermaModificaBambini.TabIndex = 126;
-            this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
-            this.ConfermaModificaBambini.Click += new System.EventHandler(this.ConfermaModificaBambini_Click);
-            // 
             // AiutoAggiungiBambini
             // 
+            this.AiutoAggiungiBambini.BackColor = System.Drawing.Color.Transparent;
             this.AiutoAggiungiBambini.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
             this.AiutoAggiungiBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AiutoAggiungiBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.AiutoAggiungiBambini.FlatAppearance.BorderSize = 0;
-            this.AiutoAggiungiBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AiutoAggiungiBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoAggiungiBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AiutoAggiungiBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AiutoAggiungiBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AiutoAggiungiBambini.Location = new System.Drawing.Point(1235, 11);
             this.AiutoAggiungiBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoAggiungiBambini.Name = "AiutoAggiungiBambini";
             this.AiutoAggiungiBambini.Size = new System.Drawing.Size(120, 120);
             this.AiutoAggiungiBambini.TabIndex = 125;
-            this.AiutoAggiungiBambini.UseVisualStyleBackColor = true;
+            this.AiutoAggiungiBambini.UseVisualStyleBackColor = false;
             this.AiutoAggiungiBambini.Click += new System.EventHandler(this.AiutoAggiungiBambini_Click);
             // 
             // CercaFotoBambini
             // 
+            this.CercaFotoBambini.BackColor = System.Drawing.Color.Transparent;
             this.CercaFotoBambini.BackgroundImage = global::Maestre.Properties.Resources.Inserisci_foto;
             this.CercaFotoBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CercaFotoBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatAppearance.BorderSize = 0;
-            this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CercaFotoBambini.Location = new System.Drawing.Point(398, 207);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
             this.CercaFotoBambini.Size = new System.Drawing.Size(130, 45);
             this.CercaFotoBambini.TabIndex = 124;
-            this.CercaFotoBambini.UseVisualStyleBackColor = true;
+            this.CercaFotoBambini.UseVisualStyleBackColor = false;
             this.CercaFotoBambini.Click += new System.EventHandler(this.CercaFotoBambini_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Cognome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Cognome";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Classe";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Classe";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "DataNascita";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Data di nascita";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // bsBambini
+            // 
+            this.bsBambini.DataSource = typeof(Classi.Bambino);
             // 
             // AggiungiBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.AnnullaModificaBambini);
             this.Controls.Add(this.ConfermaModificaBambini);
@@ -332,8 +335,8 @@ namespace Maestre.Bambini
             this.Text = "AggiungiBambino";
             this.Load += new System.EventHandler(this.AggiungiBambino_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

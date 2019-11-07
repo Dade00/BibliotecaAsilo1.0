@@ -37,27 +37,27 @@
             this.cognome_label = new System.Windows.Forms.Label();
             this.nome_label = new System.Windows.Forms.Label();
             this.Libri = new System.Windows.Forms.DataGridView();
-            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.genereCB = new System.Windows.Forms.ComboBox();
-            this.Libri_pic = new System.Windows.Forms.PictureBox();
-            this.AnnullaModificaLibro = new System.Windows.Forms.Button();
-            this.ConfermaModificaLibro = new System.Windows.Forms.Button();
-            this.AiutoModificaLibro = new System.Windows.Forms.Button();
-            this.InserisciFotoLibro = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
             this.labeltitolo = new System.Windows.Forms.Label();
             this.titolo_tb = new System.Windows.Forms.TextBox();
             this.autore_tb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.search_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.update = new System.Windows.Forms.Timer(this.components);
             this.genereCB_2 = new System.Windows.Forms.ComboBox();
+            this.search_button = new System.Windows.Forms.Button();
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prestitoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
+            this.Libri_pic = new System.Windows.Forms.PictureBox();
+            this.AnnullaModificaLibro = new System.Windows.Forms.Button();
+            this.ConfermaModificaLibro = new System.Windows.Forms.Button();
+            this.AiutoModificaLibro = new System.Windows.Forms.Button();
+            this.InserisciFotoLibro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Libri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
@@ -89,11 +89,12 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
+            this.libro_label.BackColor = System.Drawing.Color.Transparent;
             this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libro_label.Location = new System.Drawing.Point(491, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(447, 58);
+            this.libro_label.Size = new System.Drawing.Size(444, 58);
             this.libro_label.TabIndex = 84;
             this.libro_label.Text = "Aggiungi un libro";
             // 
@@ -165,6 +166,109 @@
             this.Libri.Size = new System.Drawing.Size(945, 350);
             this.Libri.TabIndex = 97;
             // 
+            // ofdFoto
+            // 
+            this.ofdFoto.FileName = "openFileDialog1";
+            // 
+            // genereCB
+            // 
+            this.genereCB.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.genereCB.FormattingEnabled = true;
+            this.genereCB.Location = new System.Drawing.Point(986, 103);
+            this.genereCB.Name = "genereCB";
+            this.genereCB.Size = new System.Drawing.Size(250, 31);
+            this.genereCB.TabIndex = 98;
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("GROBOLD", 20F);
+            this.label.Location = new System.Drawing.Point(12, 271);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(205, 33);
+            this.label.TabIndex = 99;
+            this.label.Text = "Cerca un libro:";
+            // 
+            // labeltitolo
+            // 
+            this.labeltitolo.AutoSize = true;
+            this.labeltitolo.BackColor = System.Drawing.Color.Transparent;
+            this.labeltitolo.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.labeltitolo.Location = new System.Drawing.Point(14, 311);
+            this.labeltitolo.Name = "labeltitolo";
+            this.labeltitolo.Size = new System.Drawing.Size(77, 27);
+            this.labeltitolo.TabIndex = 100;
+            this.labeltitolo.Text = "Titolo:";
+            // 
+            // titolo_tb
+            // 
+            this.titolo_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.titolo_tb.Location = new System.Drawing.Point(18, 341);
+            this.titolo_tb.Name = "titolo_tb";
+            this.titolo_tb.Size = new System.Drawing.Size(362, 30);
+            this.titolo_tb.TabIndex = 101;
+            // 
+            // autore_tb
+            // 
+            this.autore_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.autore_tb.Location = new System.Drawing.Point(18, 433);
+            this.autore_tb.Name = "autore_tb";
+            this.autore_tb.Size = new System.Drawing.Size(362, 30);
+            this.autore_tb.TabIndex = 103;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.label2.Location = new System.Drawing.Point(14, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 27);
+            this.label2.TabIndex = 102;
+            this.label2.Text = "Autore:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.label4.Location = new System.Drawing.Point(14, 495);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 27);
+            this.label4.TabIndex = 105;
+            this.label4.Text = "Genere:";
+            // 
+            // update
+            // 
+            this.update.Tick += new System.EventHandler(this.Update_Tick);
+            // 
+            // genereCB_2
+            // 
+            this.genereCB_2.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.genereCB_2.FormattingEnabled = true;
+            this.genereCB_2.Location = new System.Drawing.Point(19, 525);
+            this.genereCB_2.Name = "genereCB_2";
+            this.genereCB_2.Size = new System.Drawing.Size(250, 31);
+            this.genereCB_2.TabIndex = 106;
+            // 
+            // search_button
+            // 
+            this.search_button.BackColor = System.Drawing.Color.Transparent;
+            this.search_button.BackgroundImage = global::Maestre.Properties.Resources.cerca;
+            this.search_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.search_button.FlatAppearance.BorderSize = 0;
+            this.search_button.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_button.Location = new System.Drawing.Point(170, 573);
+            this.search_button.Name = "search_button";
+            this.search_button.Size = new System.Drawing.Size(210, 58);
+            this.search_button.TabIndex = 104;
+            this.search_button.UseVisualStyleBackColor = false;
+            this.search_button.Click += new System.EventHandler(this.Search_button_Click);
+            // 
             // titoloDataGridViewTextBoxColumn
             // 
             this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
@@ -201,21 +305,9 @@
             // 
             this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
-            // ofdFoto
-            // 
-            this.ofdFoto.FileName = "openFileDialog1";
-            // 
-            // genereCB
-            // 
-            this.genereCB.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.genereCB.FormattingEnabled = true;
-            this.genereCB.Location = new System.Drawing.Point(986, 103);
-            this.genereCB.Name = "genereCB";
-            this.genereCB.Size = new System.Drawing.Size(250, 31);
-            this.genereCB.TabIndex = 98;
-            // 
             // Libri_pic
             // 
+            this.Libri_pic.BackColor = System.Drawing.Color.Transparent;
             this.Libri_pic.Location = new System.Drawing.Point(130, 18);
             this.Libri_pic.Name = "Libri_pic";
             this.Libri_pic.Size = new System.Drawing.Size(250, 250);
@@ -229,6 +321,9 @@
             this.AnnullaModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
             this.AnnullaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AnnullaModificaLibro.FlatAppearance.BorderSize = 0;
+            this.AnnullaModificaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AnnullaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnnullaModificaLibro.Location = new System.Drawing.Point(585, 636);
             this.AnnullaModificaLibro.Name = "AnnullaModificaLibro";
@@ -243,6 +338,9 @@
             this.ConfermaModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
             this.ConfermaModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ConfermaModificaLibro.FlatAppearance.BorderSize = 0;
+            this.ConfermaModificaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ConfermaModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfermaModificaLibro.Location = new System.Drawing.Point(990, 190);
             this.ConfermaModificaLibro.Name = "ConfermaModificaLibro";
@@ -253,16 +351,20 @@
             // 
             // AiutoModificaLibro
             // 
+            this.AiutoModificaLibro.BackColor = System.Drawing.Color.Transparent;
             this.AiutoModificaLibro.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
             this.AiutoModificaLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AiutoModificaLibro.FlatAppearance.BorderSize = 0;
+            this.AiutoModificaLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AiutoModificaLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AiutoModificaLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AiutoModificaLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AiutoModificaLibro.Location = new System.Drawing.Point(1274, 9);
             this.AiutoModificaLibro.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoModificaLibro.Name = "AiutoModificaLibro";
             this.AiutoModificaLibro.Size = new System.Drawing.Size(81, 86);
             this.AiutoModificaLibro.TabIndex = 93;
-            this.AiutoModificaLibro.UseVisualStyleBackColor = true;
+            this.AiutoModificaLibro.UseVisualStyleBackColor = false;
             this.AiutoModificaLibro.Click += new System.EventHandler(this.AiutoModificaLibro_Click);
             // 
             // InserisciFotoLibro
@@ -271,6 +373,9 @@
             this.InserisciFotoLibro.BackgroundImage = global::Maestre.Properties.Resources.Inserisci_foto;
             this.InserisciFotoLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.InserisciFotoLibro.FlatAppearance.BorderSize = 0;
+            this.InserisciFotoLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.InserisciFotoLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.InserisciFotoLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.InserisciFotoLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InserisciFotoLibro.Location = new System.Drawing.Point(492, 207);
             this.InserisciFotoLibro.Margin = new System.Windows.Forms.Padding(2);
@@ -280,95 +385,11 @@
             this.InserisciFotoLibro.UseVisualStyleBackColor = false;
             this.InserisciFotoLibro.Click += new System.EventHandler(this.InserisciFotoLibro_Click);
             // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("GROBOLD", 20F);
-            this.label.Location = new System.Drawing.Point(12, 271);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(205, 33);
-            this.label.TabIndex = 99;
-            this.label.Text = "Cerca un libro:";
-            // 
-            // labeltitolo
-            // 
-            this.labeltitolo.AutoSize = true;
-            this.labeltitolo.Font = new System.Drawing.Font("GROBOLD", 16F);
-            this.labeltitolo.Location = new System.Drawing.Point(14, 311);
-            this.labeltitolo.Name = "labeltitolo";
-            this.labeltitolo.Size = new System.Drawing.Size(77, 27);
-            this.labeltitolo.TabIndex = 100;
-            this.labeltitolo.Text = "Titolo:";
-            // 
-            // titolo_tb
-            // 
-            this.titolo_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.titolo_tb.Location = new System.Drawing.Point(18, 341);
-            this.titolo_tb.Name = "titolo_tb";
-            this.titolo_tb.Size = new System.Drawing.Size(362, 30);
-            this.titolo_tb.TabIndex = 101;
-            // 
-            // autore_tb
-            // 
-            this.autore_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.autore_tb.Location = new System.Drawing.Point(18, 433);
-            this.autore_tb.Name = "autore_tb";
-            this.autore_tb.Size = new System.Drawing.Size(362, 30);
-            this.autore_tb.TabIndex = 103;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GROBOLD", 16F);
-            this.label2.Location = new System.Drawing.Point(14, 403);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 27);
-            this.label2.TabIndex = 102;
-            this.label2.Text = "Autore:";
-            // 
-            // search_button
-            // 
-            this.search_button.BackColor = System.Drawing.Color.Transparent;
-            this.search_button.BackgroundImage = global::Maestre.Properties.Resources.cerca;
-            this.search_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.search_button.FlatAppearance.BorderSize = 0;
-            this.search_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.search_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search_button.Location = new System.Drawing.Point(170, 573);
-            this.search_button.Name = "search_button";
-            this.search_button.Size = new System.Drawing.Size(210, 58);
-            this.search_button.TabIndex = 104;
-            this.search_button.UseVisualStyleBackColor = false;
-            this.search_button.Click += new System.EventHandler(this.Search_button_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("GROBOLD", 16F);
-            this.label4.Location = new System.Drawing.Point(14, 495);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 27);
-            this.label4.TabIndex = 105;
-            this.label4.Text = "Genere:";
-            // 
-            // update
-            // 
-            this.update.Tick += new System.EventHandler(this.Update_Tick);
-            // 
-            // genereCB_2
-            // 
-            this.genereCB_2.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.genereCB_2.FormattingEnabled = true;
-            this.genereCB_2.Location = new System.Drawing.Point(19, 525);
-            this.genereCB_2.Name = "genereCB_2";
-            this.genereCB_2.Size = new System.Drawing.Size(250, 31);
-            this.genereCB_2.TabIndex = 106;
-            // 
             // AggiungiLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.genereCB_2);
             this.Controls.Add(this.label4);

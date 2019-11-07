@@ -58,61 +58,61 @@
             // 
             // AnnullaModificaBambini
             // 
+            this.AnnullaModificaBambini.BackColor = System.Drawing.Color.Transparent;
             this.AnnullaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
             this.AnnullaModificaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AnnullaModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.AnnullaModificaBambini.FlatAppearance.BorderSize = 0;
-            this.AnnullaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AnnullaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AnnullaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AnnullaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnnullaModificaBambini.Location = new System.Drawing.Point(229, 636);
             this.AnnullaModificaBambini.Name = "AnnullaModificaBambini";
             this.AnnullaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.AnnullaModificaBambini.TabIndex = 111;
-            this.AnnullaModificaBambini.UseVisualStyleBackColor = true;
+            this.AnnullaModificaBambini.UseVisualStyleBackColor = false;
             this.AnnullaModificaBambini.Click += new System.EventHandler(this.AnnullaModificaBambini_Click);
             // 
             // ConfermaModificaBambini
             // 
+            this.ConfermaModificaBambini.BackColor = System.Drawing.Color.Transparent;
             this.ConfermaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
             this.ConfermaModificaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ConfermaModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ConfermaModificaBambini.FlatAppearance.BorderSize = 0;
-            this.ConfermaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.ConfermaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.ConfermaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ConfermaModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfermaModificaBambini.Location = new System.Drawing.Point(758, 637);
             this.ConfermaModificaBambini.Name = "ConfermaModificaBambini";
             this.ConfermaModificaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaModificaBambini.TabIndex = 110;
-            this.ConfermaModificaBambini.UseVisualStyleBackColor = true;
+            this.ConfermaModificaBambini.UseVisualStyleBackColor = false;
             this.ConfermaModificaBambini.Click += new System.EventHandler(this.ConfermaModificaBambini_Click);
             // 
             // AiutoModificaBambini
             // 
+            this.AiutoModificaBambini.BackColor = System.Drawing.Color.Transparent;
             this.AiutoModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
             this.AiutoModificaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AiutoModificaBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.AiutoModificaBambini.FlatAppearance.BorderSize = 0;
-            this.AiutoModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AiutoModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AiutoModificaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AiutoModificaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AiutoModificaBambini.Location = new System.Drawing.Point(1235, 11);
             this.AiutoModificaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoModificaBambini.Name = "AiutoModificaBambini";
             this.AiutoModificaBambini.Size = new System.Drawing.Size(120, 120);
             this.AiutoModificaBambini.TabIndex = 109;
-            this.AiutoModificaBambini.UseVisualStyleBackColor = true;
+            this.AiutoModificaBambini.UseVisualStyleBackColor = false;
             this.AiutoModificaBambini.Click += new System.EventHandler(this.AiutoModificaBambini_Click);
             // 
             // CercaFotoBambini
             // 
+            this.CercaFotoBambini.BackColor = System.Drawing.Color.Transparent;
             this.CercaFotoBambini.BackgroundImage = global::Maestre.Properties.Resources.Inserisci_foto;
             this.CercaFotoBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CercaFotoBambini.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.CercaFotoBambini.FlatAppearance.BorderSize = 0;
-            this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CercaFotoBambini.Location = new System.Drawing.Point(444, 207);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
@@ -125,7 +125,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(373, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -188,11 +189,12 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold);
+            this.libro_label.BackColor = System.Drawing.Color.Transparent;
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold);
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(486, 55);
+            this.libro_label.Size = new System.Drawing.Size(540, 58);
             this.libro_label.TabIndex = 100;
             this.libro_label.Text = "Modifica un bambino";
             // 
@@ -249,6 +251,7 @@
             // 
             // Bambini_pic
             // 
+            this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
             this.Bambini_pic.Location = new System.Drawing.Point(140, 278);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
@@ -300,6 +303,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.nascitaBambini);
             this.Controls.Add(this.Bambini_pic);

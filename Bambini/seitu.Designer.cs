@@ -43,6 +43,7 @@
             // seitu_label
             // 
             this.seitu_label.AutoSize = true;
+            this.seitu_label.BackColor = System.Drawing.Color.Transparent;
             this.seitu_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seitu_label.Location = new System.Drawing.Point(541, 9);
             this.seitu_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -54,6 +55,7 @@
             // nome_label
             // 
             this.nome_label.AutoSize = true;
+            this.nome_label.BackColor = System.Drawing.Color.Transparent;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nome_label.Location = new System.Drawing.Point(554, 131);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -65,6 +67,7 @@
             // Cognome_label
             // 
             this.Cognome_label.AutoSize = true;
+            this.Cognome_label.BackColor = System.Drawing.Color.Transparent;
             this.Cognome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cognome_label.Location = new System.Drawing.Point(488, 226);
             this.Cognome_label.Name = "Cognome_label";
@@ -75,6 +78,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(705, 131);
             this.lblNome.Name = "lblNome";
@@ -85,6 +89,7 @@
             // lblCognome
             // 
             this.lblCognome.AutoSize = true;
+            this.lblCognome.BackColor = System.Drawing.Color.Transparent;
             this.lblCognome.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCognome.Location = new System.Drawing.Point(705, 226);
             this.lblCognome.Name = "lblCognome";
@@ -132,6 +137,8 @@
             // 
             // pbFoto
             // 
+            this.pbFoto.BackColor = System.Drawing.Color.Transparent;
+            this.pbFoto.BackgroundImage = global::Bambini.Properties.Resources.No_image;
             this.pbFoto.InitialImage = global::Bambini.Properties.Resources.No_image;
             this.pbFoto.Location = new System.Drawing.Point(38, 123);
             this.pbFoto.Margin = new System.Windows.Forms.Padding(2);
@@ -144,6 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_Sei_Tu;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.lblCognome);
             this.Controls.Add(this.lblNome);

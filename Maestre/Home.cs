@@ -12,42 +12,11 @@ namespace Maestre
 {
     public partial class Home : Form
     {
+
+        int TabIndex = 0; //0=nulla, 1 = bambini, 2=libri, 3 = statistiche
         public Home()
         {
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
-            /*
-            Hide();
-            Statistiche_WIP_.Home home = new Statistiche_WIP_.Home();
-            home.ShowDialog();
-            Show();
-            */
-        }
-
-        private void Bambini_button_Click(object sender, EventArgs e)
-        {
-
-            /*
-            Hide();
-            Bambini.HomeBambini homeBambini = new Bambini.HomeBambini();
-            homeBambini.ShowDialog();
-            Show();
-            */
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-            /*
-            Hide();
-            Libri.HomeLibri homeLibri = new Libri.HomeLibri();
-            homeLibri.ShowDialog();
-            Show();
-            */
         }
 
         private void Indietro_button_Click(object sender, EventArgs e)
@@ -116,7 +85,10 @@ namespace Maestre
             if (Libri_radio.Checked)
             {
                 Libri_radio.BackgroundImage = Maestre.Properties.Resources.Libri_ON;
-                TabControl.SelectedIndex = 1;
+                this.BackgroundImage = Maestre.Properties.Resources.Sfondo_maestre_con_menu;
+                TabIndex = 2;
+                AllButtonsOff();
+                LibriVisibile();
             }
             else
             {
@@ -130,7 +102,9 @@ namespace Maestre
             if (Statistiche_radio.Checked)
             {
                 Statistiche_radio.BackgroundImage = Maestre.Properties.Resources.Statistiche_ON;
-                TabControl.SelectedIndex = 2;
+                this.BackgroundImage = Maestre.Properties.Resources.Sfondo_maestre_con_menu;
+                AllButtonsOff();
+                StatVisible();
             }
             else
             {
@@ -144,7 +118,10 @@ namespace Maestre
             if (Bambini_radio.Checked)
             {
                 Bambini_radio.BackgroundImage = Maestre.Properties.Resources.Bambini_ON;
-                TabControl.SelectedIndex = 0;
+                this.BackgroundImage = Maestre.Properties.Resources.Sfondo_maestre_con_menu;
+                TabIndex = 1;
+                AllButtonsOff();
+                BambinoVisible();
             }
             else
             {
@@ -154,12 +131,59 @@ namespace Maestre
 
         private void Home_Load(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 3;
+            //Inizializzazione tasti
+            //Aggiungi sezione
+            AggiungiLibro.Location = AggiungiBambino.Location;
+            StatLibri.Location = AggiungiBambino.Location;
+
+            //Modifica sezione
+            ModificaLibro.Location = ModificaBambino.Location;
+            StatBambini.Location = ModificaBambino.Location;
+
+            //Rimuovi sezione
+            EliminaLibro.Location = EliminaBambino.Location;
+            DelStat.Location = EliminaBambino.Location;
+
+            this.BackgroundImage = Maestre.Properties.Resources.Sfondo_maestre;
+
+            AllButtonsOff();
+        }
+
+        private void LibriVisibile()
+        {
+            AggiungiLibro.Visible = true;
+            ModificaLibro.Visible = true;
+            EliminaLibro.Visible = true;
+        }
+
+        private void BambinoVisible()
+        {
+            AggiungiBambino.Visible = true;
+            ModificaBambino.Visible = true;
+            EliminaBambino.Visible = true;
+        }
+        private void StatVisible()
+        {
+            DelStat.Visible = true;
+            StatLibri.Visible = true;
+            StatBambini.Visible = true;
+        }
+
+        private void AllButtonsOff()
+        {
+            AggiungiBambino.Visible = false;
+            AggiungiLibro.Visible = false;
+            StatLibri.Visible = false;
+            ModificaBambino.Visible = false;
+            ModificaLibro.Visible = false;
+            StatBambini.Visible = false;
+            EliminaBambino.Visible = false;
+            EliminaLibro.Visible = false;
+            DelStat.Visible = false;
         }
 
         private void Home_VisibleChanged(object sender, EventArgs e)
         {
-            TabControl.SelectedIndex = 3;
             //De-seleziona il radio selezionato prima di ritornare indietro, per poterne selezionare un'altro
             Bambini_radio.Checked = false;
             Libri_radio.Checked = false;
@@ -177,6 +201,18 @@ namespace Maestre
         private void Bambini_page_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Home_Click(object sender, EventArgs e)
+        {
+            AllButtonsOff();
+            this.BackgroundImage = Maestre.Properties.Resources.Sfondo_maestre;
+            Libri_radio.BackgroundImage = Maestre.Properties.Resources.Libri;
+            Bambini_radio.BackgroundImage = Maestre.Properties.Resources.Bambini;
+            Statistiche_radio.BackgroundImage = Maestre.Properties.Resources.Statistiche;
+            Libri_radio.Checked = false;
+            Bambini_radio.Checked = false;
+            Statistiche_radio.Checked = false;
         }
     }
 }

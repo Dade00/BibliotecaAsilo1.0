@@ -118,12 +118,6 @@
     <Compile Include="Restituisci\Librochoose.Designer.cs">
       <DependentUpon>Librochoose.cs</DependentUpon>
     </Compile>
-    <Compile Include="Restituisci\RestituisciGenere.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Restituisci\RestituisciGenere.Designer.cs">
-      <DependentUpon>RestituisciGenere.cs</DependentUpon>
-    </Compile>
     <Compile Include="seitu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restituisci\Librochoose.resx">
       <DependentUpon>Librochoose.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Restituisci\RestituisciGenere.resx">
-      <DependentUpon>RestituisciGenere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="seitu.resx">
       <DependentUpon>seitu.cs</DependentUpon>
@@ -240,6 +231,11 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Sfondo Aiuto.jpg" />
+    <None Include="Resources\Sfondo Prend. e Resti..jpg" />
+    <None Include="Resources\Sfondo che libro.jpg" />
+    <None Include="Resources\Sfondo Sei Tu.jpg" />
+    <None Include="Resources\Sfondo Genere.jpg" />
     <None Include="Resources\Sfondo_Login.jpg" />
     <None Include="Resources\Racconti_button.png" />
     <None Include="Resources\Scienze_button.png" />

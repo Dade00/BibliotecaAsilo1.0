@@ -310,9 +310,59 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Sfondo_Aiuto {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Aiuto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sfondo_che_libro {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_che_libro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sfondo_Genere {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Genere", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Sfondo_Login {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sfondo_Prend__e_Resti_ {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Prend__e_Resti_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sfondo_Sei_Tu {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Sei_Tu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

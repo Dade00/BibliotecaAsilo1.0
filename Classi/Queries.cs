@@ -496,6 +496,47 @@ namespace Classi
             return listaLibri;
         }
 
+        public static List<Libro> getlibridaRestituire(int IDbambino)
+        {
+            //Prende tutti i libri di un genere specificato disponibili in deposito 
+            List<Libro> listaLibri = new List<Libro>();
+            DataTable dataTable = new DataTable();
+            string sql = "SELECT libri.[ID] ,[Titolo] ,[Autore], Generi.Genere ,libri.[Path_Foto] ,[In_Prestito]" +
+                " FROM[dbo].[Libri], dbo.Transazioni, dbo.Generi where Transazioni.ID_Libro = Libri.ID and Transazioni.ID_Bambino = @id and Generi.ID = ID_Genere";
+            try
+            {
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("id", IDbambino);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+
+                    //Converto la tabella della query in Classi.Bambino
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Libro libro = new Libro();
+
+                        libro.ID = Int32.Parse(dataTable.Rows[i]["ID"].ToString());
+                        libro.Titolo = dataTable.Rows[i]["Titolo"].ToString();
+                        libro.Autore = dataTable.Rows[i]["Autore"].ToString();
+                        libro.Genere = dataTable.Rows[i]["Genere"].ToString();
+                        libro.Path = dataTable.Rows[i]["Path_Foto"].ToString();
+
+                        listaLibri.Add(libro);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return listaLibri;
+        }
+
         /// <summary>
         /// Query per prendere libri ma con parametri variabili
         /// </summary>
@@ -564,6 +605,51 @@ namespace Classi
             }
 
             return listaLibri;
+        }
+
+        public static bool PrendiLibro(Libro libro, Bambino bambino)
+        {
+            bool result = true;
+
+            try
+            {
+                string sql = "INSERT INTO Transazioni (ID_Bambino, ID_Libro, Data_Prestito)  VALUES (@id_b, @id_l, @data) ";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@id_l", libro.ID);
+                    cmd.Parameters.AddWithValue("@id_b", bambino.ID);
+                    cmd.Parameters.AddWithValue("@data", DateTime.Now);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw ex;
+            }
+
+            try
+            {
+                string sql = "UPDATE Libri SET In_Prestito=1 WHERE ID = @id";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@id", libro.ID);
+
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw ex;
+            }
+
+
+
+            return true;
         }
     }
 

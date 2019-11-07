@@ -54,7 +54,8 @@
             // libro_label
             // 
             this.libro_label.AutoSize = true;
-            this.libro_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libro_label.BackColor = System.Drawing.Color.Transparent;
+            this.libro_label.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
@@ -108,7 +109,6 @@
             this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(690, 350);
             this.TabellaBambini.TabIndex = 75;
-            this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -164,19 +164,24 @@
             // 
             // cerca_button
             // 
+            this.cerca_button.BackColor = System.Drawing.Color.Transparent;
             this.cerca_button.BackgroundImage = global::Maestre.Properties.Resources.cerca;
             this.cerca_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cerca_button.FlatAppearance.BorderSize = 0;
+            this.cerca_button.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.cerca_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cerca_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.cerca_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cerca_button.Location = new System.Drawing.Point(918, 132);
             this.cerca_button.Name = "cerca_button";
             this.cerca_button.Size = new System.Drawing.Size(220, 50);
             this.cerca_button.TabIndex = 130;
-            this.cerca_button.UseVisualStyleBackColor = true;
+            this.cerca_button.UseVisualStyleBackColor = false;
             this.cerca_button.Click += new System.EventHandler(this.Cerca_button_Click);
             // 
             // Bambini_pic
             // 
+            this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
             this.Bambini_pic.Location = new System.Drawing.Point(140, 240);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
@@ -190,6 +195,9 @@
             this.AnnullaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
             this.AnnullaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AnnullaEliminaBambini.FlatAppearance.BorderSize = 0;
+            this.AnnullaEliminaBambini.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaEliminaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AnnullaEliminaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AnnullaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnnullaEliminaBambini.Location = new System.Drawing.Point(229, 636);
             this.AnnullaEliminaBambini.Name = "AnnullaEliminaBambini";
@@ -200,32 +208,38 @@
             // 
             // ConfermaEliminaBambini
             // 
+            this.ConfermaEliminaBambini.BackColor = System.Drawing.Color.Transparent;
             this.ConfermaEliminaBambini.BackgroundImage = global::Maestre.Properties.Resources.Conferma;
             this.ConfermaEliminaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ConfermaEliminaBambini.FlatAppearance.BorderSize = 0;
+            this.ConfermaEliminaBambini.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaEliminaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ConfermaEliminaBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ConfermaEliminaBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfermaEliminaBambini.Location = new System.Drawing.Point(758, 637);
             this.ConfermaEliminaBambini.Name = "ConfermaEliminaBambini";
             this.ConfermaEliminaBambini.Size = new System.Drawing.Size(380, 120);
             this.ConfermaEliminaBambini.TabIndex = 78;
-            this.ConfermaEliminaBambini.UseVisualStyleBackColor = true;
+            this.ConfermaEliminaBambini.UseVisualStyleBackColor = false;
             this.ConfermaEliminaBambini.Click += new System.EventHandler(this.ConfermaEliminaBambini_Click);
             // 
             // AiutoCancellaBambino
             // 
+            this.AiutoCancellaBambino.BackColor = System.Drawing.Color.Transparent;
             this.AiutoCancellaBambino.BackgroundImage = global::Maestre.Properties.Resources.Aiuto;
             this.AiutoCancellaBambino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AiutoCancellaBambino.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.AiutoCancellaBambino.FlatAppearance.BorderSize = 0;
-            this.AiutoCancellaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.AiutoCancellaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.AiutoCancellaBambino.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.AiutoCancellaBambino.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AiutoCancellaBambino.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AiutoCancellaBambino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AiutoCancellaBambino.Location = new System.Drawing.Point(1235, 11);
             this.AiutoCancellaBambino.Margin = new System.Windows.Forms.Padding(2);
             this.AiutoCancellaBambino.Name = "AiutoCancellaBambino";
             this.AiutoCancellaBambino.Size = new System.Drawing.Size(120, 120);
             this.AiutoCancellaBambino.TabIndex = 48;
-            this.AiutoCancellaBambino.UseVisualStyleBackColor = true;
+            this.AiutoCancellaBambino.UseVisualStyleBackColor = false;
             this.AiutoCancellaBambino.Click += new System.EventHandler(this.AiutoCancellaBambino_Click);
             // 
             // updateDATA
@@ -237,6 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.cerca_button);
             this.Controls.Add(this.Bambini_pic);

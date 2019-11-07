@@ -43,7 +43,7 @@ namespace Bambini.Prendi
         private void Sentimenti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Sentimenti");
+            Librochoose librochoose = new Librochoose("Sentimenti", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
@@ -51,7 +51,7 @@ namespace Bambini.Prendi
         private void Scienze_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Scienze");
+            Librochoose librochoose = new Librochoose("Scienze", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
@@ -59,7 +59,7 @@ namespace Bambini.Prendi
         private void Animali_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Animali");
+            Librochoose librochoose = new Librochoose("Animali", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
@@ -67,7 +67,7 @@ namespace Bambini.Prendi
         private void Racconti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Racconti");
+            Librochoose librochoose = new Librochoose("Racconti", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
@@ -75,7 +75,7 @@ namespace Bambini.Prendi
         private void Storie_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Storie");
+            Librochoose librochoose = new Librochoose("Storie", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
@@ -83,7 +83,7 @@ namespace Bambini.Prendi
         private void Cibo_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Cibo");
+            Librochoose librochoose = new Librochoose("Cibo", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
