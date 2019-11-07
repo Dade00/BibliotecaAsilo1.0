@@ -32,6 +32,9 @@
             this.nomelibro_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,9 +66,9 @@
             this.nomelibro_label.Location = new System.Drawing.Point(571, 183);
             this.nomelibro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nomelibro_label.Name = "nomelibro_label";
-            this.nomelibro_label.Size = new System.Drawing.Size(370, 46);
+            this.nomelibro_label.Size = new System.Drawing.Size(278, 46);
             this.nomelibro_label.TabIndex = 4;
-            this.nomelibro_label.Text = "NOME LIBRO TEST";
+            this.nomelibro_label.Text = "NOME LIBRO:";
             // 
             // label1
             // 
@@ -90,12 +93,51 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoEllipsis = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("GROBOLD", 28F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(571, 229);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(645, 141);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "nome libro";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("GROBOLD", 28F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(571, 370);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 46);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "IN DATA:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("GROBOLD", 28F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(571, 425);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(226, 46);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "gg/mm/aa";
+            // 
             // ConfermaRestituzione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_che_libro;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ok_button);
             this.Controls.Add(this.nomelibro_label);
@@ -118,5 +160,8 @@
         private System.Windows.Forms.Label nomelibro_label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

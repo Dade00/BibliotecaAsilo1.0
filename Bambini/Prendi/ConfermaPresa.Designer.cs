@@ -34,6 +34,7 @@
             this.ok_button = new System.Windows.Forms.Button();
             this.nomelibro_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.indietro_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_LIBRO)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,7 @@
             this.ok_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ok_button.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
-            this.ok_button.Location = new System.Drawing.Point(531, 592);
+            this.ok_button.Location = new System.Drawing.Point(628, 592);
             this.ok_button.Margin = new System.Windows.Forms.Padding(2);
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(391, 130);
@@ -118,6 +119,22 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "VUOI PRENDERE QUESTO LIBRO?";
             // 
+            // indietro_button
+            // 
+            this.indietro_button.BackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatAppearance.BorderSize = 0;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
+            this.indietro_button.Location = new System.Drawing.Point(22, 630);
+            this.indietro_button.Margin = new System.Windows.Forms.Padding(2);
+            this.indietro_button.Name = "indietro_button";
+            this.indietro_button.Size = new System.Drawing.Size(380, 76);
+            this.indietro_button.TabIndex = 15;
+            this.indietro_button.UseVisualStyleBackColor = false;
+            this.indietro_button.Click += new System.EventHandler(this.Indietro_button_Click);
+            // 
             // ConfermaPresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,6 +142,7 @@
             this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_che_libro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.indietro_button);
             this.Controls.Add(this.pb_LIBRO);
             this.Controls.Add(this.data_label);
             this.Controls.Add(this.datastatic_label);
@@ -151,5 +169,6 @@
         private System.Windows.Forms.Button ok_button;
         private System.Windows.Forms.Label nomelibro_label;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button indietro_button;
     }
 }

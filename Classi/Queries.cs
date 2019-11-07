@@ -651,6 +651,51 @@ namespace Classi
 
             return true;
         }
+
+        public static bool RestituisciLibro(Libro libro, Bambino bambino)
+        {
+            bool result = true;
+
+            try
+            {
+                string sql = "UPDATE Transazioni  SET Data_Restituizione = @dataNow  when ID = @idTrans ";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@id_l", libro.ID);
+                    cmd.Parameters.AddWithValue("@id_b", bambino.ID);
+                    cmd.Parameters.AddWithValue("@data", DateTime.Now);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw ex;
+            }
+
+            try
+            {
+                string sql = "UPDATE Libri SET In_Prestito=1 WHERE ID = @id";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@id", libro.ID);
+
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw ex;
+            }
+
+
+
+            return true;
+        }
     }
 
 }

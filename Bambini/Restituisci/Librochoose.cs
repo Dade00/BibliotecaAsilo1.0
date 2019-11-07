@@ -1,13 +1,8 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Classi;
 
 namespace Bambini.Restituiusci
 {
@@ -26,6 +21,16 @@ namespace Bambini.Restituiusci
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                return;
+                throw;
+            }
+
             Hide();
             ConfermaRestituzione confermaRestituzione = new ConfermaRestituzione();
             confermaRestituzione.ShowDialog();

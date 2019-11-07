@@ -55,5 +55,10 @@ namespace Bambini.Prendi
         {
             ok_button.Cursor = CursorON;
         }
+
+        private void Indietro_button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

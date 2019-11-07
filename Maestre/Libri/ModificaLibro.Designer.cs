@@ -169,7 +169,6 @@
             this.Libri_pic.Size = new System.Drawing.Size(350, 350);
             this.Libri_pic.TabIndex = 97;
             this.Libri_pic.TabStop = false;
-            this.Libri_pic.Click += new System.EventHandler(this.Libri_pic_Click);
             // 
             // AnnullaModificaLibro
             // 
@@ -309,7 +308,7 @@
             this.Name = "ModificaLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificaLibro";
-            ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();

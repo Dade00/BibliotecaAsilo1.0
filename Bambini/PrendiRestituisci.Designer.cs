@@ -39,10 +39,9 @@
             this.help_button.BackColor = System.Drawing.Color.Transparent;
             this.help_button.BackgroundImage = global::Bambini.Properties.Resources.Aiuto;
             this.help_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.help_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.help_button.FlatAppearance.BorderSize = 0;
-            this.help_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.help_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.help_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.help_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.help_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.help_button.Location = new System.Drawing.Point(1232, 11);
             this.help_button.Margin = new System.Windows.Forms.Padding(2);
@@ -59,10 +58,9 @@
             this.restituisci_button.BackColor = System.Drawing.Color.Transparent;
             this.restituisci_button.BackgroundImage = global::Bambini.Properties.Resources.Restituisce;
             this.restituisci_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.restituisci_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.restituisci_button.FlatAppearance.BorderSize = 0;
-            this.restituisci_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.restituisci_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.restituisci_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.restituisci_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.restituisci_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.restituisci_button.Location = new System.Drawing.Point(746, 248);
             this.restituisci_button.Margin = new System.Windows.Forms.Padding(2);
@@ -79,10 +77,9 @@
             this.prendi_button.BackColor = System.Drawing.Color.Transparent;
             this.prendi_button.BackgroundImage = global::Bambini.Properties.Resources.Prendi;
             this.prendi_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.prendi_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.prendi_button.FlatAppearance.BorderSize = 0;
-            this.prendi_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.prendi_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.prendi_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.prendi_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.prendi_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prendi_button.Location = new System.Drawing.Point(64, 251);
             this.prendi_button.Margin = new System.Windows.Forms.Padding(2);
@@ -97,10 +94,9 @@
             // indietro_button
             // 
             this.indietro_button.BackColor = System.Drawing.Color.Transparent;
-            this.indietro_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatAppearance.BorderSize = 0;
-            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
             this.indietro_button.Location = new System.Drawing.Point(493, 609);
