@@ -44,30 +44,6 @@ namespace Maestre.Libri
 
         }
 
-        private void ConfermaModificaLibro_Click(object sender, EventArgs e)
-        {
-            if (libro != null)
-            {
-                Libro Libro_mod = new Libro();
-                Libro_mod.ID = libro.ID;
-                Libro_mod.Titolo = TitotloModLibro.Text;
-                Libro_mod.Autore = AutoreModLibro.Text;
-                Libro_mod.Genere = genere_cb.Text;
-
-
-                if (!Queries.editLibro(Libro_mod))
-                {
-                    MessageBox.Show("Errore");
-                }
-                else
-                {
-                    Close();
-                }
-                File.Delete(libro.Path);
-                Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
-            }
-        }
-
         private void TabellaBambini_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -94,6 +70,18 @@ namespace Maestre.Libri
                 List<string> vs = new List<string>();
                 vs = Queries.getGenere();
                 genere_cb.DataSource = vs;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            try
+            {
+                List<string> itemsGenere = Queries.getGenere();
+                List<string> itemsGenere2 = new List<string>(itemsGenere);
+                genereCB_2.DataSource = itemsGenere2;
+                refresh();
             }
             catch (Exception ex)
             {
@@ -163,15 +151,18 @@ namespace Maestre.Libri
                 }
                 else
                 {
-                    Close();
+                    listaLibri = Queries.getLibri();
+                    refresh();
                     if (ModFoto)
                     {
                         ModFoto = false;
                         ofdFoto.Dispose();
                         File.Delete(libro.Path);
                         Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        
                     }
                 }
+                
             }
         }
 
@@ -198,19 +189,53 @@ namespace Maestre.Libri
 
         private void Reset_button_Click(object sender, EventArgs e)
         {
-            if (GUIUpdate)
+            titolo_tb.Text = "";
+            autore_tb.Text = "";
+            genereCB_2.SelectedIndex = 0;
+            try
             {
-                GUIUpdate = false;
-                try
-                {
-                    listaLibri = Queries.getLibri();
-                    refresh();
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
+                listaLibri = Queries.getLibri();
+                refresh();
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        private void genereCB_2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void autore_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titolo_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labeltitolo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -124,5 +124,33 @@ namespace Maestre.Bambini
             }
 
         }
+
+        private void search_button_Click(object sender, EventArgs e)
+        {
+            if (nome_tb.Text != "" || cognome_tb.Text != "")
+            {
+                try
+                {
+                    listaBambini = Queries.getBambino(nome_tb.Text, cognome_tb.Text);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+            else
+            {
+                try
+                {
+                    Queries.getBambini(ref listaBambini);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+        }
     }
 }

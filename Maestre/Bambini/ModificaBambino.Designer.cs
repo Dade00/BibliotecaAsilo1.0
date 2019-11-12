@@ -51,6 +51,12 @@
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
             this.nascitaBambini = new System.Windows.Forms.DateTimePicker();
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
+            this.search_button = new System.Windows.Forms.Button();
+            this.cognome_tb = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.nome_tb = new System.Windows.Forms.TextBox();
+            this.labeltitolo = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
@@ -114,7 +120,7 @@
             this.CercaFotoBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.CercaFotoBambini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.CercaFotoBambini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CercaFotoBambini.Location = new System.Drawing.Point(444, 207);
+            this.CercaFotoBambini.Location = new System.Drawing.Point(514, 207);
             this.CercaFotoBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CercaFotoBambini.Name = "CercaFotoBambini";
             this.CercaFotoBambini.Size = new System.Drawing.Size(130, 45);
@@ -127,7 +133,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(373, 214);
+            this.label3.Location = new System.Drawing.Point(439, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -152,7 +158,7 @@
             this.classeDataGridViewTextBoxColumn,
             this.dataNascitaDataGridViewTextBoxColumn});
             this.TabellaBambini.DataSource = this.bsBambini;
-            this.TabellaBambini.Location = new System.Drawing.Point(367, 278);
+            this.TabellaBambini.Location = new System.Drawing.Point(410, 281);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.MultiSelect = false;
             this.TabellaBambini.Name = "TabellaBambini";
@@ -201,7 +207,7 @@
             // ClasseBambini
             // 
             this.ClasseBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.ClasseBambini.Location = new System.Drawing.Point(810, 99);
+            this.ClasseBambini.Location = new System.Drawing.Point(946, 102);
             this.ClasseBambini.Margin = new System.Windows.Forms.Padding(2);
             this.ClasseBambini.Name = "ClasseBambini";
             this.ClasseBambini.Size = new System.Drawing.Size(67, 30);
@@ -211,7 +217,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(709, 101);
+            this.label1.Location = new System.Drawing.Point(845, 106);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 25);
@@ -226,14 +232,14 @@
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(540, 58);
+            this.libro_label.Size = new System.Drawing.Size(543, 58);
             this.libro_label.TabIndex = 100;
             this.libro_label.Text = "Modifica un bambino";
             // 
             // CognomeBambini
             // 
             this.CognomeBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.CognomeBambini.Location = new System.Drawing.Point(439, 158);
+            this.CognomeBambini.Location = new System.Drawing.Point(514, 160);
             this.CognomeBambini.Margin = new System.Windows.Forms.Padding(2);
             this.CognomeBambini.Name = "CognomeBambini";
             this.CognomeBambini.Size = new System.Drawing.Size(237, 30);
@@ -242,7 +248,7 @@
             // NomeBambini
             // 
             this.NomeBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.NomeBambini.Location = new System.Drawing.Point(439, 103);
+            this.NomeBambini.Location = new System.Drawing.Point(514, 103);
             this.NomeBambini.Margin = new System.Windows.Forms.Padding(2);
             this.NomeBambini.Name = "NomeBambini";
             this.NomeBambini.Size = new System.Drawing.Size(237, 30);
@@ -252,7 +258,7 @@
             // 
             this.cognome_label.AutoSize = true;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(313, 160);
+            this.cognome_label.Location = new System.Drawing.Point(385, 162);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(125, 25);
@@ -263,7 +269,7 @@
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(359, 105);
+            this.nome_label.Location = new System.Drawing.Point(434, 105);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(76, 25);
@@ -273,7 +279,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(693, 145);
+            this.label2.Location = new System.Drawing.Point(824, 150);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 54);
@@ -284,9 +290,9 @@
             // Bambini_pic
             // 
             this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
-            this.Bambini_pic.Location = new System.Drawing.Point(12, 278);
+            this.Bambini_pic.Location = new System.Drawing.Point(130, 18);
             this.Bambini_pic.Name = "Bambini_pic";
-            this.Bambini_pic.Size = new System.Drawing.Size(350, 350);
+            this.Bambini_pic.Size = new System.Drawing.Size(250, 250);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Bambini_pic.TabIndex = 130;
             this.Bambini_pic.TabStop = false;
@@ -294,10 +300,76 @@
             // nascitaBambini
             // 
             this.nascitaBambini.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.nascitaBambini.Location = new System.Drawing.Point(816, 155);
+            this.nascitaBambini.Location = new System.Drawing.Point(946, 160);
             this.nascitaBambini.Name = "nascitaBambini";
             this.nascitaBambini.Size = new System.Drawing.Size(322, 30);
             this.nascitaBambini.TabIndex = 131;
+            // 
+            // search_button
+            // 
+            this.search_button.BackColor = System.Drawing.Color.Transparent;
+            this.search_button.BackgroundImage = global::Maestre.Properties.Resources.cerca;
+            this.search_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.search_button.FlatAppearance.BorderSize = 0;
+            this.search_button.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_button.Location = new System.Drawing.Point(92, 552);
+            this.search_button.Name = "search_button";
+            this.search_button.Size = new System.Drawing.Size(182, 58);
+            this.search_button.TabIndex = 137;
+            this.search_button.UseVisualStyleBackColor = false;
+            this.search_button.Click += new System.EventHandler(this.search_button_Click);
+            // 
+            // cognome_tb
+            // 
+            this.cognome_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.cognome_tb.Location = new System.Drawing.Point(18, 492);
+            this.cognome_tb.Name = "cognome_tb";
+            this.cognome_tb.Size = new System.Drawing.Size(362, 30);
+            this.cognome_tb.TabIndex = 136;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.label5.Location = new System.Drawing.Point(14, 462);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 27);
+            this.label5.TabIndex = 135;
+            this.label5.Text = "Cognome:";
+            // 
+            // nome_tb
+            // 
+            this.nome_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
+            this.nome_tb.Location = new System.Drawing.Point(18, 400);
+            this.nome_tb.Name = "nome_tb";
+            this.nome_tb.Size = new System.Drawing.Size(362, 30);
+            this.nome_tb.TabIndex = 134;
+            // 
+            // labeltitolo
+            // 
+            this.labeltitolo.AutoSize = true;
+            this.labeltitolo.BackColor = System.Drawing.Color.Transparent;
+            this.labeltitolo.Font = new System.Drawing.Font("GROBOLD", 16F);
+            this.labeltitolo.Location = new System.Drawing.Point(14, 370);
+            this.labeltitolo.Name = "labeltitolo";
+            this.labeltitolo.Size = new System.Drawing.Size(80, 27);
+            this.labeltitolo.TabIndex = 133;
+            this.labeltitolo.Text = "Nome:";
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Font = new System.Drawing.Font("GROBOLD", 20F);
+            this.label.Location = new System.Drawing.Point(12, 330);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(259, 33);
+            this.label.TabIndex = 132;
+            this.label.Text = "Cerca un bambino:";
             // 
             // ModificaBambino
             // 
@@ -305,6 +377,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Maestre.Properties.Resources.Sfondo_maestre;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.search_button);
+            this.Controls.Add(this.cognome_tb);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.nome_tb);
+            this.Controls.Add(this.labeltitolo);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.nascitaBambini);
             this.Controls.Add(this.Bambini_pic);
             this.Controls.Add(this.AnnullaModificaBambini);
@@ -358,5 +436,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cognomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn classeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataNascitaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button search_button;
+        private System.Windows.Forms.TextBox cognome_tb;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox nome_tb;
+        private System.Windows.Forms.Label labeltitolo;
+        private System.Windows.Forms.Label label;
     }
 }

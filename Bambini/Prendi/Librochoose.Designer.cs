@@ -70,7 +70,9 @@
             this.ElencoLibri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ElencoLibri.Size = new System.Drawing.Size(792, 424);
             this.ElencoLibri.TabIndex = 1;
+            this.ElencoLibri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ElencoLibri_CellContentClick);
             this.ElencoLibri.CurrentCellChanged += new System.EventHandler(this.ElencoLibri_CurrentCellChanged);
+            this.ElencoLibri.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ElencoLibri_KeyDown);
             // 
             // titoloDataGridViewTextBoxColumn
             // 
@@ -103,6 +105,7 @@
             this.immagineLibro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.immagineLibro.TabIndex = 2;
             this.immagineLibro.TabStop = false;
+            this.immagineLibro.Click += new System.EventHandler(this.immagineLibro_Click);
             // 
             // up_button
             // 

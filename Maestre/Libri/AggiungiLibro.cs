@@ -160,22 +160,26 @@ namespace Maestre.Libri
 
         private void Reset_button_Click(object sender, EventArgs e)
         {
-            if (GUIUpdate)
+            titolo_tb.Text = "";
+            autore_tb.Text = "";
+            genereCB_2.SelectedIndex = 0;
+            try
             {
-                GUIUpdate = false;
-                try
-                {
-                    listaLibri = Queries.getLibri();
-                    refresh();
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
+                listaLibri = Queries.getLibri();
+                refresh();
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
 
         private void titolo_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genereCB_2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

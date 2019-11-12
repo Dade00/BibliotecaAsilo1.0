@@ -40,13 +40,11 @@
             this.nome_label = new System.Windows.Forms.Label();
             this.Libri_pic = new System.Windows.Forms.PictureBox();
             this.ElencoLibri = new System.Windows.Forms.DataGridView();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.ofdFoto = new System.Windows.Forms.OpenFileDialog();
             this.AnnullaModifica = new System.Windows.Forms.Button();
             this.ConfermaButton = new System.Windows.Forms.Button();
             this.genere_cb = new System.Windows.Forms.ComboBox();
-            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.reset_button = new System.Windows.Forms.Button();
             this.genereCB_2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,6 +54,9 @@
             this.titolo_tb = new System.Windows.Forms.TextBox();
             this.labeltitolo = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Genere = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Libri_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElencoLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
@@ -128,7 +129,7 @@
             this.libro_label.Location = new System.Drawing.Point(504, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(375, 49);
+            this.libro_label.Size = new System.Drawing.Size(376, 49);
             this.libro_label.TabIndex = 68;
             this.libro_label.Text = "Modifica un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
@@ -197,7 +198,8 @@
             this.ElencoLibri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ElencoLibri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.titoloDataGridViewTextBoxColumn,
-            this.autoreDataGridViewTextBoxColumn});
+            this.autoreDataGridViewTextBoxColumn,
+            this.Genere});
             this.ElencoLibri.DataSource = this.bsLibri;
             this.ElencoLibri.Location = new System.Drawing.Point(410, 281);
             this.ElencoLibri.Margin = new System.Windows.Forms.Padding(2);
@@ -212,6 +214,11 @@
             this.ElencoLibri.TabIndex = 73;
             this.ElencoLibri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ElencoLibri_CellClick);
             this.ElencoLibri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellContentClick);
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
+            this.bsLibri.Filter = "";
             // 
             // AnnullaModifica
             // 
@@ -256,27 +263,6 @@
             this.genere_cb.Size = new System.Drawing.Size(175, 31);
             this.genere_cb.TabIndex = 100;
             // 
-            // titoloDataGridViewTextBoxColumn
-            // 
-            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
-            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // autoreDataGridViewTextBoxColumn
-            // 
-            this.autoreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
-            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
-            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
-            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
-            this.autoreDataGridViewTextBoxColumn.Width = 63;
-            // 
-            // bsLibri
-            // 
-            this.bsLibri.DataSource = typeof(Classi.Libro);
-            this.bsLibri.Filter = "";
-            // 
             // reset_button
             // 
             this.reset_button.BackColor = System.Drawing.Color.Transparent;
@@ -302,6 +288,7 @@
             this.genereCB_2.Name = "genereCB_2";
             this.genereCB_2.Size = new System.Drawing.Size(250, 31);
             this.genereCB_2.TabIndex = 115;
+            this.genereCB_2.SelectedIndexChanged += new System.EventHandler(this.genereCB_2_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -313,6 +300,7 @@
             this.label4.Size = new System.Drawing.Size(95, 27);
             this.label4.TabIndex = 114;
             this.label4.Text = "Genere:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // search_button
             // 
@@ -338,6 +326,7 @@
             this.autore_tb.Name = "autore_tb";
             this.autore_tb.Size = new System.Drawing.Size(362, 30);
             this.autore_tb.TabIndex = 112;
+            this.autore_tb.TextChanged += new System.EventHandler(this.autore_tb_TextChanged);
             // 
             // label2
             // 
@@ -349,6 +338,7 @@
             this.label2.Size = new System.Drawing.Size(92, 27);
             this.label2.TabIndex = 111;
             this.label2.Text = "Autore:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // titolo_tb
             // 
@@ -357,6 +347,7 @@
             this.titolo_tb.Name = "titolo_tb";
             this.titolo_tb.Size = new System.Drawing.Size(362, 30);
             this.titolo_tb.TabIndex = 110;
+            this.titolo_tb.TextChanged += new System.EventHandler(this.titolo_tb_TextChanged);
             // 
             // labeltitolo
             // 
@@ -368,6 +359,7 @@
             this.labeltitolo.Size = new System.Drawing.Size(77, 27);
             this.labeltitolo.TabIndex = 109;
             this.labeltitolo.Text = "Titolo:";
+            this.labeltitolo.Click += new System.EventHandler(this.labeltitolo_Click);
             // 
             // label
             // 
@@ -379,6 +371,32 @@
             this.label.Size = new System.Drawing.Size(205, 33);
             this.label.TabIndex = 108;
             this.label.Text = "Cerca un libro:";
+            this.label.Click += new System.EventHandler(this.label_Click);
+            // 
+            // titoloDataGridViewTextBoxColumn
+            // 
+            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.FillWeight = 147.7612F;
+            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
+            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // autoreDataGridViewTextBoxColumn
+            // 
+            this.autoreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
+            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
+            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
+            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.autoreDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // Genere
+            // 
+            this.Genere.DataPropertyName = "Genere";
+            this.Genere.FillWeight = 52.23881F;
+            this.Genere.HeaderText = "Genere";
+            this.Genere.Name = "Genere";
+            this.Genere.ReadOnly = true;
             // 
             // ModificaLibro
             // 
@@ -441,8 +459,6 @@
         private System.Windows.Forms.OpenFileDialog ofdFoto;
         private System.Windows.Forms.Button AnnullaModifica;
         private System.Windows.Forms.Button ConfermaButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn genereDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox genere_cb;
         private System.Windows.Forms.Button reset_button;
@@ -454,5 +470,8 @@
         private System.Windows.Forms.TextBox titolo_tb;
         private System.Windows.Forms.Label labeltitolo;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Genere;
     }
 }

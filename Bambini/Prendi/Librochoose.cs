@@ -130,5 +130,10 @@ namespace Bambini.Prendi
             libri = (Libro)bsLibri[bsLibri.Position];
             immagineLibro.ImageLocation = libri.Path;
         }
+
+        private void ElencoLibri_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

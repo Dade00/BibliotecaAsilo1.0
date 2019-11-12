@@ -95,7 +95,7 @@
             this.libro_label.Location = new System.Drawing.Point(491, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(444, 58);
+            this.libro_label.Size = new System.Drawing.Size(447, 58);
             this.libro_label.TabIndex = 84;
             this.libro_label.Text = "Aggiungi un libro";
             // 
@@ -290,6 +290,7 @@
             this.genereCB_2.Name = "genereCB_2";
             this.genereCB_2.Size = new System.Drawing.Size(250, 31);
             this.genereCB_2.TabIndex = 106;
+            this.genereCB_2.SelectedIndexChanged += new System.EventHandler(this.genereCB_2_SelectedIndexChanged);
             // 
             // search_button
             // 
