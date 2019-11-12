@@ -62,16 +62,16 @@ namespace Classi {
         
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Icon simile a (Icona).
-        ///// </summary>
-        //internal static System.Drawing.Icon ICON {
-        //    get {
+        /// </summary>
+       /// internal static System.Drawing.Icon ICON {
+      ///      get {
         //        object obj = ResourceManager.GetObject("ICON", resourceCulture);
-        //        return ((System.Drawing.Icon)(obj));
-        //    }
-        //}
+         //       return ((System.Drawing.Icon)(obj));
+         //   }
+       // }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a ZAMBECCOPC\SQLEXPRESS.
+        ///   Cerca una stringa localizzata simile a 2018ALLIN14\SQLEXPRESS.
         /// </summary>
         internal static string sqlServerAddress {
             get {
@@ -89,7 +89,7 @@ namespace Classi {
         }
         
         /// <summary>
-        ///   Cerca una stringa localizzata simile a PGAACDCM.
+        ///   Cerca una stringa localizzata simile a einaudi.
         /// </summary>
         internal static string sqlServerPassword {
             get {

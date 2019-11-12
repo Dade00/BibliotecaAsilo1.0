@@ -122,14 +122,14 @@
     <value>Resources\icon3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sqlServerAddress" xml:space="preserve">
-    <value>ZAMBECCOPC\SQLEXPRESS</value>
+    <value>2018ALLIN14\SQLEXPRESS</value>
     <comment>LAPTOP-H03OA999</comment>
   </data>
   <data name="sqlServerDB" xml:space="preserve">
     <value>Asilo</value>
   </data>
   <data name="sqlServerPassword" xml:space="preserve">
-    <value>PGAACDCM</value>
+    <value>einaudi</value>
     <comment>Einaudi</comment>
   </data>
   <data name="sqlServerUser" xml:space="preserve">

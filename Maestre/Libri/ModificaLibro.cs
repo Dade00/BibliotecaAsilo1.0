@@ -17,9 +17,16 @@ namespace Maestre.Libri
         Libro libro = new Libro();
         List<Libro> listaLibri = new List<Libro>();
         bool ModFoto = false;
+        bool GUIUpdate = false;
         public ModificaLibro()
         {
             InitializeComponent();
+        }
+
+        private void refresh()
+        {
+            bsLibri.DataSource = listaLibri;
+            bsLibri.ResetBindings(true);
         }
 
         private void Libro_label_Click(object sender, EventArgs e)
@@ -164,6 +171,44 @@ namespace Maestre.Libri
                         File.Delete(libro.Path);
                         Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
                     }
+                }
+            }
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Search_button_Click(object sender, EventArgs e)
+        {
+            if (titolo_tb.Text != "" || autore_tb.Text != "" || genereCB_2.Text != "")
+            {
+                try
+                {
+                    listaLibri = Queries.getLibri(titolo_tb.Text, autore_tb.Text, genereCB_2.Text); ;
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
+        }
+
+        private void Reset_button_Click(object sender, EventArgs e)
+        {
+            if (GUIUpdate)
+            {
+                GUIUpdate = false;
+                try
+                {
+                    listaLibri = Queries.getLibri();
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
                 }
             }
         }
