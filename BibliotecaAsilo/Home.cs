@@ -95,7 +95,7 @@ namespace BibliotecaAsilo
 
         private void Crediti_button_Click(object sender, EventArgs e)
         {
-            FormCrediti formCrediti = new FormCrediti();
+            Credi formCrediti = new Credi();
             formCrediti.Show();
         }
     }
