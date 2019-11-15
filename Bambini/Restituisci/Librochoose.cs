@@ -29,7 +29,7 @@ namespace Bambini.Restituiusci
                 if (Queries.RestituisciLibro(Queries.getIDTransazionebyLibro(bambinoresituente.ID, libro.ID), libro.ID))
                 {
                     Hide();
-                    ConfermaRestituzione confermaRestituzione = new ConfermaRestituzione(libro.Titolo);
+                    ConfermaRestituzione confermaRestituzione = new ConfermaRestituzione(libro.Titolo, libro.Path);
                     confermaRestituzione.ShowDialog();
                     Show();
                 }

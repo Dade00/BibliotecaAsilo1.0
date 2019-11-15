@@ -41,10 +41,10 @@
             // pb_LIBRO
             // 
             this.pb_LIBRO.BackColor = System.Drawing.Color.Transparent;
-            this.pb_LIBRO.BackgroundImage = global::Bambini.Properties.Resources.No_image;
             this.pb_LIBRO.Location = new System.Drawing.Point(159, 167);
             this.pb_LIBRO.Name = "pb_LIBRO";
             this.pb_LIBRO.Size = new System.Drawing.Size(350, 350);
+            this.pb_LIBRO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_LIBRO.TabIndex = 14;
             this.pb_LIBRO.TabStop = false;
             // 

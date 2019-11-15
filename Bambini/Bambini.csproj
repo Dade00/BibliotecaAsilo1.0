@@ -268,6 +268,7 @@
     <None Include="Resources\3anni_acceso.png" />
     <None Include="Resources\4anni_acceso.png" />
     <None Include="Resources\5anni_acceso.png" />
+    <Content Include="icon3.ico" />
     <Content Include="MickyMouseOFF.cur" />
     <Content Include="MickyMouseON.cur" />
     <Content Include="Resources\Aiuto.png" />

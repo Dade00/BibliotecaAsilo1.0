@@ -12,10 +12,11 @@ namespace Bambini.Restituiusci
 {
     public partial class ConfermaRestituzione : Form
     {
-        string nomedellibro = "";
-        public ConfermaRestituzione(string NomeLibro)
+        string nomedellibro = "", pathLibro = "";
+        public ConfermaRestituzione(string NomeLibro, string PathLibro)
         {
             nomedellibro = NomeLibro;
+            pathLibro = PathLibro;
             InitializeComponent();
         }
 
@@ -43,6 +44,7 @@ namespace Bambini.Restituiusci
             ok_button.Cursor = CursorOFF;
             nomelibro_label.Text = nomedellibro;
             data_label.Text = DateTime.Now.ToShortDateString();
+            pictureBox1.ImageLocation = pathLibro;
         }
     }
 }
