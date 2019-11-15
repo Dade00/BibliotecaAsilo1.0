@@ -164,6 +164,7 @@
             this.ElencoLibri.RowHeadersWidth = 62;
             this.ElencoLibri.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.ElencoLibri.RowTemplate.Height = 28;
+            this.ElencoLibri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ElencoLibri.Size = new System.Drawing.Size(792, 424);
             this.ElencoLibri.TabIndex = 8;
             this.ElencoLibri.SelectionChanged += new System.EventHandler(this.ElencoLibri_SelectionChanged);

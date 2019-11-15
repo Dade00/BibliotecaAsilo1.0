@@ -879,7 +879,7 @@ namespace Classi
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dataTable);
-                    return  dataTable.Rows.Count -1;
+                    return  dataTable.Rows.Count;
                 }
 
             }

@@ -33,6 +33,10 @@
             this.Indietro_Button = new System.Windows.Forms.Button();
             this.StampaStatLibro = new System.Windows.Forms.Button();
             this.BambiniLettoIlLibro = new System.Windows.Forms.DataGridView();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Libro_pic = new System.Windows.Forms.PictureBox();
@@ -42,13 +46,9 @@
             this.NLibroletto = new System.Windows.Forms.Label();
             this.GenerelibroScelto = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.BambiniLettoIlLibro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Libro_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Libro_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -119,8 +119,36 @@
             this.BambiniLettoIlLibro.RowHeadersVisible = false;
             this.BambiniLettoIlLibro.RowHeadersWidth = 62;
             this.BambiniLettoIlLibro.RowTemplate.Height = 28;
+            this.BambiniLettoIlLibro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.BambiniLettoIlLibro.Size = new System.Drawing.Size(1344, 285);
             this.BambiniLettoIlLibro.TabIndex = 132;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cognomeDataGridViewTextBoxColumn
+            // 
+            this.cognomeDataGridViewTextBoxColumn.DataPropertyName = "Cognome";
+            this.cognomeDataGridViewTextBoxColumn.HeaderText = "Cognome";
+            this.cognomeDataGridViewTextBoxColumn.Name = "cognomeDataGridViewTextBoxColumn";
+            this.cognomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // classeDataGridViewTextBoxColumn
+            // 
+            this.classeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
+            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe";
+            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
+            this.classeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.classeDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Bambino);
             // 
             // label2
             // 
@@ -221,33 +249,6 @@
             this.label7.TabIndex = 140;
             this.label7.Text = "GENERE:";
             // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cognomeDataGridViewTextBoxColumn
-            // 
-            this.cognomeDataGridViewTextBoxColumn.DataPropertyName = "Cognome";
-            this.cognomeDataGridViewTextBoxColumn.HeaderText = "Cognome";
-            this.cognomeDataGridViewTextBoxColumn.Name = "cognomeDataGridViewTextBoxColumn";
-            this.cognomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // classeDataGridViewTextBoxColumn
-            // 
-            this.classeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.classeDataGridViewTextBoxColumn.DataPropertyName = "Classe";
-            this.classeDataGridViewTextBoxColumn.HeaderText = "Classe";
-            this.classeDataGridViewTextBoxColumn.Name = "classeDataGridViewTextBoxColumn";
-            this.classeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.classeDataGridViewTextBoxColumn.Width = 63;
-            // 
-            // bsLibri
-            // 
-            this.bsLibri.DataSource = typeof(Classi.Bambino);
-            // 
             // NumeroDiVolteLetti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,8 +274,8 @@
             this.Text = "NumeroDiVolteLetti";
             this.Load += new System.EventHandler(this.NumeroDiVolteLetti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BambiniLettoIlLibro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Libro_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Libro_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

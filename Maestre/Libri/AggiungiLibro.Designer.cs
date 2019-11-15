@@ -95,7 +95,7 @@
             this.libro_label.Location = new System.Drawing.Point(491, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(447, 58);
+            this.libro_label.Size = new System.Drawing.Size(444, 58);
             this.libro_label.TabIndex = 84;
             this.libro_label.Text = "Aggiungi un libro";
             // 
@@ -165,6 +165,7 @@
             this.Libri.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Libri.RowTemplate.Height = 28;
             this.Libri.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Libri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Libri.Size = new System.Drawing.Size(945, 350);
             this.Libri.TabIndex = 97;
             // 
