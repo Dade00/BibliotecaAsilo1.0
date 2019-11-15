@@ -142,7 +142,7 @@ namespace Maestre
 
             //Rimuovi sezione
             EliminaLibro.Location = EliminaBambino.Location;
-            DelStat.Location = EliminaBambino.Location;
+            
 
             this.BackgroundImage = Maestre.Properties.Resources.Sfondo_maestre;
 
@@ -164,7 +164,7 @@ namespace Maestre
         }
         private void StatVisible()
         {
-            DelStat.Visible = true;
+            
             StatLibri.Visible = true;
             StatBambini.Visible = true;
         }
@@ -179,7 +179,7 @@ namespace Maestre
             StatBambini.Visible = false;
             EliminaBambino.Visible = false;
             EliminaLibro.Visible = false;
-            DelStat.Visible = false;
+            
         }
 
         private void Home_VisibleChanged(object sender, EventArgs e)

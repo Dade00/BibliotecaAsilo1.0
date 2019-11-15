@@ -34,7 +34,6 @@
             this.EliminaLibro = new System.Windows.Forms.Button();
             this.ModificaLibro = new System.Windows.Forms.Button();
             this.AggiungiLibro = new System.Windows.Forms.Button();
-            this.DelStat = new System.Windows.Forms.Button();
             this.StatLibri = new System.Windows.Forms.Button();
             this.StatBambini = new System.Windows.Forms.Button();
             this.Statistiche_radio = new System.Windows.Forms.RadioButton();
@@ -144,22 +143,6 @@
             this.AggiungiLibro.TabIndex = 6;
             this.AggiungiLibro.UseVisualStyleBackColor = false;
             this.AggiungiLibro.Click += new System.EventHandler(this.AggiungiLibro_Click);
-            // 
-            // DelStat
-            // 
-            this.DelStat.BackColor = System.Drawing.Color.Transparent;
-            this.DelStat.BackgroundImage = global::Maestre.Properties.Resources.Elimina_Stat;
-            this.DelStat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DelStat.FlatAppearance.BorderSize = 0;
-            this.DelStat.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.DelStat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.DelStat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.DelStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DelStat.Location = new System.Drawing.Point(869, 481);
-            this.DelStat.Name = "DelStat";
-            this.DelStat.Size = new System.Drawing.Size(380, 120);
-            this.DelStat.TabIndex = 6;
-            this.DelStat.UseVisualStyleBackColor = false;
             // 
             // StatLibri
             // 
@@ -289,7 +272,6 @@
             this.Controls.Add(this.indietro_button);
             this.Controls.Add(this.StatBambini);
             this.Controls.Add(this.StatLibri);
-            this.Controls.Add(this.DelStat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
@@ -310,7 +292,6 @@
         private System.Windows.Forms.Button EliminaLibro;
         private System.Windows.Forms.Button ModificaLibro;
         private System.Windows.Forms.Button AggiungiLibro;
-        private System.Windows.Forms.Button DelStat;
         private System.Windows.Forms.Button StatLibri;
         private System.Windows.Forms.Button StatBambini;
         private System.Windows.Forms.RadioButton Bambini_radio;
