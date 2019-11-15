@@ -22,6 +22,7 @@ namespace Bambini.Restituiusci
 
         private void Ok_button_Click(object sender, EventArgs e)
         {
+            if(bsLibri.Count > 0)
             try
             {
                 Libro libro = new Libro();

@@ -122,6 +122,16 @@ namespace BibliotecaAsilo.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sfondo_Crediti {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Crediti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sfondo_Home {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Home", resourceCulture);

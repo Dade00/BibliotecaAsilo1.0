@@ -48,10 +48,9 @@
             // indietro_button
             // 
             this.indietro_button.BackColor = System.Drawing.Color.Transparent;
-            this.indietro_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.indietro_button.FlatAppearance.BorderSize = 0;
-            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indietro_button.Image = global::Bambini.Properties.Resources.Indietro_button;
             this.indietro_button.Location = new System.Drawing.Point(313, 598);
@@ -69,8 +68,8 @@
             this.avanti_button.BackColor = System.Drawing.Color.Transparent;
             this.avanti_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.avanti_button.FlatAppearance.BorderSize = 0;
-            this.avanti_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.avanti_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.avanti_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.avanti_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.avanti_button.Image = global::Bambini.Properties.Resources.Avanti_button;
             this.avanti_button.Location = new System.Drawing.Point(752, 598);
@@ -100,8 +99,8 @@
             this.down_button.BackColor = System.Drawing.Color.Transparent;
             this.down_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.down_button.FlatAppearance.BorderSize = 0;
-            this.down_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.down_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.down_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.down_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.down_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.down_button.Image = global::Bambini.Properties.Resources.giù;
             this.down_button.Location = new System.Drawing.Point(1136, 316);
@@ -118,8 +117,8 @@
             this.up_button.BackColor = System.Drawing.Color.Transparent;
             this.up_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.up_button.FlatAppearance.BorderSize = 0;
-            this.up_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.up_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.up_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.up_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.up_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.up_button.Image = global::Bambini.Properties.Resources.Su;
             this.up_button.Location = new System.Drawing.Point(1136, 102);

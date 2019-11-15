@@ -66,6 +66,7 @@
             this.crediti_button.Size = new System.Drawing.Size(150, 174);
             this.crediti_button.TabIndex = 2;
             this.crediti_button.UseVisualStyleBackColor = false;
+            this.crediti_button.Click += new System.EventHandler(this.Crediti_button_Click);
             this.crediti_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Crediti_button_MouseDown);
             this.crediti_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Crediti_button_MouseUp);
             // 

@@ -41,10 +41,9 @@
             // ok_button
             // 
             this.ok_button.BackColor = System.Drawing.Color.Transparent;
-            this.ok_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.ok_button.FlatAppearance.BorderSize = 0;
-            this.ok_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.ok_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.ok_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ok_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ok_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ok_button.Font = new System.Drawing.Font("GROBOLD", 30F, System.Drawing.FontStyle.Bold);
             this.ok_button.Image = global::Bambini.Properties.Resources.Ok;

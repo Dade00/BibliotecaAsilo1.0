@@ -234,6 +234,7 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Sfondo Crediti %281%29.jpg" />
     <None Include="Resources\icon3.ico" />
     <None Include="Resources\Sfondo Aiuto.jpg" />
     <None Include="Resources\Sfondo Prend. e Resti..jpg" />

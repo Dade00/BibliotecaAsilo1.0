@@ -92,5 +92,11 @@ namespace BibliotecaAsilo
         {
             crediti_button.Cursor = CursorON;
         }
+
+        private void Crediti_button_Click(object sender, EventArgs e)
+        {
+            FormCrediti formCrediti = new FormCrediti();
+            formCrediti.Show();
+        }
     }
 }
