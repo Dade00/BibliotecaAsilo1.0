@@ -47,6 +47,7 @@
     "o: Grafica e Software\r\nNicolo\' Gatti: Software e Database\r\nFederico Fissore: Sof" +
     "tware\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.Credi_Click);
             // 
             // label3
             // 
@@ -58,6 +59,7 @@
             this.label3.Size = new System.Drawing.Size(368, 39);
             this.label3.TabIndex = 10;
             this.label3.Text = "prof.ssa Meinero Elena";
+            this.label3.Click += new System.EventHandler(this.Credi_Click);
             // 
             // label2
             // 
@@ -69,6 +71,7 @@
             this.label2.Size = new System.Drawing.Size(238, 46);
             this.label2.TabIndex = 9;
             this.label2.Text = "2019/2020";
+            this.label2.Click += new System.EventHandler(this.Credi_Click);
             // 
             // label1
             // 
@@ -80,6 +83,7 @@
             this.label1.Size = new System.Drawing.Size(364, 49);
             this.label1.TabIndex = 8;
             this.label1.Text = "ITIS Einaudi Alba";
+            this.label1.Click += new System.EventHandler(this.Credi_Click);
             // 
             // Credi
             // 
@@ -97,6 +101,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Credi";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Credi_Load);
             this.Click += new System.EventHandler(this.Credi_Click);
             this.ResumeLayout(false);
             this.PerformLayout();

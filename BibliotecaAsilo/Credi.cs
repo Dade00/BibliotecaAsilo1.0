@@ -21,5 +21,10 @@ namespace BibliotecaAsilo
         {
             Close();
         }
+
+        private void Credi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
