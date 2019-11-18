@@ -65,7 +65,7 @@
             // AnnullaModificaBambini
             // 
             this.AnnullaModificaBambini.BackColor = System.Drawing.Color.Transparent;
-            this.AnnullaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Annulla;
+            this.AnnullaModificaBambini.BackgroundImage = global::Maestre.Properties.Resources.Indietro;
             this.AnnullaModificaBambini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AnnullaModificaBambini.FlatAppearance.BorderSize = 0;
             this.AnnullaModificaBambini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;

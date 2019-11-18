@@ -34,7 +34,8 @@ namespace Maestre.Bambini
                 }
                 else
                 {
-                    Close();
+                    Queries.getBambini(ref listaBambini);
+                    refresh();
                     if (ModFoto)
                     {
                         ModFoto = false;

@@ -41,11 +41,11 @@
             this.label4.Font = new System.Drawing.Font("GROBOLD", 22F);
             this.label4.Location = new System.Drawing.Point(113, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(574, 185);
+            this.label4.Size = new System.Drawing.Size(575, 185);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Gabriel Siqueira: Grafica\r\nMatteo Bussolino: Grafica e Software\r\nZambecco Davide:" +
-    " Grafica e Software\r\nGatti Nicolo: Software e Database\r\nFissore Federico: Softwa" +
-    "re";
+            this.label4.Text = "Gabriel S. Sartori: Grafica\r\nMatteo Bussolino: Grafica e Software\r\nDavide Zambecc" +
+    "o: Grafica e Software\r\nNicolo\' Gatti: Software e Database\r\nFederico Fissore: Sof" +
+    "tware\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -77,7 +77,7 @@
             this.label1.Font = new System.Drawing.Font("GROBOLD", 30F);
             this.label1.Location = new System.Drawing.Point(219, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 49);
+            this.label1.Size = new System.Drawing.Size(364, 49);
             this.label1.TabIndex = 8;
             this.label1.Text = "ITIS Einaudi Alba";
             // 

@@ -41,7 +41,7 @@ namespace Bambini.Prendi
                 Close();
                 return;
             }
-            MessageBox.Show("Libro preso!");
+            
             GUIServices.ToPrendiRestituisci = true;
             Close();
         }
