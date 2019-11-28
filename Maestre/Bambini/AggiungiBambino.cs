@@ -10,7 +10,7 @@ namespace Maestre.Bambini
     {
         public List<Bambino> listaBambini;
 
-
+        bool GUIUpdate = false;
         public AggiungiBambino()
         {
             InitializeComponent();
@@ -89,11 +89,27 @@ namespace Maestre.Bambini
 
                 MessageBox.Show("Bambino aggiunto!");
 
-                Close();
+                
             }
             catch (Exception ex)
             {
                 throw;
+            }
+
+            GUIUpdate = true;
+
+            if (GUIUpdate)
+            {
+                GUIUpdate = false;
+                try
+                {
+                    Queries.getBambini(ref listaBambini);
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
             }
 
             Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);

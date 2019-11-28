@@ -38,9 +38,9 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 124);
+            this.label2.Location = new System.Drawing.Point(38, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(727, 136);
+            this.label2.Size = new System.Drawing.Size(727, 188);
             this.label2.TabIndex = 11;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;

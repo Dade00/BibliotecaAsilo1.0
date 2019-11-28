@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Inserire i dati dei libri negli appositi campi, dopo di che inserire la foto tramite apposito pulsante, una volta assicurati che tutti i campi siano riempiti correttamente premere su "CONFERMA". A lato è presente una casella di ricerca per verificfare  se il libro da aggiungere è già presente.
+</value>
+  </data>
 </root>

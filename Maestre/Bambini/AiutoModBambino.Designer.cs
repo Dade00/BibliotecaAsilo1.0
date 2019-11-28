@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AiutoModBambino));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -35,15 +36,14 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            this.label2.AutoEllipsis = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(52, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(693, 78);
+            this.label2.Size = new System.Drawing.Size(693, 113);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Selezionare il nome del bambino nella tabella, inserire i dati\r\nche si vuole modi" +
-    "ficare, una volta completata la modifica\r\npremere su \"CONFERMA\".";
+            this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1

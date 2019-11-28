@@ -25,14 +25,20 @@ namespace Maestre.Bambini
 
         private void ConfermaEliminaBambini_Click(object sender, EventArgs e)
         {
+            Bambini_pic.ImageLocation = "";
             Bambino bambino = new Bambino();
             bambino = (Bambino)bsBambini[bsBambini.Position];
             updateGUI = Queries.delBambino(bambino.ID);
             if (updateGUI)
             {
-                Bambini_pic.ImageLocation = "";
-                File.Delete(bambino.Path);
-                MessageBox.Show("Babmino rimosso");
+                try
+                {
+                   
+                    File.Delete(bambino.Path);
+                }
+                catch (Exception ex)
+                { }
+                MessageBox.Show("Bambino eliminato");
             }
         }
 
@@ -117,7 +123,7 @@ namespace Maestre.Bambini
             {
                 Bambino bambino = new Bambino();
                 bambino = (Bambino)bsBambini[bsBambini.Position];
-                Bambini_pic.Image = new Bitmap(bambino.Path);
+                Bambini_pic.ImageLocation = bambino.Path;
             }
             catch
             {

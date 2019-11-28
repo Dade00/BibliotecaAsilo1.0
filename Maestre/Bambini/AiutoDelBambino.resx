@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Inserire i dati del bambino negli appositi campi, dopo di che avviare la ricerca, selezionare nella tabella i dati del bambino che si vogliono eliminare e procedere cliccando "CONFERMA". A lato è presente una casella di ricerca per trovare il bambino da eliminare.
+</value>
+  </data>
 </root>

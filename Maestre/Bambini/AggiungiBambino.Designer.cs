@@ -59,6 +59,7 @@ namespace Maestre.Bambini
             this.nome_tb = new System.Windows.Forms.TextBox();
             this.labeltitolo = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
+            this.update = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBambini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
@@ -380,6 +381,10 @@ namespace Maestre.Bambini
             this.label.TabIndex = 130;
             this.label.Text = "Cerca un bambino:";
             // 
+            // update
+            // 
+            this.update.Enabled = true;
+            // 
             // AggiungiBambino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,5 +460,6 @@ namespace Maestre.Bambini
         private TextBox nome_tb;
         private Label labeltitolo;
         private Label label;
+        private Timer update;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AiutoDelBambino));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -35,16 +36,14 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            this.label2.AutoEllipsis = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(45, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(718, 78);
+            this.label2.Size = new System.Drawing.Size(718, 131);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Inserire i dati del bambino negli appositi campi, dopo di che \r\navviare la ricerc" +
-    "a, selezionare nella tabella i dati del bambino \r\nche si vogliono eliminare e pr" +
-    "ocedere cliccando \"CONFERMA\".";
+            this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1

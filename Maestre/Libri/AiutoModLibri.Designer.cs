@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AiutoModLibri));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,11 +40,9 @@
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(41, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(712, 109);
+            this.label2.Size = new System.Drawing.Size(712, 135);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Selezionare nella tabella il libro che si vuole eliminare, inserire nei vari camp" +
-    "i i dati che si vuole modificare, una volta terminata la modifica premere su \"CO" +
-    "NFERMA\".";
+            this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AiutoAddLibri));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,11 +41,9 @@
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(38, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(725, 109);
+            this.label2.Size = new System.Drawing.Size(725, 131);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Inserire i dati dei libri negli appositi campi, dopo di che inserire la foto tram" +
-    "ite apposito pulsante, una volta assicurati che tutti i campi siano riempiti cor" +
-    "rettamente premere su \"CONFERMA\".";
+            this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1

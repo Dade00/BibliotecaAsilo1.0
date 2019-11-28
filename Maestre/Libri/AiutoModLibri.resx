@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Selezionare nella tabella il libro che si vuole modificare, inserire nei vari campi i dati che si vuole modificare, una volta terminata la modifica premere su "CONFERMA". A lato è presente una casella di ricerca per trovare il libro da modificare.
+</value>
+  </data>
 </root>
