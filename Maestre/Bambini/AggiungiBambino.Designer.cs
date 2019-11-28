@@ -107,6 +107,7 @@ namespace Maestre.Bambini
             this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(945, 350);
             this.TabellaBambini.TabIndex = 121;
+            this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
             // dataGridViewTextBoxColumn1
             // 

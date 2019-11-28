@@ -40,6 +40,8 @@ namespace Maestre.Libri
             {
                 try
                 {
+                    Libri_pic.ImageLocation = "";
+                    Libri_pic.Refresh();
                     File.Delete(libri.Path);
                 }
                 catch

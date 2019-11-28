@@ -25,7 +25,6 @@ namespace Maestre.Bambini
 
         private void ConfermaEliminaBambini_Click(object sender, EventArgs e)
         {
-            Bambini_pic.ImageLocation = "";
             Bambino bambino = new Bambino();
             bambino = (Bambino)bsBambini[bsBambini.Position];
             updateGUI = Queries.delBambino(bambino.ID);
@@ -33,7 +32,8 @@ namespace Maestre.Bambini
             {
                 try
                 {
-                   
+                    Bambini_pic.ImageLocation = "";
+                    Bambini_pic.Refresh();
                     File.Delete(bambino.Path);
                 }
                 catch (Exception ex)

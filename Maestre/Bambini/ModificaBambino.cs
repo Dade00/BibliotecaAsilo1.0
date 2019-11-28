@@ -56,9 +56,7 @@ namespace Maestre.Bambini
             {
                 try
                 {
-                    Bitmap bmp = new Bitmap(ofdFoto.FileName);
-                    Bambini_pic.Image = new Bitmap(ofdFoto.FileName);
-                    bmp.Dispose();
+                    Bambini_pic.ImageLocation = ofdFoto.FileName;
                 }
                 catch (Exception ex)
                 {
@@ -110,7 +108,7 @@ namespace Maestre.Bambini
                 try
                 {
                     ofdFoto.FileName = bambino.Path;
-                    Bambini_pic.Image = new Bitmap(ofdFoto.FileName);
+                    Bambini_pic.ImageLocation = ofdFoto.FileName;
                 }
                 catch
                 {

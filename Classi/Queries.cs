@@ -7,6 +7,57 @@ namespace Classi
 {
     public class Queries
     {
+        public static bool bambinoExist(Bambino bambino)
+        {
+            DataTable dataTable = new DataTable();
+            try
+            {
+                string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome and Classe = @classe and Data_Nascita = @datanascita";  //Case sensitive
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    cmd.Parameters.AddWithValue("@nome", bambino.Nome);
+                    cmd.Parameters.AddWithValue("@cognome", bambino.Cognome);
+                    cmd.Parameters.AddWithValue("@classe", bambino.Classe);
+                    cmd.Parameters.AddWithValue("@datanascita", bambino.DataNascita);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+                    if (dataTable.Rows.Count > 0)
+                    {
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+            }
+            catch { throw; }
+        }
+
+        public static List<string> Classi()
+        {
+            DataTable dataTable = new DataTable();
+            try
+            {
+                string sql = "SELECT DISTINCT Classe FROM Bambini";  //Case sensitive
+
+                using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
+                {
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+                }
+            }
+            catch { throw; }
+
+            List<string> Classi = new List<string>();
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                Classi.Add(dataTable.Rows[i][0].ToString());
+            }
+
+            return Classi;
+        }
+
         public static void addBambino(Bambino bambino)
         {
             try
@@ -879,7 +930,7 @@ namespace Classi
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dataTable);
-                    return  dataTable.Rows.Count;
+                    return dataTable.Rows.Count;
                 }
 
             }
