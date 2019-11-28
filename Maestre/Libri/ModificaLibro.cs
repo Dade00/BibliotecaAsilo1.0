@@ -159,7 +159,7 @@ namespace Maestre.Libri
                         AutoreModLibro.Text = "";
                         genere_cb.Text = "";
                         Libri_pic.ImageLocation = "";
-                        Libri_pic.Hide();
+                        Libri_pic.Image = Maestre.Properties.Resources.No_image;
                     }
                 }
 

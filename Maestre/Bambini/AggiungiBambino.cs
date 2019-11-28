@@ -70,7 +70,7 @@ namespace Maestre.Bambini
                     return;
                 }
 
-                if (ofdFoto.FileName == "" || ofdFoto.FileName == null)
+                if (Bambini_pic.ImageLocation == "")
                 {
                     MessageBox.Show("Selezionare prima la foto");
                     return;
@@ -126,7 +126,7 @@ namespace Maestre.Bambini
             }
 
             Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
-            Bambini_pic.Dispose();
+            Bambini_pic.Image = Maestre.Properties.Resources.No_image;
 
         }
         private void AggiungiBambino_Load(object sender, EventArgs e)

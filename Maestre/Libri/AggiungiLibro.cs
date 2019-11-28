@@ -65,7 +65,7 @@ namespace Maestre.Libri
             Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
 
             Libri_pic.ImageLocation = "";
-            Libri_pic.Dispose();
+            Libri_pic.Image = Maestre.Properties.Resources.No_image;
 
 
         }

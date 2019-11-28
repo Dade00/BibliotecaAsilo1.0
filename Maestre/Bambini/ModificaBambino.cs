@@ -50,7 +50,7 @@ namespace Maestre.Bambini
                     ClasseBambini.Text = "";
                     nome_tb.Text = "";
                     cognome_tb.Text = "";
-                    Bambini_pic.Hide();
+                    Bambini_pic.Image = Maestre.Properties.Resources.No_image;
                 } 
         }
 
