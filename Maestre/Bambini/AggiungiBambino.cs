@@ -79,7 +79,7 @@ namespace Maestre.Bambini
                 bambino.Nome = NomeAddBambini.Text;
                 bambino.Cognome = CognomeAddBambini.Text;
                 bambino.DataNascita = nascitaAddBambini.Value;
-                bambino.Classe = ClasseAddBambini.Text;
+                bambino.Classe = ClasseAddBambini.Text.ToUpper();
                 bambino.Path = "path";
                 //Controllo se esiste il bambino 
                 if (!Queries.bambinoExist(bambino))

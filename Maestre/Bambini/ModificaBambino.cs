@@ -29,7 +29,7 @@ namespace Maestre.Bambini
         private void ConfermaModificaBambini_Click(object sender, EventArgs e)
         {
             if (bambino != null)
-                if (!Queries.editBambino(new Bambino(bambino.ID, NomeBambini.Text, CognomeBambini.Text, nascitaBambini.Value, ClasseBambini.Text, "")))
+                if (!Queries.editBambino(new Bambino(bambino.ID, NomeBambini.Text, CognomeBambini.Text, nascitaBambini.Value, ClasseBambini.Text.ToUpper(), "")))
                 {
                     MessageBox.Show("Errore");
                 }
