@@ -119,7 +119,7 @@
             this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 69;
             this.label1.Text = "GENERE";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            
             // 
             // libro_label
             // 
@@ -179,6 +179,7 @@
             // Libri_pic
             // 
             this.Libri_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Libri_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
             this.Libri_pic.Location = new System.Drawing.Point(130, 18);
             this.Libri_pic.Name = "Libri_pic";
             this.Libri_pic.Size = new System.Drawing.Size(250, 250);
@@ -214,6 +215,7 @@
             this.ElencoLibri.TabIndex = 73;
             this.ElencoLibri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ElencoLibri_CellClick);
             this.ElencoLibri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellContentClick);
+            this.ElencoLibri.SelectionChanged += new System.EventHandler(this.ElencoLibri_SelectionChanged);
             // 
             // titoloDataGridViewTextBoxColumn
             // 
@@ -313,7 +315,7 @@
             this.genereCB_2.Name = "genereCB_2";
             this.genereCB_2.Size = new System.Drawing.Size(250, 31);
             this.genereCB_2.TabIndex = 115;
-            this.genereCB_2.SelectedIndexChanged += new System.EventHandler(this.genereCB_2_SelectedIndexChanged);
+            
             // 
             // label4
             // 
@@ -325,7 +327,7 @@
             this.label4.Size = new System.Drawing.Size(95, 27);
             this.label4.TabIndex = 114;
             this.label4.Text = "Genere:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            
             // 
             // search_button
             // 
@@ -350,8 +352,7 @@
             this.autore_tb.Location = new System.Drawing.Point(18, 433);
             this.autore_tb.Name = "autore_tb";
             this.autore_tb.Size = new System.Drawing.Size(362, 30);
-            this.autore_tb.TabIndex = 112;
-            this.autore_tb.TextChanged += new System.EventHandler(this.autore_tb_TextChanged);
+            this.autore_tb.TabIndex = 112;           
             // 
             // label2
             // 
@@ -363,7 +364,6 @@
             this.label2.Size = new System.Drawing.Size(92, 27);
             this.label2.TabIndex = 111;
             this.label2.Text = "Autore:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // titolo_tb
             // 
@@ -372,7 +372,6 @@
             this.titolo_tb.Name = "titolo_tb";
             this.titolo_tb.Size = new System.Drawing.Size(362, 30);
             this.titolo_tb.TabIndex = 110;
-            this.titolo_tb.TextChanged += new System.EventHandler(this.titolo_tb_TextChanged);
             // 
             // labeltitolo
             // 
@@ -384,7 +383,6 @@
             this.labeltitolo.Size = new System.Drawing.Size(77, 27);
             this.labeltitolo.TabIndex = 109;
             this.labeltitolo.Text = "Titolo:";
-            this.labeltitolo.Click += new System.EventHandler(this.labeltitolo_Click);
             // 
             // label
             // 
@@ -396,7 +394,6 @@
             this.label.Size = new System.Drawing.Size(205, 33);
             this.label.TabIndex = 108;
             this.label.Text = "Cerca un libro:";
-            this.label.Click += new System.EventHandler(this.label_Click);
             // 
             // ModificaLibro
             // 

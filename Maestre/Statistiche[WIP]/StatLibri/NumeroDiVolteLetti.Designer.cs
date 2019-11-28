@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.Indietro_Button = new System.Windows.Forms.Button();
-            this.StampaStatLibro = new System.Windows.Forms.Button();
             this.BambiniLettoIlLibro = new System.Windows.Forms.DataGridView();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,7 +57,7 @@
             this.label1.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(199, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(969, 58);
+            this.label1.Size = new System.Drawing.Size(971, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quante volte il libro scelto è stato letto";
             // 
@@ -71,29 +70,12 @@
             this.Indietro_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Indietro_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Indietro_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Indietro_Button.Location = new System.Drawing.Point(217, 636);
+            this.Indietro_Button.Location = new System.Drawing.Point(489, 636);
             this.Indietro_Button.Name = "Indietro_Button";
             this.Indietro_Button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_Button.TabIndex = 1;
             this.Indietro_Button.UseVisualStyleBackColor = false;
             this.Indietro_Button.Click += new System.EventHandler(this.Indietro_Button_Click);
-            // 
-            // StampaStatLibro
-            // 
-            this.StampaStatLibro.BackColor = System.Drawing.Color.Transparent;
-            this.StampaStatLibro.BackgroundImage = global::Maestre.Properties.Resources.Stampa;
-            this.StampaStatLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.StampaStatLibro.Enabled = false;
-            this.StampaStatLibro.FlatAppearance.BorderSize = 0;
-            this.StampaStatLibro.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.StampaStatLibro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.StampaStatLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.StampaStatLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StampaStatLibro.Location = new System.Drawing.Point(768, 636);
-            this.StampaStatLibro.Name = "StampaStatLibro";
-            this.StampaStatLibro.Size = new System.Drawing.Size(380, 120);
-            this.StampaStatLibro.TabIndex = 2;
-            this.StampaStatLibro.UseVisualStyleBackColor = false;
             // 
             // BambiniLettoIlLibro
             // 
@@ -175,6 +157,7 @@
             // Libro_pic
             // 
             this.Libro_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Libro_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
             this.Libro_pic.Location = new System.Drawing.Point(431, 82);
             this.Libro_pic.Name = "Libro_pic";
             this.Libro_pic.Size = new System.Drawing.Size(200, 200);
@@ -265,7 +248,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BambiniLettoIlLibro);
-            this.Controls.Add(this.StampaStatLibro);
             this.Controls.Add(this.Indietro_Button);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -285,7 +267,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Indietro_Button;
-        private System.Windows.Forms.Button StampaStatLibro;
         private System.Windows.Forms.DataGridView BambiniLettoIlLibro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

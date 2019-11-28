@@ -60,15 +60,16 @@
             // 
             // label2
             // 
+            this.label2.AutoEllipsis = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 121);
+            this.label2.Location = new System.Drawing.Point(39, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(743, 114);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Inserire il proprio nome nel campo nome ed il cognome nel campo cognome. \r\nDopo d" +
-    "i che cliccare con il sinistro sul pulsante che corrisponde alla propria età e c" +
-    "liccare su avanti.";
+            this.label2.Text = "Inserire il proprio nome, cognome e la sezione (attraverso il menù). Dopo di che " +
+    "cliccare con il sinistro sul pulsante che corrisponde alla propria età e cliccar" +
+    "e su avanti. ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AiutoLogin

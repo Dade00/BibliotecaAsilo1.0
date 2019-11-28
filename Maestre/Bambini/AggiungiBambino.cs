@@ -129,6 +129,7 @@ namespace Maestre.Bambini
             {
                 throw;
             }
+            
         }
         private void refresh()
         {
@@ -174,6 +175,11 @@ namespace Maestre.Bambini
                     throw;
                 }
             }
+        }
+
+        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
+        {
+            TabellaBambini.ClearSelection();
         }
     }
 }

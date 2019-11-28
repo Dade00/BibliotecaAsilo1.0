@@ -70,6 +70,7 @@ namespace Maestre.Libri
             Libri_pic.Image = Maestre.Properties.Resources.No_image;
             Libri.DefaultCellStyle.Font = new Font("GROBOLD", 15);
             Libri.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
+            Libri.ClearSelection();
 
             try
             {
@@ -182,6 +183,16 @@ namespace Maestre.Libri
         private void genereCB_2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Libri_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Libri_SelectionChanged(object sender, EventArgs e)
+        {
+            Libri.ClearSelection();
         }
     }
 }

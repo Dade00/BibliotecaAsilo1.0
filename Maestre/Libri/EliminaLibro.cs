@@ -73,6 +73,7 @@ namespace Maestre.Libri
             {
                 throw;
             }
+            ElencoLibri.Rows[0].Cells[0].Selected = false;
         }
 
         private void refresh()
@@ -157,6 +158,16 @@ namespace Maestre.Libri
                     }
                 }
             }
+        }
+
+        private void Libri_pic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ElencoLibri_SizeChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void AiutoAggiungiLibro_Click(object sender, EventArgs e)

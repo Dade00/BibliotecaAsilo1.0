@@ -59,7 +59,7 @@
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(536, 58);
+            this.libro_label.Size = new System.Drawing.Size(537, 58);
             this.libro_label.TabIndex = 39;
             this.libro_label.Text = "Cancella un bambino";
             // 
@@ -183,6 +183,7 @@
             // Bambini_pic
             // 
             this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Bambini_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
             this.Bambini_pic.Location = new System.Drawing.Point(12, 240);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(350, 350);

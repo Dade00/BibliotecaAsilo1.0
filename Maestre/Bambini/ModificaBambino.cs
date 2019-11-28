@@ -11,7 +11,8 @@ namespace Maestre.Bambini
     {
         List<Bambino> listaBambini;
         Bambino bambino = new Bambino(); //Bambino selezionato nel datagridview
-        bool ModFoto = false;
+        bool ModFoto = false, click = false;
+
 
         public ModificaBambino()
         {
@@ -80,7 +81,8 @@ namespace Maestre.Bambini
         private void ModificaBambino_Load(object sender, EventArgs e)
         {
             TabellaBambini.DefaultCellStyle.Font = new Font("GROBOLD", 15);
-            TabellaBambini.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
+            TabellaBambini.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13); 
+
             try
             {
                 Queries.getBambini(ref listaBambini);
@@ -90,6 +92,7 @@ namespace Maestre.Bambini
             {
                 throw;
             }
+            TabellaBambini.Rows[0].Cells[0].Selected = false;
         }
 
         private void refresh()
@@ -126,6 +129,20 @@ namespace Maestre.Bambini
 
         }
 
+        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Bambino bambino = new Bambino();
+                bambino = (Bambino)bsBambini[bsBambini.Position];
+                Bambini_pic.ImageLocation = bambino.Path;
+            }
+            catch
+            {
+                Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+            }
+        }
+
         private void search_button_Click(object sender, EventArgs e)
         {
             if (nome_tb.Text != "" || cognome_tb.Text != "")
@@ -153,5 +170,7 @@ namespace Maestre.Bambini
                 }
             }
         }
+
+        
     }
 }

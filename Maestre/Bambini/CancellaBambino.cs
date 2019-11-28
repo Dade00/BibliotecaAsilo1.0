@@ -55,6 +55,7 @@ namespace Maestre.Bambini
             {
                 throw;
             }
+            TabellaBambini.Rows[0].Cells[0].Selected = false;
         }
 
         private void refresh()

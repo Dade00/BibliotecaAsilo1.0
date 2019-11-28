@@ -87,6 +87,7 @@ namespace Maestre.Libri
             {
                 throw;
             }
+            ElencoLibri.Rows[0].Cells[0].Selected = false;
         }
 
         private void ElencoLibri_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -166,10 +167,6 @@ namespace Maestre.Libri
             }
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Search_button_Click(object sender, EventArgs e)
         {
@@ -203,39 +200,22 @@ namespace Maestre.Libri
             }
         }
 
-        private void genereCB_2_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void ElencoLibri_SelectionChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void autore_tb_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void titolo_tb_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labeltitolo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_Click(object sender, EventArgs e)
-        {
-
+            libro = (Libro)bsLibri[bsLibri.Position];
+            TitotloModLibro.Text = libro.Titolo;
+            AutoreModLibro.Text = libro.Autore;
+            genere_cb.Text = libro.Genere;
+            if (libro.Path != "foto")
+            {
+                ofdFoto.FileName = libro.Path;
+                Libri_pic.ImageLocation = ofdFoto.FileName;
+            }
+            else
+            {
+                ofdFoto.FileName = libro.Path;
+            }
         }
     }
 }

@@ -171,6 +171,7 @@
             this.TabellaBambini.Size = new System.Drawing.Size(988, 350);
             this.TabellaBambini.TabIndex = 105;
             this.TabellaBambini.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellClick);
+            this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -290,6 +291,7 @@
             // Bambini_pic
             // 
             this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Bambini_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
             this.Bambini_pic.Location = new System.Drawing.Point(130, 18);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(250, 250);
