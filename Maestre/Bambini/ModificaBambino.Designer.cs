@@ -158,7 +158,7 @@
             this.classeDataGridViewTextBoxColumn,
             this.dataNascitaDataGridViewTextBoxColumn});
             this.TabellaBambini.DataSource = this.bsBambini;
-            this.TabellaBambini.Location = new System.Drawing.Point(410, 281);
+            this.TabellaBambini.Location = new System.Drawing.Point(390, 281);
             this.TabellaBambini.Margin = new System.Windows.Forms.Padding(2);
             this.TabellaBambini.MultiSelect = false;
             this.TabellaBambini.Name = "TabellaBambini";
@@ -168,7 +168,7 @@
             this.TabellaBambini.RowTemplate.Height = 28;
             this.TabellaBambini.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TabellaBambini.Size = new System.Drawing.Size(988, 350);
+            this.TabellaBambini.Size = new System.Drawing.Size(965, 350);
             this.TabellaBambini.TabIndex = 105;
             this.TabellaBambini.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellClick);
             // 
@@ -232,7 +232,7 @@
             this.libro_label.Location = new System.Drawing.Point(413, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(543, 58);
+            this.libro_label.Size = new System.Drawing.Size(540, 58);
             this.libro_label.TabIndex = 100;
             this.libro_label.Text = "Modifica un bambino";
             // 
@@ -367,7 +367,7 @@
             this.label.Font = new System.Drawing.Font("GROBOLD", 20F);
             this.label.Location = new System.Drawing.Point(12, 330);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(259, 33);
+            this.label.Size = new System.Drawing.Size(260, 33);
             this.label.TabIndex = 132;
             this.label.Text = "Cerca un bambino:";
             // 

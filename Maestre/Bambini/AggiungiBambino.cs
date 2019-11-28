@@ -29,7 +29,8 @@ namespace Maestre.Bambini
             {
                 try
                 {
-                    Bambini_pic.Image = new Bitmap(ofdFoto.FileName);
+                    Bambini_pic.ImageLocation = ofdFoto.FileName;
+                    Bambini_pic.Show();
                 }
                 catch (Exception ex)
                 {
@@ -89,6 +90,12 @@ namespace Maestre.Bambini
                     bambino.Path = @"C:\BibliotecaAsilo\IMMAGINI_BAMBINI\" + bambino.Nome + bambino.Cognome + bambino.ID + ".jpg";
                     Queries.editBambino(bambino);
 
+                    //Refresh della pahina
+                    NomeAddBambini.Text = "";
+                    CognomeAddBambini.Text = "";
+                    nascitaAddBambini.Value = DateTime.Now;
+                    ClasseAddBambini.Text = "";
+
                     MessageBox.Show("Bambino aggiunto!");
 
                 }
@@ -119,6 +126,7 @@ namespace Maestre.Bambini
             }
 
             Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+            Bambini_pic.Dispose();
 
         }
         private void AggiungiBambino_Load(object sender, EventArgs e)

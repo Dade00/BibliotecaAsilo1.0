@@ -43,7 +43,14 @@ namespace Maestre.Bambini
                         File.Delete(bambino.Path);
                         Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
                     }
-                }
+                    NomeBambini.Text = "";
+                    CognomeBambini.Text = "";
+                    nascitaBambini.Value = DateTime.Now;
+                    ClasseBambini.Text = "";
+                    nome_tb.Text = "";
+                    cognome_tb.Text = "";
+                    Bambini_pic.Hide();
+                } 
         }
 
 
@@ -57,6 +64,7 @@ namespace Maestre.Bambini
                 try
                 {
                     Bambini_pic.ImageLocation = ofdFoto.FileName;
+                    Bambini_pic.Show();
                 }
                 catch (Exception ex)
                 {

@@ -207,12 +207,13 @@ namespace Classi
             DataTable dataTable = new DataTable();
             try
             {
-                string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome";  //Case sensitive
+                string sql = "SELECT * FROM Bambini WHERE Nome LIKE @nome and Cognome LIKE @cognome and Classe = @classi";  //Case sensitive
 
                 using (SqlCommand cmd = new SqlCommand(sql, Sql.getInstance()))
                 {
                     cmd.Parameters.AddWithValue("@nome", bambinoRicercato.Nome);
                     cmd.Parameters.AddWithValue("@cognome", bambinoRicercato.Cognome);
+                    cmd.Parameters.AddWithValue("@classi", bambinoRicercato.Classe);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dataTable);

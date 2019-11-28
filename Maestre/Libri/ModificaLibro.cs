@@ -1,13 +1,8 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using Classi;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Maestre.Libri
@@ -58,7 +53,6 @@ namespace Maestre.Libri
 
         private void ModificaLibro_Load(object sender, EventArgs e)
         {
-            Libri_pic.Image = Maestre.Properties.Resources.No_image;
             ElencoLibri.DefaultCellStyle.Font = new Font("GROBOLD", 15);
             ElencoLibri.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
 
@@ -99,10 +93,10 @@ namespace Maestre.Libri
             {
                 ofdFoto.FileName = libro.Path;
                 Libri_pic.ImageLocation = ofdFoto.FileName;
+                Libri_pic.Show();
             }
             else
             {
-                Libri_pic.Image = Maestre.Properties.Resources.No_image;
                 ofdFoto.FileName = libro.Path;
             }
 
@@ -160,10 +154,14 @@ namespace Maestre.Libri
                         Libri_pic.ImageLocation = "";
                         File.Delete(libro.Path);
                         Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
-                        
+                        TitotloModLibro.Text = "";
+                        AutoreModLibro.Text = "";
+                        genere_cb.Text = "";
+                        Libri_pic.ImageLocation = "";
+                        Libri_pic.Hide();
                     }
                 }
-                
+
             }
         }
 

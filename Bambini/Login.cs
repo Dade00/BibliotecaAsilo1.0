@@ -50,7 +50,7 @@ namespace Bambini
                 return;
             }
 
-            Bambino daPassare = Queries.getBambino(new Bambino(nome_textbox.Text, cognome_textbox.Text), anni);
+            Bambino daPassare = Queries.getBambino(new Bambino(nome_textbox.Text, cognome_textbox.Text, DateTime.Now ,classiCB.Text, null), anni);
 
             if(daPassare == null)
             {

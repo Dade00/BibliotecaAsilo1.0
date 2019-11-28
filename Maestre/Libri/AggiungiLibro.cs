@@ -52,6 +52,9 @@ namespace Maestre.Libri
 
             if (flagInserimento)
             {
+                AutoreAddLibro.Text = "";
+                TitoloAddLibro.Text = "";
+                genereCB.Text = "";
                 MessageBox.Show("Inserimento avvenuto!");
             }
             else
@@ -61,7 +64,9 @@ namespace Maestre.Libri
 
             Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
 
-            
+            Libri_pic.ImageLocation = "";
+            Libri_pic.Dispose();
+
 
         }
 
@@ -142,6 +147,7 @@ namespace Maestre.Libri
                 try
                 {
                     listaLibri = Queries.getLibri();
+
                     refresh();
                 }
                 catch (Exception ex)
