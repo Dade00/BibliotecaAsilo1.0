@@ -74,8 +74,10 @@
             this.TabellaBambini.RowHeadersVisible = false;
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
+            this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(1344, 268);
             this.TabellaBambini.TabIndex = 131;
+            this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
             // label1
             // 

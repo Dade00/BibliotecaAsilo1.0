@@ -104,6 +104,7 @@
             this.BambiniLettoIlLibro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.BambiniLettoIlLibro.Size = new System.Drawing.Size(1344, 285);
             this.BambiniLettoIlLibro.TabIndex = 132;
+            this.BambiniLettoIlLibro.SelectionChanged += new System.EventHandler(this.BambiniLettoIlLibro_SelectionChanged);
             // 
             // nomeDataGridViewTextBoxColumn
             // 

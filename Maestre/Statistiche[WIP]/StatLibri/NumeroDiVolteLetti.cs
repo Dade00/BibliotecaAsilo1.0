@@ -58,5 +58,16 @@ namespace Maestre.Statistiche_WIP_
             bsLibri.DataSource = bambinos;
             bsLibri.ResetBindings(true);
         }
+
+        private void BambiniLettoIlLibro_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Libro libro = new Libro();
+                libro = (Libro)bsLibri[bsLibri.Position];
+            }
+            catch
+            { }
+        }
     }
 }

@@ -50,6 +50,7 @@ namespace Maestre.Statistiche_WIP_
             {
                 throw;
             }
+            TabellaBambini.Rows[0].Cells[0].Selected = false;
         }
 
         class ItemEqualityComparer : IEqualityComparer<Libro>
@@ -64,6 +65,18 @@ namespace Maestre.Statistiche_WIP_
             {
                 return obj.ID.GetHashCode();
             }
+        }
+
+        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Libro libro = new Libro();
+                libro = (Libro)bsLibri[bsLibri.Position];
+            }
+            catch
+            { }
+            
         }
     }
 }
