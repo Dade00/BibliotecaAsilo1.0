@@ -158,6 +158,7 @@ namespace Maestre.Libri
                     {
                         ModFoto = false;
                         ofdFoto.Dispose();
+                        Libri_pic.ImageLocation = "";
                         File.Delete(libro.Path);
                         Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
                         

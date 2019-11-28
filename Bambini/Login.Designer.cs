@@ -41,6 +41,8 @@
             this.avanti_button = new System.Windows.Forms.Button();
             this.return_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.classe_label = new System.Windows.Forms.Label();
+            this.classiCB = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +65,7 @@
             this.nome_label.AutoSize = true;
             this.nome_label.BackColor = System.Drawing.Color.Transparent;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(405, 131);
+            this.nome_label.Location = new System.Drawing.Point(405, 84);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(101, 33);
@@ -75,7 +77,7 @@
             this.cognome_label.AutoSize = true;
             this.cognome_label.BackColor = System.Drawing.Color.Transparent;
             this.cognome_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
-            this.cognome_label.Location = new System.Drawing.Point(339, 175);
+            this.cognome_label.Location = new System.Drawing.Point(339, 130);
             this.cognome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cognome_label.Name = "cognome_label";
             this.cognome_label.Size = new System.Drawing.Size(167, 33);
@@ -85,7 +87,7 @@
             // nome_textbox
             // 
             this.nome_textbox.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
-            this.nome_textbox.Location = new System.Drawing.Point(546, 131);
+            this.nome_textbox.Location = new System.Drawing.Point(546, 80);
             this.nome_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.nome_textbox.Name = "nome_textbox";
             this.nome_textbox.Size = new System.Drawing.Size(392, 40);
@@ -94,7 +96,7 @@
             // cognome_textbox
             // 
             this.cognome_textbox.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
-            this.cognome_textbox.Location = new System.Drawing.Point(546, 175);
+            this.cognome_textbox.Location = new System.Drawing.Point(546, 126);
             this.cognome_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.cognome_textbox.Name = "cognome_textbox";
             this.cognome_textbox.Size = new System.Drawing.Size(392, 40);
@@ -231,12 +233,39 @@
             this.panel1.Size = new System.Drawing.Size(1244, 254);
             this.panel1.TabIndex = 14;
             // 
+            // classe_label
+            // 
+            this.classe_label.AutoSize = true;
+            this.classe_label.BackColor = System.Drawing.Color.Transparent;
+            this.classe_label.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
+            this.classe_label.Location = new System.Drawing.Point(379, 176);
+            this.classe_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.classe_label.Name = "classe_label";
+            this.classe_label.Size = new System.Drawing.Size(127, 33);
+            this.classe_label.TabIndex = 15;
+            this.classe_label.Text = "CLASSE";
+            // 
+            // classiCB
+            // 
+            this.classiCB.BackColor = System.Drawing.SystemColors.Window;
+            this.classiCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.classiCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.classiCB.Font = new System.Drawing.Font("GROBOLD", 20.25F, System.Drawing.FontStyle.Bold);
+            this.classiCB.FormattingEnabled = true;
+            this.classiCB.Location = new System.Drawing.Point(546, 172);
+            this.classiCB.MaxDropDownItems = 12;
+            this.classiCB.Name = "classiCB";
+            this.classiCB.Size = new System.Drawing.Size(95, 41);
+            this.classiCB.TabIndex = 16;
+            // 
             // Login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Bambini.Properties.Resources.Sfondo_Login;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.classiCB);
+            this.Controls.Add(this.classe_label);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.help_button);
             this.Controls.Add(this.avanti_button);
@@ -272,6 +301,8 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label classe_label;
+        private System.Windows.Forms.ComboBox classiCB;
     }
 }
 

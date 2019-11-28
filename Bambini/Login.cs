@@ -114,6 +114,11 @@ namespace Bambini
             return_button.Cursor = CursorOFF;
             avanti_button.Cursor = CursorOFF;
             help_button.Cursor = CursorOFF;
+            try
+            {
+                classiCB.DataSource = Queries.Classi();
+            }
+            catch { }
         }
 
         private void RadioButton2_MouseUp(object sender, MouseEventArgs e)

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Classi;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Classi;
 
 namespace Maestre.Bambini
 {
@@ -14,7 +14,7 @@ namespace Maestre.Bambini
         public AggiungiBambino()
         {
             InitializeComponent();
-            if(listaBambini == null)
+            if (listaBambini == null)
                 listaBambini = new List<Bambino>();
         }
 
@@ -74,22 +74,28 @@ namespace Maestre.Bambini
                     MessageBox.Show("Selezionare prima la foto");
                     return;
                 }
-                
+
                 bambino.Nome = NomeAddBambini.Text;
                 bambino.Cognome = CognomeAddBambini.Text;
                 bambino.DataNascita = nascitaAddBambini.Value;
                 bambino.Classe = ClasseAddBambini.Text;
                 bambino.Path = "path";
+                //Controllo se esiste il bambino 
+                if (!Queries.bambinoExist(bambino))
+                {
+                    Queries.addBambino(bambino);
 
-                Queries.addBambino(bambino);
+                    bambino.ID = Queries.getMaxIDfromBambini();
+                    bambino.Path = @"C:\BibliotecaAsilo\IMMAGINI_BAMBINI\" + bambino.Nome + bambino.Cognome + bambino.ID + ".jpg";
+                    Queries.editBambino(bambino);
 
-                bambino.ID = Queries.getMaxIDfromBambini();
-                bambino.Path = @"C:\BibliotecaAsilo\IMMAGINI_BAMBINI\" + bambino.Nome + bambino.Cognome + bambino.ID + ".jpg";
-                Queries.editBambino(bambino);
+                    MessageBox.Show("Bambino aggiunto!");
 
-                MessageBox.Show("Bambino aggiunto!");
+                }
+                else
+                    MessageBox.Show("Bambino già presente!");
 
-                
+
             }
             catch (Exception ex)
             {
@@ -114,10 +120,10 @@ namespace Maestre.Bambini
 
             Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
 
-        }    
+        }
         private void AggiungiBambino_Load(object sender, EventArgs e)
         {
-            Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+
             TabellaBambini.DefaultCellStyle.Font = new Font("GROBOLD", 15);
             TabellaBambini.ColumnHeadersDefaultCellStyle.Font = new Font("GROBOLD", 13);
             try
