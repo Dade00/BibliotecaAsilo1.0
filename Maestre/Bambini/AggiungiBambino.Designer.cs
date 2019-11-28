@@ -181,7 +181,7 @@ namespace Maestre.Bambini
             this.libro_label.Location = new System.Drawing.Point(412, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(543, 58);
+            this.libro_label.Size = new System.Drawing.Size(546, 58);
             this.libro_label.TabIndex = 116;
             this.libro_label.Text = "Aggiungi un bambino";
             this.libro_label.Click += new System.EventHandler(this.libro_label_Click);
@@ -274,6 +274,7 @@ namespace Maestre.Bambini
             // Bambini_pic
             // 
             this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Bambini_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
             this.Bambini_pic.InitialImage = null;
             this.Bambini_pic.Location = new System.Drawing.Point(129, 18);
             this.Bambini_pic.Name = "Bambini_pic";
@@ -378,7 +379,7 @@ namespace Maestre.Bambini
             this.label.Font = new System.Drawing.Font("GROBOLD", 20F);
             this.label.Location = new System.Drawing.Point(12, 308);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(260, 33);
+            this.label.Size = new System.Drawing.Size(259, 33);
             this.label.TabIndex = 130;
             this.label.Text = "Cerca un bambino:";
             // 

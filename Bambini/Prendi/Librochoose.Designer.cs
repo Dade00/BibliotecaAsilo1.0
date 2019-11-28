@@ -72,7 +72,6 @@
             this.ElencoLibri.TabIndex = 1;
             this.ElencoLibri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ElencoLibri_CellContentClick);
             this.ElencoLibri.CurrentCellChanged += new System.EventHandler(this.ElencoLibri_CurrentCellChanged);
-            //this.ElencoLibri.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ElencoLibri_KeyDown);
             // 
             // titoloDataGridViewTextBoxColumn
             // 
@@ -97,7 +96,7 @@
             // immagineLibro
             // 
             this.immagineLibro.BackColor = System.Drawing.Color.Transparent;
-            this.immagineLibro.Image = global::Bambini.Properties.Resources.No_image;
+            this.immagineLibro.ErrorImage = global::Bambini.Properties.Resources.No_image;
             this.immagineLibro.Location = new System.Drawing.Point(10, 114);
             this.immagineLibro.Margin = new System.Windows.Forms.Padding(2);
             this.immagineLibro.Name = "immagineLibro";
@@ -105,7 +104,7 @@
             this.immagineLibro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.immagineLibro.TabIndex = 2;
             this.immagineLibro.TabStop = false;
-            //this.immagineLibro.Click += new System.EventHandler(this.immagineLibro_Click);
+            this.immagineLibro.Click += new System.EventHandler(this.immagineLibro_Click);
             // 
             // up_button
             // 

@@ -32,6 +32,7 @@ namespace Maestre.Statistiche_WIP_
             {
                 throw;
             }
+            TabellaBambini.Rows[0].Cells[0].Selected = false;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -81,6 +82,17 @@ namespace Maestre.Statistiche_WIP_
             Statistiche_WIP_.LibriLetti libriLetti = new Statistiche_WIP_.LibriLetti((Bambino)bsLibri[bsLibri.Position]);
             libriLetti.ShowDialog();
             Show();
+        }
+
+        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Libro libro = new Libro();
+                libro = (Libro)bsLibri[bsLibri.Position];
+            }
+            catch
+            { }
         }
     }
 }

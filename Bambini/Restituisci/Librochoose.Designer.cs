@@ -134,6 +134,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Bambini.Properties.Resources.No_image;
+            this.pictureBox1.ErrorImage = global::Bambini.Properties.Resources.No_image;
             this.pictureBox1.Location = new System.Drawing.Point(11, 102);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";

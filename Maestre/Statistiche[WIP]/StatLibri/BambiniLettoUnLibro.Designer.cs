@@ -54,7 +54,7 @@
             this.label1.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(395, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(577, 58);
+            this.label1.Size = new System.Drawing.Size(580, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cerca il titolo del libro";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -130,9 +130,11 @@
             this.LibroTabella.Name = "LibroTabella";
             this.LibroTabella.ReadOnly = true;
             this.LibroTabella.RowHeadersVisible = false;
+            this.LibroTabella.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.LibroTabella.Size = new System.Drawing.Size(1342, 420);
             this.LibroTabella.TabIndex = 5;
             this.LibroTabella.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LibroTabella_CellDoubleClick);
+            this.LibroTabella.SelectionChanged += new System.EventHandler(this.LibroTabella_SelectionChanged);
             // 
             // titoloDataGridViewTextBoxColumn
             // 

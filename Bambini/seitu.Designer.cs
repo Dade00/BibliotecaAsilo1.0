@@ -139,6 +139,7 @@
             // 
             this.pbFoto.BackColor = System.Drawing.Color.Transparent;
             this.pbFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbFoto.ErrorImage = global::Bambini.Properties.Resources.No_image;
             this.pbFoto.InitialImage = global::Bambini.Properties.Resources.No_image;
             this.pbFoto.Location = new System.Drawing.Point(38, 123);
             this.pbFoto.Margin = new System.Windows.Forms.Padding(2);

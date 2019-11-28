@@ -76,12 +76,24 @@ namespace Maestre.Statistiche_WIP_
             {
                 throw;
             }
+            LibroTabella.Rows[0].Cells[0].Selected = false;
         }
 
         private void refresh()
         {
             bsLibri.DataSource = libros;
             bsLibri.ResetBindings(true);
+        }
+
+        private void LibroTabella_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Libro libro = new Libro();
+                libro = (Libro)bsLibri[bsLibri.Position];
+            }
+            catch
+            { }
         }
     }
 }

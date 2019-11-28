@@ -135,5 +135,10 @@ namespace Bambini.Prendi
         {
 
         }
+
+        private void immagineLibro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

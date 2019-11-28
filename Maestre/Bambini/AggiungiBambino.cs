@@ -143,7 +143,7 @@ namespace Maestre.Bambini
             {
                 throw;
             }
-            TabellaBambini.ClearSelection();
+            
         }
         private void refresh()
         {

@@ -95,7 +95,7 @@
             this.libro_label.Location = new System.Drawing.Point(491, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(444, 58);
+            this.libro_label.Size = new System.Drawing.Size(447, 58);
             this.libro_label.TabIndex = 84;
             this.libro_label.Text = "Aggiungi un libro";
             // 
@@ -168,6 +168,8 @@
             this.Libri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Libri.Size = new System.Drawing.Size(945, 350);
             this.Libri.TabIndex = 97;
+            this.Libri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Libri_CellContentClick);
+            this.Libri.SelectionChanged += new System.EventHandler(this.Libri_SelectionChanged);
             // 
             // titoloDataGridViewTextBoxColumn
             // 
@@ -313,6 +315,7 @@
             // Libri_pic
             // 
             this.Libri_pic.BackColor = System.Drawing.Color.Transparent;
+            this.Libri_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
             this.Libri_pic.Location = new System.Drawing.Point(130, 18);
             this.Libri_pic.Name = "Libri_pic";
             this.Libri_pic.Size = new System.Drawing.Size(250, 250);
@@ -465,10 +468,6 @@
         private System.Windows.Forms.PictureBox Libri_pic;
         private System.Windows.Forms.DataGridView Libri;
         private System.Windows.Forms.BindingSource bsLibri;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genereDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn prestitoDataGridViewCheckBoxColumn;
         private System.Windows.Forms.OpenFileDialog ofdFoto;
         private System.Windows.Forms.ComboBox genereCB;
         private System.Windows.Forms.Label label;
@@ -481,5 +480,9 @@
         private System.Windows.Forms.Timer update;
         private System.Windows.Forms.ComboBox genereCB_2;
         private System.Windows.Forms.Button reset_button;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titoloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genereDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn prestitoDataGridViewCheckBoxColumn;
     }
 }

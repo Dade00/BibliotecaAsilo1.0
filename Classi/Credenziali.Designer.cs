@@ -61,16 +61,6 @@ namespace Classi {
         }
         
         /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Icon simile a (Icona).
-        /// </summary>
-        //internal static System.Drawing.Icon ICON {
-         //   get {
-      //          object obj = ResourceManager.GetObject("ICON", resourceCulture);
-     //          return ((System.Drawing.Icon)(obj));
-     //      }
-     //  }
-        
-        /// <summary>
         ///   Cerca una stringa localizzata simile a MATTEOBUSSO428C\SQLEXPRESS.
         /// </summary>
         internal static string sqlServerAddress {

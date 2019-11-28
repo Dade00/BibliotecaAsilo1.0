@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.TabellaBambini = new System.Windows.Forms.DataGridView();
-            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,14 +37,17 @@
             this.ClasseStudScelto = new System.Windows.Forms.Label();
             this.CogomeStudScelto = new System.Windows.Forms.Label();
             this.NomeStudScelto = new System.Windows.Forms.Label();
-            this.StampaStatStudente = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.NLibriLabel = new System.Windows.Forms.Label();
             this.Indietro_button = new System.Windows.Forms.Button();
             this.Bambini_pic = new System.Windows.Forms.PictureBox();
+            this.titoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsLibri = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).BeginInit();
             this.SuspendLayout();
             // 
             // TabellaBambini
@@ -75,37 +74,10 @@
             this.TabellaBambini.RowHeadersVisible = false;
             this.TabellaBambini.RowHeadersWidth = 62;
             this.TabellaBambini.RowTemplate.Height = 28;
+            this.TabellaBambini.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TabellaBambini.Size = new System.Drawing.Size(1344, 268);
             this.TabellaBambini.TabIndex = 131;
-            // 
-            // titoloDataGridViewTextBoxColumn
-            // 
-            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
-            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
-            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // autoreDataGridViewTextBoxColumn
-            // 
-            this.autoreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
-            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
-            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
-            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
-            this.autoreDataGridViewTextBoxColumn.Width = 63;
-            // 
-            // genereDataGridViewTextBoxColumn
-            // 
-            this.genereDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
-            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
-            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
-            this.genereDataGridViewTextBoxColumn.ReadOnly = true;
-            this.genereDataGridViewTextBoxColumn.Width = 67;
-            // 
-            // bsLibri
-            // 
-            this.bsLibri.DataSource = typeof(Classi.Libro);
+            this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
             // label1
             // 
@@ -185,22 +157,6 @@
             this.NomeStudScelto.TabIndex = 140;
             this.NomeStudScelto.Text = "label7";
             // 
-            // StampaStatStudente
-            // 
-            this.StampaStatStudente.BackColor = System.Drawing.Color.Transparent;
-            this.StampaStatStudente.BackgroundImage = global::Maestre.Properties.Resources.Stampa;
-            this.StampaStatStudente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.StampaStatStudente.FlatAppearance.BorderSize = 0;
-            this.StampaStatStudente.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.StampaStatStudente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.StampaStatStudente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.StampaStatStudente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StampaStatStudente.Location = new System.Drawing.Point(762, 636);
-            this.StampaStatStudente.Name = "StampaStatStudente";
-            this.StampaStatStudente.Size = new System.Drawing.Size(380, 120);
-            this.StampaStatStudente.TabIndex = 142;
-            this.StampaStatStudente.UseVisualStyleBackColor = false;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -208,7 +164,7 @@
             this.label8.Font = new System.Drawing.Font("GROBOLD", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(300, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(782, 58);
+            this.label8.Size = new System.Drawing.Size(785, 58);
             this.label8.TabIndex = 143;
             this.label8.Text = "Quanti libri ha letto lo studente";
             // 
@@ -233,7 +189,7 @@
             this.Indietro_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Indietro_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Indietro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Indietro_button.Location = new System.Drawing.Point(222, 636);
+            this.Indietro_button.Location = new System.Drawing.Point(445, 636);
             this.Indietro_button.Name = "Indietro_button";
             this.Indietro_button.Size = new System.Drawing.Size(380, 120);
             this.Indietro_button.TabIndex = 141;
@@ -245,12 +201,42 @@
             this.Bambini_pic.BackColor = System.Drawing.Color.Transparent;
             this.Bambini_pic.BackgroundImage = global::Maestre.Properties.Resources.No_image;
             this.Bambini_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Bambini_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
             this.Bambini_pic.Location = new System.Drawing.Point(310, 79);
             this.Bambini_pic.Name = "Bambini_pic";
             this.Bambini_pic.Size = new System.Drawing.Size(200, 200);
             this.Bambini_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Bambini_pic.TabIndex = 132;
             this.Bambini_pic.TabStop = false;
+            // 
+            // titoloDataGridViewTextBoxColumn
+            // 
+            this.titoloDataGridViewTextBoxColumn.DataPropertyName = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.HeaderText = "Titolo";
+            this.titoloDataGridViewTextBoxColumn.Name = "titoloDataGridViewTextBoxColumn";
+            this.titoloDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // autoreDataGridViewTextBoxColumn
+            // 
+            this.autoreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.autoreDataGridViewTextBoxColumn.DataPropertyName = "Autore";
+            this.autoreDataGridViewTextBoxColumn.HeaderText = "Autore";
+            this.autoreDataGridViewTextBoxColumn.Name = "autoreDataGridViewTextBoxColumn";
+            this.autoreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.autoreDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // genereDataGridViewTextBoxColumn
+            // 
+            this.genereDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.genereDataGridViewTextBoxColumn.DataPropertyName = "Genere";
+            this.genereDataGridViewTextBoxColumn.HeaderText = "Genere";
+            this.genereDataGridViewTextBoxColumn.Name = "genereDataGridViewTextBoxColumn";
+            this.genereDataGridViewTextBoxColumn.ReadOnly = true;
+            this.genereDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // bsLibri
+            // 
+            this.bsLibri.DataSource = typeof(Classi.Libro);
             // 
             // LibriLetti
             // 
@@ -260,7 +246,6 @@
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.NLibriLabel);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.StampaStatStudente);
             this.Controls.Add(this.Indietro_button);
             this.Controls.Add(this.NomeStudScelto);
             this.Controls.Add(this.CogomeStudScelto);
@@ -277,8 +262,8 @@
             this.Text = "LibriLetti";
             this.Load += new System.EventHandler(this.LibriLetti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabellaBambini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bambini_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLibri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,7 +281,6 @@
         private System.Windows.Forms.Label CogomeStudScelto;
         private System.Windows.Forms.Label NomeStudScelto;
         private System.Windows.Forms.Button Indietro_button;
-        private System.Windows.Forms.Button StampaStatStudente;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.BindingSource bsLibri;
         private System.Windows.Forms.Label NLibriLabel;
