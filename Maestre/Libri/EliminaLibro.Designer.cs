@@ -61,7 +61,7 @@
             this.libro_label.Location = new System.Drawing.Point(481, 11);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(407, 58);
+            this.libro_label.Size = new System.Drawing.Size(404, 58);
             this.libro_label.TabIndex = 68;
             this.libro_label.Text = "Elimina un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
@@ -92,6 +92,7 @@
             this.ElencoLibri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ElencoLibri.Size = new System.Drawing.Size(959, 350);
             this.ElencoLibri.TabIndex = 69;
+            this.ElencoLibri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ElencoLibri_CellClick);
             this.ElencoLibri.SelectionChanged += new System.EventHandler(this.ElencoLibri_SelectionChanged);
             // 
             // titoloDataGridViewTextBoxColumn
@@ -240,6 +241,7 @@
             // 
             this.Libri_pic.BackColor = System.Drawing.Color.Transparent;
             this.Libri_pic.ErrorImage = global::Maestre.Properties.Resources.No_image;
+            this.Libri_pic.InitialImage = null;
             this.Libri_pic.Location = new System.Drawing.Point(41, 240);
             this.Libri_pic.Name = "Libri_pic";
             this.Libri_pic.Size = new System.Drawing.Size(350, 350);

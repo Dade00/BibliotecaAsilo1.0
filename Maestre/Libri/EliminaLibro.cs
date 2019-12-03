@@ -119,15 +119,18 @@ namespace Maestre.Libri
 
         private void ElencoLibri_SelectionChanged(object sender, EventArgs e)
         {
-            try
+            if (ok)
             {
-                Libro libri = new Libro();
-                libri = (Libro)bsLibri[bsLibri.Position];
-                Libri_pic.ImageLocation = libri.Path;
+                try
+                {
+                    Libro libri = new Libro();
+                    libri = (Libro)bsLibri[bsLibri.Position];
+                    Libri_pic.ImageLocation = libri.Path;
 
+                }
+                catch
+                { }
             }
-            catch
-            { }
         }
 
         private void UpdateDATA_Tick(object sender, EventArgs e)
@@ -170,6 +173,20 @@ namespace Maestre.Libri
         private void ElencoLibri_SizeChanged(object sender, EventArgs e)
         {
 
+        }
+
+        bool ok = false;
+        private void ElencoLibri_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                Libro libri = new Libro();
+                libri = (Libro)bsLibri[bsLibri.Position];
+                Libri_pic.ImageLocation = libri.Path;
+                ok = true;
+            }
+            catch
+            { }
         }
 
         private void AiutoAggiungiLibro_Click(object sender, EventArgs e)

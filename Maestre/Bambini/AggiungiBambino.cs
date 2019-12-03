@@ -124,9 +124,16 @@ namespace Maestre.Bambini
                     throw;
                 }
             }
+            try
+            {
+                Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
 
-            Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
-            Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+            }
+            catch
+            {
+                Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+                Bambini_pic.Image.Save(bambino.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
 
         }
         private void AggiungiBambino_Load(object sender, EventArgs e)
@@ -143,7 +150,7 @@ namespace Maestre.Bambini
             {
                 throw;
             }
-            
+
         }
         private void refresh()
         {
