@@ -171,7 +171,6 @@
             this.TabellaBambini.Size = new System.Drawing.Size(965, 350);
             this.TabellaBambini.TabIndex = 105;
             this.TabellaBambini.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellClick);
-            this.TabellaBambini.SelectionChanged += new System.EventHandler(this.TabellaBambini_SelectionChanged);
             // 
             // nomeDataGridViewTextBoxColumn
             // 

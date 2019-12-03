@@ -35,8 +35,6 @@ namespace Maestre.Bambini
                 }
                 else
                 {
-                    Queries.getBambini(ref listaBambini);
-                    refresh();
                     if (ModFoto)
                     {
                         ModFoto = false;
@@ -51,6 +49,9 @@ namespace Maestre.Bambini
                     nome_tb.Text = "";
                     cognome_tb.Text = "";
                     Bambini_pic.Image = Maestre.Properties.Resources.No_image;
+                    TabellaBambini.Rows[bsBambini.Position].Cells[0].Selected = false;
+                    Queries.getBambini(ref listaBambini);
+                    refresh();
                 } 
         }
 
@@ -109,20 +110,10 @@ namespace Maestre.Bambini
 
         private void TabellaBambini_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (SelectionOK == false)
-            {
                 Seleziona();
-            }
-            SelectionOK = true;
         }
 
-        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
-        {
-            if (SelectionOK)
-            {
-                Seleziona();
-            }
-        }
+        
 
         private void Seleziona()
         {
@@ -157,12 +148,12 @@ namespace Maestre.Bambini
             {
                 try
                 {
+                    TabellaBambini.Rows[1].Cells[0].Selected = false;
                     listaBambini = Queries.getBambino(nome_tb.Text, cognome_tb.Text);
                     refresh();
                 }
                 catch (Exception ex)
                 {
-                    throw;
                 }
             }
             else
@@ -174,7 +165,6 @@ namespace Maestre.Bambini
                 }
                 catch (Exception ex)
                 {
-                    throw;
                 }
             }
         }
