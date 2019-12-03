@@ -97,7 +97,7 @@ namespace Maestre.Bambini
                     ClasseAddBambini.Text = "";
 
                     MessageBox.Show("Bambino aggiunto!");
-
+                    //Bambini_pic.Image = Properties.Resources.No_image;
                 }
                 else
                     MessageBox.Show("Bambino già presente!");
