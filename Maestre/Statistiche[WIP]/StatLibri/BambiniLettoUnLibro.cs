@@ -48,6 +48,8 @@ namespace Maestre.Statistiche_WIP_
             {
                 libros = Queries.getLibri();
                 refresh();
+                titolotb.Text = "";
+                autore_tb.Text = "";
             }
             catch
             {
@@ -71,6 +73,7 @@ namespace Maestre.Statistiche_WIP_
             {
                 libros = Queries.getLibri();
                 refresh();
+                generetb.DataSource = Queries.getGenere();
             }
             catch
             {

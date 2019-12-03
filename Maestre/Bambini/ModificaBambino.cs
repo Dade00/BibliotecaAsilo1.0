@@ -12,7 +12,7 @@ namespace Maestre.Bambini
         List<Bambino> listaBambini;
         Bambino bambino = new Bambino(); //Bambino selezionato nel datagridview
         bool ModFoto = false, click = false;
-
+        bool SelectionOK = false;
 
         public ModificaBambino()
         {
@@ -109,12 +109,29 @@ namespace Maestre.Bambini
 
         private void TabellaBambini_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (SelectionOK == false)
+            {
+                Seleziona();
+            }
+            SelectionOK = true;
+        }
+
+        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
+        {
+            if (SelectionOK)
+            {
+                Seleziona();
+            }
+        }
+
+        private void Seleziona()
+        {
             bambino = (Bambino)bsBambini[bsBambini.Position];
             NomeBambini.Text = bambino.Nome;
             CognomeBambini.Text = bambino.Cognome;
             ClasseBambini.Text = bambino.Classe;
             nascitaBambini.Value = bambino.DataNascita;
-            if(bambino.Path != "")
+            if (bambino.Path != "")
             {
                 try
                 {
@@ -131,21 +148,6 @@ namespace Maestre.Bambini
             {
                 Bambini_pic.Image = Maestre.Properties.Resources.No_image;
                 ofdFoto.FileName = bambino.Path;
-            }
-
-        }
-
-        private void TabellaBambini_SelectionChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                Bambino bambino = new Bambino();
-                bambino = (Bambino)bsBambini[bsBambini.Position];
-                Bambini_pic.ImageLocation = bambino.Path;
-            }
-            catch
-            {
-                Bambini_pic.Image = Maestre.Properties.Resources.No_image;
             }
         }
 

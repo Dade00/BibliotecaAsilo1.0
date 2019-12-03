@@ -12,7 +12,7 @@ namespace Maestre.Libri
         Libro libro = new Libro();
         List<Libro> listaLibri = new List<Libro>();
         bool ModFoto = false;
-        bool GUIUpdate = false;
+        bool SelectionOK = false;
         public ModificaLibro()
         {
             InitializeComponent();
@@ -35,11 +35,6 @@ namespace Maestre.Libri
         }
 
         private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TabellaBambini_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -86,21 +81,11 @@ namespace Maestre.Libri
 
         private void ElencoLibri_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            libro = (Libro)bsLibri[bsLibri.Position];
-            TitotloModLibro.Text = libro.Titolo;
-            AutoreModLibro.Text = libro.Autore;
-            genere_cb.Text = libro.Genere;
-            if (libro.Path != "foto")
+            if(SelectionOK == false)
             {
-                ofdFoto.FileName = libro.Path;
-                Libri_pic.ImageLocation = ofdFoto.FileName;
-                Libri_pic.Show();
+                Seleziona();
             }
-            else
-            {
-                ofdFoto.FileName = libro.Path;
-            }
-
+            SelectionOK = true;
         }
 
         private void CercaFotoLibro_Click(object sender, EventArgs e)
@@ -201,6 +186,14 @@ namespace Maestre.Libri
 
 
         private void ElencoLibri_SelectionChanged(object sender, EventArgs e)
+        {
+            if (SelectionOK)
+            {
+                Seleziona();
+            }
+        }
+
+        private void Seleziona()
         {
             libro = (Libro)bsLibri[bsLibri.Position];
             TitotloModLibro.Text = libro.Titolo;

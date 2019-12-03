@@ -109,6 +109,7 @@
             this.down_button.Size = new System.Drawing.Size(190, 210);
             this.down_button.TabIndex = 11;
             this.down_button.UseVisualStyleBackColor = false;
+            this.down_button.Click += new System.EventHandler(this.Down_button_Click);
             this.down_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Down_button_MouseDown);
             this.down_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Down_button_MouseUp);
             // 
@@ -127,13 +128,13 @@
             this.up_button.Size = new System.Drawing.Size(190, 210);
             this.up_button.TabIndex = 10;
             this.up_button.UseVisualStyleBackColor = false;
+            this.up_button.Click += new System.EventHandler(this.Up_button_Click);
             this.up_button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Up_button_MouseDown);
             this.up_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Up_button_MouseUp);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Bambini.Properties.Resources.No_image;
             this.pictureBox1.ErrorImage = global::Bambini.Properties.Resources.No_image;
             this.pictureBox1.Location = new System.Drawing.Point(11, 102);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);

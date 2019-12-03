@@ -119,7 +119,6 @@
             this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 69;
             this.label1.Text = "GENERE";
-            
             // 
             // libro_label
             // 
@@ -129,7 +128,7 @@
             this.libro_label.Location = new System.Drawing.Point(504, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(376, 49);
+            this.libro_label.Size = new System.Drawing.Size(375, 49);
             this.libro_label.TabIndex = 68;
             this.libro_label.Text = "Modifica un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
@@ -214,7 +213,6 @@
             this.ElencoLibri.Size = new System.Drawing.Size(945, 350);
             this.ElencoLibri.TabIndex = 73;
             this.ElencoLibri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ElencoLibri_CellClick);
-            this.ElencoLibri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabellaBambini_CellContentClick);
             this.ElencoLibri.SelectionChanged += new System.EventHandler(this.ElencoLibri_SelectionChanged);
             // 
             // titoloDataGridViewTextBoxColumn
@@ -315,7 +313,6 @@
             this.genereCB_2.Name = "genereCB_2";
             this.genereCB_2.Size = new System.Drawing.Size(250, 31);
             this.genereCB_2.TabIndex = 115;
-            
             // 
             // label4
             // 
@@ -327,7 +324,6 @@
             this.label4.Size = new System.Drawing.Size(95, 27);
             this.label4.TabIndex = 114;
             this.label4.Text = "Genere:";
-            
             // 
             // search_button
             // 
@@ -352,7 +348,7 @@
             this.autore_tb.Location = new System.Drawing.Point(18, 433);
             this.autore_tb.Name = "autore_tb";
             this.autore_tb.Size = new System.Drawing.Size(362, 30);
-            this.autore_tb.TabIndex = 112;           
+            this.autore_tb.TabIndex = 112;
             // 
             // label2
             // 

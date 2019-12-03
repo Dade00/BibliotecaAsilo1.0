@@ -50,7 +50,12 @@ namespace Maestre.Statistiche_WIP_
             {
                 throw;
             }
+            try
+            {
             TabellaBambini.Rows[0].Cells[0].Selected = false;
+
+            }
+            catch { }
         }
 
         class ItemEqualityComparer : IEqualityComparer<Libro>
