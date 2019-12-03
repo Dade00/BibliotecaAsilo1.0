@@ -169,7 +169,7 @@
             this.ElencoLibri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ElencoLibri.Size = new System.Drawing.Size(792, 424);
             this.ElencoLibri.TabIndex = 8;
-            this.ElencoLibri.SelectionChanged += new System.EventHandler(this.ElencoLibri_SelectionChanged);
+            this.ElencoLibri.CurrentCellChanged += new System.EventHandler(this.ElencoLibri_CurrentCellChanged);
             // 
             // titoloDataGridViewTextBoxColumn
             // 
