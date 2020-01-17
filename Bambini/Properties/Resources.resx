@@ -121,9 +121,6 @@
   <data name="Aiuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aiuto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Animali_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Animali_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Avanti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Avanti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -164,26 +161,14 @@
   <data name="Prendi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\prendi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Racconti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Racconti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Restituisce" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\restituisce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Scienze_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scienze_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sentimenti_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sentimenti_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sfondo_Aiuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sfondo Aiuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sfondo_che_libro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sfondo che libro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sfondo_Genere" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sfondo Genere.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sfondo_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sfondo_Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,9 +178,6 @@
   </data>
   <data name="Sfondo_Sei_Tu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sfondo Sei Tu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Storie_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Storie_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Su" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Su.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,5 +202,23 @@
   </data>
   <data name="ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scienze___Natura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scienze &amp; Natura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sfondo_Genere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sfondo Genere.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sfondo_Genere1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sfondo Genere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Storie_Classiche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Storie Classiche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Storie_per_imparare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Storie per imparare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Storie___Favole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Storie &amp; Favole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

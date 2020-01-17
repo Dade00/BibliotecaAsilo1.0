@@ -28,8 +28,6 @@ namespace Bambini.Prendi
             sentimenti_button.Cursor = CursorOFF;
             storie_button.Cursor = CursorOFF;
             scienze_button.Cursor = CursorOFF;
-            animali_button.Cursor = CursorOFF;
-            cibo_button.Cursor = CursorOFF;
             racconti_button.Cursor = CursorOFF;
             indietro_button.Cursor = CursorOFF;
             aiuto_button.Cursor = CursorOFF;
@@ -43,7 +41,7 @@ namespace Bambini.Prendi
         private void Sentimenti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Sentimenti", bambinoLoggato);
+            Librochoose librochoose = new Librochoose("Scienza e natura", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
@@ -51,39 +49,16 @@ namespace Bambini.Prendi
         private void Scienze_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Scienze", bambinoLoggato);
+            Librochoose librochoose = new Librochoose("Storia_Per_Imparare", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
 
-        private void Animali_button_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Librochoose librochoose = new Librochoose("Animali", bambinoLoggato);
-            librochoose.ShowDialog();
-            Show();
-        }
 
         private void Racconti_button_Click(object sender, EventArgs e)
         {
             Hide();
-            Librochoose librochoose = new Librochoose("Racconti", bambinoLoggato);
-            librochoose.ShowDialog();
-            Show();
-        }
-
-        private void Storie_button_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Librochoose librochoose = new Librochoose("Storie", bambinoLoggato);
-            librochoose.ShowDialog();
-            Show();
-        }
-
-        private void Cibo_button_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Librochoose librochoose = new Librochoose("Cibo", bambinoLoggato);
+            Librochoose librochoose = new Librochoose("Storie_Classiche", bambinoLoggato);
             librochoose.ShowDialog();
             Show();
         }
@@ -159,25 +134,6 @@ namespace Bambini.Prendi
             scienze_button.Cursor = CursorON;
         }
 
-        private void Animali_button_MouseUp(object sender, MouseEventArgs e)
-        {
-            animali_button.Cursor = CursorOFF;
-        }
-
-        private void Animali_button_MouseDown(object sender, MouseEventArgs e)
-        {
-            animali_button.Cursor = CursorON;
-        }
-
-        private void Cibo_button_MouseUp(object sender, MouseEventArgs e)
-        {
-            cibo_button.Cursor = CursorOFF;
-        }
-
-        private void Cibo_button_MouseDown(object sender, MouseEventArgs e)
-        {
-            cibo_button.Cursor = CursorON;
-        }
 
         private void Indietro_button_MouseUp(object sender, MouseEventArgs e)
         {
@@ -187,6 +143,14 @@ namespace Bambini.Prendi
         private void Indietro_button_MouseDown(object sender, MouseEventArgs e)
         {
             indietro_button.Cursor = CursorON;
+        }
+
+        private void Storie_button_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Librochoose librochoose = new Librochoose("Storie e favole", bambinoLoggato);
+            librochoose.ShowDialog();
+            Show();
         }
     }
 }

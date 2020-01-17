@@ -234,6 +234,11 @@
     <None Include="Resources\Ok.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Storie Classiche.png" />
+    <None Include="Resources\Storie &amp; Favole.png" />
+    <None Include="Resources\Scienze &amp; Natura.png" />
+    <None Include="Resources\Storie per imparare.png" />
+    <None Include="Resources\Sfondo Genere.png" />
     <None Include="Resources\Sfondo Crediti %281%29.jpg" />
     <None Include="Resources\icon3.ico" />
     <None Include="Resources\Sfondo Aiuto.jpg" />

@@ -133,16 +133,6 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Animali_button {
-            get {
-                object obj = ResourceManager.GetObject("Animali_button", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap Avanti_button {
             get {
                 object obj = ResourceManager.GetObject("Avanti_button", resourceCulture);
@@ -280,16 +270,6 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Racconti_button {
-            get {
-                object obj = ResourceManager.GetObject("Racconti_button", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap Restituisce {
             get {
                 object obj = ResourceManager.GetObject("Restituisce", resourceCulture);
@@ -300,19 +280,9 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Scienze_button {
+        public static System.Drawing.Bitmap Scienze___Natura {
             get {
-                object obj = ResourceManager.GetObject("Scienze_button", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Sentimenti_button {
-            get {
-                object obj = ResourceManager.GetObject("Sentimenti_button", resourceCulture);
+                object obj = ResourceManager.GetObject("Scienze___Natura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -350,6 +320,16 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Sfondo_Genere1 {
+            get {
+                object obj = ResourceManager.GetObject("Sfondo_Genere1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Sfondo_Login {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Login", resourceCulture);
@@ -380,9 +360,29 @@ namespace Bambini.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Storie_button {
+        public static System.Drawing.Bitmap Storie___Favole {
             get {
-                object obj = ResourceManager.GetObject("Storie_button", resourceCulture);
+                object obj = ResourceManager.GetObject("Storie___Favole", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Storie_Classiche {
+            get {
+                object obj = ResourceManager.GetObject("Storie_Classiche", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Storie_per_imparare {
+            get {
+                object obj = ResourceManager.GetObject("Storie_per_imparare", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
