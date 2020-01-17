@@ -127,17 +127,17 @@
             // titolo_tb
             // 
             this.titolo_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.titolo_tb.Location = new System.Drawing.Point(565, 92);
+            this.titolo_tb.Location = new System.Drawing.Point(552, 92);
             this.titolo_tb.Margin = new System.Windows.Forms.Padding(2);
             this.titolo_tb.Name = "titolo_tb";
-            this.titolo_tb.Size = new System.Drawing.Size(312, 30);
+            this.titolo_tb.Size = new System.Drawing.Size(350, 30);
             this.titolo_tb.TabIndex = 71;
             // 
             // nome_label
             // 
             this.nome_label.AutoSize = true;
             this.nome_label.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold);
-            this.nome_label.Location = new System.Drawing.Point(385, 97);
+            this.nome_label.Location = new System.Drawing.Point(372, 97);
             this.nome_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nome_label.Name = "nome_label";
             this.nome_label.Size = new System.Drawing.Size(170, 25);
@@ -148,17 +148,17 @@
             // autore_tb
             // 
             this.autore_tb.Font = new System.Drawing.Font("GROBOLD", 14F);
-            this.autore_tb.Location = new System.Drawing.Point(565, 137);
+            this.autore_tb.Location = new System.Drawing.Point(552, 137);
             this.autore_tb.Margin = new System.Windows.Forms.Padding(2);
             this.autore_tb.Name = "autore_tb";
-            this.autore_tb.Size = new System.Drawing.Size(312, 30);
+            this.autore_tb.Size = new System.Drawing.Size(350, 30);
             this.autore_tb.TabIndex = 133;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(373, 139);
+            this.label1.Location = new System.Drawing.Point(360, 139);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 25);
@@ -169,7 +169,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("GROBOLD", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(373, 186);
+            this.label2.Location = new System.Drawing.Point(360, 186);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 25);
@@ -180,9 +180,9 @@
             // 
             this.Genere_CB.Font = new System.Drawing.Font("GROBOLD", 14F);
             this.Genere_CB.FormattingEnabled = true;
-            this.Genere_CB.Location = new System.Drawing.Point(565, 184);
+            this.Genere_CB.Location = new System.Drawing.Point(552, 184);
             this.Genere_CB.Name = "Genere_CB";
-            this.Genere_CB.Size = new System.Drawing.Size(312, 31);
+            this.Genere_CB.Size = new System.Drawing.Size(350, 31);
             this.Genere_CB.TabIndex = 135;
             // 
             // reset_button

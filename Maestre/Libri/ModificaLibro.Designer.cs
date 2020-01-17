@@ -285,7 +285,7 @@
             this.genere_cb.FormattingEnabled = true;
             this.genere_cb.Location = new System.Drawing.Point(986, 103);
             this.genere_cb.Name = "genere_cb";
-            this.genere_cb.Size = new System.Drawing.Size(175, 31);
+            this.genere_cb.Size = new System.Drawing.Size(244, 31);
             this.genere_cb.TabIndex = 100;
             // 
             // reset_button
@@ -311,7 +311,7 @@
             this.genereCB_2.FormattingEnabled = true;
             this.genereCB_2.Location = new System.Drawing.Point(19, 525);
             this.genereCB_2.Name = "genereCB_2";
-            this.genereCB_2.Size = new System.Drawing.Size(250, 31);
+            this.genereCB_2.Size = new System.Drawing.Size(361, 31);
             this.genereCB_2.TabIndex = 115;
             // 
             // label4
