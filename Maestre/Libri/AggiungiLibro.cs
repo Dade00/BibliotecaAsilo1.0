@@ -62,11 +62,26 @@ namespace Maestre.Libri
 
             GUIUpdate = true;
 
-            Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+            if (GUIUpdate)
+            {
+                GUIUpdate = false;
+                try
+                {
+                    listaLibri =  Queries.getLibri();
+                    refresh();
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }
 
+            
+            Libri_pic.Image.Save(libro.Path, System.Drawing.Imaging.ImageFormat.Jpeg);
+            
             Libri_pic.ImageLocation = "";
             Libri_pic.Image = Maestre.Properties.Resources.No_image;
-
+            
 
         }
 

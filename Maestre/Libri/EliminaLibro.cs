@@ -48,6 +48,9 @@ namespace Maestre.Libri
                 { }
                 MessageBox.Show("Libro eliminato");
             }
+
+            listaLibri = Queries.getLibri();
+            refresh();
         }
 
         private void EliminaLibro_Load(object sender, EventArgs e)
@@ -188,6 +191,7 @@ namespace Maestre.Libri
             catch
             { }
         }
+
 
         private void AiutoAggiungiLibro_Click(object sender, EventArgs e)
         {

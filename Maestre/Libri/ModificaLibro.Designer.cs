@@ -128,7 +128,7 @@
             this.libro_label.Location = new System.Drawing.Point(504, 9);
             this.libro_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.libro_label.Name = "libro_label";
-            this.libro_label.Size = new System.Drawing.Size(375, 49);
+            this.libro_label.Size = new System.Drawing.Size(376, 49);
             this.libro_label.TabIndex = 68;
             this.libro_label.Text = "Modifica un libro";
             this.libro_label.Click += new System.EventHandler(this.Libro_label_Click);
